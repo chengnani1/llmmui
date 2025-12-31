@@ -1,0 +1,124 @@
+{
+    "scene-apps": {
+        "地图导航": [
+            ""
+        ],
+        "打车服务": [
+            "READ_PHONE_NUMBERS",
+            
+        ],
+        "即时通信聊天服务": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "电话通话": [
+            "READ_CALL_LOG",
+            "WRITE_CALL_LOG",
+            "CALL_PHONE",
+            "ANSWER_PHONE_CALLS",
+            "PROCESS_OUTGOING_CALLS",
+            "RECORD_AUDIO"
+        ],
+        "网络社区": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "网络支付": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "网上购物": [],
+        "餐饮外卖": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "邮寄服务": [],
+        "交通票务": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "婚恋相亲": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "求职招聘": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "网络借贷": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "房屋租售": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "汽车交易": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "医疗健康": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "旅游服务": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "酒店预定": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "网络游戏": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "学习教育": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "维修装修": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "女性健康": [],
+        "汽车单车租赁": [
+            "READ_PHONE_NUMBERS",
+            "ACCESS_FINE_LOCATION",
+            "ACCESS_BACKGROUND_LOCATION"
+        ],
+        "投资理财": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "手机银行": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "网络邮箱": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "远程会议": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "网络直播": [
+            "RECORD_AUDIO"
+        ],
+        "在线影音": [
+            "RECORD_AUDIO"
+        ],
+        "新闻资讯": [],
+        "运动健身": [],
+        "浏览器": [],
+        "杀毒软件": [
+            "READ_PHONE_STATE",
+            "App",
+            "WRITE_EXTERNAL_STORAGE"
+        ],
+        "电子图书": [],
+        "拍摄美化": [
+            "CAMERA"
+        ],
+        "应用商店": [],
+        "天气": [
+            "ACCESS_FINE_LOCATION"
+        ],
+        "日历": [
+            "READ_CALENDAR",
+            "WRITE_CALENDAR"
+        ],
+        "实用工具": [],
+        "文件管理": [
+            "READ_EXTERNALSTORAGE",
+            "WRITE_EXTERNAL_STORAGE"
+        ],
+        "娱乐票务": [
+            "READ_PHONE_NUMBERS"
+        ],
+        "用户登录": [],
+        "其他": [],
+        "广告": []
+    }
+}

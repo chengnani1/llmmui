@@ -1,0 +1,101 @@
+#######################################
+# OS / Editor
+#######################################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/
+*.code-workspace
+
+#######################################
+# Python
+#######################################
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env/
+
+#######################################
+# Conda
+#######################################
+
+# Conda environments (usually outside project, but safe to ignore)
+conda-env/
+.envs/
+
+#######################################
+# Data / Model / Cache (RESEARCH CRITICAL)
+#######################################
+
+# Datasets
+data/
+dataset/
+datasets/
+
+# Model checkpoints / weights
+checkpoints/
+ckpt/
+models/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# HuggingFace / transformers cache
+.cache/
+hf_cache/
+huggingface/
+
+#######################################
+# Experiments / Logs
+#######################################
+
+# Training logs
+logs/
+log/
+*.log
+
+# Experiment outputs
+outputs/
+runs/
+results/
+
+# TensorBoard / wandb
+wandb/
+tb/
+tensorboard/
+
+#######################################
+# Jupyter
+#######################################
+
+.ipynb_checkpoints/
+
+#######################################
+# Temporary / Backup
+#######################################
+
+*~
+*.swp
+*.tmp
+
+#######################################
+# Security / Private
+#######################################
+
+# API keys / secrets
+.env.local
+.env.*.local
+*.key
+*.pem
