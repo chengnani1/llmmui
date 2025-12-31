@@ -36,6 +36,9 @@ BASE_PERMISSION_TABLE: Dict[str, Dict[str, List[str]]] = {
         "通过网络或者卫星对您的手机定位": [
             "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"
         ],
+        "定位信息": [
+            "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"
+        ],
         "允许后台访问位置信息": ["ACCESS_BACKGROUND_LOCATION"],
         "访问您设备上的照片、媒体内容和文件": [
             "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"
@@ -63,6 +66,7 @@ BASE_PERMISSION_TABLE: Dict[str, Dict[str, List[str]]] = {
         "添加语音邮件": ["ADD_VOICEMAIL"],
         "拍摄照片和录制视频": ["CAMERA"],
         "录制音频": ["RECORD_AUDIO"],
+        "录音": ["RECORD_AUDIO"],
         "读取联系人": ["READ_CONTACTS"],
         "写入/删除联系人": ["WRITE_CONTACTS"],
         "获取手机的账户列表": ["GET_ACCOUNTS"],

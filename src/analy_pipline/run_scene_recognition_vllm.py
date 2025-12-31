@@ -5,7 +5,7 @@ import sys
 from tqdm import tqdm  # type: ignore
 
 # 调用新的 v4 场景识别逻辑
-from scene_recognizer_v4 import recognize_scene
+from src.analy.scene_recognizer import recognize_scene
 
 
 def process_single_result_json(result_json_path):

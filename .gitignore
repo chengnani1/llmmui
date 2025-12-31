@@ -98,4 +98,4 @@ tensorboard/
 .env.local
 .env.*.local
 *.key
-*.pem
+*.pem.DS_Store

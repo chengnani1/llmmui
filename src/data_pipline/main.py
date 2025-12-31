@@ -5,7 +5,7 @@ from tqdm import tqdm # type: ignore
 
 import configs.config as config
 import src.utils.utils as utils
-from data_analyze import DataAnalyzeAgent
+from scripts.data_analyze import DataAnalyzeAgent
 from src.data.data_collect import DataCollectAgent
 from data_process_v1 import DataProcessAgent
 

@@ -20,15 +20,19 @@ import json
 import subprocess
 import re
 from typing import List
-
-from label_config import PERMISSION_CANDIDATES
-
+from src.configs.label_config import PERMISSION_CANDIDATES
 # =========================================================
 # CONFIG
 # =========================================================
 
-ROOT_DIR = "/Users/charon/Downloads/llmui/processed"
-
+ROOT_DIR = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        "..", "..",          
+        "data",
+        "processed"
+    )
+)
 # =========================================================
 # Utils
 # =========================================================
@@ -101,7 +105,7 @@ def label_one_app(app_dir: str):
 
     chain_imgs.sort(key=parse_chain_id)
 
-    label_path = os.path.join(app_dir, "permission_labels.json")
+    label_path = os.path.join(app_dir, "labels.json")
     if os.path.exists(label_path):
         labels = json.load(open(label_path, "r", encoding="utf-8"))
     else:
