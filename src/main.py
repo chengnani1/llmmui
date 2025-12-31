@@ -3,10 +3,10 @@ import time
 import os
 from tqdm import tqdm # type: ignore
 
-import config
-import utils
+import configs.config as config
+import src.utils.utils as utils
 from data_analyze import DataAnalyzeAgent
-from data_collect import DataCollectAgent
+from src.data.data_collect import DataCollectAgent
 from data_process_v1 import DataProcessAgent
 
 

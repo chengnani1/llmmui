@@ -8,10 +8,10 @@ import traceback
 import requests
 from openai import OpenAI
 
-import config
-import utils
-from config import CHAT_URL, DEFAULT_MODEL
-from utils import logger
+import configs.config as config
+import src.utils.utils as utils
+from configs.config import CHAT_URL, DEFAULT_MODEL
+from src.utils.utils import logger
 
 
 def commit_to_deployed(prompt):
