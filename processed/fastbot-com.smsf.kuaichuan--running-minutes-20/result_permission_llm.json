@@ -1,0 +1,39 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [
+      "CAMERA"
+    ],
+    "files": {
+      "before": "step-318-1764914287400.png",
+      "granting": [
+        "step-319-1764914288283.png"
+      ],
+      "after": "step-320-1764914289488.png"
+    }
+  },
+  {
+    "chain_id": 1,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-70-1764914012469.png",
+      "granting": [
+        "step-74-1764914015982.png",
+        "step-75-1764914016641.png"
+      ],
+      "after": "step-76-1764914017300.png"
+    }
+  },
+  {
+    "chain_id": 2,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-87-1764914029748.png",
+      "granting": [
+        "step-88-1764914030534.png",
+        "step-89-1764914031223.png"
+      ],
+      "after": "step-90-1764914031974.png"
+    }
+  }
+]

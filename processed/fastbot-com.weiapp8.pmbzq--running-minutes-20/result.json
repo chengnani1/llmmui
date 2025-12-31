@@ -1,0 +1,255 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-29-1764901437899.png",
+      "feature": {
+        "text": "事归3会区加首页新手教程软件介绍屏幕标注器是一款极其方便的电子屏悬浮窗画起注笔标注工具占用手机空间小具有绘画写字照片涂鸦记录创意重点标注讲课标记线上会议标记直播横幅等各式各样的使AN用方式学习小黑板随时拥有1E适用人群存储权限我们需要存储权限以保存图片文件使用功能各种画笔类型任您挑选轻松设置画笔粗细颜色使用简单并且可打开悬浮窗功能在其他软件上使用标注。书发2会乡上午1025忆四上上首页新手教程软件介绍屏幕标注器是一款极其方便的电子屏悬浮窗画笔标注工具占用手机空间小具有绘画写字照片涂鸦记录创意重点标注讲课标记线上会议标记直播横幅等各式各样的使用方式学习小黑板随时拥有适用人和群存储权限我们需要存储权限以保存图片文件使用功能各种画笔类型任您挑选轻松设置画笔粗细颜色使用简单并且可打开悬浮窗功能在其他软件上使用标注。囊并会区加4新手教程软件介绍屏幕标注器是一款极其方便的电子屏悬浮窗画笔标注工具鼎用手机空间小具有绘画写字照片涂鸦记录创意重点标注讲课标记线上会议标记直播横幅等各了式各样的使用方式学习小黑板随时拥有适用人和群人存储权限我们需要存储权限以保存图片文件使用功能各种画笔类型任您挑选轻松设置画笔粗细颜色使用简单并且可打开悬浮窗功能在其他软件上使用标注。",
+        "widgets": [
+          {
+            "text": "存储权限",
+            "class": "android.widget.TextView",
+            "resource-id": "com.weiapp8.pmbzq:id/tv_title",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "我们需要存储权限以保存图片文件",
+            "class": "android.widget.TextView",
+            "resource-id": "com.weiapp8.pmbzq:id/tv_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.weiapp8.pmbzq:id/tv_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "确认",
+            "class": "android.widget.TextView",
+            "resource-id": "com.weiapp8.pmbzq:id/tv_confirm",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-31-1764901439286.png",
+        "feature": {
+          "text": "下午1023忆用四生软件介绍屏幕标注器是一款极其方便的电子屏悬浮窗画笔标注工具占用手机空间小具有绘画写字照片涂鸦记录创意重点标注讲课标记线上会议标记直播横幅等各式各样的使用方式学习小黑板随时拥有适用人和群职员线上会议讲解重要文件屏幕标注器帮您一键轻松解决烦恼。主播支持直播带货主播背景文案制作售课全卖写设备上的照片及文件屏幕标注器拒绝始终允许烙4会Goo乡首页新手教程目吕孜上品加巾和tpwo仅在使用中允许山O八SEOBasOn软件介绍屏幕标注器是一款极其方便的电子屏悬浮窗画笔标注工具占用手机空间小具有绘画写字照片涂鸦记录创意重点标注讲课标忆线上会议标记和直播横幅等各式各样的使用方式学习小黑板随时拥有适用人群职员线上会议讲解重要文件屏幕标注器帮您一键轻松解决烦恼。主播支持直播带货主播朋景文案制作售课四读写设备上的照片及文件屏幕标注器拒绝始终允许皮4会Gooh乡首页新手教程9Q上4仅在使用中人允许册口人上千1023世本a首页新手教程皮会000乡软件介绍屏幕标注器是一款极其方便的电子屏悬浮窗画笔标注工具记用手机空间小具有绘画写字照片涂鸦记录创意重点标注讲课标记线上会议标记和直播横幅等各式各样的使用方式学习小黑板随时拥有适用人和群职员线上会议讲解重要文件屏幕标注器帮您一键轻松解决烦恼。主播文持直播融贫播育景文案制作售课四卖写设备上的照片及文件屏幕标注器拒绝仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "屏幕标注器",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-32-1764901439979.png",
+      "feature": {
+        "text": "软件介绍屏幕标注器是一款极其方便的电子屏悬浮窗画笔标注工具占用手机空间小具有绘画写字照片涂鸦记录创意重点标注讲课标记线上会议标记直播横幅等各式各样的使用方式学习小黑板随时拥有适用人和群职员线上会议讲解重要文件屏幕标注器帮您一键轻松解决烦恼。主播支持直播带货主播背景文案制作售课主播讲解时屏幕标注。老师和矩形圆形曲线直线等多种画笔帮助您网课标记重点。使用功能各种画笔类型任您挑选轻松设置画笔粗细颜色使用简单并且可打开悬浮窗功能在其他软件上使用标注。回已保存到相册山O八ET区新手教程8O悬浮画小8SHD8加日8G须中加软件介绍屏幕标注器是一款极其方便的电子屏悬浮窗画笔标注工具占用手机空间小具有绘画写字照片涂鸦记录创意重点标注讲课标记线上会议标记直播横幅等各式各样的使用方式学习小黑板随时拥有适用人和群职员线上会议讲解重要文件屏幕标注器帮您一键轻松解决烦恼。主播支持直播带货主播背景文案制作售课主播讲解时屏幕标注。老师和矩形圆形曲线直线等多种画笔帮助您网课标记重点。使用功能各种画笔类型任您挑选轻松设置画笔粗细频色使用简单并且可打开悬浮窗功能在其他软件上使用标注。轩已保存到相册册口人ET区新手教程目属BSUC28加日BO圳时软件介绍屏幕标注器是一款极其方便的电子屏悬浮窗画笔标注工具鼎用手机空间小具有绘画写字照片涂萎记录创意重点标注讲课标记线上会议标记和直播横幅等各式各样的使用方式学习小黑板随时拥有适用人和群职员线上会议讲解重要文件屏幕标注器帮您一键轻松解决烦恼。主播支持直播融氏主播育景文案制作售课主播讲解时屏幕标注。老师窍形圆形曲线直线等多种画笔帮助您网课标记重点。使用功能各种画笔类型任您挑选轻松设置画笔粗细频色使用简单并且可打开悬浮窗功能在其他软件上使用标注。一回。已保存到相册用吕人",
+        "widgets": [
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "新手教程",
+            "class": "android.widget.TextView",
+            "resource-id": "com.weiapp8.pmbzq:id/tv_home_video",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "悬浮",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "关悬浮",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "画笔",
+            "class": "android.widget.RadioButton",
+            "resource-id": "com.weiapp8.pmbzq:id/rb_paint",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "文字",
+            "class": "android.widget.RadioButton",
+            "resource-id": "com.weiapp8.pmbzq:id/rb_text",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "形状",
+            "class": "android.widget.RadioButton",
+            "resource-id": "com.weiapp8.pmbzq:id/rb_shape",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清除",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "保存",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.weiapp8.pmbzq:id/iv_me",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.weiapp8.pmbzq:id/iv_undo",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.weiapp8.pmbzq:id/iv_redo",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.weiapp8.pmbzq:id/iv_go_home",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.weiapp8.pmbzq:id/iv_close_float",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.weiapp8.pmbzq:id/rl_paint",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.weiapp8.pmbzq:id/rl_text",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.weiapp8.pmbzq:id/rl_shape",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.weiapp8.pmbzq:id/rb_clear",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.weiapp8.pmbzq:id/rb_save",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  }
+]

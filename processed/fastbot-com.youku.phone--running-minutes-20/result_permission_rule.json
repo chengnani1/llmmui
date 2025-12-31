@@ -1,0 +1,51 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-3-1764957111744.png",
+      "granting": [
+        "step-5-1764957114953.png"
+      ],
+      "after": "step-6-1764957115692.png"
+    }
+  },
+  {
+    "chain_id": 1,
+    "predicted_permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE"
+    ],
+    "files": {
+      "before": "step-717-1764958025851.png",
+      "granting": [
+        "step-718-1764958026566.png"
+      ],
+      "after": "step-719-1764958027232.png"
+    }
+  },
+  {
+    "chain_id": 2,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-665-1764957965945.png",
+      "granting": [
+        "step-667-1764957967668.png"
+      ],
+      "after": "step-668-1764957968305.png"
+    }
+  },
+  {
+    "chain_id": 3,
+    "predicted_permissions": [
+      "CAMERA"
+    ],
+    "files": {
+      "before": "step-714-1764958023792.png",
+      "granting": [
+        "step-716-1764958025181.png"
+      ],
+      "after": "step-717-1764958025851.png"
+    }
+  }
+]

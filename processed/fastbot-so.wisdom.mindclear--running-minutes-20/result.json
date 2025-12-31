@@ -1,0 +1,544 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-19-1764969717379.png",
+      "feature": {
+        "text": "智能清理专家需要您同意用户协议与隐私政策在使用过程种需要获取存及备信息地理位置权限用于帮储空间助您管理手机空间保障手机运行良好与安全。部分手机也会获取通知权限用于提醒功能的正常使用。您是否同意上帕智能清理专家智能清理所有不快三加书并和智能清理专家需要您同意用户协议与隐私政策在使用过程种需要获取存储空间设备信息地理位置权限用于帮助您管理手机空间保障手机运行良好与安全。部分手机也会获取通知权限用于提醒功能的正常使用。您是否同意所智能清理专家智能清理所有不快三回G书六和智能清理专家需要您同意用尸协议与隐私政策在使用过程种需要获取存及备信息地理位置权限用于帮储空间助您管理手机空间保障手机运行良好与安全。部分手机也会获取通知权限用于提醒功能的正常使用。您是否同意由智能清理专家智能清理所有不快三加6",
+        "widgets": [
+          {
+            "text": "智能清理专家需要您同意《用户协议》与《隐私政策》，在使用过程种需要获取存储空间,设备信息,地理位置权限，用于帮助您管理手机空间，保障手机运行良好与安全。部分手机也会获取通知权限，用于提醒功能的正常使用。您是否同意？",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/message",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "不同意",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/negativeTextView",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "同意",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/positiveTextView",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-20-1764969718090.png",
+        "feature": {
+          "text": "事归5合区加乡下G获取手机号及通话状态智能清理专家12OO凌晨521国事蚊1会区加和AAAG获取手机号及通话状态智能清理专家12口囊六会区加乡AAAG获取手机号及通话状态智能清理专家12",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "智能清理专家(1/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-21-1764969718814.png",
+        "feature": {
+          "text": "事归5合区加乡全读写设备上的照片及文件智能清理专家22生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许凌晨521国事蚊1会区加和四读写设备上的照片及文件智能清理专家22移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许口囊六会区加乡读写设备上的照片及文件智能清理专家22设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "智能清理专家(2/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-22-1764969720275.png",
+      "feature": {
+        "text": "O日1。手机空间已占用14习和手机加速手机降温书并2仿E加乡和9微信清理深度清理人超过4周未使用的应用回超过4周未使用的应用口口定期清理应用释放手机空间攻立即管理肌候微信清理机之吧首页管理我的O5。手机空间已占用14人手机加速手机降温超级省电居侣多微信清理深度清理病毒查杀从超过4周未使用的应用回超过4周未使用的应用口口定期清理应用释放手机空间攻立即管下伟微信清理有5玖叫所首页管理我的吕书妆会区加乡智能清理专家W57A手机空间已占用14人手机加速手机降温超级省电必合多微信清理深度清理病毒但杀人超过4周未使用的应用回超过4周未使用的应有口口定期清理应用释放手机空间攻立即管理肌伟微信清理se有首页管理我的",
+        "widgets": [
+          {
+            "text": "智能清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "73",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/score",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "分",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/score_unit",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机空间已占用14%",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/status",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "一键清理",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/to_clear",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/txt_tab",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "管理",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/txt_tab",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/txt_tab",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/item_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/item_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "超级省电",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/item_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/item_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "深度清理",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/item_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "病毒查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/item_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "超过4周未使用的应用",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "超过4周未使用的应用",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/big_card_body_tip_title_appmanage",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "定期清理应用，释放手机空间",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/big_card_body_tip_subtitle_appmanage",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即管理",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/big_card_item_btn_appmanage",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/header",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "so.wisdom.mindclear:id/pager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "so.wisdom.mindclear:id/tablayout",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "so.wisdom.mindclear:id/notice_image_view",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "so.wisdom.mindclear:id/scroll_layout",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "so.wisdom.mindclear:id/acc_item",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "so.wisdom.mindclear:id/cool_down_item",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "so.wisdom.mindclear:id/power_item",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "so.wisdom.mindclear:id/wechat_item",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "so.wisdom.mindclear:id/file_item",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "so.wisdom.mindclear:id/virus_item",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "so.wisdom.mindclear:id/gride_app_manage_item",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "so.wisdom.mindclear:id/big_card_wechat_total_layout",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-0-1764969691867.png",
+      "feature": {
+        "text": "智能清理专家需要您同意用户协议与隐私政策在使用过程种需要获取存及备信息地理位置权限用于帮储空间助您管理手机空间保障手机运行良好与安全。部分手机也会获取通知权限用于提醒功能的正常使用。您是否同意上帕智能清理专家智能清理所有不快三加书并和智能清理专家需要您同意用户协议与隐私政策在使用过程种需要获取存储空间设备信息地理位置权限用于帮助您管理手机空间保障手机运行良好与安全。部分手机也会获取通知权限用于提醒功能的正常使用。您是否同意所智能清理专家智能清理所有不快三回G书六和智能清理专家需要您同意用尸协议与隐私政策在使用过程种需要获取存及备信息地理位置权限用于帮储空间助您管理手机空间保障手机运行良好与安全。部分手机也会获取通知权限用于提醒功能的正常使用。您是否同意由智能清理专家智能清理所有不快三加6",
+        "widgets": [
+          {
+            "text": "智能清理专家需要您同意《用户协议》与《隐私政策》，在使用过程种需要获取存储空间,设备信息,地理位置权限，用于帮助您管理手机空间，保障手机运行良好与安全。部分手机也会获取通知权限，用于提醒功能的正常使用。您是否同意？",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/message",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "不同意",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/negativeTextView",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "同意",
+            "class": "android.widget.TextView",
+            "resource-id": "so.wisdom.mindclear:id/positiveTextView",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-2-1764969693377.png",
+        "feature": {
+          "text": "事归5合区加乡全读写设备上的照片及文件智能清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许凌晨521国事改会区加和四读写设备上的照片及文件智能清理专家移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许口囊六会区加乡读写设备上的照片及文件智能清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "智能清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-3-1764969693988.png",
+      "feature": {
+        "text": "法因521舌事妆5合GD乡出智能清理专家下智能清理所有不快O八凌晨521乱忆六会GO和喜智能清理专家员智能清理所有不快册口人潜晨521自囊六5会GO乡二智能清理专家中智能清理所有不快用品人",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  }
+]

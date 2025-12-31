@@ -1,0 +1,15 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [
+      "CAMERA"
+    ],
+    "files": {
+      "before": "step-955-1764853934016.png",
+      "granting": [
+        "step-959-1764853939873.png"
+      ],
+      "after": "step-960-1764853940911.png"
+    }
+  }
+]

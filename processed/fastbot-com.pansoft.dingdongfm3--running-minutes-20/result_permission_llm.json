@@ -1,0 +1,101 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-350-1764841294066.png",
+      "granting": [
+        "step-352-1764841295516.png"
+      ],
+      "after": "step-353-1764841296221.png"
+    }
+  },
+  {
+    "chain_id": 1,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-172-1764841077717.png",
+      "granting": [
+        "step-174-1764841079366.png"
+      ],
+      "after": "step-175-1764841080022.png"
+    }
+  },
+  {
+    "chain_id": 2,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-378-1764841326288.png",
+      "granting": [
+        "step-380-1764841328088.png"
+      ],
+      "after": "step-381-1764841329380.png"
+    }
+  },
+  {
+    "chain_id": 3,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-120-1764841020426.png",
+      "granting": [
+        "step-122-1764841021870.png"
+      ],
+      "after": "step-123-1764841022623.png"
+    }
+  },
+  {
+    "chain_id": 4,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-239-1764841164553.png",
+      "granting": [
+        "step-240-1764841165201.png"
+      ],
+      "after": "step-241-1764841165934.png"
+    }
+  },
+  {
+    "chain_id": 5,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-433-1764841393499.png",
+      "granting": [
+        "step-435-1764841395222.png"
+      ],
+      "after": "step-436-1764841395915.png"
+    }
+  },
+  {
+    "chain_id": 6,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-215-1764841135769.png",
+      "granting": [
+        "step-216-1764841136434.png"
+      ],
+      "after": "step-217-1764841137849.png"
+    }
+  },
+  {
+    "chain_id": 7,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-314-1764841254961.png",
+      "granting": [
+        "step-315-1764841256097.png"
+      ],
+      "after": "step-316-1764841256809.png"
+    }
+  },
+  {
+    "chain_id": 8,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-939-1764841988656.png",
+      "granting": [
+        "step-941-1764841990737.png"
+      ],
+      "after": "step-942-1764841991369.png"
+    }
+  }
+]

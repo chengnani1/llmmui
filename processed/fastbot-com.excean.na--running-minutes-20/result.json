@@ -1,0 +1,269 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-9-1764815559290.png",
+      "feature": {
+        "text": "事六会E4中申请加速本地游戏读取已安装应用用于读取本地游戏实现快速启动加速游戏取消去开启。普通线路爆满游戏可能会出现卡顿或更新缓慢山四久排行榜加速我的事冯2人会医四乡人申请加速本地游戏读取已安装应用用于读取本地游戏实现快速司动加速游戏取消去开局。普通线路爆满游戏可能会出现卡顿或更新缓慢出9鱼排行榜加速我的书六和ENem2SN人mwd申请加速本地游戏读取已安委应用用于读取本地游戏实现快速局动加速游戏取消去开局普通路要还线路类让升级高级线路勾游戏可能会出现卡顿或更新缓慢-一1山作由排行榜加速我的",
+        "widgets": [
+          {
+            "text": "读取已安装应用\n\n用于读取本地游戏实现快速启动加速游戏",
+            "class": "android.widget.TextView",
+            "resource-id": "com.excean.na:id/msg",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.excean.na:id/cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去开启",
+            "class": "android.widget.TextView",
+            "resource-id": "com.excean.na:id/confirm",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-11-1764815560587.png",
+        "feature": {
+          "text": "止午1032局事六会GDQ搜索你想加速的游戏全中申请加速本地游戏利获取手机中已安装的应用信息99手游加速器拒绝始终允许仅在使用中允许OOHD上午1052中会Go乡Q搜索你想加速的游戏会中申请加速本地游戏全获取手机中已安装的应用信息99手游加速器拒绝始终允许仅在使用中人允许口上午10352四Q搜索你想加速的游戏廊2人Rsio0乡级通行证免费领mm呈no个申请加速本地游戏恒获取手机中已安装的应用信息99手游加速器拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "获取手机中已安装的应用信息",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "99手游加速器",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-12-1764815561513.png",
+      "feature": {
+        "text": "必二1054二6上。Q。搜索你想加速的尖允入本地没有可加速的游戏请先安装哦-。普通线路爆满游戏可能会出现卡顿或更新缓慢nxz四口雹次可会oemQQ搜索你想加速的游戏全本地没有可加速的游戏请先安装哦。普通线路爆满游戏可能会出现卡顿或更新缓慢二1054和Co习庆会om搜索你想加速的游戏请本地没有可加速的游戏请先安装哦。共通线路爆满游戏可能会出现卡顿或更新缓慢",
+        "widgets": [
+          {
+            "text": "普通线路爆满",
+            "class": "android.widget.TextView",
+            "resource-id": "com.excean.na:id/full_line_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "游戏可能会出现卡顿或更新缓慢",
+            "class": "android.widget.TextView",
+            "resource-id": "com.excean.na:id/full_line_content",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "升级高级线路",
+            "class": "android.widget.TextView",
+            "resource-id": "com.excean.na:id/open_vip_button",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "排行榜",
+            "class": "android.widget.TextView",
+            "resource-id": "com.excean.na:id/tv_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.excean.na:id/tv_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "com.excean.na:id/tv_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "搜索你想加速的游戏",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "本地没有可加速的游戏，请先安装哦~",
+            "class": "android.widget.TextView",
+            "resource-id": "com.excean.na:id/empty_tv",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "申请加速本地游戏",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.excean.na:id/mainPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.excean.na:id/na_search_bar_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.excean.na:id/na_search_bar_right_icon",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.excean.na:id/listView",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.excean.na:id/layout_empty",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.excean.na:id/close_btn",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.excean.na:id/btn_ask_for_local",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 5,
+            "score": 0.6
+          }
+        ]
+      }
+    }
+  }
+]

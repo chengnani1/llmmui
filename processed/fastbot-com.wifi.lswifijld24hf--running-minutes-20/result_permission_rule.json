@@ -1,0 +1,71 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-264-1764883864225.png",
+      "granting": [
+        "step-265-1764883864959.png"
+      ],
+      "after": "step-266-1764883865584.png"
+    }
+  },
+  {
+    "chain_id": 1,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-1067-1764884698671.png",
+      "granting": [
+        "step-1068-1764884699343.png"
+      ],
+      "after": "step-1069-1764884700049.png"
+    }
+  },
+  {
+    "chain_id": 2,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-975-1764884617375.png",
+      "granting": [
+        "step-976-1764884618149.png"
+      ],
+      "after": "step-977-1764884618923.png"
+    }
+  },
+  {
+    "chain_id": 3,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-16-1764883620848.png",
+      "granting": [
+        "step-17-1764883621627.png"
+      ],
+      "after": "step-18-1764883622368.png"
+    }
+  },
+  {
+    "chain_id": 4,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-908-1764884555650.png",
+      "granting": [
+        "step-909-1764884556372.png"
+      ],
+      "after": "step-910-1764884557041.png"
+    }
+  },
+  {
+    "chain_id": 5,
+    "predicted_permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE"
+    ],
+    "files": {
+      "before": "step-932-1764884576951.png",
+      "granting": [
+        "step-935-1764884579184.png"
+      ],
+      "after": "step-936-1764884579845.png"
+    }
+  }
+]

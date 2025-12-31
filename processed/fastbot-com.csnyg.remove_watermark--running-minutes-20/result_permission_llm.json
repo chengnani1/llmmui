@@ -1,0 +1,44 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE"
+    ],
+    "files": {
+      "before": "step-716-1764844057306.png",
+      "granting": [
+        "step-717-1764844061286.png"
+      ],
+      "after": "step-718-1764844061878.png"
+    }
+  },
+  {
+    "chain_id": 1,
+    "predicted_permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE"
+    ],
+    "files": {
+      "before": "step-49-1764843410642.png",
+      "granting": [
+        "step-50-1764843411315.png"
+      ],
+      "after": "step-51-1764843414219.png"
+    }
+  },
+  {
+    "chain_id": 2,
+    "predicted_permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE"
+    ],
+    "files": {
+      "before": "step-3-1764843358495.png",
+      "granting": [
+        "step-4-1764843359129.png"
+      ],
+      "after": "step-5-1764843359758.png"
+    }
+  }
+]

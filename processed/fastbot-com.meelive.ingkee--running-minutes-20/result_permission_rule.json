@@ -1,0 +1,13 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-120-1764954734430.png",
+      "granting": [
+        "step-122-1764954735782.png"
+      ],
+      "after": "step-123-1764954736505.png"
+    }
+  }
+]

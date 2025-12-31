@@ -1,0 +1,522 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-211-1764832213543.png",
+      "feature": {
+        "text": "事归3会GD有省权限必要权限UL忽略电池优化为了能够后台稳定运行一键白名单可选权限通过设置壁纸的方式是可以避免被系统清理可能影响桌面壁纸显示众下列权限无法检测是否开启能够稳定运行设置大点击查看图文教程动权限量来避免被系统清理事六3会乡省权限必要权限j忽略电池优化为了能够后台稳定运行星请务必开启通过设置壁纸的方式时可以避免被系统清理可能影响桌面壁纸显示本键白名单下列权限无法检测是否开启本但是为了能够稳定运行时请务必开启本点击查看图文教程动启启自动启动权册口人囊冯会EGGj忽略电池优化为了能够后台稳定运行星请务必开局一键白名单可选权限通过设置壁纸的方式是可以避免被系统清理可能影响桌面壁纸显示众让列权限无法检测是否开启本但是为了能够稳定运行设置红点击查看图文教程",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.ImageButton",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "权限",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "必要权限",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "⚠️ 如果运行一段时间后出现 自动关闭、卡死 等问题，请务必按照下列说明添加白名单，来避免被系统清理\n如果仍然无法正常运行，请尝试 重启手机",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "👉",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "辅助服务权限",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "去授权",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "‼️忽略电池优化",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "为了能够后台稳定运行，请务必开启",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开启",
+            "class": "android.widget.Button",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "一键白名单(可选权限)",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "通过设置壁纸的方式，可以避免被系统清理（可能影响桌面壁纸显示）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "一键白名单",
+            "class": "android.widget.Button",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "⚠️ 下列权限无法检测是否开启，但是为了能够稳定运行，请务必开启",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "自动启动",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开启 自动启动权限，来避免被系统清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开启",
+            "class": "android.widget.Button",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "👉",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "不会设置？点击查看图文教程",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-213-1764832214908.png",
+        "feature": {
+          "text": "事归3会EGG有省权限ULII时6辅助服务权限专划人二了了十了了了二了二了了了由忽略电池优化CEEREEREEERE读取设备上的照片及文件贝利自动点击器拒绝仅在使用中允许册O八事六2会乡有省权限LU十6辅助服务权限专划9全了了二了二于了了了二了了二了了了了二了十了了了了二了了二于了二了二了了了忽略电池优化为了能够后台稳定运行昌请务必开启读取设备上的照片及文件贝利自动点击器拒绝始终允许仅在使用中人允许口囊并会医GGE一LI划辅助服务权限专功全了了二于二了二了了二了于二于二于卫直了二了二了二了于二二二了二了二于了了二众如果运行二段时间后出现自动关闭夸卡死等问题按照下列说明添加白名单置来避免被系统清理如果仍然无法正常运行晶请尝试和忽略电池优化为了能够后台稳定运行星请务必开局读取设备上的照片及文件贝利自动点击器拒绝始终允许仅在使用中允许用口人",
+          "widgets": [
+            {
+              "text": "读取设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "贝利自动点击器",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-214-1764832215521.png",
+      "feature": {
+        "text": "囊归5会ED王权限通过设置壁纸的方式可以避免被系统清理可能影响桌面壁纸显示取消立即设置从中列权限无法检测是否开启能够稳定中全自动启动启自动启动权限是来避免被系统清理事六3会乡所国权了恨通过设置壁纸的方式可以避免被系统清理可能影响栗面壁纸显示取消立即设置从4FE列权限无法检测是否开启能够稳定运行自动局动开启自动启动权限时来避免被系统清理书并会医国4所国生权限通过设置壁纸的方式可以避免被系统清理可能影响果面壁纸显示取消立即设置从4下列权限无法检测是否开启能够稳定运行自动司动站司自动司动权限量来避免被系统清理",
+        "widgets": [
+          {
+            "text": "一键白名单",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "立即设置",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "通过设置壁纸的方式，可以避免被系统清理（可能影响桌面壁纸显示）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-231-1764832232670.png",
+      "feature": {
+        "text": "下午310图四日囊虹3会GE有省Autorisation全Silyadesproblemestelsquelafermeturedeapplicatiomriegelassurez-vousdajouterblancheconformementauxinstructionsSuivantespoureviterdetrenettoyeparleSystemeSiellenefonctionnetoujourspasnormalementveuillezULAutoriserLutilisationdelabatterieVeuillezvousassurerdeLactiverpourunfonctionnementstableenarriere-planE3ListeblanchedeconfigurationrapideAutorisationsfacultativesEndefinissantlefonddecranVOuSpouvezeviterdetrenettoyeparleSystemepeutaffecterUaffichagedufonddecrandubureau1SJTEBLANCHEADECONFIGURATIONRAPIDE全LesautorisationssujvantesnepeuventpasetreverifjeesSIellesSont事六3会乡下午510国四日GAUutorlsationsneceSsalres和SilyadesproblemestelsquelafermeturedeWapplicationlegelassurez-vousdajouterunelisteblancheconformementauxinstructionsSuivantespoOureviterdetrenettoyeparlesystemeSiellenefonctionnetoujourspasnormalementveuillezESSayezdeTedemarrerletelephoneJLAutoriserLutilisationdelabatterieVeuillezvousassurerdeLactiverpourunfonctionnementStableenarriere-planE3ListeblanchedeconfligurationrapideAutorisationsfacultativesEndefinissantlefonddecranvouspouvezeviterdetrenettoyeparleSystemepeutaffecterLaffichagedufonddecrandubureauISTEBLANCHEDECONFIGURATIONRAPIDE从LesautorisationssuivantesnePeuventpasetreverifieesSiellesSont册口人囊冯会EGG下午310国四日人AUutorlSsatIionsSneceSSalres和全SilyadesproblemestelsquelafermeturedeWapplicationlegelassurez-vousdajouterunelisteblancheconformementauxinstructionsSuivantespoOUreviterdetrenettoyeparleSystemeSiellenefonctionnetoujourspasnormalementveuillezESssayezderedemarrerletelephoneJLAutoriserutilisationdelabatterieVeuillezvousassurerdeLactiverpourunfonctionnementStableenarriere-planE3ListeblanchedeconflgurationrapideAutorisationsfacultativesEndefinissantlefonddecranvouspouvezeviterdetrenettoyeparleSystemepeutaffecterLaffichagedufonddecrandubureauIEBLANCHEDECONFIGURATIONRAPIDE全LesautorisationsSuivantesnePeuventpasetreverifjeesSiellesSont用吕人",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.ImageButton",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "Autorisation",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "Autorisations nécessaires",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "⚠️ S'il y a des problèmes tels que la fermeture de l'application, le gel, assurez-vous d'ajouter une liste blanche conformément aux instructions suivantes pour éviter d'être nettoyé par le système.\nSi elle ne fonctionne toujours pas normalement, veuillez Essayez de redémarrer le téléphone",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "👉",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "Autorisations de service auxiliaire",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "autoriser",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "‼️Autoriser l'utilisation de la batterie",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "Veuillez vous assurer de l'activer pour un fonctionnement stable en arrière-plan",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "OUVRIR",
+            "class": "android.widget.Button",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "Liste blanche de configuration rapide(Autorisations facultatives)",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "En définissant le fond d’écran, vous pouvez éviter d’être nettoyé par le système (peut affecter l’affichage du fond d’écran du bureau)",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "LISTE BLANCHE DE CONFIGURATION RAPIDE",
+            "class": "android.widget.Button",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "⚠️ Les autorisations suivantes ne peuvent pas être vérifiées si elles sont activées, mais afin de pouvoir fonctionner de manière stable, assurez-vous de les activer",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-232-1764832233428.png",
+        "feature": {
+          "text": "下午510图目日事归3会EGG而四AutorisationAUtoriSationSsneceSSsalresULLLUTLLLLULUULULLLLUIIIIIIQUTLOSe帮AutorisationsdeServiceXilialreblancheconformementauxInstructionsSuivantesPoUreviterdetrenettoyeparleSystemeSiellenefonctionnetoujourspasnormalementveuillezAutoriserLutilisationdelabatterieVeuillezvousassurerdeactiverpourun读取设备上的照片及文件贝利自动点击器拒绝仅在使用中允许OO事六2会乡下午510国四日他AUtorjSatIlonsSneceSSailresHEHE相AutorlsationsdeServIce2ULOFISeGI份io22了了了了了工工了了了工工工工工工了工了了了二工工工了全Silyadesproblemestelsquelafermeturede3pplicationlegelassurez-vousdajouterunelisteblancheconformementauxinstructionsSuivantesPoOureviterdetrenettoyeparleSystemeSiellenefonctionnetoujourspasnormalementveuillezEssayezderedemarrerletelephoneAutoriserutilisationdelabatterieVeuillezvousassurerdeactiverpourun四读取设备上的照片及文件贝利自动点击器拒绝仅在使用中人允许口下午3510国四自囊六会EN所国星AutorisationAUtomSatIionSneceSSsalres一LULULLLUUTLLLLULLLULULLLLLLLLIUUIIIII昌AutorlsationsdeServIce2全Pa一autorlse有2auUXlllalre了了二于了二了十卫了了耳了二于了于二卫了二于了了了了了二于了二了于和Silyadesproblemestelsquelafermeturede3pplicationlegelassurez-vousdajouterunelisteblancheconformementauxinstructionsSuivantesPoOUreviterdetrenettoyeparleSystemeSiellenefonctionnetoujourspasnormalementveuillezESssayezderedemarrerletelephoneAutoriserutilisationdelabatterieVeuillezvousassurerdeLactiverpourun四读取设备上的照片及文件贝利自动点击器拒绝仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读取设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "贝利自动点击器",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-233-1764832234094.png",
+      "feature": {
+        "text": "囊归3会E下午310图目日GAUtousatonsaecessdlkes也SiLyadesproblemestelsquelajermeturedeappllcatiorliegeuassurez-vousdajouterunelisteblancheconformementauxInstructionsSulvantespouListeblanchedeconfigurationrapideEndefinissantlefonddecranvouspouvezeviterdetrenettoyeparlesystemepeutaffecterLaffichagedufonddecrandubureauCANCELCONFIGURERMAINTENANTraplQetAuUTIOrISatlonsTacutatIVeSEndefinissantlefonddecranVvouSpouvezeviterdetrenettoyeparleSystemepeutaffecteraffichagedufonddecrandubureauREBRANOUENDE全LesautorisationssuivantesnepPeuventpasetreverifieesSIellesSont下午510国目日G事六3会乡和SiLYadesproblemestelsquelajermeturedeapplicatiorlegeassurez-vousdajouterunelisteblancheconformementauxInstructionsSulvantesPoOUListeblanchedeconfigurationrapideEndefinissantlefonddecranvouspouvezeviterdetrenettoyeparlesystemepeutaffecterLaffichagedufonddecrandubureauCANCELCONFIGURERMAINTENANTraplQetAUTIOrlsSaLlonsTacuULLaLIVeSEndefinissantlefonddecranyvousPouvezeviteraffichagedufonddecrandubureau从LesautorlsationssulvantesnePeuventpasetreverifieesSIellessont书并会医国4下午310国四昌各让Silyadesproblemestelsquelajermeturedeappllcatiorlegeassurez-vousdajouterunelisteblancheconformementauxInstructionsSulvantespoOuListeblanchedeconfigurationrapideEndefinissantlefonddecranvouspouvezeviterdetrenettoyeparlesystemepeutaffecterLaffichagedufonddecrandubureauCANCELCONFIGURERMAINTENANTraplQeWAuUTLorlsaLlonsTacCultaLIVeSEndefinissantlefonddecranVvouspouvezeviterdetrenettoyeparleSystemrepeutaffecteraffichagedufonddecrandubureauBRANGHEROS人LesautorisationsSulvantesnePeuventpasetreverifjeesSIellesSont",
+        "widgets": [
+          {
+            "text": "Liste blanche de configuration rapide",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "CANCEL",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "CONFIGURER MAINTENANT",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "En définissant le fond d’écran, vous pouvez éviter d’être nettoyé par le système (peut affecter l’affichage du fond d’écran du bureau)",
+            "class": "android.widget.TextView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "com.ksxkq.autoclick:id/arg",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  }
+]

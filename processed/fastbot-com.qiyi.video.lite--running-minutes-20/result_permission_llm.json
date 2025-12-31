@@ -1,0 +1,27 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-14-1764820645082.png",
+      "granting": [
+        "step-16-1764820647490.png"
+      ],
+      "after": "step-17-1764820648476.png"
+    }
+  },
+  {
+    "chain_id": 1,
+    "predicted_permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE"
+    ],
+    "files": {
+      "before": "step-79-1764820724286.png",
+      "granting": [
+        "step-80-1764820725030.png"
+      ],
+      "after": "step-81-1764820725788.png"
+    }
+  }
+]

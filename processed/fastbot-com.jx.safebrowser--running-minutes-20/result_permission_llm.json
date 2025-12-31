@@ -1,0 +1,99 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [
+      "CAMERA"
+    ],
+    "files": {
+      "before": "step-485-1764825121480.png",
+      "granting": [
+        "step-486-1764825122140.png"
+      ],
+      "after": "step-487-1764825123497.png"
+    }
+  },
+  {
+    "chain_id": 1,
+    "predicted_permissions": [
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION"
+    ],
+    "files": {
+      "before": "step-423-1764825026184.png",
+      "granting": [
+        "step-424-1764825027944.png"
+      ],
+      "after": "step-425-1764825028955.png"
+    }
+  },
+  {
+    "chain_id": 2,
+    "predicted_permissions": [
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION"
+    ],
+    "files": {
+      "before": "step-460-1764825082257.png",
+      "granting": [
+        "step-462-1764825085381.png"
+      ],
+      "after": "step-463-1764825086160.png"
+    }
+  },
+  {
+    "chain_id": 3,
+    "predicted_permissions": [
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION"
+    ],
+    "files": {
+      "before": "step-401-1764824992168.png",
+      "granting": [
+        "step-403-1764824994342.png"
+      ],
+      "after": "step-404-1764824995596.png"
+    }
+  },
+  {
+    "chain_id": 4,
+    "predicted_permissions": [
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION"
+    ],
+    "files": {
+      "before": "step-446-1764825061988.png",
+      "granting": [
+        "step-449-1764825066122.png"
+      ],
+      "after": "step-450-1764825066842.png"
+    }
+  },
+  {
+    "chain_id": 5,
+    "predicted_permissions": [
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION"
+    ],
+    "files": {
+      "before": "step-473-1764825105040.png",
+      "granting": [
+        "step-475-1764825107174.png"
+      ],
+      "after": "step-476-1764825107891.png"
+    }
+  },
+  {
+    "chain_id": 6,
+    "predicted_permissions": [
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION"
+    ],
+    "files": {
+      "before": "step-410-1764825003952.png",
+      "granting": [
+        "step-413-1764825011931.png"
+      ],
+      "after": "step-414-1764825012804.png"
+    }
+  }
+]

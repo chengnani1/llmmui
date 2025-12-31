@@ -1,0 +1,1659 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-4-1764990096597.png",
+      "feature": {
+        "text": "开局VV需要获取以下权限以保证作品正常播放下载以及您的账号安全存储空间电话设备信息开局VV需要获取以下权限以保证作品正党播放下载以及您的账号安全存储空间电话设备信息如VV开司VV需要获取以下权限以保证作品正第播放下载以及您的账号安全存储空间电话设备信息",
+        "widgets": [
+          {
+            "text": "存储空间",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "电话设备信息",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "开启VV",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "需要获取以下权限，以保证作品正常播放下载以及您的账号安全",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_ap_dialog_next",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-5-1764990097400.png",
+        "feature": {
+          "text": "网Q拥抱美好主后一全读写设备上的照片及文件vv生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许入QU才抱壬好主滞四读写设备上的照片及文件VV倍设置访问相册和社交应用文件拒绝始终允许仅在使用中允许和四拥把腾好王硬一四读写设备上的照片及文件VV设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "VV",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-6-1764990098678.png",
+      "feature": {
+        "text": "拥抱筠好主恒全VV制把筠好主硬抽把美好主硬",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-453-1764990570045.png",
+      "feature": {
+        "text": "推荐说说CQ六梦里相伴关注人2021-05-10093949235次浏览NSey赞成没有结果的爱情只能给彼此带来伤害既然已经没有了结果还是早点放手长痛不如短痛就要努力的让自己放下避免让两展开山东省济南市Co2C0中10负心汉4LaAAA和关注2021-05-07233532187次浏览NSes赞成没有结此带来伤害既然已经没有了络忌放手长痛不如汉广梦里相伴月2021-05-10093949235次浏览赞成没有结果的爱情只能给彼此带来伤害既然已经没有了结果还是早点放手长痛不如短痛就要努力的让自己放下避免让两展开绅山东省济南市CC2CI0叱10SS负心汉2021-05-07233532187次浏览赞成没有结既然已经没有了结站Ce三吕说说你对这和句话的看法生梦里相伴2021-05-10093949235次浏览赞成没有结果的爱情只能给彼此带来伤害既然已经没有了结果还是早点放手长痛不如短痛Ce避免让两展开和山东省济南市9230号10负心汉2021-05-07233532187次浏览赞成没有结既估已经没有了纺南nn色生1三",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_topic_homepage_tittle",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "分享",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/iv_topic_homepage_share",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "#你赞成“没结果的爱情，就不要相互耽误”吗#",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_topic_homepage_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "18.6万热度 · 说说你对这句话的看法",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_topic_homepage_hot",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "主持人：VV说说",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_topic_host_user_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "961人参与",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_topic_homepage_participant_number",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "推荐",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/item_sliding_tab_title",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "说说",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/item_sliding_tab_title",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_topic_homepage_back",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/topic_detail_collect_button",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_topic_homepage_active",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "梦里相伴",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/sv_common_imagetext_nickname",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "2021-05-10 09:39:49",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/sv_common_imagetext_time",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "235次浏览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_dynamic_view_number",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_dynamic_detail_attention",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "赞成，没有结果的爱情，只能给彼此带来伤害，既然已经没有了结果，还是早点放手，长痛不如短痛，就要努力的让自己放下，避免让两...展开",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_sv_imagetext_describe",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "山东省.济南市",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_sv_imagetext_location",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_han_work_reply",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "0",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_han_work_share",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "10",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_han_work_praise",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "负心汉",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/sv_common_imagetext_nickname",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "2021-05-07 23:35:32",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/sv_common_imagetext_time",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "187次浏览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_dynamic_view_number",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_dynamic_detail_attention",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "赞成，没有结果的爱情，只能给彼此带来伤害，既然已经没有了结果，还是早点放手，长痛不如短痛，就要努力的让自己放下，避免让两...展开",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_sv_imagetext_describe",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.vv51.mvbox:id/bsd_topic_homepage_host_user",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.vv51.mvbox:id/topic_joiner_layout",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.vv51.mvbox:id/tl_topic_homepage",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_topic_search",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.vv51.mvbox:id/vp_topic_homepage",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.vv51.mvbox:id/rlv_topic_homepage_tab",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.vv51.mvbox:id/ll_common_root",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.vv51.mvbox:id/ll_common_root",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.vv51.mvbox:id/rl_common_user_info",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.vv51.mvbox:id/gv_sv_imagetext_img",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.vv51.mvbox:id/ll_sv_imagetext_location",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.vv51.mvbox:id/ll_han_work_reply",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.vv51.mvbox:id/ll_han_work_share",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.vv51.mvbox:id/ll_han_work_praise",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.vv51.mvbox:id/rl_common_user_info",
+            "depth": 6,
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-454-1764990570831.png",
+        "feature": {
+          "text": "一一人推荐说说QF本局ES所访梦里相伴人上关注罗入2021-05-10093949235次浏览SN赞成没有结果的爱情只能给彼此带来伤害六4外姜公汕到-24士上Am不肠户I-上AN获取设备的定位信息vv仅在使用中允许OODe5返9ates。me推存说说Gahh六2021-05-100935949235次浏览GD关注R没有结果的爱情只能给彼此带来伤害六4姜了到-24士甸Aa不下腿-上亡和一AS获取设备的定位信息vV拒绝本次运行允许仅在使用中允许U册口人攀里相伴必9由12021-05-10093949235次浏览赞成没有结果的爱情只能给彼此带来伤害六7二人获取设备的定位信息VV拒绝本次运行允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "获取设备的定位信息",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "VV",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-455-1764990571590.png",
+      "feature": {
+        "text": "推荐说说CQ六梦里相伴关注人2021-05-10093949235次浏览NSey赞成没有结果的爱情只能给彼此带来伤害既然已经没有了结果还是早点放手长痛不如短痛就要努力的让自己放下避免让两展开山东省济南市Co2C0中10负心汉4LaAAA和关注2021-05-07233532187次浏览NSes赞成没有结此带来伤害既然已经没有了络忌放手长痛不如汉广梦里相伴月2021-05-10093949235次浏览赞成没有结果的爱情只能给彼此带来伤害既然已经没有了结果还是早点放手长痛不如短痛就要努力的让自己放下避免让两展开绅山东省济南市CC2CI0叱10SS负心汉2021-05-07233532187次浏览赞成没有结既然已经没有了结站Ce三吕说说你对这和句话的看法生梦里相伴2021-05-10093949235次浏览赞成没有结果的爱情只能给彼此带来伤害既然已经没有了结果还是早点放手长痛不如短痛Ce避免让两展开和山东省济南市9230号10负心汉2021-05-07233532187次浏览赞成没有结既估已经没有了纺南nn色生1三",
+        "widgets": [
+          {
+            "text": " 50米 ",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": " 50米 ",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "山东省.济南市",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_imagetext_map_address_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "济南市 历下区 转山隧道 ",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_imagetext_map_address_sub",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_imagetext_map_mylocation",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 2,
+    "ui_before_grant": {
+      "file": "step-719-1764990855757.png",
+      "feature": {
+        "text": "会因到乡囊归2上午1114国目日保存图片了鸯二-57区人包人六取消CE乡一坤上午1114国四四下本二。。人32倪保存图片AN取9乡一4事六23上午1114国四四和时。。本本昌nmANOA-AAA1和1Cr四3-v保存图片入ANN了取",
+        "widgets": [
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_dialog_cancel",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "保存图片",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_dialog_item",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.vv51.mvbox:id/coordinator",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.vv51.mvbox:id/design_bottom_sheet",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-720-1764990856563.png",
+        "feature": {
+          "text": "上午1114国和日书归呈合国玫乡读写设备上的照片及文件vv生设置访问相册和社交应用文件v拒绝台终允许仅在使用中允许上午1114国四四囊妆人会国玫儿读与设备上的照片及文件vV移设置访问相册和社交应用文件v拒绝6终允许仅在使用中人允许上午1114国四四读写设备上的照片及文件VV设置访问相册和社交应用文件v拒绝仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "VV",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-721-1764990857228.png",
+      "feature": {
+        "text": "上午1114国目日CE乡一坤上午1114国四四9乡4代hNH本书皮上午1114国四四",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.vv51.mvbox:id/gv_dynamic_pic_preview_gridview",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.vv51.mvbox:id/sd_dynamic_pic_preview",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 3,
+    "ui_before_grant": {
+      "file": "step-862-1764991031807.png",
+      "feature": {
+        "text": "囊归会医国乡上午1117国目日泥响革无音效升降调革0人声明100伴奏帮81三O混响昌无音效升降调也0默认三吕上午1117国目目冯会医玫和断情泪OOEBDEBD混响时无音效升降调村0从二时100伴认81",
+        "widgets": [
+          {
+            "text": "断情泪",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_player_head_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "演唱",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_player_head_right",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "舒哥",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_cover_singer_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "1604",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_cover_work_listened_times",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "#年度燃动声浪#我刚唱了一首歌曲，快来听听吧。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_cover_work_description",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "上榜记录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/works_board_song_tag_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "全国榜 NO.4",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_work_board_tag",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "四川榜 NO.2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_work_board_tag",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "人气总榜 NO.2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_work_board_tag",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "设备：Android",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_record_params_machine",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "耳机：未使用",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_record_params_headicon_state",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "混响：无音效",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_record_params_music_effect",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "升降调：0",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_record_params_tune_value",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "人声：100",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_record_params_personal_volume",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "伴奏：81",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_accompany_volume_value",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "均衡：默认",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_record_params_equalizer",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "音色：标准",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_record_params_timbre",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "录歌配置",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "贡献榜",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "最近听众",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "添加到合集",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_work_detail_add_album",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "举报",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_work_detail_report_works",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "导出",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_work_detail_export_work",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "146万",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_flowers_top_count",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "6.7万",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_flowers_second_count",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "6.7万",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_flowers_third_count",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "6.7万",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_flowers_four_count",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.vv51.mvbox:id/vp_player_content",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_player_head_left",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_activity_logo",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.vv51.mvbox:id/iv_cover_singer_head",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_cover_operate",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.vv51.mvbox:id/ll_work_detail_add_album",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.vv51.mvbox:id/ll_work_detail_report_works",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.vv51.mvbox:id/ll_work_detail_export_work",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.vv51.mvbox:id/rl_find_flowers_ranking_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-863-1764991032693.png",
+        "feature": {
+          "text": "生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八囊妆人会医玫儿上午1117国四加读写设备上的照片及文件vV娩设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许口读写设备上的照片及文件VV设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "VV",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-864-1764991033398.png",
+      "feature": {
+        "text": "囊归会医国乡上午1117国目日100811三O上午1117国目加书六会乡断情泪OO从声林100伴奏二81三吕冯会医玫和上午1117国目目断情泪OO",
+        "widgets": [
+          {
+            "text": "导出作品...28%",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/txt_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_cancel_output",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ProgressBar",
+            "resource-id": "com.vv51.mvbox:id/pbar_file_scan",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 4,
+    "ui_before_grant": {
+      "file": "step-687-1764990812903.png",
+      "feature": {
+        "text": "2僵上E四乡下购上午1113L当前二个人跳着孤单的舞步月尖0000全乡囊购上和TCD一个人跳着静音的舞步0000会5乡囊响上午1113U小二半且一尾中概国生21到订0000",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.vv51.mvbox:id/ll_global_list_activity",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "情罪",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_global_detail_title",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "陈玉建",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_global_detail_singer",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_global_detail_attention",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "收藏",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_global_detail_collect",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "演唱",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_global_detail_record",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "00:00",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_global_play_progress_time",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "04:17",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_global_play_duration_time",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "推荐",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/item_sliding_tab_title",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "当前",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/item_sliding_tab_title",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/item_sliding_tab_title",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.vv51.mvbox:id/vp_global_paly",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.vv51.mvbox:id/rl_global_play_head_con",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.vv51.mvbox:id/rv_global_lyric_container",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_global_player_mode",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_play_last",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_player_next",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_global_player_collect",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_close",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.vv51.mvbox:id/sliding_tabs_global_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_global_play_search",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.vv51.mvbox:id/ll_global_detail_control_title",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.SeekBar",
+            "resource-id": "com.vv51.mvbox:id/sb_global_songlist",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.vv51.mvbox:id/ltv_global_item_lyric",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/tv_global_detail_alarm",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/tv_global_detail_share",
+            "depth": 6,
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-689-1764990814452.png",
+        "feature": {
+          "text": "上午1115四目日囊归会医国乡进行通话录音或本地录音仅在使用中允许OO上午1115国四加进行通话录音或本地录音vV仅在使用中人允许口上午1115国四目AAA昌进行通话录音或本地录音VV拒绝堵河风di路下仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "进行通话录音或本地录音",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "VV",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-690-1764990815255.png",
+      "feature": {
+        "text": "囊归会医国乡情罪山O八情罪书六会乡册口人情罪书并会医玫儿用吕人",
+        "widgets": [
+          {
+            "text": "情罪",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_record_prepare_song_name",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "开始录独唱",
+            "class": "android.widget.Button",
+            "resource-id": "com.vv51.mvbox:id/btn_record_prepare",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "情罪",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_record_music_song_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "加载中...0%",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_progress_record_prepare",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_record_prepare_play_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "音频",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "MV",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/tv_record_prepare_solo_ksc",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "片段唱",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/item_sliding_tab_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "独唱",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/item_sliding_tab_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "合唱",
+            "class": "android.widget.TextView",
+            "resource-id": "com.vv51.mvbox:id/item_sliding_tab_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.vv51.mvbox:id/rppb_record_prepare",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_record_prepare_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.vv51.mvbox:id/vp_record_prepare",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.vv51.mvbox:id/stl_record_prepare",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/iv_down_song_back",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ProgressBar",
+            "resource-id": "com.vv51.mvbox:id/pb_progress_record_prepare",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.vv51.mvbox:id/bsd_record_prepare_head",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  }
+]

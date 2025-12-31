@@ -1,0 +1,718 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-865-1764880645092.png",
+      "feature": {
+        "text": "潜居437本四四事阁5会GD弛导读问题拉玉以便我们更好的帮助你解决问提高产品质量。请选择你在产品异常中遇到的问题提交反馈山O八潜晨437车国四囊六5会GOIT贵粘贴常用语自动填充一N一青填写问题描述以便我们更好的帮助您解决问提高产品质量。请选择你在产品异常中遇到的问题册口人凌晨437本国四事妆5会GO二关富问题摘述以便我们更好的帮助您解决问提高产品质量。请选择你在产品异常中遇到的问题提交反馈用吕人",
+        "widgets": [
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "反馈内容",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "请选择你在产品异常中遇到的问题",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "提交反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/tv_submit",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "程序BUG",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/tv_feed_type",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "内容建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/tv_feed_type",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "网络问题",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/tv_feed_type",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "功能建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/tv_feed_type",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "其他",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/tv_feed_type",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.gtdev5.caller_flashover:id/iv_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "com.gtdev5.caller_flashover:id/nestedScrollView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入标题",
+            "class": "android.widget.EditText",
+            "resource-id": "com.gtdev5.caller_flashover:id/et_title",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请填写问题描述，以便我们更好的帮助您解决问题，提高产品质量。",
+            "class": "android.widget.EditText",
+            "resource-id": "com.gtdev5.caller_flashover:id/et_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.gtdev5.caller_flashover:id/recyclerView_pic",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.gtdev5.caller_flashover:id/recyclerView",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.gtdev5.caller_flashover:id/iv_pic",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-866-1764880645954.png",
+        "feature": {
+          "text": "事六会区加请填写问题描述以便我们更好的帮助您解决问题提高产品质量。NA反馈内容广FA必7读写设备上的照片及文件来电闪拒绝始终允许仅在使用中允许OO事六2会乡请填写问题描述以便我们更好的帮助您解决问题提高产品质量。反馈内容广PR必2读与设备上的照片及文件来电闪拒绝始终允许仅在使用中人允许口囊并会区加N请填写问题朱述以便我们更好的帮助您解决问题提高产品质量。读写设备上的照片及文件来电闪拒绝仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "来电闪",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-867-1764880646674.png",
+      "feature": {
+        "text": "潜居437本四四事阁5会GD弛请填写问题描述以便我们更好的帮助您解决问题提高产品质量。请选择你在产品异常中遇到的问题提交反馈授权成功山O八潜晨437车国四囊六5会GO请填写问题描述以便我们更好的帮助您解决问题提高产品质量。请选择你在产品异常中遇到的问题提交反馈授权成功册口人凌晨437本国四事妆5会GO请填写问题描述以便我们更好的帮助您解决问题提高产品质量。请选择你在产品异常中遇到的问题提交反馈授权成功用吕人",
+        "widgets": [
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "反馈内容",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "请选择你在产品异常中遇到的问题",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "提交反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/tv_submit",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "程序BUG",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/tv_feed_type",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "内容建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/tv_feed_type",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "网络问题",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/tv_feed_type",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "功能建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/tv_feed_type",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "其他",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/tv_feed_type",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.gtdev5.caller_flashover:id/iv_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "com.gtdev5.caller_flashover:id/nestedScrollView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入标题",
+            "class": "android.widget.EditText",
+            "resource-id": "com.gtdev5.caller_flashover:id/et_title",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请填写问题描述，以便我们更好的帮助您解决问题，提高产品质量。",
+            "class": "android.widget.EditText",
+            "resource-id": "com.gtdev5.caller_flashover:id/et_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.gtdev5.caller_flashover:id/recyclerView_pic",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.gtdev5.caller_flashover:id/recyclerView",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.gtdev5.caller_flashover:id/iv_pic",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-101-1764879945998.png",
+      "feature": {
+        "text": "潜居425外未登录来电闪这潜晨425加未登录来电内二凌晨425入未登录来电内CS申加四会员",
+        "widgets": [
+          {
+            "text": "短信闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/txt_icon_name",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "来电闪",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/head_center_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "未登录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/head_right_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "来电闪",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/txt_icon_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "通知闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/txt_icon_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "设置",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/txt_icon_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "会员",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/txt_icon_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "关于",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/txt_icon_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.gtdev5.caller_flashover:id/recy_index",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-102-1764879946714.png",
+        "feature": {
+          "text": "潜晨425四四图来电闪末登录谷员知办7设置获取手机号及通话状态来电闪三O来电内未登录获取手机号及通话状态来电闪三吕来电闪未登录获取手机号及通话状态来电闪一口",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "来电闪",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-103-1764879947408.png",
+      "feature": {
+        "text": "5会GaG闪光开关orr闪烁次数5次闪烁频率50ms特效开关oF闪烁特效默认特效1特效循环次数无限三OO会Ci00乡闪光开关和加闪烁次数5次闪烁频率50ms特效开关cr闪烁特效默认特效1特效循环次数无限三口5会GDG闪光开关条世闪烁次数5次闪烁频率50ms特效开关oFr闪烁特效默认特效1特效循环次数无限二吕",
+        "widgets": [
+          {
+            "text": "来电闪",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/head_titles",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "闪光开关",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.CompoundButton",
+            "resource-id": "com.gtdev5.caller_flashover:id/swich_btn",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "特效开关",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.CompoundButton",
+            "resource-id": "com.gtdev5.caller_flashover:id/swich_effect_btn",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "闪烁次数",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "5次",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/txt_flash_count",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "闪烁频率",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "50ms",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/txt_frequency",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "闪烁特效",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "默认特效1",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/txt_texiao",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "特效循环次数",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/textView",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "无限",
+            "class": "android.widget.TextView",
+            "resource-id": "com.gtdev5.caller_flashover:id/txt_loop_count",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.gtdev5.caller_flashover:id/head_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.gtdev5.caller_flashover:id/rv_flash_count",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.gtdev5.caller_flashover:id/rv_flash_frequency",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.gtdev5.caller_flashover:id/rv_flash_texiao",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.gtdev5.caller_flashover:id/rv_flash_loop_count",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  }
+]

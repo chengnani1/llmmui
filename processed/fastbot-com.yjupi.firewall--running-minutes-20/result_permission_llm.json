@@ -1,0 +1,54 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-1085-1764834336443.png",
+      "granting": [
+        "step-1087-1764834337753.png",
+        "step-1088-1764834338344.png",
+        "step-1089-1764834338944.png"
+      ],
+      "after": "step-1090-1764834339577.png"
+    }
+  },
+  {
+    "chain_id": 1,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-28-1764833299328.png",
+      "granting": [
+        "step-30-1764833300731.png",
+        "step-31-1764833301309.png",
+        "step-32-1764833301903.png"
+      ],
+      "after": "step-33-1764833302603.png"
+    }
+  },
+  {
+    "chain_id": 2,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-72-1764833346921.png",
+      "granting": [
+        "step-74-1764833348211.png",
+        "step-75-1764833348797.png",
+        "step-76-1764833349375.png"
+      ],
+      "after": "step-77-1764833349960.png"
+    }
+  },
+  {
+    "chain_id": 3,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-581-1764833826792.png",
+      "granting": [
+        "step-582-1764833827490.png",
+        "step-583-1764833828103.png",
+        "step-584-1764833828823.png"
+      ],
+      "after": "step-585-1764833829498.png"
+    }
+  }
+]

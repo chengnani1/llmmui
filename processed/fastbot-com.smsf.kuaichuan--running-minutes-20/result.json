@@ -1,0 +1,1757 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-318-1764914287400.png",
+      "feature": {
+        "text": "下午1581eJeiaao国四C给朋友安装B山O八下午1581eTe和国四人C给朋友安装册口人下午1581e基过公书多天如因5给朋友安装加入",
+        "widgets": [
+          {
+            "text": "建组",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "加入",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "给朋友安装",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.smsf.kuaichuan:id/iv_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.smsf.kuaichuan:id/iv_record",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.smsf.kuaichuan:id/iv_scan",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.smsf.kuaichuan:id/iv_guide",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_create",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_add",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_share",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-319-1764914288283.png",
+        "feature": {
+          "text": "ES3EEDGe人对四人给朋友安装拍摄照片和录制视频闪传拒绝本次运行允许仅在使用中允许OOSaEDee思5给朋友安装目担摄照片和录制视频闪传拒绝本炊运行允许仅在使用中人允许口人5给朋友安装担摄照请和录制钢频闪伟拒绝本次运行允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "拍摄照片和录制视频",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "闪传",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-320-1764914289488.png",
+      "feature": {
+        "text": "",
+        "widgets": [
+          {
+            "text": "将二维码放入框内，即可自动扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-70-1764914012469.png",
+      "feature": {
+        "text": "下午153国四图囊妆3合区回乡应用44屏幕录制晴虹FM小米社区三xiaomicn加四用出这关4ee知翁mm和2QQ二9回人训王器说四。国下午155国品加应用44小米社区罗泣宝特价淘特书妆交中会无回乡LSPosedPR三xLU省aa本可豆评。国下午1535上国巴因百度输系统语人一一名小米换机百度书六会区回音乐本民虽xiomicn小米社区润特un文件全部7计关一门必1门4LU。更如人NLA训让册上时s国",
+        "widgets": [
+          {
+            "text": "文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "Google通讯录同步",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "应用（44）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_apps_count",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "应用",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "图片",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "视频",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "音乐",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "全部",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "屏幕录制",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "蜻蜓FM",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "小米社区",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "三方应用异常分析",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "百度输入法小米版",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "系统语音引擎",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "淘特",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "LSPosed",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "小米换机",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "百度",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "健康",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "小米文档查看器（WPS定制）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "小米画报",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "全球上网",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "指南针",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "万能遥控",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "拼多多",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "钱包",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "今日头条",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.smsf.kuaichuan:id/iv_share",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.smsf.kuaichuan:id/iv_record",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.smsf.kuaichuan:id/tabs",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.smsf.kuaichuan:id/view_pager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_tab_home",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_tab_transfer",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_tab_mine",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_all",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.GridView",
+            "resource-id": "com.smsf.kuaichuan:id/gv_apps",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-74-1764914015982.png",
+        "feature": {
+          "text": "下午1531eie应用图片视频音乐文件图片获取设备的定位信息闪传2拒绝本次运行允许仅在使用中允许OO获取设备的定位信息闪传2拒绝本次运行允许仅在使用中允许口下午153LeJi让过应用图片视频图片获取设备的定位信息闪传2拒绝本次运行允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "获取设备的定位信息",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "闪传(1/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-75-1764914016641.png",
+        "feature": {
+          "text": "应用图片视频音乐文件一读写设备上的照片及文件闪传212生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八关型加下溺车加污文件读写设备上的照片及文件闪传22移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许册口人应用图片钢频音乐文件读与设备上的照片及文件闪传22设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "闪传(2/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-76-1764914017300.png",
+      "feature": {
+        "text": "下午153国四图囊妆3合区回乡GOCn应用图片视频音乐文件fastbot-comsingclient--running-minutes-1共4张爱唱共1张mosheng共4张Pictures共7张apptemp1764842446712共1张一曙fanxingalbumrlas。共2张人出下午153国四加书虹别人写GaU应用图片视频音乐文件fastbot-comsingclent--running-minUtes-1共4张爱唱共1张mosheng共4张Pictures共7张apptemp1764842446712共1张fanxingalbum共2张口中一下午1535国加加冰妆2会区回Uun应用图片钢频音乐文件xs国fastbot-comsingclient--running-minES国utes-12国共4张he和共1张mosheng共4张Plctures共7张apptemp1764842440712共1张fanxingalbum共2张加由2一人",
+        "widgets": [
+          {
+            "text": "文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "图片",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "应用",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "图片",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "视频",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "音乐",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "fastbot-com.sing.client--running-minutes-1",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_folder_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "共4张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_folder_count",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "爱唱",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_folder_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "共1张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_folder_count",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "mosheng",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_folder_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "共4张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_folder_count",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "Pictures",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_folder_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "共7张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_folder_count",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "apptemp1764842446712",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_folder_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "共1张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_folder_count",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "fanxing_album",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_folder_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "共2张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_folder_count",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.smsf.kuaichuan:id/iv_share",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.smsf.kuaichuan:id/iv_record",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.smsf.kuaichuan:id/tabs",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.smsf.kuaichuan:id/view_pager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_tab_home",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_tab_transfer",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_tab_mine",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.smsf.kuaichuan:id/lv_folder",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 2,
+    "ui_before_grant": {
+      "file": "step-87-1764914029748.png",
+      "feature": {
+        "text": "下午1535国加图囊妆3合区回乡上人人下秆153国加加书六会回点用图片视频音乐应用0册人人人下年153回四加囊必会区加尾用图片钢频音乐人人",
+        "widgets": [
+          {
+            "text": "文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "应用（0）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_apps_count",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "应用",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "图片",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "视频",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "音乐",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "全部",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.smsf.kuaichuan:id/iv_share",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.smsf.kuaichuan:id/iv_record",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.smsf.kuaichuan:id/tabs",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.smsf.kuaichuan:id/view_pager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_tab_home",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_tab_transfer",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_tab_mine",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_all",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-88-1764914030534.png",
+        "feature": {
+          "text": "CnNI应用图片视频音乐文件应用44全部国原收音机xiaomnicn屏幕录制晴星FM小米社区三方应谨公全入百度输系统语淘特LSPosed获取设备的定位信息闪传2拒绝本次运行允许仅在使用中允许OOQ书必用图片视频音乐文件应用44全部轩屏幕录制晴星FM小米社区三方应咖信网区百度输系统语淘特LSPosed下获取设备的定位信息闪传2拒绝本次运行允许仅在使用中允许口下午153LeJi让过刀NI用图片钢频民应用44全部人轩SS屏幕录制晴星FM小米社区三方应地人色生-必百度输系统语淘特LSPosed获取设备的定位信息闪传2拒绝本次运行允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "获取设备的定位信息",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "闪传(1/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-89-1764914031223.png",
+        "feature": {
+          "text": "CnNI应用图片视频音乐文件应用44全部O轩Q屏幕录制晴虹FM小米社区三方应全读写设备上的照片及文件闪传212生设置访问相册和社交应用文件拒绝始终允许仅在使用中允许山O八Q书点用图片视频音乐文件应用44全部人SS原收音机xiaomicn屏幕录制晴星FM小米社区三方应读写设备上的照片及文件闪传22移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许册口人Q己飞用图片视频音乐文件应用44全部O办屏幕录制晴星FM小米社区三方应四读与设备上的照片及文件闪传22设置访问相册和社交应用文件拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "闪传(2/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-90-1764914031974.png",
+      "feature": {
+        "text": "下午153国四图囊妆3合区回乡各应用图片视频音乐应用44义xiaomicn昌人屏幕录制晴虹FM小米社区人Na1测宝特价人们A本瑟洛小米换机百度健康避轧SSLAASE指南针Cn文件口Ht四用出这关安王工ffema0和加半ee全NL过稻扩下午153国四加书虹别人写GaU点用图片视频音乐应用44屏幕录制晴星FM小米社区N二LA-渔宝特价百度输系统语淘特二宙Sq小米换机百度健康小米画报全球上网指南针册口人三方应下午1535上国巴因U必用应用44本民虽术EN厂册了一当量作品巧冰书六会区回un文件此C口计关一门必1门4LU。更如人NLA训让册上时",
+        "widgets": [
+          {
+            "text": "文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "Google通讯录同步",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "应用（44）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_apps_count",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "应用",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "图片",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "视频",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "音乐",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "全部",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "屏幕录制",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "蜻蜓FM",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "小米社区",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "三方应用异常分析",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "百度输入法小米版",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "系统语音引擎",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "淘特",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "LSPosed",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "小米换机",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "百度",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "健康",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "小米文档查看器（WPS定制）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "小米画报",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "全球上网",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "指南针",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "万能遥控",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "拼多多",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "钱包",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "今日头条",
+            "class": "android.widget.TextView",
+            "resource-id": "com.smsf.kuaichuan:id/tv_app_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.smsf.kuaichuan:id/iv_share",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.smsf.kuaichuan:id/iv_record",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.smsf.kuaichuan:id/tabs",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.smsf.kuaichuan:id/view_pager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_tab_home",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_tab_transfer",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_tab_mine",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.smsf.kuaichuan:id/ll_all",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.GridView",
+            "resource-id": "com.smsf.kuaichuan:id/gv_apps",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  }
+]

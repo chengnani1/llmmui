@@ -1,0 +1,55 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [
+      "READ_EXTERNAL_STORAGE"
+    ],
+    "files": {
+      "before": "step-826-1764862825251.png",
+      "granting": [
+        "step-827-1764862826065.png"
+      ],
+      "after": "step-828-1764862826832.png"
+    }
+  },
+  {
+    "chain_id": 1,
+    "predicted_permissions": [
+      "RECORD_AUDIO"
+    ],
+    "files": {
+      "before": "step-313-1764862179954.png",
+      "granting": [
+        "step-314-1764862180783.png"
+      ],
+      "after": "step-315-1764862181441.png"
+    }
+  },
+  {
+    "chain_id": 2,
+    "predicted_permissions": [
+      "CAMERA"
+    ],
+    "files": {
+      "before": "step-53-1764861840050.png",
+      "granting": [
+        "step-54-1764861840889.png"
+      ],
+      "after": "step-55-1764861841575.png"
+    }
+  },
+  {
+    "chain_id": 3,
+    "predicted_permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE"
+    ],
+    "files": {
+      "before": "step-699-1764862678549.png",
+      "granting": [
+        "step-700-1764862679305.png"
+      ],
+      "after": "step-701-1764862680070.png"
+    }
+  }
+]

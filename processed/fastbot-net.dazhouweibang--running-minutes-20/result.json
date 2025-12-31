@@ -1,0 +1,150 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-466-1764962614084.png",
+      "feature": {
+        "text": "提示为了确保图片视频正常浏览需要申请手机存储权限确定提示为了确保图片视频正常浏览需要申请手机存储权限确定提示为了确保图片视频正音浏训需要申请手机仓储权限确定民吕从",
+        "widgets": [
+          {
+            "text": "为了确保图片、视频正常浏览，需要申请手机存储权限",
+            "class": "android.widget.TextView",
+            "resource-id": "net.dazhouweibang:id/content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "提示",
+            "class": "android.widget.TextView",
+            "resource-id": "net.dazhouweibang:id/title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.TextView",
+            "resource-id": "net.dazhouweibang:id/confirm",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-467-1764962614836.png",
+        "feature": {
+          "text": "全读写设备上的照片及文件在开网拒绝始终允许仅在使用中允许山O八四读与设备上的照片及文件在开网拒绝始终允许仅在使用中人允许册口人四读写设备上的照片及文件在开网拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "在开网",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-468-1764962615497.png",
+      "feature": {
+        "text": "",
+        "widgets": [
+          {
+            "text": "1/1",
+            "class": "android.widget.TextView",
+            "resource-id": "net.dazhouweibang:id/count",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "net.dazhouweibang:id/pager_view",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ProgressBar",
+            "resource-id": "net.dazhouweibang:id/progressBar",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "net.dazhouweibang:id/save",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "net.dazhouweibang:id/image_item_nomal",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  }
+]

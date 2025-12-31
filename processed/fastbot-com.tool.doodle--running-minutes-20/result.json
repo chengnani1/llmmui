@@ -1,0 +1,529 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-31-1764838334508.png",
+      "feature": {
+        "text": "Cubecreation163Com联系方式cubecreation163Com意见反馈联系方式CubecreationQ163Com",
+        "widgets": [
+          {
+            "text": "返回",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tool.doodle:id/iv_back",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tool.doodle:id/tv_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "联系方式",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "cubecreation@163.com",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "登录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tool.doodle:id/nick",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "分享好友",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "使用说明",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "关于我们",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "com.tool.doodle:id/nsl",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.tool.doodle:id/ll_head",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.tool.doodle:id/fl_share",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.tool.doodle:id/ll_intro",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.tool.doodle:id/ll_feedback",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.tool.doodle:id/ll_about",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-33-1764838335977.png",
+        "feature": {
+          "text": "下午452图目目四读写设备上的照片及文件电子黑板读写存储权使用说明个仅在使用中允许四ees下下午452国目自读写设备上的照片及文件电子黑板读写存储权使用说明人仅在使用中允许加ecees四ESEDDD读写设备上的照片及文件电子黑板读写存储权使用说明仅在使用中允许一",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "电子黑板",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-34-1764838336595.png",
+      "feature": {
+        "text": "eeDaQ2CeDBDQ211OoDBDaQ2",
+        "widgets": [
+          {
+            "text": "1/1",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tool.doodle:id/tv_page_count",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.tool.doodle:id/ll_check_group",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.tool.doodle:id/ll_page",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_pen",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_eraser",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_save",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_revoke",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_resume",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_add",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_pre",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_next",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_share",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_setting",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-15-1764838322608.png",
+      "feature": {
+        "text": "囊-11多三119三各11人用三",
+        "widgets": [
+          {
+            "text": "点击清屏",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "1/1",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tool.doodle:id/tv_page_count",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.tool.doodle:id/ll_eraser",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.tool.doodle:id/ll_check_group",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.tool.doodle:id/ll_page",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_pen",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_eraser",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_save",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_revoke",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_resume",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_add",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_pre",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_next",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_share",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_setting",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-17-1764838323986.png",
+        "feature": {
+          "text": "囊归3会E国4读写设备上的照片及文件电子黑板下午452图目目读写存储权使用说明人仅在使用中允许BeQOG所下午452国目自四读写设备上的照片及文件电子黑板仅在使用中人允许8QOG读写存储权使用说明用于照片和文件的保存读取等场景下午452图昌目四读写设备上的照片及文件电子黑板仅在使用中人允许读写存储权使用说明用于照片和文件的保存读取等场景",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "电子黑板",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-18-1764838324607.png",
+      "feature": {
+        "text": "OOGGBDeQG2凡面引本地文件列表注轩文件仅保存在本手机IOGBDaQ各而。下本地文件列表注置文件仅保存在本手机QIGGDaQ2各四外得",
+        "widgets": [
+          {
+            "text": "本地文件列表",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tool.doodle:id/tv_title",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "（注：文件仅保存在本手机）",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "暂无数据",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tool.doodle:id/tv_empty",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tool.doodle:id/iv_close",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  }
+]

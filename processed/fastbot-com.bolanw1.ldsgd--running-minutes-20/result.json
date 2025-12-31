@@ -1,0 +1,5304 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-741-1764881774440.png",
+      "feature": {
+        "text": "令网络问题夫潜朋456国图图事六3会意见反馈CE3问题描述请在此详细描写您的问题建议册口人凌晨456国国国事蚁2会意见反馈俐网络问题霄用吕人",
+        "widgets": [
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvTitleCenter",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "提交",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFeedbackAdd",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "1、反馈标题",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "2、问题类型",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "3、问题描述",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "（上传问题截图，最多3张）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackAddContentTip",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "程序BUG",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "使用建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "网络问题",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内容建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "其他",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivTitleLeft",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入反馈标题",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddTitle",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/rvFeedbackAddType",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请在此详细描写您的问题/建议...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddContent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivFeedbackAdd",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-743-1764881775825.png",
+        "feature": {
+          "text": "BySEDG相机胶卷取消拍摄-个读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许OD多和人ER凌野456四全国BBSIEY他相机胶卷取消读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许ESETLLDOUDERETSE2征相机胶卷取消SS四读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "来电闪光灯",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-744-1764881776467.png",
+      "feature": {
+        "text": "凌晨456国国图事归3会EGG预览消赃祷绩扯艳过乓时国国国O0十号巡预览国国D4嘛上巡预览",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCamera",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "相机胶卷",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_title",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "预览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_preview",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "请选择",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_complete",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_cancel",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/title_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/recycler",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/bottom_nar_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_complete_select",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/rl_title_bar",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_iv_left_back",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_click",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_bg",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-722-1764881753135.png",
+      "feature": {
+        "text": "令网络问题夫CE便网络问题胁3问题描述请在此详细描写您的问题建议4册口凌晨455国国国书妆2吕窑意见反馈俐网络问题协",
+        "widgets": [
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvTitleCenter",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "提交",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFeedbackAdd",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "1、反馈标题",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "2、问题类型",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "3、问题描述",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "（上传问题截图，最多3张）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackAddContentTip",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "程序BUG",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "使用建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "网络问题",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内容建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "其他",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivTitleLeft",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入反馈标题",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddTitle",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/rvFeedbackAddType",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请在此详细描写您的问题/建议...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddContent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivFeedbackAdd",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-723-1764881753788.png",
+        "feature": {
+          "text": "便读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许山O八及剖堆旭四读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中人允许册口人痘硬9四读与设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许用吕人肝剖府刀",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "来电闪光灯",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-724-1764881754476.png",
+      "feature": {
+        "text": "人zaTSED相机胶卷了汪2-了宛多昌人多书妾品会GD法县455回国图人让入人届ecIP区下乡k法屋455回国图外机胶疮议二SY多VPC和四外wo5",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCamera",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "相机胶卷",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_title",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "预览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_preview",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "请选择",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_complete",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_cancel",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/title_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/recycler",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/bottom_nar_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_complete_select",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/rl_title_bar",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_iv_left_back",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_click",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_bg",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 2,
+    "ui_before_grant": {
+      "file": "step-1000-1764882016721.png",
+      "feature": {
+        "text": "令网络问题夫凌晨500国图图囊发会6意见反馈俐网络问题霄4O时俐网络问题霄",
+        "widgets": [
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvTitleCenter",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "提交",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFeedbackAdd",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "1、反馈标题",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "2、问题类型",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "3、问题描述",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "（上传问题截图，最多3张）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackAddContentTip",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "程序BUG",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "使用建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "网络问题",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内容建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "其他",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivTitleLeft",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入反馈标题",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddTitle",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/rvFeedbackAddType",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请在此详细描写您的问题/建议...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddContent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivFeedbackAdd",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-1002-1764882018017.png",
+        "feature": {
+          "text": "人BysEDG相机胶卷取消四拍摄下读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许胃OO人了ruBECETSEY相机胶卷取消AAA读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许凌层500四图国DCTSED相机胶卷AAA读与设备上的照片及文件来电内光灯拒绝",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "来电闪光灯",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-1003-1764882018655.png",
+      "feature": {
+        "text": "凌晨500国图图事归3会EGG预览消赃祷绩扯艳过乓时国国国避吕LO号巡预览国国已LO巡预览",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCamera",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "相机胶卷",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_title",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "预览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_preview",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "请选择",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_complete",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_cancel",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/title_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/recycler",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/bottom_nar_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_complete_select",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/rl_title_bar",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_iv_left_back",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_click",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_bg",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 3,
+    "ui_before_grant": {
+      "file": "step-399-1764881416042.png",
+      "feature": {
+        "text": "囊归3会E凌晨450国四国ET1当反馈标题请输入反馈标题作网络问题协忆发2会乡潜居450国国图意见反馈1扫反馈标题请输入反馈标题2本问题类型仿3问题描述请在此详细描写您的问题建议册口人1意见反馈书帮会医国4俐网络问题霄用吕人",
+        "widgets": [
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvTitleCenter",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "提交",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFeedbackAdd",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "1、反馈标题",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "2、问题类型",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "3、问题描述",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "（上传问题截图，最多3张）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackAddContentTip",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "程序BUG",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "使用建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "网络问题",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内容建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "其他",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivTitleLeft",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入反馈标题",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddTitle",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/rvFeedbackAddType",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请在此详细描写您的问题/建议...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddContent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivFeedbackAdd",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-401-1764881417563.png",
+        "feature": {
+          "text": "作83HTSEDG相机胶卷下修全读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许口多时DZETSED二相机胶卷AAA四读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许EREIILDOD32ETSE2D二相机胶卷AAA四读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中人允许三口",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "来电闪光灯",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-402-1764881418292.png",
+      "feature": {
+        "text": "法朋450国图图事归3会GD预览请选择潜晨450国国图囊必3会EGG且入风格-入cr生生时和王口提国者下儿人aa站四内NE潜朋450国国图囊并会攻E人2四时-和各癌昌维四信人站相册四",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCamera",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "相机胶卷",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_title",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "预览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_preview",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "请选择",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_complete",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_cancel",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/title_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/recycler",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/bottom_nar_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_complete_select",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/rl_title_bar",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_iv_left_back",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_click",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_bg",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 4,
+    "ui_before_grant": {
+      "file": "step-1202-1764882209030.png",
+      "feature": {
+        "text": "囊归3会E凌晨505国国图OF预览山O八事六2会乡来电闪光闪关灯参数设置来电闪交CO开启加间隔时间闪光次数确定预览册口人书帮会医国4凌晨505国国国GCO开启预览用吕人",
+        "widgets": [
+          {
+            "text": "来电闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvTitleCenter",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "闪关灯参数设置",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "（由于设备硬件存在差异，实际效果可能不尽相同）",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "来电闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemTitle",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFlashOk",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "预览",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFlashPreview",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开启",
+            "class": "android.widget.RadioButton",
+            "resource-id": "com.bolanw1.ldsgd:id/rbFlashItemOpen",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "关闭",
+            "class": "android.widget.RadioButton",
+            "resource-id": "com.bolanw1.ldsgd:id/rbFlashItemClose",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "闪光时间",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemTitle",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "500ms",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemContent",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "间隔时间",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemTitle",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "500ms",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemContent",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "闪光次数",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemTitle",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "直到接通",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemContent",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivTitleLeft",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "com.bolanw1.ldsgd:id/cvFlash",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RadioGroup",
+            "resource-id": "com.bolanw1.ldsgd:id/rgFlashItemContent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-1204-1764882210607.png",
+        "feature": {
+          "text": "囊蚁会攻加4凌晨505国国图来电闪光EREIRAOL开启0闪光次数获取手机号及通话状态来电闪光灯OO书并3会乡来电闪光闪关灯参数设置由于设备硬件存在差异昌实际效果可能不尽相同OF攻关闭0500mslEEE3w获取手机号及通话状态来电闪光灯口书妆1会医来电闪光内关灯参数设置由于设备硬件存在差异昌实际效果可能不尽相同OA0获取手机号及通话状态来电闪光灯",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "来电闪光灯",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-1205-1764882211345.png",
+      "feature": {
+        "text": "事六会医国4凌晨505国国图来电闪光人来电闪光CO关闭一O闪光次数预览山O八囊并3会乡凌晨505国国图来电闪光CO关亲人闪光次数预览册口人书妆31会医下4凌晨505国国国来电闪光CO关闭人闪光次数预览用吕人",
+        "widgets": [
+          {
+            "text": "来电闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvTitleCenter",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "闪关灯参数设置",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "（由于设备硬件存在差异，实际效果可能不尽相同）",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "来电闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemTitle",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFlashOk",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "预览",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFlashPreview",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开启",
+            "class": "android.widget.RadioButton",
+            "resource-id": "com.bolanw1.ldsgd:id/rbFlashItemOpen",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "关闭",
+            "class": "android.widget.RadioButton",
+            "resource-id": "com.bolanw1.ldsgd:id/rbFlashItemClose",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "闪光时间",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemTitle",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "500ms",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemContent",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "500ms",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemSeekBar",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "间隔时间",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemTitle",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "500ms",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemContent",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "闪光次数",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemTitle",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "直到接通",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFlashItemContent",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivTitleLeft",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "com.bolanw1.ldsgd:id/cvFlash",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RadioGroup",
+            "resource-id": "com.bolanw1.ldsgd:id/rgFlashItemContent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.SeekBar",
+            "resource-id": "com.bolanw1.ldsgd:id/sbFlashItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 5,
+    "ui_before_grant": {
+      "file": "step-697-1764881725069.png",
+      "feature": {
+        "text": "令网络问题夫ECETSEY意见反馈1反馈标题请输入反馈标题2当问题类型SEE3问题描述请在此详细描写您的问题建议4O时俐网络问题霄",
+        "widgets": [
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvTitleCenter",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "提交",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFeedbackAdd",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "1、反馈标题",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "2、问题类型",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "3、问题描述",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "（上传问题截图，最多3张）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackAddContentTip",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "程序BUG",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "使用建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "网络问题",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内容建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "其他",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivTitleLeft",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入反馈标题",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddTitle",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/rvFeedbackAddType",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请在此详细描写您的问题/建议...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddContent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivFeedbackAdd",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-698-1764881725746.png",
+        "feature": {
+          "text": "便读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许山O八冲四读写设备上的照片及文件来电闪光灯仅在使用中允许录剖堆旭册口人渤四读与设备上的照片及文件来电闪光灯仅在使用中允许及剖府刀用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "来电闪光灯",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-699-1764881726401.png",
+      "feature": {
+        "text": "EREDCC82HSEDP9Se了3人人相机胶卷书阅会区加4凌晨455回国图。人机胶卷时中Vipx全",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCamera",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "相机胶卷",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_title",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "预览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_preview",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "请选择",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_complete",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_cancel",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/title_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/recycler",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/bottom_nar_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_complete_select",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/rl_title_bar",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_iv_left_back",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_click",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_bg",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 6,
+    "ui_before_grant": {
+      "file": "step-624-1764881647503.png",
+      "feature": {
+        "text": "令网络问题夫山O八潜晨454国国国囊蚊5窑意见反馈1反馈标题请输入反馈标题CE3问题描述请在此详细描写您的问题建议册口人凌晨454国国国事蚁2会意见反馈俐网络问题霄用吕人",
+        "widgets": [
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvTitleCenter",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "提交",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFeedbackAdd",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "1、反馈标题",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "2、问题类型",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "3、问题描述",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "（上传问题截图，最多3张）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackAddContentTip",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "程序BUG",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "使用建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "网络问题",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内容建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "其他",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivTitleLeft",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入反馈标题",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddTitle",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/rvFeedbackAddType",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请在此详细描写您的问题/建议...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddContent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivFeedbackAdd",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-625-1764881648196.png",
+        "feature": {
+          "text": "读写设备上的照片及文件来电闪光灯拒绝仅在使用中允许三O始终允许0二让录剖才刀读与设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中人允许册口人交册二由让及剖夫旭四读写设备上的照片及文件来电闪光灯人拒绝人始终允许王用品人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "来电闪光灯",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-626-1764881648929.png",
+      "feature": {
+        "text": "ED一3囊痉3潜居454回国国人取消相机胶卷syRe用Aump-了PRcy所办凌屋454回国国取消相机胶卷二交全Anep-亡晨454回国国吉1作vaunwp-",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCamera",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "相机胶卷",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_title",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "预览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_preview",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "请选择",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_complete",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_cancel",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/title_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/recycler",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/bottom_nar_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_complete_select",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/rl_title_bar",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_iv_left_back",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_click",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_bg",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 7,
+    "ui_before_grant": {
+      "file": "step-892-1764881925134.png",
+      "feature": {
+        "text": "令网络问题夫潜朋458国国图事六3会意见反馈CE3问题描述请在此详细描写您的问题建议册口人凌晨458图国国事蚁2会意见反馈俐网络问题霄用吕人",
+        "widgets": [
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvTitleCenter",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "提交",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFeedbackAdd",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "1、反馈标题",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "2、问题类型",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "3、问题描述",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "（上传问题截图，最多3张）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackAddContentTip",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "程序BUG",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "使用建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "网络问题",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内容建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "其他",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivTitleLeft",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入反馈标题",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddTitle",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/rvFeedbackAddType",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请在此详细描写您的问题/建议...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddContent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivFeedbackAdd",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-894-1764881926345.png",
+        "feature": {
+          "text": "BossSEDG相机胶卷取消拍摄-个读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许OD多和人ER岂作浊会EG相机胶卷取消读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许EEZEIUULDODBEETSED征相机胶卷取消SS四读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "来电闪光灯",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-895-1764881926980.png",
+      "feature": {
+        "text": "了事六5会EE国预览消赃祷绩扯艳过乓时国国国004十号巡预览国国Co4嘛上巡预览",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCamera",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "相机胶卷",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_title",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "预览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_preview",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "请选择",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_complete",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_cancel",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/title_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/recycler",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/bottom_nar_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_complete_select",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/rl_title_bar",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_iv_left_back",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_click",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_bg",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 8,
+    "ui_before_grant": {
+      "file": "step-637-1764881661533.png",
+      "feature": {
+        "text": "令网络问题夫潜晨454国国国囊蚊5窑意见反馈1反馈标题请输入反馈标题CE3问题描述青在此详细描写您的问题建议册口人凌晨454国国国事蚁2会意见反馈俐网络问题霄用吕人",
+        "widgets": [
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvTitleCenter",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "提交",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFeedbackAdd",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "1、反馈标题",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "2、问题类型",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "3、问题描述",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "（上传问题截图，最多3张）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackAddContentTip",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "程序BUG",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "使用建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "网络问题",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内容建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "其他",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivTitleLeft",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入反馈标题",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddTitle",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/rvFeedbackAddType",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请在此详细描写您的问题/建议...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddContent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivFeedbackAdd",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-638-1764881662230.png",
+        "feature": {
+          "text": "便读写设备上的照片及文件来电闪光灯人可始终允许仅在使用中允许OO录剖堆妃四读写设备上的照片及文件来电闪光灯人可人始终允许仅在使用中人允许口肝剖府妃四读写设备上的照片及文件来电闪光灯可人始终允许仅在使用中人允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "来电闪光灯",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-639-1764881662879.png",
+      "feature": {
+        "text": "人人人GE加乡他要上昌各鼎扫可可友六二冰玫2法因454回国图seLA全人攻自人贡和让k和二冯多人机胶卷凌晨454回国图摄。忆Seo",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCamera",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "相机胶卷",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_title",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "预览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_preview",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "请选择",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_complete",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_cancel",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/title_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/recycler",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/bottom_nar_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_complete_select",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/rl_title_bar",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_iv_left_back",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_click",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_bg",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 9,
+    "ui_before_grant": {
+      "file": "step-709-1764881739393.png",
+      "feature": {
+        "text": "令网络问题夫俐网络问题霄4这HONA人凌晨455国国国书六窑意见反馈俐网络问题协",
+        "widgets": [
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvTitleCenter",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "提交",
+            "class": "android.widget.Button",
+            "resource-id": "com.bolanw1.ldsgd:id/btnFeedbackAdd",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "1、反馈标题",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "2、问题类型",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "3、问题描述",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "（上传问题截图，最多3张）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackAddContentTip",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "程序BUG",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "使用建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "网络问题",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内容建议",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "其他",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvFeedbackTypeItem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivTitleLeft",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入反馈标题",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddTitle",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/rvFeedbackAddType",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请在此详细描写您的问题/建议...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.ldsgd:id/etFeedbackAddContent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ivFeedbackAdd",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-711-1764881740658.png",
+        "feature": {
+          "text": "作83HTSEDG相机胶卷下修全读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许口多时BETESED二相机胶卷AAA四读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中允许BETSED二相机胶卷AAA四读写设备上的照片及文件来电闪光灯拒绝始终允许仅在使用中人允许三口",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "来电闪光灯",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-712-1764881741321.png",
+      "feature": {
+        "text": "凌晨455国生图事归3会EGG预览消赃祷绩扯艳过乓时国国图LO8十号巡预览国国LO4嘛上巡预览",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCamera",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "相机胶卷",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_title",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "预览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_preview",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "请选择",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_complete",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_tv_cancel",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.ldsgd:id/tvCheck",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/title_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.ldsgd:id/recycler",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/bottom_nar_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_complete_select",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/rl_title_bar",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_iv_left_back",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_click",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.ldsgd:id/ps_rl_album_bg",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.bolanw1.ldsgd:id/btnCheck",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  }
+]

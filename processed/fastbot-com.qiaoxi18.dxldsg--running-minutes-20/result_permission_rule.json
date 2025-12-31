@@ -1,0 +1,16 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [
+      "READ_PHONE_NUMBERS",
+      "READ_PHONE_STATE"
+    ],
+    "files": {
+      "before": "step-186-1764845593556.png",
+      "granting": [
+        "step-188-1764845595391.png"
+      ],
+      "after": "step-189-1764845596098.png"
+    }
+  }
+]

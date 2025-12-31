@@ -1,0 +1,654 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-186-1764845593556.png",
+      "feature": {
+        "text": "囊蚁会医国4短信来电闪光来电闪光去电闪光国微信闪光QQ闪光WechatflashQQflashED党二二泽0区去电闪光来电闪光Incomingflash到四中证ESOOSP做全flash机闪闪短信来电闪光扣es全昌全Soees9es9es0来电闪光去电闪光IncomingflashCallflashGOQQ闪光QQflash答信闪光WechatflashNN",
+        "widgets": [
+          {
+            "text": "短信来电闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexTitle",
+            "depth": 2,
+            "score": 16.4
+          },
+          {
+            "text": "短信闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvTabItemTitle",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvTabItemTitle",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "设置",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvTabItemTitle",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "来电闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "Incoming flash",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "去电闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "Call flash",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "SMS flash",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "万能闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "Universal flash",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "微信闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "Wechat flash",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "QQ闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "QQ flash",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "屏幕闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "Screen flash",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "弹幕表白",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "Barrage confession",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.qiaoxi18.dxldsg:id/viewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tabLayout",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.qiaoxi18.dxldsg:id/bannerViewPager",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/ivIndexItemSwitchIcon",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/ivIndexItemSwitchIcon",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/ivIndexItemSwitchIcon",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/ivIndexItemSwitchIcon",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/ivIndexItemSwitchIcon",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/ivIndexItemSwitchIcon",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/ivIndexItemSwitchIcon",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-188-1764845595391.png",
+        "feature": {
+          "text": "囊六5会医四短信来电闪光全短信闪光万能闪光SMSflashUniversalflash国获取手机号及通话状态短信来电闪光口短信来电闪光一9短信闪光万能闪光GO0言SN微信闪光wQQ闪光wWechatflashQQflash获取手机号及通话状态短信来电闪光口傍晚655国四四书六和AP短信六光9万能闪光SMSflashUniversalflash太志三",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "短信来电闪光",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-189-1764845596098.png",
+      "feature": {
+        "text": "SMSflashUniversalflashScreenflash短信来电闪交属四站隐短信闪光万能闪光SMSflasheraflashGOScreenflash忆歇人会医国乡短信来电闪光屋人最同。SMSflashUniversalflash微信闪光QQ闪光Wechatflash屏幕内光QQflashScreenflash",
+        "widgets": [
+          {
+            "text": "短信来电闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexTitle",
+            "depth": 2,
+            "score": 16.4
+          },
+          {
+            "text": "短信闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvTabItemTitle",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvTabItemTitle",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "设置",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvTabItemTitle",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "SMS flash",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "万能闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "Universal flash",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "微信闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "Wechat flash",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "QQ闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "QQ flash",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "屏幕闪光",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "Screen flash",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "弹幕表白",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "Barrage confession",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "引导设置",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "Boot settings",
+            "class": "android.widget.TextView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tvIndexItemContent",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.qiaoxi18.dxldsg:id/viewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/tabLayout",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.qiaoxi18.dxldsg:id/bannerViewPager",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.qiaoxi18.dxldsg:id/clIndexItem",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/ivIndexItemSwitchIcon",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/ivIndexItemSwitchIcon",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/ivIndexItemSwitchIcon",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/ivIndexItemSwitchIcon",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.qiaoxi18.dxldsg:id/ivIndexItemSwitchIcon",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  }
+]

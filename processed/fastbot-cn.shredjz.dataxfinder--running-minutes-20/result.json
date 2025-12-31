@@ -1,0 +1,2237 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-84-1764926031673.png",
+      "feature": {
+        "text": "下午515图目目囊归会医国乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件全从名个CD已恢复文件已导出文件个人中心号四下午515国四加二书六会乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件员六和个3已恢复文件已导出文件个人中心四公下午515国目四了书并人会攻玫儿使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件一耸m个CD已恢复文件已导出文件个人中心一口",
+        "widgets": [
+          {
+            "text": "申请存储权限，用于存储使用过程产生的数据",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "使用该功能需要授权以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去授权",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/down",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-85-1764926032371.png",
+        "feature": {
+          "text": "事归会医国乡下午515图目目了读写设备上的照片及文件照片数据恢复红句子精灵生设置访问相册和社交应用文件v拒绝仅在使用中允许山O八书六3会乡下午515国目目读写设备上的照片及文件照片数据恢复红句子精灵移设置访问相册和社交应用文件v拒绝仅在使用中人允许册口人下千515国四回上囊六中会医国乡读与设备上的照片及文件照片数据恢复红句子精灵设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "照片数据恢复红句子精灵",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-86-1764926033054.png",
+      "feature": {
+        "text": "Word文档导出0人请输入要搜索的内容人请输入要搜索的内容KWord文档导出0O请输入要搜索的内容",
+        "widgets": [
+          {
+            "text": "暂无文件",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/scan_info",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "Word文档导出(0)",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/title_str",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "全选",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_content_num",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "导出选中",
+            "class": "android.widget.Button",
+            "resource-id": "cn.shredjz.dataxfinder:id/select_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_all_check",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/rl_search",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "cn.shredjz.dataxfinder:id/mXRecyclerView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入要搜索的内容",
+            "class": "android.widget.EditText",
+            "resource-id": "cn.shredjz.dataxfinder:id/search_edit",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.shredjz.dataxfinder:id/search_delete",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-728-1764926800751.png",
+      "feature": {
+        "text": "囊归会医国乡下午526图四目了使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件由可个4已恢复文件已导出文件个人中心号DQ下午526图目目了书六会乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件员六和个3已恢复文件已导出文件个人中心四公下午526国四四上书并会医国和使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件一耸m个CD已恢复文件已导出文件个人中心一口",
+        "widgets": [
+          {
+            "text": "申请存储权限，用于存储使用过程产生的数据",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "使用该功能需要授权以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去授权",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/down",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-729-1764926801485.png",
+        "feature": {
+          "text": "事几合攻国乡下午526图目目了上-读写设备上的照片及文件照片数据恢复红句子精灵生设置访问相册和社交应用文件v拒绝仅在使用中允许山O八囊必5会医生下午526国四四读写设备上的照片及文件照片数据恢复红句子精灵移设置访问相册和社交应用文件v拒绝仅在使用中人允许册口人下午5260国四四上L书并会医国乡读与设备上的照片及文件照片数据恢复红句子精灵设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "照片数据恢复红句子精灵",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-730-1764926802150.png",
+      "feature": {
+        "text": "FEEDODmBBSCe1暂无图片山O八FEEDODmDTESTC2B暂无图片册口人K暂无图片用吕人",
+        "widgets": [
+          {
+            "text": "相册恢复",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/tv_count",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "暂无图片",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/no_data",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "立即恢复",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/tv_confirm",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.shredjz.dataxfinder:id/iv_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "cn.shredjz.dataxfinder:id/recyclerview",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 2,
+    "ui_before_grant": {
+      "file": "step-124-1764926086076.png",
+      "feature": {
+        "text": "ECOODnK人中心使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据系统权限微信清理版本号囊归会医国乡必加和EECODn6人中心使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据微信清理版本号四书六会乡171书并会攻国和ECOODoK人中心使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据系统权限微信清理版本号17加",
+        "widgets": [
+          {
+            "text": "申请存储权限，用于存储使用过程产生的数据",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "使用该功能需要授权以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去授权",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/down",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-125-1764926086891.png",
+        "feature": {
+          "text": "FOODa6个人中心NS26EE疙用户协议隐私政策读写设备上的照片及文件照片数据恢复红句子精灵设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八FSCOODo6个人中心用户协议隐私政策读写设备上的照片及文件照片数据恢复红句子精灵6设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许册口人RErcoDok人中心CS5E用户协议隐私政策读写设备上的照片及文件照片数据恢复红句子精灵6设置访问相册和社交应用文件拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "照片数据恢复红句子精灵",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-126-1764926087543.png",
+      "feature": {
+        "text": "SA5E用户协议隐私政策享好友关于我们帮助中心意见反馈系统权限微信清理版本号171山O八SEE用户协议隐私政策享好友关于我们帮助中心意见反馈系统权限微信清理版本号171册口人号庆会更用户协议隐私政策享好友关于我们帮助中心意见反馈系统权限微信清理版本与171用吕人",
+        "widgets": [
+          {
+            "text": "个人中心",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "立即登录",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/tv_login",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开通会员",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/tv_vip",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "版本号",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "1.7.1",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/tv_version",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "用户协议",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "隐私政策",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "分享好友",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "关于我们",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "帮助中心",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "系统权限",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.shredjz.dataxfinder:id/iv_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/rl_no_information",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_huiyuan",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/rl_yhxy",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/rl_yszc",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/rl_fxhy",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/rl_gywm",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/rl_help",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/rl_feedback",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/rl_permissions",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/rl_wxclear",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 3,
+    "ui_before_grant": {
+      "file": "step-24-1764925956855.png",
+      "feature": {
+        "text": "下午512图目目囊归会医国乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件全从名个CD已恢复文件已导出文件个人中心号四下午512国四加二书六会乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件员六和个3已恢复文件已导出文件个人中心四公下午512国四固卫书并人会攻玫儿使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件一耸m个CD已恢复文件已导出文件个人中心一口",
+        "widgets": [
+          {
+            "text": "申请存储权限，用于存储使用过程产生的数据",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "使用该功能需要授权以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去授权",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/down",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-26-1764925958269.png",
+        "feature": {
+          "text": "事归会医国乡下午512图目目了上读写设备上的照片及文件照片数据恢复红句子精灵生设置访问相册和社交应用文件v拒绝仅在使用中允许山O八书六3会乡下午512国目上四读写设备上的照片及文件照片数据恢复红句子精灵移设置访问相册和社交应用文件v拒绝仅在使用中人允许册口人下千512国四回六囊六中会医国乡读与设备上的照片及文件照片数据恢复红句子精灵设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "照片数据恢复红句子精灵",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-27-1764925958995.png",
+      "feature": {
+        "text": "国有MPz文件导出4全选人请输入要搜索的内容W12025年12月05日人户伴奏bbe790mp32025年12月05日11MB图户伴奏98c052mp32025年12月05日0MB12025年12月04日川量征MP3文件导出4人请输入要搜索的内容12025年12月05日CO户伴奏-bbe790mp32025年12月05日11MB口户伴奏-98c052mp32025年12月05日10MB12025年12月04日是竹MP3文件导出4请输入要搜索的内容412025年12月05日舍户伴奏bbe790mp32025年12月05日1MBOO户7伴奏98c052mp32025年12月05日10MB2025年12月04日川",
+        "widgets": [
+          {
+            "text": "MP3文件导出(4)",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/title_str",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "全选",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_content_num",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "导出选中",
+            "class": "android.widget.Button",
+            "resource-id": "cn.shredjz.dataxfinder:id/select_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "2025年12月05日",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/createTime_top",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "伴奏_bbe790.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "2025年12月05日|1.1 MB",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_file_info",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "伴奏_98c052.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "2025年12月05日|1.0 MB",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_file_info",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "2025年12月04日",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/createTime_top",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_all_check",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/rl_search",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "cn.shredjz.dataxfinder:id/mXRecyclerView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入要搜索的内容",
+            "class": "android.widget.EditText",
+            "resource-id": "cn.shredjz.dataxfinder:id/search_edit",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.shredjz.dataxfinder:id/search_delete",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_right_top_image",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_item_check",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_item_check",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_right_top_image",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 4,
+    "ui_before_grant": {
+      "file": "step-422-1764926375338.png",
+      "feature": {
+        "text": "下午519图四目了囊并会攻国乡K个人中心使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据系统权限微信清理版本号必加和EECODa6人中心使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据微信清理版本号四囊以会攻国入171书并会医国乡SECODoK个人中心使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据系统权限微信清理版本号171四",
+        "widgets": [
+          {
+            "text": "申请存储权限，用于存储使用过程产生的数据",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "使用该功能需要授权以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去授权",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/down",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-423-1764926376065.png",
+        "feature": {
+          "text": "FSCOODa6个人中心囊妆3会NS26EE疙用户协议隐私政策读写设备上的照片及文件照片数据恢复红句子精灵设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八FSCODo6个人中心用户协议隐私政策读写设备上的照片及文件照片数据恢复红句子精灵6设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许册口人EECOODaK和人中心CS5E用户协议隐私政策读写设备上的照片及文件照片数据恢复红句子精灵6设置访问相册和社交应用文件拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "照片数据恢复红句子精灵",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-424-1764926376743.png",
+      "feature": {
+        "text": "19国号已下事几5会区加乡囊六会区加乡加谨慎清理NA一键清理册口人书六3会区加乡",
+        "widgets": [
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/title_str",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "👍赞一个",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/to_common",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键清理",
+            "class": "android.widget.Button",
+            "resource-id": "cn.shredjz.dataxfinder:id/bontom_clean",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "正在扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/tv",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "谨慎清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "表情包",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "清理后无影响",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_info",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "0.0M",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_content_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "0项",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_content_num",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_run",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_item_checkbox",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 5,
+    "ui_before_grant": {
+      "file": "step-788-1764926895946.png",
+      "feature": {
+        "text": "下午528图四目了囊归会医国乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件全从名个CD已恢复文件已导出文件个人中心号四下午528国四加二书六会乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件员六和个3已恢复文件已导出文件个人中心四公下午528国目四了书并人会攻玫儿使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件一耸m个CD已恢复文件已导出文件个人中心一口",
+        "widgets": [
+          {
+            "text": "申请存储权限，用于存储使用过程产生的数据",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "使用该功能需要授权以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去授权",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/down",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-789-1764926896837.png",
+        "feature": {
+          "text": "事归会医国乡下午528图四目上-读写设备上的照片及文件照片数据恢复红句子精灵生设置访问相册和社交应用文件v拒绝仅在使用中允许山O八书六3会乡下午528国目四读写设备上的照片及文件照片数据恢复红句子精灵移设置访问相册和社交应用文件v拒绝仅在使用中人允许册口人下午528国四加上囊六中会医国乡读与设备上的照片及文件照片数据恢复红句子精灵设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "照片数据恢复红句子精灵",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-790-1764926897555.png",
+      "feature": {
+        "text": "下午528图四日上事妆3会上暂无照片注按照恢复时间进行排序三O下午528国四日上事六3会暂无照片注按照恢复时间进行排序三吕下午528国四日9aescop暂无照片注按照恢复时间进行排序一口",
+        "widgets": [
+          {
+            "text": "已恢复照片",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "暂无照片",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/tv_showView",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "注：按照恢复时间进行排序",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/tv_text",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.shredjz.dataxfinder:id/iv_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "cn.shredjz.dataxfinder:id/lv_recovery_detail",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 6,
+    "ui_before_grant": {
+      "file": "step-443-1764926419041.png",
+      "feature": {
+        "text": "下午520图四目卫囊归会医国乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件全从名个CD已恢复文件已导出文件个人中心号四下午520国四加二书六会乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件员六和个3已恢复文件已导出文件个人中心四公下午520国四四上书并人会攻玫儿使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件一耸m个CD已恢复文件已导出文件个人中心一口",
+        "widgets": [
+          {
+            "text": "申请存储权限，用于存储使用过程产生的数据",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "使用该功能需要授权以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去授权",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/down",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-444-1764926419698.png",
+        "feature": {
+          "text": "事归会医国乡下午520图四目上上-读写设备上的照片及文件照片数据恢复红句子精灵生设置访问相册和社交应用文件v拒绝仅在使用中允许山O八书六3会乡下午520国四四读写设备上的照片及文件照片数据恢复红句子精灵移设置访问相册和社交应用文件v拒绝仅在使用中人允许册口人下午520国四加上囊六中会医国乡读与设备上的照片及文件照片数据恢复红句子精灵设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "照片数据恢复红句子精灵",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-445-1764926420337.png",
+      "feature": {
+        "text": "下午520图目日上Word文件如已恢复文件彻底删除事归会区国乡PDF文件CNPPT文件个人中心下午520国四日上已恢复文件彻底删除囊六会乡个人中心下午520国四目上Word文件匠已恢复文件彻底删除囊并会区儿PDF文件国IEhhPPT文件个人中心",
+        "widgets": [
+          {
+            "text": "已恢复文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 16.4
+          },
+          {
+            "text": "已导出文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 16.4
+          },
+          {
+            "text": "视频文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "音频文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "PDF文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "Word文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "Excel文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "PPT文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "分享",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/tv_share",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "个人中心",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.shredjz.dataxfinder:id/iv_scan",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.shredjz.dataxfinder:id/iv_del",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.shredjz.dataxfinder:id/iv_wx_clear",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_recovery",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_export",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_cenyter",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_video",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_audio",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_pdf",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_word",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_excel",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_ppt",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 7,
+    "ui_before_grant": {
+      "file": "step-73-1764926013175.png",
+      "feature": {
+        "text": "下午515图四目了囊并会攻国乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件全从名个CD已恢复文件已导出文件个人中心号四下午515国四加二囊以会攻国乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件员六和个3已恢复文件已导出文件个人中心四公下午515国目目卫囊六会医国乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件an名个Ah已恢复文件已导出文件个人中心口",
+        "widgets": [
+          {
+            "text": "申请存储权限，用于存储使用过程产生的数据",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "使用该功能需要授权以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去授权",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/down",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-74-1764926013926.png",
+        "feature": {
+          "text": "下午515国目日上-ERAGDZ分条读写设备上的照片及文件照片数据恢复红句子精灵生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八囊几会医国入下午515国目目读写设备上的照片及文件照片数据恢复红句子精灵移设置访问相册和社交应用文件v拒绝仅在使用中人允许册口人下千515国四回上书并会医国乡读与设备上的照片及文件照片数据恢复红句子精灵设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "照片数据恢复红句子精灵",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-75-1764926014558.png",
+      "feature": {
+        "text": "炎复彻Eee枉文件音文件EX拷兰尘最",
+        "widgets": [
+          {
+            "text": "已导出文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "已导出文件",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/order_tab0",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "暂无文件",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/tv_showView",
+            "depth": 2,
+            "score": 16.4
+          },
+          {
+            "text": "已导出视频",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/order_tab1",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.shredjz.dataxfinder:id/iv_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "cn.shredjz.dataxfinder:id/find_vp",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "cn.shredjz.dataxfinder:id/recycler_file",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 8,
+    "ui_before_grant": {
+      "file": "step-588-1764926616582.png",
+      "feature": {
+        "text": "下午525国目目下事归会EE国乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件Excel文件PPT文件可咎dh已恢复文件已导出文件个人中心一人山-一下午525国四四书六3会乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据寺取消去授权民企LN让LN国友国Word文件Excel文件PPT文件人如个已恢复文件已导出文件个人中心TY人-一下午525国四四囊六会医乡使用该功能需要授权以下权限申请存储权限用于存储使用过程产生的数据Word文件人如个已恢复文件已导出文件个人中心站人山-",
+        "widgets": [
+          {
+            "text": "申请存储权限，用于存储使用过程产生的数据",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "使用该功能需要授权以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/du_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去授权",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/down",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-589-1764926617249.png",
+        "feature": {
+          "text": "事归会医国乡下午525图目目了读写设备上的照片及文件照片数据恢复红句子精灵生设置访问相册和社交应用文件v拒绝仅在使用中允许山O八书六3会乡下午525国四四读写设备上的照片及文件照片数据恢复红句子精灵移设置访问相册和社交应用文件v拒绝仅在使用中人允许册口人下午525国四加囊六中会医国乡读与设备上的照片及文件照片数据恢复红句子精灵设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "照片数据恢复红句子精灵",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-590-1764926617917.png",
+      "feature": {
+        "text": "下午525图学已下书并2仿G加乡加谨慎清理表情包00OM10项清理后无影响下午525图骂马蜂事归各会区加乡由筑二个加谨慎清理表情包人00M10项清理后无影响下午525图屋已下忆暴2会区加时谨慎清理表情包00OM10项清理后无影响",
+        "widgets": [
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/title_str",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "👍赞一个",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/to_common",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键清理",
+            "class": "android.widget.Button",
+            "resource-id": "cn.shredjz.dataxfinder:id/bontom_clean",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "正在扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/tv",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "谨慎清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "表情包",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "清理后无影响",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_info",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "0.0M",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_content_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "0项",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.shredjz.dataxfinder:id/item_content_num",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_run",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.shredjz.dataxfinder:id/ll_item_checkbox",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  }
+]

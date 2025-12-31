@@ -1,0 +1,29 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE"
+    ],
+    "files": {
+      "before": "step-302-1764822281310.png",
+      "granting": [
+        "step-303-1764822282023.png"
+      ],
+      "after": "step-304-1764822282710.png"
+    }
+  },
+  {
+    "chain_id": 1,
+    "predicted_permissions": [
+      "CAMERA"
+    ],
+    "files": {
+      "before": "step-331-1764822325686.png",
+      "granting": [
+        "step-332-1764822326480.png"
+      ],
+      "after": "step-333-1764822334073.png"
+    }
+  }
+]

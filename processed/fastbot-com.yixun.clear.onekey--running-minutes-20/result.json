@@ -1,0 +1,3878 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-1056-1764948209937.png",
+      "feature": {
+        "text": "囊六2会晚上1125图马欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功Rb不同意一键清理专家有手机清理更专业三回史上1125国局欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各台有Rb不同意一键清理专家证玫。手机清理更专业目回晚上1125国已欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和有用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各局月不同意一键清理专家一和。手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "欢迎使用一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "同意并进入",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agree",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "不同意",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "我们非常重视对个人信息的保护，在您使用我们产品前，请仔细阅读《隐私政策》和《用户服务协议》全部条款。点击\"同意\"视为您已同意上述协议的全部内容。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agreement",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "为了您更好的体验功能，会提前向您申请获得以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "设备权限使用说明：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "用于识别设备，进行设备安全保障功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-1057-1764948211300.png",
+        "feature": {
+          "text": "晚上112红oj获取手机号及通话状态一键清理专家OO风上112红获取手机号及通话状态一键清理专家口晚上1123LcJ获取手机号及通话状态一键清理专家口",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-1059-1764948213038.png",
+        "feature": {
+          "text": "晚上112红oj读写设备上的照片及文件一键清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许风上112红读写设备上的照片及文件一键清理专家移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许晚上112引Lo读写设备上的照片及文件一键清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-1060-1764948213743.png",
+      "feature": {
+        "text": "晚上11235国四蔬妆3合区回乡AN4EmoJI清理系统加载中一键清理专家1证和。手机清理更专业三回了晚上11235上国四书蜂3仿区回少A八品CE下JI清理系统加载中一键清理专家手机清理更专业目回晚上1125上图口囊六汪合G四和A八人CE一JI清理系统加载中一键清理专家-手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-23-1764947097449.png",
+      "feature": {
+        "text": "和电病毒查杀共扫描44个应用四一超强省电2个应用正在耗电立即处理KK个微信专清清除微信缓存垃圾放理上局手机加加内存被占用375MB拖慢手机三回重病毒查杀共扫描44个应用日超强省电2个应用正在耗电立即处理4让微信专清清除微信缓存垃圾印于理K局手机加吉内人存锌请用375MB拖慢手机目回重病毒查杀共扫描44个应用超强省电2个应用正在耗电立即处理6让微信专清清除微信缓存垃圾齐于从理kh局皇机加加内存被白用375MB拖慢手机目回",
+        "widgets": [
+          {
+            "text": "病毒查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_common_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "完成",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_finish_context",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "共扫描44个应用，未发现病毒",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_style_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "超强省电",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "2个应用正在耗电",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_content",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即处理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_btn",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "微信专清",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "清除微信缓存垃圾",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_content",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_btn",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "内存被占用375MB，拖慢手机",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_content",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_btn",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_com_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.yixun.clear.onekey:id/recycle_view",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-24-1764947098142.png",
+        "feature": {
+          "text": "事归会EGG乡重病毒查杀共扫描44个应用四超强省电2个应用正在耗电读写设备上的照片及文件一键清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八重病毒查杀书六3会乡共扫描44个应用四。超强省电2个应用正在耗电读写设备上的照片及文件一键清理专家移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许册口人重病毒查杀共扫描44个应用加超强省电2个应用正在耗电读写设备上的照片及文件一键清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-25-1764947098786.png",
+      "feature": {
+        "text": "条四用空间定期清理个缓存垃圾四缓存图片仓缓存文档人缓存表情10010202100条史上1104图上司用空间极速清理他缓存垃圾全缓存图片他缓存文档人缓存表情10101000条司用空间定期清理极速清理合缓存垃圾缓存图片人缓存文档人缓存表情10000",
+        "widgets": [
+          {
+            "text": "B",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_wc_unit",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "占用空间",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "定期清理，畅快聊天",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "极速清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "缓存垃圾",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "缓存图片",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "缓存文档",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "缓存表情",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 2,
+    "ui_before_grant": {
+      "file": "step-784-1764947930021.png",
+      "feature": {
+        "text": "晚上1118目串囊站合GD乡一键清理专家企二Us垃圾清理中病毒查杀微信专清吉4GE深度清理手机加速8超强省电手机降温浊扣-八了晚上1118目巴蔬蚊3会GD一键清理专家企二OUa垃圾清理中病毒查杀微信专清吉4GE深度清理手机加速8超强省电手机降温过贡-和八晚上1118上国牟沁六3会GD一键清理专家人二OUa垃圾清理由病毒理杀向信专清而个攻2二深度清理手机加速8超强省电手机降温这押j人",
+        "widgets": [
+          {
+            "text": "一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "0",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_clear_size",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "B",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_main_clear_gb",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "垃圾清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_text1",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开始扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_now_clear",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "0",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_clear_size",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "B",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_main_clear_gb",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "垃圾清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_text1",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开始扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_now_clear",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "0",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_clear_size",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "B",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_main_clear_gb",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "垃圾清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_text1",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开始扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_now_clear",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_one",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "病毒查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信专清",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "深度清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内存不足",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_phone_speed",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "超强省电",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "病毒查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信专清",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "深度清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内存不足",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_phone_speed",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "超强省电",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "病毒查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信专清",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "深度清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内存不足",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_phone_speed",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "超强省电",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_main_warn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_main_warn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_main_warn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_one",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main6",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main2",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main1",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main4",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main5",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main3",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main6",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main2",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main1",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main4",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main5",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main3",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main6",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main2",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main1",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main4",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main5",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main3",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-785-1764947930743.png",
+        "feature": {
+          "text": "晚上1118j一键清理专家读写设备上的照片及文件一键清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八晚上1118ucj一键清理专家读写设备上的照片及文件一键清理专家移设置访问相册和社交应用文件v拒绝仅在使用中人允许册口人CEBe唱一键清理专家读写设备上的照片及文件一键清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-786-1764947931415.png",
+      "feature": {
+        "text": "个缓存垃圾加广告垃圾CCCC人临时文件和CCCC卸载残留人缓存垃圾四广告垃坝CC人临时文件CCC人卸载残留合缓存垃圾个广告垃圾人人临时文件4人趣载残留",
+        "widgets": [
+          {
+            "text": "临时文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "GB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_cacahe_unit",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "扫描路径： Android/data/com.mediatek.op01.phone.pluginfiles/",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_path",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "极速清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "缓存垃圾",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "广告垃圾",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "卸载残留",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 3,
+    "ui_before_grant": {
+      "file": "step-146-1764947215039.png",
+      "feature": {
+        "text": "四昨电池降浊当前电池温度260C局手机加加内存被占用235MB拖慢手机Y即加速个微信专清清除微信缓存垃圾加衣峙竹全电池降温降温完当前电池温度260C局手机加吉内人存锌占用235MB拖慢手机4让微信专清清除微信缓存垃圾上衣唱生痢电池降温当前电池温度260C局皇机加加囊并会区加入内人存被上用235MB拖慢手机w即加速6让微信专清清除微信缓仓垃圾导中",
+        "widgets": [
+          {
+            "text": "电池降温",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_common_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "降温完成",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_finish_context",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "当前电池温度26.0°C",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_style_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "内存被占用235MB，拖慢手机",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_content",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_btn",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "微信专清",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "清除微信缓存垃圾",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_content",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_btn",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "病毒查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "系统可能存在潜在风险",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_content",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_btn",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_com_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.yixun.clear.onekey:id/recycle_view",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-147-1764947215733.png",
+        "feature": {
+          "text": "人重电池降温当前电池温度260C筷手机加速事归会EGG乡内存被占用235MB拖慢手机王-一全读写设备上的照片及文件一键清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八重电池降温降温完当前电池温度260C筷手机加束内存被占用235MB拖慢手机王-一四读写设备上的照片及文件一键清理专家移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许册口人重电池降温当前电池温度260C乌手机加加内存被占用235MB拖慢手机一-四读写设备上的照片及文件一键清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-148-1764947216368.png",
+      "feature": {
+        "text": "K重谷信专清成回收闭直把共清理了0B垃圾局手机加加内存被占用327MB拖慢手机Y即加速发现还有741MB垃圾未清理立即清理三回重微信专清共清理了0B垃圾局手机加吉内存锌上用327MB拖慢手机最微信专清了赣d才渤面怕地共清理了0B垃圾局皇机加加内存被占用327MB拖慢手机w即加速皮现还有741MB垃圾未清理目回",
+        "widgets": [
+          {
+            "text": "微信专清",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_common_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "清理完成",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_finish_context",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "共清理了0 B垃圾",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_style_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "内存被占用327MB，拖慢手机",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_content",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_btn",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "病毒查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "系统可能存在潜在风险",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_content",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_btn",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "深度清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "发现还有741MB垃圾未清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_content",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_btn",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_com_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.yixun.clear.onekey:id/recycle_view",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 4,
+    "ui_before_grant": {
+      "file": "step-737-1764947884835.png",
+      "feature": {
+        "text": "囊六2会晚上1118图已欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功Rb不同意一键清理专家有手机清理更专业三回晚上1118国欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各台有Rb不同意一键清理专家证玫。手机清理更专业目回晚上1118国局欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和有用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各局月不同意一键清理专家一和。手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "欢迎使用一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "同意并进入",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agree",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "不同意",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "我们非常重视对个人信息的保护，在您使用我们产品前，请仔细阅读《隐私政策》和《用户服务协议》全部条款。点击\"同意\"视为您已同意上述协议的全部内容。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agreement",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "为了您更好的体验功能，会提前向您申请获得以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "设备权限使用说明：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "用于识别设备，进行设备安全保障功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-738-1764947885565.png",
+        "feature": {
+          "text": "CG5Bee获取手机号及通话状态一键清理专家OO晚上11181eJ获取手机号及通话状态一键清理专家口晚上11181el获取手机号及通话状态一键清理专家口",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-739-1764947886159.png",
+        "feature": {
+          "text": "CG5Bee读写设备上的照片及文件一键清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许晚上11181eJ读写设备上的照片及文件一键清理专家移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许晚上1118Lcj读写设备上的照片及文件一键清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-740-1764947886781.png",
+      "feature": {
+        "text": "了晚上1118目四蔬妆3合区回乡AN4EmoJI清理系统加载中一键清理专家1证和。手机清理更专业三回了晚上1118目四书蜂3仿区回少A八品CE下JI清理系统加载中一键清理专家手机清理更专业目回晚上1118上国口囊六汪合G四和A八人CE一JI清理系统加载中一键清理专家-手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 5,
+    "ui_before_grant": {
+      "file": "step-769-1764947914333.png",
+      "feature": {
+        "text": "晚上1118目串囊站合GD乡一键清理专家企二Us垃圾清理中病毒查杀微信专清吉4GE深度清理手机加速8超强省电手机降温浊扣-八了晚上1118目巴蔬蚊3会GD一键清理专家企二OUa垃圾清理中病毒查杀微信专清吉4GE深度清理手机加速8超强省电手机降温过贡-和八晚上1118上国牟沁六3会GD一键清理专家人二OUa垃圾清理由病毒理杀向信专清而个攻2二深度清理手机加速8超强省电手机降温这押j人",
+        "widgets": [
+          {
+            "text": "一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "0",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_clear_size",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "B",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_main_clear_gb",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "垃圾清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_text1",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开始扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_now_clear",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "0",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_clear_size",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "B",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_main_clear_gb",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "垃圾清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_text1",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开始扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_now_clear",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_one",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "病毒查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信专清",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "深度清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内存不足",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_phone_speed",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "超强省电",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "病毒查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信专清",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "深度清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内存不足",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_phone_speed",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "超强省电",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_main_warn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_main_warn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_one",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main6",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main2",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main1",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main4",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main5",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main3",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main6",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main2",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main1",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main4",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main5",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main3",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-770-1764947915087.png",
+        "feature": {
+          "text": "晚上1118j一键清理专家读写设备上的照片及文件一键清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八晚上1118ucj一键清理专家读写设备上的照片及文件一键清理专家移设置访问相册和社交应用文件v拒绝仅在使用中人允许册口人CEBe唱一键清理专家读写设备上的照片及文件一键清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-771-1764947915752.png",
+      "feature": {
+        "text": "三晚上1118图日后用空间定期清理用畅快聊天个缓存垃圾辕绥存图片人缓存文档CCCCCCCCCC人缓存表情1晚上1118图日司用空间他缓存垃圾辐缓存图片伯缓存文档100100人缓存表情六RETSIEY日避用空间极速清理全个缓存垃圾人缓存图片人他缓存文档会人缓存表情会",
+        "widgets": [
+          {
+            "text": "B",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_wc_unit",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "占用空间",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "定期清理，畅快聊天",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "极速清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "缓存垃圾",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "缓存图片",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "缓存文档",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "缓存表情",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 6,
+    "ui_before_grant": {
+      "file": "step-977-1764948121991.png",
+      "feature": {
+        "text": "囊妾2会晚上1122图已欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功Rb不同意一键清理专家有手机清理更专业三回史上1122国局欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各台有Rb不同意一键清理专家证玫。手机清理更专业目回晚上1122国已欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和有用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各局月不同意一键清理专家一和。手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "欢迎使用一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "同意并进入",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agree",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "不同意",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "我们非常重视对个人信息的保护，在您使用我们产品前，请仔细阅读《隐私政策》和《用户服务协议》全部条款。点击\"同意\"视为您已同意上述协议的全部内容。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agreement",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "为了您更好的体验功能，会提前向您申请获得以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "设备权限使用说明：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "用于识别设备，进行设备安全保障功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-978-1764948123483.png",
+        "feature": {
+          "text": "112下于获取手机号及通话状态一键清理专家OO上112下让获取手机号及通话状态一键清理专家口晚上11221cj获取手机号及通话状态一键清理专家口",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-981-1764948125614.png",
+        "feature": {
+          "text": "112下于读写设备上的照片及文件一键清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许上112下让读写设备上的照片及文件一键清理专家移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许晚上112下e读写设备上的照片及文件一键清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-982-1764948126250.png",
+      "feature": {
+        "text": "晚上1122国四蔬妆3合区回乡AN4EmoJI清理系统加载中一键清理专家1证和。手机清理更专业目各了晚上1122回加书六会区回A八品CE下JI清理系统加载中一键清理专家手机清理更专业目各晚上1122上园四囊归扣写E回A八人CE一JI清理系统加载中一键清理专家-手机清理更专业目癌",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 7,
+    "ui_before_grant": {
+      "file": "step-1-1764947071341.png",
+      "feature": {
+        "text": "囊六2会晚上1104图马欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功Rb不同意一键清理专家有手机清理更专业三回史上1104图局欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各台有Rb不同意一键清理专家证玫。手机清理更专业目回晚上1104国已欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和有用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各局月不同意一键清理专家一和。手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "欢迎使用一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "同意并进入",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agree",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "不同意",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "我们非常重视对个人信息的保护，在您使用我们产品前，请仔细阅读《隐私政策》和《用户服务协议》全部条款。点击\"同意\"视为您已同意上述协议的全部内容。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agreement",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "为了您更好的体验功能，会提前向您申请获得以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "设备权限使用说明：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "用于识别设备，进行设备安全保障功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-3-1764947073971.png",
+        "feature": {
+          "text": "囊欣2合GE加乡晚上1104国日设备权限使用说明用于识别设备进行设备安全保障等功能一获取手机号及通话状态一键清理专家口囊六会EGG和晚上1104图日设备权限使用说明用于识别设备进行设备安全保障等功能一一获取手机号及通话状态一键清理专家口囊六会GE晚上1104国日设备权限使用说明用于识别设备进行设备安全保障等功能一一获取手机号及通话状态一键清理专家口",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-4-1764947074651.png",
+        "feature": {
+          "text": "晚上1104Lej读写设备上的照片及文件一键清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许Cee读写设备上的照片及文件一键清理专家移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许晚上1104Lej读写设备上的照片及文件一键清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-5-1764947075367.png",
+      "feature": {
+        "text": "了晚上1104上四四蔬妆3合区回乡AN4EmoJI清理系统加载中一键清理专家1证和。手机清理更专业三回了晚上1104占四书蜂3仿区回少A八品CE下JI清理系统加载中一键清理专家手机清理更专业目回晚上1104占四书2仿EE回A八人CE一JI清理系统加载中一键清理专家-手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 8,
+    "ui_before_grant": {
+      "file": "step-129-1764947198927.png",
+      "feature": {
+        "text": "囊六2会晚上1106图已欢迎使用一键清理专家私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功会吕Rb存储权限使用说明用于缓存图片存储相关必要信息不同意一键清理专家有手机清理更专业三回史上1106图已欢迎使用一键清理专家私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功能存储权限使用说明用于缓存图片存储相关必要信息不同意一键清理专家证玫。手机清理更专业目回晚上1106国已欢迎使用一键清理专家私政策和有用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各局月存储权限使用说明用于缓存图片存储相关必要信息不同意一键清理专家一和。手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "存储权限使用说明：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 16.4
+          },
+          {
+            "text": "用于缓存图片，存储相关必要信息",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 16.4
+          },
+          {
+            "text": "欢迎使用一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "同意并进入",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agree",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "不同意",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "我们非常重视对个人信息的保护，在您使用我们产品前，请仔细阅读《隐私政策》和《用户服务协议》全部条款。点击\"同意\"视为您已同意上述协议的全部内容。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agreement",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "为了您更好的体验功能，会提前向您申请获得以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "设备权限使用说明：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "用于识别设备，进行设备安全保障功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-130-1764947200366.png",
+        "feature": {
+          "text": "Gzipeec获取手机号及通话状态一键清理专家OOCsimee获取手机号及通话状态一键清理专家口晚上1106Lej获取手机号及通话状态一键清理专家口",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-132-1764947202211.png",
+        "feature": {
+          "text": "Gzipeec读写设备上的照片及文件一键清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许Csimee读写设备上的照片及文件一键清理专家移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许晚上11041读写设备上的照片及文件一键清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-133-1764947202840.png",
+      "feature": {
+        "text": "了晚上1106目四蔬妆3合区回乡AN4EmoJI清理系统加载中一键清理专家1证和。手机清理更专业三回了晚上1106上国四书蜂3仿区回少A八品CE下JI清理系统加载中一键清理专家手机清理更专业目回晚上1106目加沁六会区回A八人CE一JI清理系统加载中一键清理专家-手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 9,
+    "ui_before_grant": {
+      "file": "step-946-1764948088810.png",
+      "feature": {
+        "text": "囊六2会欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功Rb不同意一键清理专家有手机清理更专业三回史上1121国已欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各台有Rb不同意一键清理专家证玫。手机清理更专业目回晚上1121国已欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和有用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各局月不同意一键清理专家一和。手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "欢迎使用一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "同意并进入",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agree",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "不同意",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "我们非常重视对个人信息的保护，在您使用我们产品前，请仔细阅读《隐私政策》和《用户服务协议》全部条款。点击\"同意\"视为您已同意上述协议的全部内容。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agreement",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "为了您更好的体验功能，会提前向您申请获得以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "设备权限使用说明：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "用于识别设备，进行设备安全保障功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-947-1764948090350.png",
+        "feature": {
+          "text": "晚上112了获取手机号及通话状态一键清理专家OO晚上112站ee获取手机号及通话状态一键清理专家口晚上112卫了忆获取手机号及通话状态一键清理专家口",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-949-1764948091662.png",
+        "feature": {
+          "text": "晚上112了读写设备上的照片及文件一键清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许上2下读写设备上的照片及文件一键清理专家移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许拘上上112于读写设备上的照片及文件一键清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-950-1764948092282.png",
+      "feature": {
+        "text": "晚上1121上图加蔬妆3合区回乡AN4EmoJI清理系统加载中一键清理专家1证和。手机清理更专业三回了晚上1121国加书蜂3仿区回少A八品CE下JI清理系统加载中一键清理专家手机清理更专业目回晚上1121上图口囊六汪合G四和A八人CE一JI清理系统加载中一键清理专家-手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 10,
+    "ui_before_grant": {
+      "file": "step-1082-1764948241823.png",
+      "feature": {
+        "text": "囊六2会晚上1124图马欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功Rb不同意一键清理专家有手机清理更专业三回史上1124国局欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各台有Rb不同意一键清理专家证玫。手机清理更专业目回晚上1124国已欢迎使用一键清理专家我们非常重视对个人信息的保护在您使用我们产品前请仔细阅读隐私政策和有用户服务协议全部条议的全部内容。为了您更好的体验功能会提前向您申请获得以下权限设备权限使用说明用于识别设备进行设备安全保障功各局月不同意一键清理专家一和。手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "欢迎使用一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "同意并进入",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agree",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "不同意",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "我们非常重视对个人信息的保护，在您使用我们产品前，请仔细阅读《隐私政策》和《用户服务协议》全部条款。点击\"同意\"视为您已同意上述协议的全部内容。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_agreement",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "为了您更好的体验功能，会提前向您申请获得以下权限：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "设备权限使用说明：",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "用于识别设备，进行设备安全保障功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-1083-1764948243234.png",
+        "feature": {
+          "text": "晚上1124Lc1获取手机号及通话状态一键清理专家OO晚上1124LeJ获取手机号及通话状态一键清理专家口晚上1124cj获取手机号及通话状态一键清理专家口",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-1084-1764948243894.png",
+        "feature": {
+          "text": "晚上1124Lc1读写设备上的照片及文件一键清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许晚上1124LeJ读写设备上的照片及文件一键清理专家移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许晚上1124cj读写设备上的照片及文件一键清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-1085-1764948244566.png",
+      "feature": {
+        "text": "晚上1124图加蔬妆3合区回乡AN4EmoJI清理系统加载中一键清理专家1证和。手机清理更专业三回了晚上1124上国四书蜂3仿区回少A八品CE下JI清理系统加载中一键清理专家手机清理更专业目回晚上1124上图四囊妆仿区回儿A八人CE一JI清理系统加载中一键清理专家-手机清理更专业目回",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 11,
+    "ui_before_grant": {
+      "file": "step-51-1764947122207.png",
+      "feature": {
+        "text": "晚上1105上图巴囊站合GD乡一键清理专家企二Us垃圾清理中病毒查杀微信专清吉4GE深度清理手机加速4超强省电手机降温浊扣-八了晚上1105上国巴书蜂3仿GD一键清理专家人二Us垃圾清理中病毒查杀微信专清军4GE深度清理手机加速8so3-C3超强省电手机降温过贡-和八晚上1105上图巴溃六仿GD一键清理专家人二OUa垃圾清理由病毒理杀向信专清而个攻2二深度清理手机加速8超强省电手机降温这押j人",
+        "widgets": [
+          {
+            "text": "一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键清理专家",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "0",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_clear_size",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "B",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_main_clear_gb",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "垃圾清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_text1",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开始扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_now_clear",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "0",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_clear_size",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "B",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_main_clear_gb",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "垃圾清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_text1",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开始扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_now_clear",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "0",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_clear_size",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "B",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_main_clear_gb",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "垃圾清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_mian_text1",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "开始扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_now_clear",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_one",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "病毒查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信专清",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "深度清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内存不足",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_phone_speed",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "超强省电",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "37.3℃",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_battery_tem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "病毒查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信专清",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "深度清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内存不足",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_phone_speed",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "超强省电",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "38.2℃",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_battery_tem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "病毒查杀",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信专清",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "深度清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "内存不足",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_phone_speed",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "超强省电",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "39.8℃",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_battery_tem",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_main_warn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_main_warn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_main_warn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_one",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main6",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main2",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main1",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main4",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main5",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main3",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main6",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main2",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main1",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main4",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main5",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main3",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main6",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main2",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main1",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main4",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main5",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.yixun.clear.onekey:id/ll_main3",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-52-1764947122912.png",
+        "feature": {
+          "text": "晚上1105Ls1a一键清理专家读写设备上的照片及文件一键清理专家生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八CQ5iEEBee一键清理专家读写设备上的照片及文件一键清理专家移设置访问相册和社交应用文件v拒绝仅在使用中人允许册口人晚上1105LoT一键清理专家读写设备上的照片及文件一键清理专家设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键清理专家",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-53-1764947123540.png",
+      "feature": {
+        "text": "史上110导站事放人CD1清理了0共清理了0B垃圾四一超强省电4个应用正在耗电局手机加加内存被占用330MB拖慢手机Y即加速从手机降温警告手机温度29C请尽快降温三回唤上1105C刷放全CD日超强省电4个应用正在耗电立即处理且手机加速内存被占用330MB拖慢手机即加速镭手机降温警告手机温度29C请尽快降温目回吃上1105L书谢SCD共清理了0B垃圾共清理了0B垃圾超强省电4个应用正在耗电局皇机加加内人存锌折用330MB拖慢手机w即加速镭手机降温警告手机温度29C请尽快降温目回",
+        "widgets": [
+          {
+            "text": "微信专清",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_common_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "清理完成",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_finish_context",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "共清理了0 B垃圾",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_style_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "超强省电",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "4个应用正在耗电",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_content",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即处理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_btn",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "内存被占用330MB，拖慢手机",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_content",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_btn",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "警告！手机温度29°C，请尽快降温",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_content",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "立即降温",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yixun.clear.onekey:id/tv_btn",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yixun.clear.onekey:id/iv_com_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.yixun.clear.onekey:id/recycle_view",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  }
+]

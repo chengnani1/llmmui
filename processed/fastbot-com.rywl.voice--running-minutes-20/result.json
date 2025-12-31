@@ -1,0 +1,895 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-399-1764921877613.png",
+      "feature": {
+        "text": "图片转文字拍照提取本地照片提取温馨提示需要开启存储和相机权限拍摄保存照片并提取文字取消去开局下午404国局国图片转文字拍照提取本地照片提取温志提示需要开局存储和相机权限担摄保存照片并提取文字取消去开局己加下午404国已国图片转文字拍照提取本地照片提取温馨提示需要开局存储和相机权限担摄保存照片并提取文字取消去开局",
+        "widgets": [
+          {
+            "text": "需要开启存储和相机权限，拍摄保存照片并提取文字",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "温馨提示",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去开启",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_open",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-400-1764921878431.png",
+        "feature": {
+          "text": "下午404Iejieiv图片转文字八拍照提取本地照片提取拍摄照片和录制视频视频转文字12拒绝本次运行允许仅在使用中允许OO下午404IcJieiw图片转文字八拍照提取本地照片提取担摄照片和录制视频视频转文字12拒绝本次运行允仅在使用中人允许册口人下午404IcJeiw图片转文字人人拍照提取本地照片提取担摄照片和录制钢频视频转文字12拒绝本次运行允仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "拍摄照片和录制视频",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "视频转文字(1/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-401-1764921879119.png",
+        "feature": {
+          "text": "下午404Iejieiv图片转文字八拍照提取本地照片提取全读写设备上的照片及文件视频转文字22拒绝始终允许仅在使用中允许山O八下午404IcJeTw图片转文字八拍照提取本地照片提取一四读写设备上的照片及文件视频转文字22拒绝始终允许仅在使用中人允许册口人下午404Ie了is图片转文字人人拍照提取本地照片提取AAA四读与设备上的照片及文件视频转文字212拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "视频转文字(2/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-402-1764921882222.png",
+      "feature": {
+        "text": "下午404上加加口囊妆3合区回乡加盯转文字NAq百一实时悬浮转写悬浮在任意音视频上开启悬浮语音文件转文字图片转文字实时语音mp3pdf等支持拍照本地图片视频压缩高清无损压缩素材开载文字配音标题内容视频图集等多种热门配音员下午404上国四口书归扣仿区回视频转文字NALNA二2轻松提取复制视频链接视频转文字恒生目实时悬浮转写支持中长视频悬浮在任意音视频上本地视频开启悬浮语音文件转文字图片转文字实时语音mp3pdf等支持拍照本地图片更多功能悬浮窗提词器钢频压缩直播拍视频必备高清无损压缩素材工载文字配音标题内容视频图集等关目至逢执让配音员三吕下午404上四四口书并别人写Ga袖频转文字NS轻松提取复制视频链接实时悬浮转写悬浮在任意音视频上支持拍照本地图片标题内容视频图集等",
+        "widgets": [
+          {
+            "text": "语音.文件转文字",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "视频转文字",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "更多功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_tab_home",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "文案记录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_tab_words",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_tab_me",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "网页版",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "会员中心",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "链接提取文字",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "复制视频链接，轻松提取",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "视频转文字",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "支持中长视频",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "实时悬浮转写",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "悬浮在任意音视频上",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "实时语音.mp3.pdf等",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "图片转文字",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "支持拍照.本地图片",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "悬浮窗提词器",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "直播拍视频必备",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "视频压缩",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "高清无损压缩",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "素材下载",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "标题内容视频图集等",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "文字配音",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "多种热门配音员",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/ll_tab_home",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/ll_tab_words",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/ll_tab_me",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/myweb",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/mycenter",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.rywl.voice:id/rl_item1",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.rywl.voice:id/rl_item2",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.rywl.voice:id/rl_item5",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/rl_item3",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/rl_item4",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/tv_teleprompter",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/tv_compress",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/tv_removelogo",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/tv_dubbing",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-179-1764921669707.png",
+      "feature": {
+        "text": "下午401图已国事六吕会加乡图片转文字拍照提取本地照片提取温馨提示需要开启存储权限访问本地相册图片提取文字取消去开局下午401国局国图片转文字拍照提取本地照片提取温志提示需要开启存储权限访问本地相册图片提取文字取消去开局下午401国局国图片转文字拍照提取本地照片提取温馨提示需要开局存储权限访问本地相册图片提取文字取消去开局",
+        "widgets": [
+          {
+            "text": "需要开启存储权限，访问本地相册图片提取文字",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "温馨提示",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去开启",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_open",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-180-1764921670497.png",
+        "feature": {
+          "text": "下午40TYeielw图片转文字八拍照提取本地照片提取全读写设备上的照片及文件视频转文字拒绝始终允许仅在使用中允许山O八下午40YciEis图片转文字八拍照提取本地照片提取SS四读写设备上的照片及文件视频转文字拒绝始终允许仅在使用中允许册口人下午40TYeieiw图片转文字人人拍照提取本地照片提取AAA四读写设备上的照片及文件视频转文字拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "视频转文字",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-181-1764921671168.png",
+      "feature": {
+        "text": "人下午401目巴口书阁2会下到大所季风让员竺间征文呈证户当记二上会这昧这本册二可桩志式有届关二国让1周方式子小星束姑的网有全用人钉职员博上会汉男且本要广竺租晤虹高攻但一生地习衣凌地仙。条主喝支由站别罕信王国革同文妆和ME国生人可击生天莉睹国旋直志玫才队本怎-人拓担闪霹国昧忆曾殷Y熏用联呆1T二区加汉相了ERCT人了下7和沾3从文件去导入OO多人山全下午401上轩串口书必2会Ga到硬所当坎让只和二年坟必定译证记二上会汉慰记本员大里桩名式各和4站名有网方式子克小星各师归网有素腔名和列演进RAT二用人莉陵灵二上会汉机央本过广于租是呈江高二意一委好代衣决这山。。三喝交品在咽军货荆国区明文家人5国生国讨二上芭各而和氏扩硬暑国旋直二气交队曾征了。革抱从局国时已站所。吗面3面值稼用并明1一由让到人YYT区wavav037一各全下午401因加口六全6选择图片纪旦站让员竺章重坟有疫央这天网二占村和条呈和民网访3小星束晴归网有合用人着职员二上会汉曾铺生要广泡租是后江高儿意一委好全就凌演负。主唱尖汪让昌汪基于国和旺六病人到确开衣汀页草奈人村-全厂查祭司国际忆直扎。稼用联咀TEST0衬325从文件夹导入人用",
+        "widgets": [
+          {
+            "text": "从文件夹导入",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_choosefile",
+            "depth": 2,
+            "score": 16.4
+          },
+          {
+            "text": "选择图片",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.rywl.voice:id/iv_title_back_avr",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.rywl.voice:id/recyclerView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/rl_bottom",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 2,
+    "ui_before_grant": {
+      "file": "step-416-1764921896477.png",
+      "feature": {
+        "text": "下午404国已国事虹2传视频转文字加机版s员中心人CID复制视频链接量轻松提取支持中长视频EEEEEESEI温馨提示需要开启存储权限用于视频压缩这5者EREEEREE下午404图局国视频转文字CD复制视频链接是轻松支持中长视频EEEEEESL旬5寺各内窜呆频图入等下午404图局国视频转广字复制视频链接量轻松支持中长视频EEEEEE温馨提示需要开局存储权限用于视频讨缩这村由款生生内容各上图集等",
+        "widgets": [
+          {
+            "text": "需要开启存储权限，用于视频压缩",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_content",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "温馨提示",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去开启",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_open",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-417-1764921897178.png",
+        "feature": {
+          "text": "正午4041ejeiwmx字目mn视频转文字实时悬浮转写大线支持中长视频悬浮在任意音视频上四读写设备上的照片及文件视频转文字拒绝仅在使用中人允许OO下午404Icieiw视频转文字饮频转文字实时悬浮转写支持中长视频悬浮在任意音视频上过信-生9各二习7读与设备上的照片及文件视频转文字拒绝仅在使用中人允许口下午404Iciefw人钢频转文字复制视频链接是轻松提取视频转文字实时悬浮转写恒和广持中长视频悬浮在任意音视频上着罗读写设备上的照片及文件视频转文字拒绝仅在使用中人允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "视频转文字",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-418-1764921897796.png",
+      "feature": {
+        "text": "八下午404国四口岂妆会GE加选择视频本地视频为空3从文件去导入OO下午404目四口蔬蚊3会区加本地视频为空5从文件夹导入口人人下午404上加四口书妆1仿区回本地视频为空加5从文件夹导入",
+        "widgets": [
+          {
+            "text": "从文件夹导入",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tv_choosefile",
+            "depth": 2,
+            "score": 16.4
+          },
+          {
+            "text": "选择视频",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "本地视频为空",
+            "class": "android.widget.TextView",
+            "resource-id": "com.rywl.voice:id/tipsTV",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.rywl.voice:id/iv_title_back_avr",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.rywl.voice:id/rl_bottom",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  }
+]

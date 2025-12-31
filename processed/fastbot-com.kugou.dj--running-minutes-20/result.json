@@ -1,0 +1,381 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-850-1764876869023.png",
+      "feature": {
+        "text": "DERTSEC3全请详细描述您的问题或建议十请留下您的手机号方便我们与您联系加同意在提交反馈时上传日志文件提交潜晨334国图囊蚊5窑人我的反馈请详细描述您的问题或建议十留下您的手机号方便我们与您联系加同意在提交反馈时上传日志文件提交ETSIEY二请详细描述您的问题或建议十请留下您的手机号方便我们与您联系加同意在提交反馈时上传日志文件",
+        "widgets": [
+          {
+            "text": "同意在提交反馈时上传日志文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 7,
+            "score": 14.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageButton",
+            "resource-id": "com.kugou.dj:id/common_tool_bar_btn_back",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.kugou.dj:id/tool_bar_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.kugou.dj:id/menu_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.kugou.dj:id/comm_menu_card",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.webkit.WebView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "添加图片",
+            "class": "android.widget.Button",
+            "resource-id": "",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "提交",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "意见反馈",
+            "class": "android.webkit.WebView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "app",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.EditText",
+            "resource-id": "",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "请留下您的手机号，方便我们与您联系",
+            "class": "android.widget.EditText",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.CheckBox",
+            "resource-id": "",
+            "depth": 7,
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-852-1764876870711.png",
+        "feature": {
+          "text": "囊归3会E加4允许使用您的存储权限用于读取本地内容上传存储下载文件等功能使用全读写设备上的照片及文件酷狗DJ拒绝始终允许仅在使用中允许山O八书六2会乡允许使用您的存储权限用于读取本地内容上传存储下载文件等功能使用下四读与设备上的照片及文件酷狗DJ拒绝始终允许仅在使用中人允许册口人书反省会医国4允许使用您的存储权限用于读取本地内容上传存储下载文件等功能使用AAA四读写设备上的照片及文件酷狗DJ拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "酷狗DJ",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-853-1764876871373.png",
+      "feature": {
+        "text": "囊归3会E国4允许使用匈的相机权限用至实向行多二捍国功间司存放旱瞩闻惫再-必用平井出币事Se六他关外岂曙不允许忽许本玫甩辣所本本电量中本条夫枯六y为二间国和覃交本的天其崩自峡认芋且-用户开亲各天加每国信全生硬夫二届本看的月生习半得辐作信心届六网户个人证得全本以帮芝4g国忒Arr玫四作人和和二全证医从他二个人村的本1基隆外计生胃汪本和但各加曙任们可本全作生太二放生本全1以本于让性号只昌至全re要且由的生生旨们刘风丰胸得晤鸭且内-en目9本全举人悄当可以半昌Ser朋小昌三上P和本太阴本可直击昌和四的们与全方届事个全本全的有及习息向关民凡国光生生四下当天时半生访人关机交各本本放朗全ee全孝王重而重王国称吉全个人生生我科人a且全于ar昌汪法晨334国国事六3会乡漠曙允许使用邯的相机权限用平实取行换二捍国功站可存设里瞩闻曾理-必用下限测役邓Song入外关孙不允许锡许全的本关二相遇信和攀凡国岁合生辕特量科各乓信访人贡蜀罗博晤且长赣全外人可性量古量正国附部的个人节昌由科从哩有下亚中机镁村习上性加mi让更和。和和ES护恒各全本ZX总有有站和人莫3和内时有二二本3雹省有-到者时证朋CE全-量主二二村村二二直下下和二直下国生党和四好看可马且如和站是乡必人兰呈人人本十于于下生生考证生生克人全伏凌晨534国国xz村的站C",
+        "widgets": [
+          {
+            "text": "最近图片",
+            "class": "android.widget.TextView",
+            "resource-id": "com.kugou.dj:id/album_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.kugou.dj:id/album_select_container",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.kugou.dj:id/common_title_bar_btn_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.GridView",
+            "resource-id": "com.kugou.dj:id/images_gridView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.kugou.dj:id/album_arrow",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.kugou.dj:id/image_item_image",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.kugou.dj:id/image_item_image",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.kugou.dj:id/image_item_image",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.kugou.dj:id/image_item_image",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.kugou.dj:id/image_item_image",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.kugou.dj:id/image_item_image",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.kugou.dj:id/image_item_image",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.kugou.dj:id/image_item_image",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.kugou.dj:id/image_item_image",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  }
+]

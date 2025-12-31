@@ -1,0 +1,3886 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-141-1764924819832.png",
+      "feature": {
+        "text": "下午453国加图蔬妆3合区回乡咨询客服CO今天1651请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询EDIQ大帅为您服务re请问您需要咨询哪方面业务呢可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询LA4A2和了主二4四站LT一AT反一本人人人和入消有-CC四马四Lo相册拍照视频文件山O八下午455国加加书归扣仿区回咨询客服今天1651SN请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询因Q大帅为您服务辣请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询ELPRRL4加了主二1467四六LT一的-本人电输入消息-C人拍摄视频相册拍照文件册口人下午4535加加园囊六会区回咨询客服今天1651ES请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询葬a大帅为您服务1计请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询LAoosmenensrarGO放痊入消息-C人拍照文件用吕人",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "文件",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "咨询客服",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "今天 16:51",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "[流泪][惊讶]",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "大帅为您服务",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_notification_label",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "您好，请问您是已经下订单了还是咨询业务呢？如已下单，麻烦您提供一下订单号以便快速的查询",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "相册",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "拍照",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "视频",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_back_area",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.soouya.pic:id/messageListView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/buttonAudioMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "输入消息...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.soouya.pic:id/editTextMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/emoji_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/action_list_trigger_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.soouya.pic:id/viewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.GridView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-142-1764924820576.png",
+        "feature": {
+          "text": "正午453LeTeT志咨询客服今天1651一一一人人1C请问您需要咨询哪方面业务呢一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询9大帅为您服务从请问您需要咨询哪方面业务呢可以先描述一下哦-或提供购买时AsT的王AL孙人1人门理由疙人名三拍摄照片和录制视频手机照片恢复12拒绝本次运行允许仅在使用中允许下午45纪cJe咨询客服今天1651国是YYCg芍请问您需要咨询哪方面业务呢一一可以先描述一下哦或提供购买时的订单号方便我们更快为您查询9大帅为您服务8请问您需要咨询哪方面业务呢可以先描述一下哦-或提供购买时入工拘呈AaE和孙仆理由疙人人本担摄照片和录制视频手机照片恢复12仅在使用中人允许口下午45引cj咨询客服今天1651一全Cg移请问您需要咨询哪方面业务呢居一可以先措述一下哦-或提供购买时的订单号方便我们更快为您查询现大帅为您服务请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时asT了的旺LE人盏孙仆皇由治本担摄照请和录制钢频手机照片恢复112拒绝本次运行允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "拍摄照片和录制视频",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "手机照片恢复(1/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-143-1764924821230.png",
+        "feature": {
+          "text": "正午453LeTeT志咨询客服今天1651全人1C请问您需要咨询哪方面业务呢一可以先描述一下哦或提供购买时的订单号方便我们更快为您查询和大帅为您服务从请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时AsT的王AL孙人1人门理由疙人名三昌进行通话录音或本地录音手机照片恢复22拒绝本次运行允许仅在使用中允许下午45纪cJe咨询客服今天1651一人人人rr7VYVYVYVYVVYVSVSVGZXXAXAXAXAXAXAXAXAXAXAXAXA和AAA和和和和XXXCg区请问您需要咨询哪方面业务呢一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询葬Q8请问您需要咨询哪方面业务呢可以先描述一下哦-或提供购买时入工拘呈AaE和孙仆理由疙人人本昌进行通话录音或本地录音手机照片恢复22大帅为您服务仅在使用中人允许口下午45忆ci咨询客服今天1651一全Cg移请问您需要咨询哪方面业务呢居一可以先措述一下哦-或提供购买时的订单号方便我们更快为您查询现大帅为您服务请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时asT了的旺LE人盏孙仆皇由治本昌进行通话录吾或本地录音手机照片恢复22拒绝本次运行允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "进行通话录音或本地录音",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "手机照片恢复(2/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-144-1764924821967.png",
+      "feature": {
+        "text": "",
+        "widgets": [
+          {
+            "text": "30s",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_tv_video_progress_second",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/ysf_iv_capture_video_finish",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/switch_cameras",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/ysf_iv_video_select",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/record_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ProgressBar",
+            "resource-id": "com.soouya.pic:id/ysf_pb_video_progress_bar",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-582-1764925278780.png",
+      "feature": {
+        "text": "下午501国加加蔬妆3合区回乡咨询客服GD空大帅为您服务自芭请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询您好很高兴能为您服务。请问您逢要咨询什么言息或者需要我们提供帮助的地方今天1656La7人站CC四四口拍照视频本四让山O八下午501国四加书六会区回咨询客服0站大帅为您服务各请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询GE很高兴全。站们提供帮助的地方今天1656-AR人答入消息-G二拍照加文件评价退出册口人下午501国四加囊几3全GE加咨询客服安大帅为您服务请问您需要次询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询您好很高兴能为您服务。请问您需要咨询什么信息或者需要我们提供帮助的地方一一一今天1656de41输入消息-拍照本文件评价退出用吕人",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "文件",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "咨询客服",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "今天 16:56",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "大帅为您服务",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_notification_label",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "您好，很高兴能为您服务。请问您需要咨询什么信息或者需要我们提供帮助的地方？",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "[敲][怒][调皮][大笑][傲慢][睡着][惊喜][惊恐][委屈][汗][偷笑][嘘][亲][鄙视][阿弥陀佛][流感]",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "相册",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "拍照",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "视频",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "评价",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "退出",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_back_area",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.soouya.pic:id/messageListView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/buttonAudioMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "输入消息...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.soouya.pic:id/editTextMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/emoji_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/action_list_trigger_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.soouya.pic:id/viewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.GridView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-583-1764925279553.png",
+        "feature": {
+          "text": "下午50首ee下二咨询客服大帅为您服务从请问您需要咨询哪方面业务呢可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询您好很高兴能为您服务。请问您需要咨询什么信息或者需要我们提供帮助的地方全读取设备上的照片及文件手机照片恢复设置访问相册和社交应用文件拒绝始终允许仅在使用中允许下午50首ec了下过咨询客服大帅为您服务站请问您需要咨询哪方面业务呢可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询4CeN所AN从您好很高兴能为您服务。请问您需要咨询什么信息或者需要我们提供帮助的地方四读取设备上的照片及文件手机照片恢复设置访问相册和社交应用文件拒绝始终允许仅在使用中人允许册口人下午50们ceJeT汉咨询客服大帅为您服务四请问您需要咨询哪方面业务呢可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询4一人一A人一AAN四您好很高兴能为您服务。请问您需要次询什么信息或者需要我们提供帮助的地方读取设备上的照片及文件手机照片恢复设置访问相册和社交应用文件v拒绝仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读取设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "手机照片恢复",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-584-1764925280537.png",
+      "feature": {
+        "text": "下午501国加加蔬妆3合区回乡咨询客服GD空大帅为您服务自芭请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询您好很高兴能为您服务。请问您逢要咨询什么言息或者需要我们提供帮助的地方今天1656hoOeGg人QH入大江La7人人和入消息-ee十四口拍照视频本四让山O八下午501国四加书六会区回咨询客服0站大帅为您服务各请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询GE很高兴全。站们提供帮助的地方今天1656-AR人重入消息-G二拍照加文件评价退出册口人下午501国四加囊几3全GE加咨询客服安大帅为您服务请问您需要次询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询您好很高兴能为您服务。请问您需要咨询什么信息或者需要我们提供帮助的地方一一一今天1656de41办入消息-拍照本文件评价退出用吕人",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "文件",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "咨询客服",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "今天 16:56",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "大帅为您服务",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_notification_label",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "您好，很高兴能为您服务。请问您需要咨询什么信息或者需要我们提供帮助的地方？",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "[敲][怒][调皮][大笑][傲慢][睡着][惊喜][惊恐][委屈][汗][偷笑][嘘][亲][鄙视][阿弥陀佛][流感]",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "相册",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "拍照",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "视频",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "评价",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "退出",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_back_area",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.soouya.pic:id/messageListView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/buttonAudioMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "输入消息...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.soouya.pic:id/editTextMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/emoji_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/action_list_trigger_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.soouya.pic:id/viewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.GridView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 2,
+    "ui_before_grant": {
+      "file": "step-70-1764924743190.png",
+      "feature": {
+        "text": "下午452国加图蔬妆3合区回乡咨询客服GD安今天1651Cl请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询四大帅为您服务4请问您条需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询9人和入消有-oOe十四口拍照下大昌文件评价退出山O八下午452加加加书六仿区回咨询客服安今天1651CE请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询因Q大帅为您服务请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询2-一人答入消息-G二拍摄视频相册拍照文件评价退出三吕下午452上加加加冰妆2会区回咨询客服CD安今天1651ES请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询酌大帅为您服务请问您需要次询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询2一-器相册拍照拍摄视频文件评价和三",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "文件",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "咨询客服",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "今天 16:51",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "[流泪][惊讶]",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "大帅为您服务",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_notification_label",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "相册",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "拍照",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "视频",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "评价",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "退出",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_back_area",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.soouya.pic:id/messageListView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/buttonAudioMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "输入消息...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.soouya.pic:id/editTextMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/emoji_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/action_list_trigger_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.soouya.pic:id/viewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.GridView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-71-1764924743861.png",
+        "feature": {
+          "text": "上下午4521eJeT咨询客服今天1651全人CE请问您需要咨询哪方面业务呢人一可以先描述一下哦或提供购买时的订单号方便我们更快为您查询Q全读写设备上的照片及文件手机照片恢复生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许下午4521eTe丰汉咨询客服今天1651一全1Cg移请问您需要咨询哪方面业务呢人一可以先描述一下哦或提供购买时的订单号方便我们更快为您查询Q四读写设备上的照片及文件手机照片恢复移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许册口人下午4521cJe咨询客服今天1651人人4Cg移请问您需要咨询哪方面业务呢一可以先描述一下哦或提供购买时的订单号方便我们更快为您查询Q四读与设备上的照片及文件手机照片恢复设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "手机照片恢复",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-72-1764924744624.png",
+      "feature": {
+        "text": "相册阮Pictures共7张出1二Screenshots共1张fanxingalbum共2张apptemp1764842446712共1张9e宁mosheng和共4张爱唱共1张共4张滑话人下午452国加加囊几3会区回fastbot-comsingclient--running-人山O作下午452回四加可必别念0相册时Pictures相上Screenshots共1张fanxingalbum共2张apptemp1764842446712共1张六mosheng共4张爱唱共1张fastbot-comsingclient--running-共4张当眠人HO时人沿相册下午452国加加囊妆3会区加Pictures共7张Screenshots共1张fanxingalbum共2张apptemp1764842440712共1张moshengww共4张爱唱共1张fastbot-comsingclilent--running-共4张用吕人",
+        "widgets": [
+          {
+            "text": "预览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_bottombar_preview",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": " 发送 ",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_bottombar_select",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "相册",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "Pictures",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_info",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "共7张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_num",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "Screenshots",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_info",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "共1张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_num",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "fanxing_album",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_info",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "共2张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_num",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "apptemp1764842446712",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_info",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "共1张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_num",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "mosheng",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_info",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "共4张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_num",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "爱唱",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_info",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "共1张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_num",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "fastbot-com.sing.client--running-minutes-1",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_info",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "共4张",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/picker_photofolder_num",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_back_area",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.soouya.pic:id/picker_image_folder_listView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 3,
+    "ui_before_grant": {
+      "file": "step-345-1764925028015.png",
+      "feature": {
+        "text": "FEDGeeBaTSED请打开以下必要权限开始使用功能存储权限思获取存储权限访问照片和文件用于数据和图片恢复功能我知道了正千457后汪昨可既5会请打开以下必要权限开始使用功能存储权限时获取存储权限访问照片和文件用于数据和图片恢复功能我知道了口八人会Goo乡As正午457四后汪昨囊刀请打开以下必要权限开始使用功能存储权限时获取存储权限访问照片和文件用于数据和图片恢复功能我姑道了品人",
+        "widgets": [
+          {
+            "text": "存储权限",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "获取存储权限，访问照片和文件，用于数据和图片恢复功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "请打开以下必要权限开始使用功能",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "我知道了",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/tv_sure",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-347-1764925029247.png",
+        "feature": {
+          "text": "下午457国日全下全读写设备上的照片及文件手机照片恢复仅在使用中人允许事疾2会区回乡下午457国日辟下四读写设备上的照片及文件手机照片恢复仅在使用中允许下午457图白辟且四读写设备上的照片及文件手机照片恢复仅在使用中人允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "手机照片恢复",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-348-1764925030193.png",
+        "feature": {
+          "text": "人下午457图日翌昨BaETSEDass读写设备上的照片及文件手机照片恢复生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许NA三O多-下午457图日健生Amm-i吉工开上上几术以要权了只开始伟用功能em四读写设备上的照片及文件手机照片恢复设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许-下午457四日全下Am去并开上上必要权队开始伟用功能em四读写设备上的照片及文件手机照片恢复6设置访问相册和社交应用文件Y拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "手机照片恢复",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-349-1764925030826.png",
+      "feature": {
+        "text": "人和457回巴田订单暂时还没有订单哦1囊六合玫G午457国加园1单暂时还没有订单哦1囊览会国玫人二457回巴田暂时还没有订单哦囊妆3会恩玫",
+        "widgets": [
+          {
+            "text": "订单",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/action_text",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "暂时还没有订单哦~",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/tv_order_empty",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/action_contact",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 4,
+    "ui_before_grant": {
+      "file": "step-20-1764924689939.png",
+      "feature": {
+        "text": "下午451国加图蔬妆3合区回乡咨询客服今天1651请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询中ee和sz昌四有人昌塌昌轧国介乡会旬直人短优因包间国人多下午451国四园蔬蚊3会区加咨询客服今天1651一一一9y请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询Ces四心四四昌昌曲四提国人钊会外男从加名昌四名下午451回四园囊六会区回咨询客服CD今天1651ES请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询包3日信和四加四日De申轩四四9SeEGB入思四自",
+        "widgets": [
+          {
+            "text": " 发送 ",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/send_message_button",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "咨询客服",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageButton",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "今天 16:51",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_back_area",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.soouya.pic:id/messageListView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/buttonAudioMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "[流泪][惊讶]",
+            "class": "android.widget.EditText",
+            "resource-id": "com.soouya.pic:id/editTextMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/emoji_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.soouya.pic:id/emotion_icon_pager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.soouya.pic:id/emoj_tab_view_container",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.GridView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-21-1764924690700.png",
+        "feature": {
+          "text": "正午45站ecJi咨询客服他今天1651一一一人人1C请问您需要咨询哪方面业务呢一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询一昌进行通话录音或本地录音手机照片恢复拒绝本次运行允许仅在使用中允许OO下午45吕cj咨询客服今天1651一人人人rrCg区请问您需要咨询哪方面业务呢一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询下昌进行通话录音或本地录音手机照片恢复拒绝本炊运行允许仅在使用中人允许口下午45站cj下咨询客服它今天1651一一一一人人IICg请问您需要咨询哪方面业务呢一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询AAA昌进行通话录吾或本地录音手机照片恢复拒绝本次运行允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "进行通话录音或本地录音",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "手机照片恢复",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-22-1764924691378.png",
+      "feature": {
+        "text": "下午451国回回蔬妆3合区回乡咨询客服CD今天1651请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询Ca后三OO下午451国四加书六呈会区回咨询客服C今天1651CE请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询BCaa三吕下午451上加加图沙六2会区回咨询客服CO今天1651ES请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询eC三",
+        "widgets": [
+          {
+            "text": "按住 说话",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/audioRecord",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": " 发送 ",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/send_message_button",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "咨询客服",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "今天 16:51",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_back_area",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.soouya.pic:id/messageListView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/buttonTextMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 5,
+    "ui_before_grant": {
+      "file": "step-839-1764925556002.png",
+      "feature": {
+        "text": "FaoeeCRTSGD请打开以下必要权限开始使用功能设备信息获取设备相关信息用于提供个性化服务存储权限到获取存储权限访问照片和文件用于数据和图片恢复功能我知道了下午505四丘学基书痉吕会GD请打开以下必要权限开始使用功能设备信息获取设备相关信息用于提供个性化服务存储权限获取存储权限访问照片和文件用于数据和图片恢复功能我知道了口人As正午505握吕玫书低人会Goo乡请打开以下必要权限开始使用功能设备信息获取设备相关信息用于提供个性化服务仓储权限加获取存储权限访问照片和文件用于数据和图片恢复功能我知道了口人",
+        "widgets": [
+          {
+            "text": "存储权限",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "获取存储权限，访问照片和文件，用于数据和图片恢复功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "请打开以下必要权限开始使用功能",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "设备信息",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "获取设备相关信息，用于提供个性化服务",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "我知道了",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/tv_sure",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-840-1764925556603.png",
+        "feature": {
+          "text": "下午505鼻目等长囊妆5宣会区四搬读写设备上的照片及文件手机照片恢复拒绝始终允许仅在使用中允许一一册下午505自目如是四读写设备上的照片及文件手机照片恢复拒绝始终允许仅在使用中允许一书妆4会区四肌下午505重自好手读写设备上的照片及文件手机照片恢复拒绝始终允许仅在使用中人允许Ne书凑3会区四多用",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "手机照片恢复",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-841-1764925557251.png",
+      "feature": {
+        "text": "一键式简单操作高效恢复图片一键式简单操作高效恢复图片引沁再剧焉秀一攻图要者交归于了罗和auocisaahdvuookona",
+        "widgets": [
+          {
+            "text": "一键扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/one_search",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "已删除照片容易被系统抹掉，请尽早恢复！",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/tv_home_hint",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.soouya.pic:id/me_baner",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 6,
+    "ui_before_grant": {
+      "file": "step-37-1764924706581.png",
+      "feature": {
+        "text": "人下午451自后尝关BaTySED请打开以下必要权限开始使用功能存储权限斩获取存储权限访问照片和文件用于数据和图片恢复功能我知道了CO乡请打开以下必要权限开始使用功能存储权限时获取存储权限访问照片和文件用于数据和图片恢复功能我知道了员口八GD和请打开以下必要权限开始使用功能存储权限时获取存储权限访问照片和文件用于数据和图片恢复功能我知道了口人",
+        "widgets": [
+          {
+            "text": "存储权限",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "获取存储权限，访问照片和文件，用于数据和图片恢复功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "请打开以下必要权限开始使用功能",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "我知道了",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/tv_sure",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-38-1764924707188.png",
+        "feature": {
+          "text": "一了O8区孔存饥议限访语已具积广拒绝oa褒终允许放一人N1TNAEEHQmTh人1二caThem主1TAR百这本下的限片及文手机照片恢曼存储权也各限读卫用和拒绝用于数所和国六始终允许W下午451驾折全下1",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "手机照片恢复",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-39-1764924707977.png",
+      "feature": {
+        "text": "一键扫描人已删除照片容易被系统抹掉请尽早恢复-人虽国八pHOTOGRAPHKREEFORES一-全4二全二高效恢复图片一键式简单操作一键扫描人已删除照片容易被系统抹掉请尽早恢复-AM册口人一键扫摘已删除照片容易被系统抹掉请尽早恢复用口人",
+        "widgets": [
+          {
+            "text": "一键扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/one_search",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "已删除照片容易被系统抹掉，请尽早恢复！",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/tv_home_hint",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.soouya.pic:id/me_baner",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 7,
+    "ui_before_grant": {
+      "file": "step-66-1764924740323.png",
+      "feature": {
+        "text": "下午452国加加书妆3会区回咨询客服富加大帅为您服务4请问您尔需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询1自您好请问您是已经下订单了还是咨询业务呢如已下单麻烦您提供一下订单号以便快速的查询人人和入消息-CC四旦Y避OWEGRB下午452国加加冰六2全GE加咨询客服CG安四辣请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询各您好请问您是已经下订单了还大帅为您服务是咨询业务呢如已下单麻烦您提供一下订单号以便快速的查询三入消息-站GOWEGWD下午452上加加加冰妆2会区回咨询客服NAGD大帅为您服务可以先描述一下哦或提供购买时的订单号方便我们更快为您查询1人一SSN一有N喇您好请问您是已经下订单了还是咨询业务呢如已下单麻烦您提供一下订单号以便快速的碍询二和消息站加WEGRB",
+        "widgets": [
+          {
+            "text": "咨询客服",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "[流泪][惊讶]",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "大帅为您服务",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_notification_label",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "您好，请问您是已经下订单了还是咨询业务呢？如已下单，麻烦您提供一下订单号以便快速的查询",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_back_area",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.soouya.pic:id/messageListView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/buttonAudioMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "输入消息...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.soouya.pic:id/editTextMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/emoji_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/action_list_trigger_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-67-1764924741065.png",
+        "feature": {
+          "text": "正午4521cTe咨询客服今天1651全人1CE才请问您需要咨询哪方面业务呢六一可以先描述一下哦或提供购买时的订单号方便我们更快为您查询O大帅为您服务从请问您需要咨询哪方面业务呢可以先描述一下哦-或提供购买时昌进行通话录音或本地录音手机照片恢复拒绝本次运行允许仅在使用中允许下午4521eTe丰汉咨询客服今天1651一全1Cg移请问您需要咨询哪方面业务呢人一可以先描述一下哦或提供购买时的订单号方便我们更快为您查询Q大帅为您服务站请问您需要咨询哪方面业务呢可以先描述一下哦-或提供购买时昌进行通话录音或本地录音手机照片恢复仅在使用中人允许口下午4521cJe咨询客服今天1651人人4Cg移请问您需要咨询哪方面业务呢一可以先描述一下哦或提供购买时的订单号方便我们更快为您查询Q大帅为您服务四请问您需要咨询哪方面业务呢可以先描述一下哦-或提供购买时昌进行通话录吾或本地录音手机照片恢复拒绝本次运行允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "进行通话录音或本地录音",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "手机照片恢复",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-68-1764924741735.png",
+      "feature": {
+        "text": "下午452国加图蔬妆3合区回乡咨询客服GD安今天1651请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询国Q大帅为您服务自请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询自您好请问您是已经下订单了还是咨询业务呢如已下单麻烦您提供一下订单号以便快速的查询sa6三O下午452加四园蔬蚊3会区加咨询客服GD安今天1651CE请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询O大帅为您服务请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询您好请问您是已经下订单了还是咨询业务呢如已下单麻烦您提供一下订单号以便快速的查询和和sa6三吕下午452上加加加冰妆2会区回咨询客服安今天1651ES请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询起大帅为您服务请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询您好请问您是已经下订单了还是咨询业务呢如已下单太烦您提供一下订单号以便快速的碍询内内eC和6三",
+        "widgets": [
+          {
+            "text": "按住 说话",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/audioRecord",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "咨询客服",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "今天 16:51",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "[流泪][惊讶]",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "大帅为您服务",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_notification_label",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "您好，请问您是已经下订单了还是咨询业务呢？如已下单，麻烦您提供一下订单号以便快速的查询",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_back_area",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.soouya.pic:id/messageListView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/buttonTextMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/action_list_trigger_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 8,
+    "ui_before_grant": {
+      "file": "step-501-1764925187746.png",
+      "feature": {
+        "text": "PEpoeacasED请打开以下必要权限开始使用功能存储权限斩获取存储权限访问照片和文件用于数据和图片恢复功能我知道了CO乡下午459自回所用书痉4会请打开以下必要权限开始使用功能存储权限时获取存储权限访问照片和文件用于数据和图片恢复功能我知道了员口八GD和下午459和加所用沙烷2会请打开以下必要权限开始使用功能存储权限时获取存储权限访问照片和文件用于数据和图片恢复功能我知道了口人",
+        "widgets": [
+          {
+            "text": "存储权限",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "获取存储权限，访问照片和文件，用于数据和图片恢复功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "请打开以下必要权限开始使用功能",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "我知道了",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/tv_sure",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-503-1764925188943.png",
+        "feature": {
+          "text": "下午459图四日用全读写设备上的照片及文件手机照片恢复仅在使用中人允许事疾2会区回乡下午459图四昌且四读写设备上的照片及文件手机照片恢复仅在使用中允许书六2会乡下午459国四折正四读写设备上的照片及文件手机照片恢复仅在使用中人允许囊六会区加",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "手机照片恢复",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-504-1764925189973.png",
+        "feature": {
+          "text": "人ES2EDOODzxBEETSEDse读写设备上的照片及文件手机照片恢复生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许WA三图多下午459回回日正囊凑人会区国和Am-i吉工开上几术以要权了只开始使用功能四读写设备上的照片及文件手机照片恢复设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许口八ae刷2会天加和Aml吉斌开上上术要权了只开始传用功衣em四读写设备上的照片及文件手机照片恢复6设置访问相册和社交应用文件Y拒绝始终允许仅在使用中允许口人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "手机照片恢复",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-505-1764925190559.png",
+      "feature": {
+        "text": "逢更上导钦六则号十日昌口Em箱吏上民钦交则颖十四目箱吏上蝶钦光丘疆十圳了",
+        "widgets": [
+          {
+            "text": "订单",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/action_text",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "暂时还没有订单哦~",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/tv_order_empty",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 9,
+    "ui_before_grant": {
+      "file": "step-134-1764924813756.png",
+      "feature": {
+        "text": "下午453国加图蔬妆3合区回乡咨询客服CO今天1651请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询EDIQ大帅为您服务re请问您需要咨询哪方面业务呢可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询LA4A2和了主二4四站LT一AT反一本人人人和入消有-CC四马四Lo相册拍照视频文件山O八下午455国加加书归扣仿区回咨询客服今天1651SN请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询因Q大帅为您服务辣请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询ELPRRL4加了主二1467四六LT一的-本人电输入消息-C人拍摄视频相册拍照文件册口人下午4535加加园囊六会区回咨询客服今天1651ES请问您需要咨询哪方面业务呢-一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询葬a大帅为您服务1计请问您需要咨询哪方面业务呢可以先描述一下哦或提供购买时的订单号方便我们更快为您查询LAoosmenensrarGO放答入消息-C人拍照文件用吕人",
+        "widgets": [
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "文件",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "咨询客服",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "今天 16:51",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "[流泪][惊讶]",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "大帅为您服务",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_notification_label",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "请问您需要咨询哪方面业务呢？可以先描述一下哦~或提供购买时的订单号，方便我们更快为您查询...",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "您好，请问您是已经下订单了还是咨询业务呢？如已下单，麻烦您提供一下订单号以便快速的查询",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/nim_message_item_text_body",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "相册",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "拍照",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "视频",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/textView",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_back_area",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.soouya.pic:id/messageListView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/buttonAudioMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "输入消息...",
+            "class": "android.widget.EditText",
+            "resource-id": "com.soouya.pic:id/editTextMessage",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/emoji_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.soouya.pic:id/action_list_trigger_button",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.soouya.pic:id/viewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.GridView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.soouya.pic:id/ysf_message_item_content",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-135-1764924814571.png",
+        "feature": {
+          "text": "下午453Lclejs咨询客服C今天1651全人1C请问您需要咨询哪方面业务呢一可以先描述一下哦或提供购买时的订单号方便我们更快为您查询Q读写设备上的照片及文件手机照片恢复生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八下午45纪cJe咨询客服今天1651一人人人rr7VYVYVYVYVVYVSVSVGZXXAXAXAXAXAXAXAXAXAXAXAXA和AAA和和和和XXXCg区请问您需要咨询哪方面业务呢一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询葬Q全读写设备上的照片及文件手机照片恢复移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许册口人下午45引cj咨询客服C今天1651一一一一人人IICg请问您需要咨询哪方面业务呢一可以先描述一下哦-或提供购买时的订单号方便我们更快为您查询现个读与设备上的照片及文件手机照片恢复设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "手机照片恢复",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-136-1764924815259.png",
+      "feature": {
+        "text": "下午453国加图蔬妆3合区回乡选择文件已为您过滤时长超过50秒大小超过50M的视频还没有图片或视频三OUL下午453上国名加冰六2全GE加选择文件已为您过滤时长超过50秒大小超过50M的视频还没有图片或视频三吕下午4535国加图冰妆2会区回选择文件已为您过滤时长超过50秒大小超过50M的视频还没有图片或视频页览确定用吕人",
+        "widgets": [
+          {
+            "text": "选择文件",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_title",
+            "depth": 2,
+            "score": 16.4
+          },
+          {
+            "text": "已为您过滤时长超过30秒，大小超过50M的视频",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/message_tips_label",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "还没有图片或视频",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_empty_view_content",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "预览",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_button_preview",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.TextView",
+            "resource-id": "com.soouya.pic:id/ysf_button_apply",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.soouya.pic:id/ysf_title_bar_back_area",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  }
+]

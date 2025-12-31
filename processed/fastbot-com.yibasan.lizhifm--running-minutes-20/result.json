@@ -1,0 +1,465 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-52-1764886235550.png",
+      "feature": {
+        "text": "和和峡下QQ号或其他联系方式上咎610国口国反馈建议听不到声音声音卡无法送礼物送礼物异常选择上传方法拍摄照片从相册中选取事归3会GD提交事六3会乡上午610和图口四和反馈建议提交图听不到声音声音卡无法送礼物O适礼物异常选择上传方法拍摄照片从相册中选取鲜下QQ号或其他联系方式囊到会GD上午610国虽图所反馈建议提交图听不到声音声音卡无法送礼物OO送礼物异单选择上传方法拍摄照片从相册中选取航下QQ号或其他联系方式",
+        "widgets": [
+          {
+            "text": "拍摄照片",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yibasan.lizhifm:id/common_list_dialog_item",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "选择上传方法",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yibasan.lizhifm:id/dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "从相册中选取",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yibasan.lizhifm:id/common_list_dialog_item",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yibasan.lizhifm:id/dialog_ok",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.yibasan.lizhifm:id/dialog_list",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-54-1764886236970.png",
+        "feature": {
+          "text": "书归别传国并选择图片四所有图片昌-合全读写设备上的照片及文件荔术生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八书妆2仿区弗选择四片a所有图片昌-一人修四读写设备上的照片及文件荔枝移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许册口人人会国到了自G下至3和所有图片旺-AAA四读写设备上的照片及文件功枝设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "荔枝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-55-1764886237683.png",
+      "feature": {
+        "text": "避泽+-十员习癌医生民复口嫩不本白己四入伞从到网上和方迁加。用不到到人肤芍古论加晤扫地口只忆吕省六是寺本FEC国4CaiaFA其二过这御四竺划冰术和二卫生人ee直愉和区卫尼外站宇避泽+-十员习癌医生民复癌医生民复口嫩不本白己四入伞从龟委不合白局凑的评论到网上和方迁加。用不到到人肤芍古论加。用不到到人肤芍古论加晤扫地口只忆吕省口只忆吕省六是寺本FEC国4CaiaFA其二过这御四竺划冰术和六是寺本FEC国4CaiaFA其二过这御四竺划冰术和二卫生人ee直愉和区卫尼外站二卫生人ee直愉和区卫尼外站二二人asawaaaOEEheS生四示号三已抽风口本不他白局居的侠论口审几不号加匡有二产生二品格不可其人旺的侠铬会项它站古eeea牛芭口基体同时汪生站本记FS辣叶。tiaPR用攻本的三全加帮埃用-芝宇平4二1全到让有寻六是寺本FEC国4CaiaFA其二过这御四竺划冰术和二卫生人ee直愉和区卫尼外站四口上元号码已隔网熏上且孙号胡已否间熏上且孙号胡已否间口申放不口芒口申放不口芒口申放不口芒会项训站是口其名员下口其名员下妇拉于本PS同呈各iaPR用攻本的下四瑟在要攻坟且-生生站本站PR全攻。tiFI本六王国有在吾帮过用生生站本站PR全攻。tiFI本六王国有在吾帮过用是立守办人二区可让肥寻是立守办人二区可让肥寻是立守办人二区可让肥寻ae实生于三二失基配昌qhHMT7T克开和雪人晤ieiie惠上且信向阳nd和二帮入全的人吉人丰人咎卫候愉皇间四时-荔和站丰卫候沪和玫四属-肋和站1从重耳施邓困下DC坦及许铂祭方亿酸度基地名及方式本4例一基汪二Y鳃和人QY111T213ra全放生ra-和全。和六外用4性各玫学全人咎末了从让三O重用昭六ai简便本六朋赂P4性克庆学全全看末和开伍攻温+-二人买到葬上交方让匆时执池以表肛直下本秘网3和合本村下和二全天生如要近时入二人入区秘宛后9二SN果吾四产本二可全了各2轩术页堆SR口归示屋三已隔网口申由不口蕊会其它站是了和千克疡了KE博导加raFA下E的开本Di和吾六过呈是立半办外所并区到区可时丛让3人和和二本二jh开捉四个全息民主划自必-功Ai站王梧计三匠下DO但及府针取太太芝和人QIlwEIRYIYTONTGI全用必ra-科全各信外用P放询六党全伯生订有扩达人畔欠温+-二人买到葬上交方让匆时扫兴以表肛中下本口医4呈只复口妇不本白己四扒促替口用不到到人其鸭全伦口其忆忆省本下竺本才是FEC国业CH1其而过区穆加是全宇和妇用-二卫生和直忆区好尼民们因口用和二民复口茹不全白口长的评论有不卫扣人壮的余欠口其他司置宇和下等本二是TEC国业CH9作其而过区穆四是合理冰妇下-二卫生和直反避区好时民们四口申几不品蕊O其CQ东拉中国产了KE全呈raPR用并克和D且生宇户动上是立半办外所并区到区可介里与全本六二入开二四全二准香司自卫俱汉末了四属-荔和站十广全六ay到4本六角骨P4放二六学生全和末手拒位作-O口医4呈只复口妇不本白己四扒促替时不到着人其为剑论口其忆忆省宇和下等本二玫TEC国业CH1其而过区特加是全下冰妇下二卫生和直反区如尼民们四口医呈只复和合委不全白局长的评论用不到其人其为剑论口其忆忆省宇和下等本二玫TEC国业CH1其而过区特加是全下冰妇下二卫生和直反区如尼民们四口轨示号三已隔网口申由不品蕊东拉千本产卫fKI全二。raFS有并匡的三重D且在宇户友和是立半办外所工区到让可时口申由不品蕊O其CS东拉千本产卫fKI全二。raFS有并匡的三重D且在宇户友和是立半办外所工区到让可时所人生产wige理4村人ESAOL着由志和个要忆生加必本寻口摊+-雹凤买到鸯上外方让妇时扫兴似网3全区醒时下寺二二天和旭银绽全这吉禾季昱9二NYSE1户必志可全了束导妨页宪SR口刀示有大已隔网口申由不后轧会其它目置了和中国产上网叶。加15aPR有下的开本Di有二要六示卢是立半内外所工区至东村什从到站人下全与时本六一拆碟避本作证准香翌丰县候汉了耳四只-押和必仆认玫梧广王匠下DC但及记敏介闻亿-人可二区人山印QQYIalwelRYylyioliolg合用发Ja天人作信月同P放克站宛全全帮末用扩全人。口摊+-雹凤买到鸯上外方让妇时扫兴口医小十民复口绍不本白二站扒促二用不到到人其为剑论口其忆马省宇和至等本声是FEC国业Cthg站其而过区一特加相合宇冰玉生二了重生和去于区好尼要们四口淮小二异革口委不全白局其的评论茹不且基人时的余始口其性由夺宇和至等本声是FEC国业Cthg站其而过区一特加相合宇冰玉生二了重生和去于区好尼要们四和二季号砚已否则口审由不喇蕊其多册于么计国产上网呈。加15aPR克下区开本Di有二要六示卢是立半内外所工区至东村什壬与时本六一失大二曙自屋候汪汪奸罩属-功各站二广必Pa到全本信角风P放原由宛全种帮条于扩公人吕口医小十民复口绍不本白二站扒促二用不到到人其为剑论口其忆马省宇和至等本声是FEC国业Cthg站其而过区一特加相合宇冰玉生二了重生和去于区好尼要们四口医小十民复全。和不骨白口发的评论用不到到人其为剑论口其忆马省宇和至等本声是FEC国业Cthg站其而过区一特加相合宇冰玉生二了重生和去于区好尼要们四口上邮屋三已隔网口审由不喇蕊其它目置么计国产上网呈。加15aPR克下区开本Di有二要六示卢是立半内外所工区至东村什口审由不喇蕊其多册于么计国产上网呈。加15aPR克下区开本Di有二要六示卢是立半内外所工区至东村什委沪昌产wiy下4生个有风力二凡生全全全如了全1着由志和个自生公司翌商和们avt0o忆a1芝下人QWII1213",
+        "widgets": [
+          {
+            "text": "拍摄照片",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yibasan.lizhifm:id/ic_back",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "选择图片",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yibasan.lizhifm:id/tv_select_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "下一步",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yibasan.lizhifm:id/tv_done",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "所有图片",
+            "class": "android.widget.TextView",
+            "resource-id": "com.yibasan.lizhifm:id/tv_folder_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.yibasan.lizhifm:id/ll_folder",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.yibasan.lizhifm:id/rv",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.yibasan.lizhifm:id/iv_picture",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,289 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-487-1764893224890.png",
+      "granting": [
+        "step-489-1764893228145.png",
+        "step-490-1764893228852.png"
+      ],
+      "after": "step-491-1764893229536.png"
+    }
+  },
+  {
+    "chain_id": 1,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-128-1764892717849.png",
+      "granting": [
+        "step-131-1764892723277.png"
+      ],
+      "after": "step-132-1764892725779.png"
+    }
+  },
+  {
+    "chain_id": 2,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-572-1764893299974.png",
+      "granting": [
+        "step-574-1764893302202.png",
+        "step-575-1764893302829.png"
+      ],
+      "after": "step-576-1764893303528.png"
+    }
+  },
+  {
+    "chain_id": 3,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-12-1764892594265.png",
+      "granting": [
+        "step-13-1764892597477.png",
+        "step-14-1764892598250.png"
+      ],
+      "after": "step-15-1764892598982.png"
+    }
+  },
+  {
+    "chain_id": 4,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-342-1764893026662.png",
+      "granting": [
+        "step-344-1764893031219.png",
+        "step-346-1764893034540.png"
+      ],
+      "after": "step-347-1764893035229.png"
+    }
+  },
+  {
+    "chain_id": 5,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-112-1764892692524.png",
+      "granting": [
+        "step-116-1764892707033.png",
+        "step-117-1764892707647.png"
+      ],
+      "after": "step-118-1764892708506.png"
+    }
+  },
+  {
+    "chain_id": 6,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-89-1764892670627.png",
+      "granting": [
+        "step-90-1764892671362.png",
+        "step-91-1764892671976.png"
+      ],
+      "after": "step-92-1764892672658.png"
+    }
+  },
+  {
+    "chain_id": 7,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-103-1764892681867.png",
+      "granting": [
+        "step-105-1764892686290.png",
+        "step-106-1764892686872.png"
+      ],
+      "after": "step-107-1764892687514.png"
+    }
+  },
+  {
+    "chain_id": 8,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-298-1764892959373.png",
+      "granting": [
+        "step-299-1764892964352.png",
+        "step-300-1764892965169.png"
+      ],
+      "after": "step-301-1764892965837.png"
+    }
+  },
+  {
+    "chain_id": 9,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-555-1764893286885.png",
+      "granting": [
+        "step-557-1764893289061.png",
+        "step-558-1764893289693.png"
+      ],
+      "after": "step-559-1764893290395.png"
+    }
+  },
+  {
+    "chain_id": 10,
+    "predicted_permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE"
+    ],
+    "files": {
+      "before": "step-386-1764893089347.png",
+      "granting": [
+        "step-388-1764893094029.png"
+      ],
+      "after": "step-389-1764893096039.png"
+    }
+  },
+  {
+    "chain_id": 11,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-404-1764893119494.png",
+      "granting": [
+        "step-406-1764893124639.png",
+        "step-408-1764893127097.png"
+      ],
+      "after": "step-409-1764893127789.png"
+    }
+  },
+  {
+    "chain_id": 12,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-516-1764893253055.png",
+      "granting": [
+        "step-517-1764893253835.png",
+        "step-518-1764893254470.png"
+      ],
+      "after": "step-519-1764893255141.png"
+    }
+  },
+  {
+    "chain_id": 13,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-601-1764893327947.png",
+      "granting": [
+        "step-603-1764893332191.png",
+        "step-604-1764893332876.png"
+      ],
+      "after": "step-605-1764893333588.png"
+    }
+  },
+  {
+    "chain_id": 14,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-541-1764893274847.png",
+      "granting": [
+        "step-542-1764893275614.png",
+        "step-543-1764893276250.png"
+      ],
+      "after": "step-544-1764893276925.png"
+    }
+  },
+  {
+    "chain_id": 15,
+    "predicted_permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE"
+    ],
+    "files": {
+      "before": "step-307-1764892973843.png",
+      "granting": [
+        "step-309-1764892978986.png"
+      ],
+      "after": "step-310-1764892979658.png"
+    }
+  },
+  {
+    "chain_id": 16,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-916-1764893599150.png",
+      "granting": [
+        "step-918-1764893600474.png",
+        "step-919-1764893601208.png"
+      ],
+      "after": "step-920-1764893601844.png"
+    }
+  },
+  {
+    "chain_id": 17,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-311-1764892980324.png",
+      "granting": [
+        "step-314-1764892987965.png"
+      ],
+      "after": "step-315-1764892988634.png"
+    }
+  },
+  {
+    "chain_id": 18,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-278-1764892932757.png",
+      "granting": [
+        "step-280-1764892935323.png",
+        "step-281-1764892936009.png"
+      ],
+      "after": "step-282-1764892936719.png"
+    }
+  },
+  {
+    "chain_id": 19,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-26-1764892608721.png",
+      "granting": [
+        "step-28-1764892610795.png",
+        "step-29-1764892611424.png"
+      ],
+      "after": "step-30-1764892612117.png"
+    }
+  },
+  {
+    "chain_id": 20,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-303-1764892967518.png",
+      "granting": [
+        "step-305-1764892972308.png"
+      ],
+      "after": "step-306-1764892973062.png"
+    }
+  },
+  {
+    "chain_id": 21,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-74-1764892652764.png",
+      "granting": [
+        "step-75-1764892653580.png"
+      ],
+      "after": "step-76-1764892654970.png"
+    }
+  },
+  {
+    "chain_id": 22,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-456-1764893178915.png",
+      "granting": [
+        "step-458-1764893181280.png",
+        "step-461-1764893186807.png"
+      ],
+      "after": "step-462-1764893187422.png"
+    }
+  },
+  {
+    "chain_id": 23,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-391-1764893098050.png",
+      "granting": [
+        "step-392-1764893101104.png"
+      ],
+      "after": "step-393-1764893101902.png"
+    }
+  }
+]

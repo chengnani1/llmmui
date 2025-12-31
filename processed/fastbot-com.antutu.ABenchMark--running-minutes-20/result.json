@@ -1,0 +1,626 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-739-1764827677994.png",
+      "feature": {
+        "text": "安免免评测v1005-OB3安装测试RedmliNote95G事归3会GD四电池温度545C生CPU温度507G4二宣验机Al测试我的设备今日10409您的手机智能吗震四本机好评度8396加压力测试网络测速电池损耗测试检测耗电和稳定性待测速测试电池损耗程度和常用功能辐出厂信息查询I7呵。。可碍询设备的型号颜色内存等出厂信息幼忆四图首页排行选机资讯三口下午154图委已安免免评测v1005-OB3安装测试RedmlNote925G囊六2会GD包电池温度5345C和CPU温度507oCi全分匿验机Al测试我的设备今日10409您的手机智能吗本机好评度83956和四身压力测试网络测速电池损耗测试检测耗电和稳定性待测速测试电池损耗程度和常用功能可查询设备的型号颜色内存等出厂信息名do昌转首页排行选机资讯我的三口安免免评测v1003-OB3囊并会GDRedmliNote95G包电池温度345C和CPU温度507oC人羡医验机Al测试我的设备今日10409您的手机智能吗人四本机好评度8396吕压力测试网络测速电池损耗测试检测耗电和稳定性待测速测试电池损耗程度和常用功能可查询设备的型号颜色内存等出厂信息蚂忆四首页排行选机资讯一口",
+        "widgets": [
+          {
+            "text": "安兔兔评测 v10.0.3-OB3",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.Button",
+            "resource-id": "com.antutu.ABenchMark:id/action_main_settings",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "首 页",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/tabText",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "排 行",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/tabText",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "选 机",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/tabText",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "资 讯",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/tabText",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "我 的",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/tabText",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "安装测试",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/main_test_start_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "常用功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.antutu.ABenchMark:id/mainPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.antutu.ABenchMark:id/mainTabs",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "Redmi Note 9 5G",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeDeviceName",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "电池温度",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeBatteryTempDesc",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": ":34.3℃",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeBatteryCurrentTemp",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "CPU温度",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeCpuLoadDesc",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": ":50.7℃",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeCpuLoadCurrent",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "查看详情 >",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "验机",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureTitle",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "今日：",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureDesc",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "10409",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureDescSub",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "AI 测试",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureTitle",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "您的手机智能吗？",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureDescOne",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "我的设备",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureTitle",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "本机好评度：",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureDesc",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "83%",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureDescSub",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "压力测试",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureTitle",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "检测耗电和稳定性",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureDescOne",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "网络测速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureTitle",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "待测速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureDescOne",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "电池损耗测试",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureTitle",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "测试电池损耗程度",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatureDescOne",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "出厂信息查询",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMoreFeatureTitle",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "可查询设备的型号、颜色、内存等出厂信息",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMoreFeatureDesc",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "com.antutu.ABenchMark:id/homeScrollView",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.antutu.ABenchMark:id/main_test_start_bg",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.antutu.ABenchMark:id/homeDevice",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.antutu.ABenchMark:id/homeBatteryTemp",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMainFeatures",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.antutu.ABenchMark:id/homeMoreFeatures",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-741-1764827679612.png",
+        "feature": {
+          "text": "事归会GE加设备状态权限使用说明获取设备的网络规格信息用王验机是以确保验拒绝或取消授权虑可能导致验机结果不准确获取手机号及通话状态安兔免评测OO事六2会乡设备状态权限使用说明拒绝或取消授权虐可能导致验机结果不准确4获取手机号及通话状态安免免评测拒绝始终允许册口人下午154国所日水虹2会EGG设备状态权限使用说明获取设备的网络规格信息用王验机是以确保验拒绝或取消授权瞄可能导致验机结果不准确获取手机号及通话状态安免免评测",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "安兔兔评测",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-742-1764827680481.png",
+      "feature": {
+        "text": "事归3会GD所RedmiNote95G验机结论本机各项配置与官方相同看请放心使用硬件详情区日8目mAn闫定介深度验机查询设备的出厂信息zzz重新验机OO囊六2会GDRedmlNote95G验机结论本机各项配置与官方相同量请放心使用硬件详情查看全区虽重新验机口皮会区束握RedmlINote95G验机结论本机各项配置与官方相同晶请放心使用硬件详情听日卜mAh颌定值深度验机查询设备的出厂信息zzz重新验机",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.ImageButton",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "验机报告",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "重新验机",
+            "class": "android.widget.Button",
+            "resource-id": "com.antutu.ABenchMark:id/button_revalidate",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "Redmi Note 9 5G",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_device_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "验机编号：",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_verify_id",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "S26624101764827679",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_verify_id_value",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "验机结论",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_1",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "本机各项配置与官方相同，请放心使用",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_2",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "深度验机",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_shenduyanji_1",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "硬件详情",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_device_details_1",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "查看全部",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_device_details_2",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "＞",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_device_details_3",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_device_details_cpu",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_device_details_front_camera",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_device_details_rear_camera",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_device_details_battery_value",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": " mAh",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_device_details_battery_unit",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "(额定值)",
+            "class": "android.widget.TextView",
+            "resource-id": "com.antutu.ABenchMark:id/text_view_device_details_battery_type",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "查询设备的出厂信息",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "com.antutu.ABenchMark:id/scrollView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.antutu.ABenchMark:id/view_group_device_details",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.widget.LinearLayoutCompat",
+            "resource-id": "com.antutu.ABenchMark:id/view_group_shenduyanji_fiq",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,880 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-221-1764916695307.png",
+      "feature": {
+        "text": "下午238图国已下Q点击输入搜索内容GO钙热门新人音乐舞蹈交友脱口秀户外。排行傍。钴路舞秀性感受昌声目一昌葡提示拘相机麦克风权限说明您还未开启相机麦克风权限开启后方可使用直播小视频拍摄及收音视频通话修改头像及动态发布功能岂虹2会瑟加乡下午238国国马站Q点击输入搜索内容大口热门新人音乐舞蹈交友脱口秀户外馨提示的相机麦克风权限说明您还未开局相机麦克风权限开局后方可使用直播全放风人计所能才胃册二下午238国国巨星Q点击输入搜索内容oh岂暴会加加乡热门新人音乐舞蹈交友脱口秀户外白声4日一吕芯提示拘相机麦克风权限说明您还未开司相机麦克风权限开司后方可使用直播全和们相间钢频通修改头像及动态皮布功能",
+        "widgets": [
+          {
+            "text": "相机，麦克风权限说明",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_explain",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "您还未开启相机、麦克风权限，开启后方可使用直播、小视频拍摄及收音、视频通话、修改头像及动态发布功能",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/text_description",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "温馨提示",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "禁止",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/prohibit",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去开启",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/agree",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-223-1764916697044.png",
+        "feature": {
+          "text": "事妆呈会EGG下午258图国日让点击输入搜索内容GO钙热门新人音乐舞蹈交友脱口秀户外。排行榜中吕舞秀性感曼妙拍摄照片和录制视频石榴直播2拒绝本次运行允许仅在使用中允许下午258国国昌下Q点击输入搜索内容大口书六会儿热门新人音乐舞蹈交友脱口秀户外排行榜舞蹈舞秀性感曼妙担摄照片和录制视频石榴直播12仅在使用中人允许口下午258国国日用Q点击输入搜索内容D囊闹会EEE乡热门新人音乐舞蹈交友脱口秀户外排行榜呈下舞秀性感曼妙拍摄照请和录制视频石榴直播12",
+          "widgets": [
+            {
+              "text": "拍摄照片和录制视频",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "石榴直播(1/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-224-1764916697695.png",
+        "feature": {
+          "text": "事妆呈会EGG下午258图国日让点击输入搜索内容GO钙热门新人音乐舞蹈交友脱口秀户外。排行榜中吕舞秀性感曼妙GE生进行通话录音或本地录音石榴直播22拒绝本次运行允许仅在使用中允许下午258国国昌下Q点击输入搜索内容大口书六会儿热门新人音乐舞蹈交友脱口秀户外排行榜舞蹈舞秀性感曼妙进行通话录音或本地录音石榴直播272仅在使用中人允许口囊闹会EEE乡下午258国国日用Q点击输入搜索内容D热门新人音乐舞蹈交友脱口秀户外排行榜呈下舞秀性感曼妙-NMYL进行通话录音或本地录音石榴直播22",
+          "widgets": [
+            {
+              "text": "进行通话录音或本地录音",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "石榴直播(2/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-225-1764916698940.png",
+      "feature": {
+        "text": "昌四国0器人N十牙四RS微开始直播视频直播剧星语音直播Y日g国国CD站人N寺长十汉视频直播出旺语音直播MY日g国国CD此N上长人有微遇昌开始直播饮频直播国旺语音直播VY",
+        "widgets": [
+          {
+            "text": "设置海报",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_poster",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "美颜",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "微信",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "朋友圈",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "开始直播",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_play_live",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "视频直播",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_video",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "语音直播",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_radio",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_gift_content",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_gift_content",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_gift_content",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_gift_content",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_gift_content",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_gift_content",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_gift_content",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_gift_content",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_gift_content",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "加密直播",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/iv_back_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/iv_change_orientation",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/iv_camera_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/iv_poster",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/iv_beauty_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.v6.sixrooms:id/ll_friends_chat",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/btn_weixin",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/btn_friends",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.webkit.WebView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.webkit.WebView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.webkit.WebView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.webkit.WebView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-815-1764917312393.png",
+      "feature": {
+        "text": "事归会GD乡下午248国局国站个人信息日声+日一温馨提示存储权限说明您还未开启存储权限开启后方可使用修改头像海报和相册上传动态发布本地小视频上传下载下午248国已国下4个人信息囊六会乡日直上划一温世提示存储权限说明您还未开局存储权限开局后方可使用修改头像海报和相册上传动态友布本地小视频上传下载下午248图局国下个人信息昌声+日一温敬提示存储权限说明您还未开局存储权限开局后方可使用修改头像海报和相册上传动态发布本地小视频上传下载",
+        "widgets": [
+          {
+            "text": "存储权限说明",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_explain",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "您还未开启存储权限，开启后方可使用修改头像、海报和相册上传、动态发布、本地小视频上传/下载",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/text_description",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "温馨提示",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "禁止",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/prohibit",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "去开启",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/agree",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-817-1764917314004.png",
+        "feature": {
+          "text": "正午248LeJielw个人信息6景墙O6长按并拖动可以为图片排序DA人人全读写设备上的照片及文件石榴直播生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八下午248cieis个人信息6背景墙06长按并拖动可以为图片排序人人四读写设备上的照片及文件石榴直播移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许册口人下午2481cieiw个人信息6育景墙06长按并拖动可以为图片排序人忆四读与设备上的照片及文件石榴直播设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "石榴直播",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-818-1764917314763.png",
+      "feature": {
+        "text": "下午248国加口囊疾2合区回乡个人信息背景墙O6长按并拖动可以为图片排序十个人信息昵称而小挺喜欢打羽毛球签名房号262301100山O八下午248国四口书妆1合区回个人信息背景墙06长按并拖动可以为图片排序十个人信息了昵称帮小挺喜欢打羽毛球签名房号2062301100册口人下午248上国名口书妆1仿区回个人信息育景墙06长按并拖动可以为图片排序十个人信息了昵称机小挺喜欢打羽毛球签名房号2062301100用吕人",
+        "widgets": [
+          {
+            "text": "上传背景墙",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/rising_popularity_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "人气预计提升300",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/rising_popularity_num",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "上传",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/up_pic",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "资料",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "动态 1  ",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "作品",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "あ小挺喜欢打羽毛球",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/user_name_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "个人信息",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_title_bar",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的头像",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_avatar_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "背景墙(0/6)",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_photo_wall",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "长按并拖动可以为图片排序",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_photo_wall_intro",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "个人信息",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_personal_info",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "昵称",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_alias_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "あ小挺喜欢打羽毛球",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_alias",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "签名",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_sign_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_sign",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "房号",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_rid_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "262301100",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_rid",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "个人信息",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/user_info_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "房号：",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/user_info_room_number_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "262301100",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/user_info_room_number",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "复制",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_copy_number",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "个性签名：",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/personal_signature_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "暂无",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/personal_signature",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "等级",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/grade_layout_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "明星",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_star_level_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "距下一级1,000六豆",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_star_level_des",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "富豪",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_wealth_level_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "距下一级95六币",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/tv_wealth_level_des",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "徽章",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/badge_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "1枚",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.v6.sixrooms:id/badge_more",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "cn.v6.sixrooms:id/coordinator",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "cn.v6.sixrooms:id/viewpager",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/iv_back",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/iv_top_share",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/iv_edit",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "cn.v6.sixrooms:id/vp_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/iv_back",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/sdv_avatar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "cn.v6.sixrooms:id/rv_photo_wall",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "cn.v6.sixrooms:id/fl_root",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "cn.v6.sixrooms:id/honor_badge_personal",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/iv_add_pic",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.v6.sixrooms:id/iv_widget",
+            "depth": 6,
+            "score": 0.0
+          }
+        ]
+      }
+    }
+  }
+]

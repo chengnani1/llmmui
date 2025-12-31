@@ -1,0 +1,1489 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-764-1764878052627.png",
+      "feature": {
+        "text": "微和看de欣酷我聚星ID5003587242我在酷我聚星扫码查看我的个人空间Ge9OQQ空间新浪微博复制链接山微看de欣酷我聚星ID3003587242我在酷我聚星扫码查看我的个人空间BOQQ空间新浪微博复制链接山酷我紧星ID3003587242我在酷我聚星扫码查看我的个人空间昌马所包日QQ空间新浪人微博复制链接山",
+        "widgets": [
+          {
+            "text": "微吾de欣",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_singer_name_tv",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "酷我聚星ID：3003587242",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_singer_room_tv",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "我在酷我聚星，扫码查看我的个人空间",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_title_description",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "QQ",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "QQ空间",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "新浪微博",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "复制链接",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "保存",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-765-1764878053403.png",
+        "feature": {
+          "text": "法层354国图国生授权确认酷我聚星需要获取存储空间权限用于上传更新头像发布内容录制保存应用内app下载安装等功能。TasA纪关注粉丝2四四写设备上的照片及文件酷我聚星生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许OO书虹5会EEj授权确认酷我聚星需要获取存储空间权限用于上传更新头像发布内容录制保存应用内app下载安装等粉丝关注写设备上的照片及文件酷我聚星移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许口潜居354国国四六事六2会E授权确认酷我聚星需要获取存储空间权限用于上传更新洒读与设备上的照上请及文件酷我聚星设置访问相册和社交应用文件v仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "酷我聚星",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-766-1764878054157.png",
+      "feature": {
+        "text": "事归3会EGG法居554国四国生BF和IN人一动微看de欣酷我聚星ID5003587242我在酷我聚星扫码查看我的个人空间Ge9OQQ空间新浪微博复制链接保存微看de欣酷我聚星ID3003587242我在酷我聚星扫码查看我的个人空间BOQQ空间新浪微博复制链接山微乍de欣酷我聚星ID535003587242我在酷我聚星扫码查看我的个人空间昌马所包日QQ空间新浪人微博复制链接山",
+        "widgets": [
+          {
+            "text": "微吾de欣",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_singer_name_tv",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "酷我聚星ID：3003587242",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_singer_room_tv",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "我在酷我聚星，扫码查看我的个人空间",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_title_description",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "QQ",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "QQ空间",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "新浪微博",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "复制链接",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "保存",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-851-1764878154688.png",
+      "feature": {
+        "text": "囊归3会E国4凌晨355国国图QQ空间新浪微博复制链接保存事痉2人会医潜晨355国四国秋风吹不到窟肚下人二PPPTSe新浪油博复制链接QQ空间秋风吹不到罕3到Te由atQQ空间新浪人微博复制链接",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "直播中",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_livestate",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "扫 码 听 我 唱",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_singer_share_text_v",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "雪儿小调皮",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_userinfo_nickname_v",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "我在酷我聚星，扫码听我唱",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_vsinger_comment_v",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "QQ",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "QQ空间",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "新浪微博",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "复制链接",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "保存",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_view_pager",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-853-1764878156265.png",
+        "feature": {
+          "text": "法月355国国图事妆3会E国4受权确认酷我聚星需要获取存储空间权限用于上传更新头像发布内容录制保存应用内app下载安装等功能。读写设备上的照片及文件酷我聚星生设置访问相册和社交应用文件v拒绝台终允许仅在使用中允许潜晨355国国国书六会医国4受权确认酷我聚星需要获取存储空间权限用于上传更新头像发布内容录制保存应用内app下载安装等读写设备上的照片及文件酷我聚星移设置访问相册和社交应用文件v拒绝6终允许仅在使用中人允许凌晨355国国国书六会医国4授权确认酷我聚星需要获取存储空间权限用于上传更新头像发布内容录制保存应用内app下载安装等功能。读与设备上的照上请及文件酷我聚星设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "酷我聚星",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-854-1764878156995.png",
+      "feature": {
+        "text": "QQ空间新浪微博复制链接保存昌村Pio此至本下2兴灿二二wsdljasag2秋风吹不到认3B你就斧同3区和如QQ空间新浪油博复制链接昌相rrAr瞧妆台ED二一LN人让秋风吹不到闪3nn1abCE语QQ空间新浪人微博复制链接瞧妾台隐保在成怠有上于仙人千到NEba了",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "直播中",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_livestate",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "扫 码 听 我 唱",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_singer_share_text_v",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "雪儿小调皮",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_userinfo_nickname_v",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "我在酷我聚星，扫码听我唱",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_vsinger_comment_v",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "QQ",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "QQ空间",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "新浪微博",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "复制链接",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "保存",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "cn.kuwo.juxing:id/fa_share_view_pager",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 2,
+    "ui_before_grant": {
+      "file": "step-101-1764877355184.png",
+      "feature": {
+        "text": "凌晨342回口蔬六3会GE加4动态直播十pe登录后可查看你关注的动态凌晨342轿口书六会ED4动态直播ie登录后可查看你关注的动态个凌晨342上加口书蜂吕写回+动态直播Be登录后可查看你关注的动态人",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_tab_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_tab_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "一起玩",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_tab_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "交友",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_tab_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_tab_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "cn.kuwo.juxing:id/fx_framework_main_menu_card",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "cn.kuwo.juxing:id/tab_viewpager",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.kuwo.juxing:id/fx_main_tab_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "动态",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fx_follow_tab_custom_text_tv",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "直播",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fx_follow_tab_custom_text_tv",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "登录后可查看你关注的动态",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fx_login_now_tips_tv",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "马上登录",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fx_login_now_tv",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "没有你关注的动态",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_common_refresh_text",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/main_bottom_tab_live",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/main_bottom_tab_mobile",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/main_bottom_tab_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/main_bottom_tab_love_show",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/main_bottom_tab_mine",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/fx_top_bar_rl",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "cn.kuwo.juxing:id/fa_viewpager",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "cn.kuwo.juxing:id/fa_pager_title_strip_2",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.kuwo.juxing:id/fx_add_dynamic_top",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/fx_common_layout",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/fa_common_refresh_layout",
+            "depth": 6,
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-103-1764877357003.png",
+        "feature": {
+          "text": "法蝴342受权确认酷我聚星需要获取定位权限用于发现附近的主播附近的用户并在您开播时推荐给附近的人等功能。瓷ji4小时前rrH欧烨退了4小时殿辽全GEE东劳市第十三高级中学未命名NN6小时前王于纺P市获取设备的定位信息酷我聚星拒绝本次运行允许仅在使用中允许OO潜层342cJ受权确认酷我聚星需要获取定位权限用于发现附近的主播附近的用户并在您开播时推荐给附近的人等功能。1GEEBrnTeSA雇H欧烨退了4小时前人人工王东劳市第十三高级中学未命名NN6小时前人借名H市获取设备的定位信息酷我聚星拒绝本炊运行允许仅在使用中人允许口竣层347cs授权确认酷我聚星需要获取定位权限用于发现附近的主播附近的用户并在您开播时推荐给附近的人等功能。人加CEEB交hhCe加信AGEH欧退了4小时前人下有东劳市第十三高级中学未命名NN6小时前多全王绵p8市获取设备的定位信息酷我聚星拒绝本次运行允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "获取设备的定位信息",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "酷我聚星",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-104-1764877357748.png",
+      "feature": {
+        "text": "凌晨342回口蔬六3会GE加4广场聊天中刊baby好运在线拱这全加下有永放市依H欧烨退了4小时前这O人9EEEB东劳市第十三高级中学多未命名NN6小时前四有5市搭训人终点站到了y小时前措辽人全广坟LA一一一OoeoeaeDge发现关注一起玩交友我的山O八凌晨342上回口书蚊会回4广场聊天E六了更乔baby好运z7EGEBahA办小时前2H欧烨退了4小时前搭辽人人仁三东劳市第十三高级中学相未命名NN6小时前PS交名在二终点站到了y2小时前人全下广填LARh-一一一避让发现关注一起玩交友我的凌晨342上加口书蜂吕写回+广场聊天1人型baby好运在线yy四CEEBihNAH欧烨退了4小时前人全于东芝市第十三高级中学终点站到了y小时前GEEBrmLASa一一-日包人昌发现关注一起玩交友我的",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_tab_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_tab_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "一起玩",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_tab_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "交友",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_tab_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_tab_text",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "cn.kuwo.juxing:id/fx_framework_main_menu_card",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "广场",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "聊天",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "cn.kuwo.juxing:id/tab_viewpager",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "cn.kuwo.juxing:id/fx_main_tab_bar",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "甜baby好运",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_name_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "在线",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_on_line_state_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_sex_status",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "实名",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_certification_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "永州市",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_title_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "搭讪",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_paychat_pick_up",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "H欧烨退了",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_name_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "4小时前",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_on_line_state_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_sex_status",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "实名",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_certification_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "东莞市第十三高级中学",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_title_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "搭讪",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_paychat_pick_up",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "未命名NN",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_name_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "6小时前",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_on_line_state_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_sex_status",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "实名",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_certification_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "绵阳市",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_title_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "搭讪",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_paychat_pick_up",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "不想带娃",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_name_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "41小时前",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_on_line_state_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_sex_status",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "实名",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_certification_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "搭讪",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_paychat_pick_up",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "终点站到了y",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_name_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "2小时前",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_on_line_state_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_sex_status",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "实名",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_certification_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "广元市",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_title_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "搭讪",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_paychat_pick_up",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "唱歌淇淇",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_name_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "2小时前",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_on_line_state_tv",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "搭讪",
+            "class": "android.widget.TextView",
+            "resource-id": "cn.kuwo.juxing:id/fa_paychat_pick_up",
+            "depth": 8,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/main_bottom_tab_live",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/main_bottom_tab_mobile",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/main_bottom_tab_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/main_bottom_tab_love_show",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "cn.kuwo.juxing:id/main_bottom_tab_mine",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "cn.kuwo.juxing:id/fa_viewpager",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "cn.kuwo.juxing:id/fa_pager_title_strip_2",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_right_tv",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "cn.kuwo.juxing:id/fa_paychat_content_fl",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "cn.kuwo.juxing:id/fa_recyclerview",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "cn.kuwo.juxing:id/fa_container",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_item_avatar",
+            "depth": 8,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "cn.kuwo.juxing:id/fa_img_recyclerview",
+            "depth": 8,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.kuwo.juxing:id/image_iv",
+            "depth": 9,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "cn.kuwo.juxing:id/fa_container",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_item_avatar",
+            "depth": 8,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "cn.kuwo.juxing:id/fa_img_recyclerview",
+            "depth": 8,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.kuwo.juxing:id/image_iv",
+            "depth": 9,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "cn.kuwo.juxing:id/fa_container",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_item_avatar",
+            "depth": 8,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "cn.kuwo.juxing:id/fa_img_recyclerview",
+            "depth": 8,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.kuwo.juxing:id/image_iv",
+            "depth": 9,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.kuwo.juxing:id/image_iv",
+            "depth": 9,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "cn.kuwo.juxing:id/fa_container",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_item_avatar",
+            "depth": 8,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "cn.kuwo.juxing:id/fa_container",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_item_avatar",
+            "depth": 8,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "cn.kuwo.juxing:id/fa_container",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "cn.kuwo.juxing:id/fa_msg_center_item_avatar",
+            "depth": 8,
+            "score": 0.0
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,431 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-345-1764923516594.png",
+      "feature": {
+        "text": "下午431加囊妆会区加88请输入验证码团匀选即代表已同意服务条款习口口回四山O八下午431四书归虽会区回88请输入验证码团义选即代表已同意服务条款下午431四沙六2会区回88请输入验证码全义选即代表已同意服务条款四四回回区用吕人",
+        "widgets": [
+          {
+            "text": "获取验证码",
+            "class": "android.widget.Button",
+            "resource-id": "com.unking.yiguanai:id/code_btn",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": " 勾选即代表已同意服务条款",
+            "class": "android.widget.TextView",
+            "resource-id": "com.unking.yiguanai:id/privacy_tv",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "立即登陆",
+            "class": "android.widget.Button",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_demo_login_do_login",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "本机号码一键登陆",
+            "class": "android.widget.TextView",
+            "resource-id": "com.unking.yiguanai:id/onekeylogin_tv",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "88",
+            "class": "android.widget.EditText",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_demo_login_usename",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入验证码",
+            "class": "android.widget.EditText",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_demo_login_password",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.CheckBox",
+            "resource-id": "com.unking.yiguanai:id/checkbox",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-347-1764923518122.png",
+        "feature": {
+          "text": "正午451JE书3会5和88RonAeGT读写设备上的照片及文件手机定位易关爱和设置访问相册和社交应用文件拒绝始终允许仅在使用中允许山O八下午45VoLT88nnAGxT读写设备上的照片及文件手机定位易关爱设置访问相册和社交应用文件拒绝始终允许仅在使用中人允许册口人下午45人88RonAG工读写设备上的照片及文件手机定位易关爱设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "手机定位易关爱",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-348-1764923518752.png",
+      "feature": {
+        "text": "下午431加囊妆会区加88请输入验证码团匀选即代表已同意服务条款人网络异常本机号码一键登陆下午431四书归虽会区回88请输入验证码团义选即代表已同意服务条款网络异常本机号码一键登陆册口人下午431四沙六2会区回88请输入验证码全义选即代表已同意服务条款YY网络异常本机号码一键登陆",
+        "widgets": [
+          {
+            "text": "获取验证码",
+            "class": "android.widget.Button",
+            "resource-id": "com.unking.yiguanai:id/code_btn",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": " 勾选即代表已同意服务条款",
+            "class": "android.widget.TextView",
+            "resource-id": "com.unking.yiguanai:id/privacy_tv",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "立即登陆",
+            "class": "android.widget.Button",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_demo_login_do_login",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "本机号码一键登陆",
+            "class": "android.widget.TextView",
+            "resource-id": "com.unking.yiguanai:id/onekeylogin_tv",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "88",
+            "class": "android.widget.EditText",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_demo_login_usename",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入验证码",
+            "class": "android.widget.EditText",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_demo_login_password",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.CheckBox",
+            "resource-id": "com.unking.yiguanai:id/checkbox",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-14-1764923099558.png",
+      "feature": {
+        "text": "下午424上加四口书旷吕仿区回乡1787060中国移动提供认证服务本机号码一键登录侠同意移动统一认证服务条款和易关爱协议并授权易关爱获取本机号码手机号登录山O八下午424国四口蔬蚊3会区加1787060中国移动提供认证服务本机号码一键登录团同意移动统一认证服务条款和有易关爱协议并授权易关爱获取本机号码册口人下午424上国外口书妆1仿区回1787060中国移动提供认证服务侠同意移动统一认证服务条款和易关爱协议并授权易关爱获取本机号码手机号登录用吕人",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_title_bar_center",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "178****7060",
+            "class": "android.widget.TextView",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_page_one_key_login_phone",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "中国移动提供认证服务",
+            "class": "android.widget.TextView",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_page_login_slogan",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "本机号码一键登录",
+            "class": "android.widget.Button",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_page_login_login_btn",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "同意《移动统一认证服务条款》和易关爱协议并授权易关爱获取本机号码",
+            "class": "android.widget.TextView",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_page_login_use_this_number",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "手机号登录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.unking.yiguanai:id/customized_view_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_title_bar_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_page_one_key_login_main_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_page_one_key_login_logo_iv",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.CheckBox",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_page_one_key_login_checkbox",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-16-1764923101031.png",
+        "feature": {
+          "text": "正午425Leiel全读写设备上的照片及文件手机定位易关爱生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八下午425lclelu四读写设备上的照片及文件手机定位易关爱移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许册口人下午425LeJiegwAAA四读写设备上的照片及文件手机定位易关爱设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "手机定位易关爱",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-17-1764923101754.png",
+      "feature": {
+        "text": "下午425上国四口蔬妆3合区回乡请输入手机号请输入验证码CD义选即代表已同意服务条款下午425上加四口蔬蚊3会区加请输入手机号请输入验证码C久选即代表已同意服务条款册口人下午425国四口书妆1仿区回请输入手机号请输入验证码CD久选即代表已同意服务条款",
+        "widgets": [
+          {
+            "text": "获取验证码",
+            "class": "android.widget.Button",
+            "resource-id": "com.unking.yiguanai:id/code_btn",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": " 勾选即代表已同意服务条款",
+            "class": "android.widget.TextView",
+            "resource-id": "com.unking.yiguanai:id/privacy_tv",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "立即登陆",
+            "class": "android.widget.Button",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_demo_login_do_login",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "请输入手机号",
+            "class": "android.widget.EditText",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_demo_login_usename",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "请输入验证码",
+            "class": "android.widget.EditText",
+            "resource-id": "com.unking.yiguanai:id/sec_verify_demo_login_password",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.CheckBox",
+            "resource-id": "com.unking.yiguanai:id/checkbox",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  }
+]

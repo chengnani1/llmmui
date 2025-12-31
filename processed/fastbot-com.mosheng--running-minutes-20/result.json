@@ -1,0 +1,3314 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-1070-1764820338096.png",
+      "feature": {
+        "text": "囊归3会攻了权限申请爱聊需要开启存储权限以便保存你爱聊中的照片视频等内容。日提罩日朋友图微信QQ空间保存权限申请爱聊需要开局存储权限以便保存你爱聊中的照片视频等内容。四生QQ空间保存书妆2会医国4权限申请爱聊需要开局存储权限以便保存你爱聊中的照片视频等内容。四映QQ空间保存",
+        "widgets": [
+          {
+            "text": "爱聊需要开启存储权限，以便保存你在爱聊中的照片、视频等内容。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_view_switch",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "权限申请",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-1072-1764820339892.png",
+        "feature": {
+          "text": "囊妆3会EE国4读写设备上的照片及文件爱聊生设置访问相册和社交应用文件v拒绝仅在使用中允许读写设备上的照片及文件爱聊移设置访问相册和社交应用文件v拒绝仅在使用中人允许读写设备上的照片及文件爱聊设置访问相册和社交应用文件v拒绝仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "爱聊",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-1073-1764820340527.png",
+      "feature": {
+        "text": "QQ空间保存邀请收益我的邀请必下隆请7友在8到町PRmme-一ApA7-朋友图微信QQQQ空间保存QQ空间保存",
+        "widgets": [
+          {
+            "text": "朋友圈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_share_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_share_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "QQ",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_share_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "QQ空间",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_share_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "保存",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_share_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/iv_close",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.mosheng:id/rv_invite",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-33-1764819358230.png",
+      "feature": {
+        "text": "事归3会GD相机胶卷取消权限申请爱聊需要开启存储权限以便保存你爱聊中的照片视频等内容。事六2会乡相机胶卷取消权限申请爱聊需要开局存储权限以便保存你爱聊中的照片视频等内容。囊到会GD相机胶卷取消权限申请爱聊需要开局存储权限以便保存你爱聊中的照片视频等内容。几吕从",
+        "widgets": [
+          {
+            "text": "爱聊需要开启存储权限，以便保存你在爱聊中的照片、视频等内容。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_view_switch",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "权限申请",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-34-1764819358913.png",
+        "feature": {
+          "text": "相机胶卷取消国读写设备上的照片及文件爱聊生设置访问相册和社交应用文件拒绝始终允许在合用中介次相机胶卷取消一国读与设备上的照片及文件爱聊设置访问相册和社交应用文件v拒绝始终允许在使用中介许相机胶卷取消ss峡读写设备上的照片及文件爱聊6设置访问相册和社交应用文件v拒绝始终允许在使用中介许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "爱聊",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-35-1764819359636.png",
+      "feature": {
+        "text": "全上午1135国囊败2会区加4相机胶卷取消三O力路上午1135囊归细相机胶卷取消rryt时gw人5届ad二二种了本负AI全四和二症呈你才寺村征攻古本二站和用7了阳Re多全贡上1坟本直下秤rm个全全玉人和和和二忆拓言加和Wer3闻文人人际痢证人和ee人全和JE人人en人ACEIseneeeeee册口人上午1135上国万并2会GE加4相机胶卷取消过必rug色本加JIE了和人人orwh一用吕人",
+        "widgets": [
+          {
+            "text": "相机胶卷",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/picture_title",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_title_camera",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/picture_right",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/picture_left_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.mosheng:id/picture_recycler",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 2,
+    "ui_before_grant": {
+      "file": "step-514-1764819785201.png",
+      "feature": {
+        "text": "上上午11435图真人认证事归3会GD因为真实所以你更受欢迎认证要求请露出正脸和上半身并保持猫手姿势拍照2请保证头像与真人认证为同一人35拍摄照片仅用作认证官方将对照片保密权限申请爱聊需使用相机权限以正常使用拍照视频直播等功能。三加上上午1145图真人认证溃六2会乡因为真实所以你更受欢迎认证要求1请露出正脸和上半身并保持狂手姿势拍照2请保证头像与真人认证为同一人5拍摄照片仪用作认证官方将对照片保密权限申请爱聊需使用相机权限以正常使用拍照视频直播等功能。真人认证囊到会GD因为真实所以你更受欢迎认证要求1请露出正脸和上半身并保持猎手姿势拍照2请保证头像与真人认证为同一人3拍摄照片仅用作认证官方将对照片保密权限申请爱聊需使用相机权限以正常使用拍照视频直播等功能。三加6",
+        "widgets": [
+          {
+            "text": "爱聊需使用相机权限，以正常使用拍照、视频、直播等功能。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_view_switch",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "权限申请",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-515-1764819785994.png",
+        "feature": {
+          "text": "上午1145图真人认证事归会GD因为真实所以你更受欢迎认证要求1请露出正脸和上半身并保持猎手姿势拍照2请保证头像与真人认证为同一人5拍摄照片仅用作认证官方将对照片保密拍摄照片和录制视频爱聊仅在使用中允许OOES3EED真人认证事六3会乡因为真实所以你更受欢迎认证要求1请露出正验和上半身并保持狂手姿势拍照2请保证头像与真人认证为同一人53拍摄照片仅用作认证官方将对照片保密拍摄照片和录制视频爱聊拒绝本次运行允许仅在使用中人允许口上午1145图o真人认证事六3会E4因为真实所以你更受欢迎认证要求1请露出正脸和上半身并保持猎手姿势拍照2请保证头像与真人认证为同一人3拍摄照片仅用作认证官方将对照片保密拒绝本次运行允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "拍摄照片和录制视频",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "爱聊",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-516-1764819786729.png",
+      "feature": {
+        "text": "上午1145卜囊冯真人认证2会区加4因为真实所以你更受欢迎认证要求请露出正脸和上半身并保持猫手姿势拍照2请保证头像与真人认证为同一人35拍摄照片仅用作认证官方将对照片保密山O八上午1143蔬发3会区加4真人认证因为真实所以你更受欢迎认证要求1请露出正脸和上半身并保持猫手姿势拍照2请保证头像与真人认证为同一人5拍摄照片仅用作认证官方将对照片保密册口人上午1143囊蚊会区加4真人认证因为真实所以你更受欢迎认证要求1请严出正脸和上半身并保持狂手姿势拍照2请保证头像与真人认证为同一人5拍摄照片仅用作认证官方将对照片保密用吕人",
+        "widgets": [
+          {
+            "text": "1、请露出正脸和上半身，并保持猫手姿势拍照\r\n2、请保证头像与真人认证为同一人\r\n3、拍摄照片仅用作认证，官方将对照片保密",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/top_content_tv",
+            "depth": 2,
+            "score": 16.4
+          },
+          {
+            "text": "真人认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "因为真实，所以你更受欢迎",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/textViewTips",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "认证要求：",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/top_title_tv",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "马上认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_next",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "不露正脸",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_desc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "缺少猫手姿势",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_desc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "姿势错误",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_desc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/iv_left",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.mosheng:id/recyclerView",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.mosheng:id/btn_Auth_photo",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.mosheng:id/rel_avatar_example",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.mosheng:id/rel_avatar_example",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.mosheng:id/rel_avatar_example",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 3,
+    "ui_before_grant": {
+      "file": "step-298-1764819597314.png",
+      "feature": {
+        "text": "事归洁上午1159图CICOCaCD人中会区加视频速配同城速配同城附近守季选忌儿人纺eRA西安31岁单身思打招呼每个人都有脆弱的一面有人懂加权限申请为了基于地理位置向你推荐用户请授权我们获取位置权限。打招呼已发出感性的反耽习思西安1358岁单身打招呼希望在这里能找到我的另一半。钨OO中中oO发现直播消息我三加事几2人会加加和上上午1159图四CICOCoCD区视频速配同城速配同城附近守租先芯儿人编wRA人西安31岁单身号打招呼每个人都有脆弱的一面有人懂权限申请为了基于地理位置向你推荐用户请授权我们获取位置权限。西安38岁单身希望在这里能找到我的另一半。人她O昌CPPOO发现直播消息我三回G上午1139国地玫人人人CoCD人视频速配同城速配同城附近守稍先可儿坟KR人西安31岁单身史每个人都有脆弱的一面有人履权限申请权我们获取位置权限。西安38岁单身希望在这里能找到我的另一半。伯Ocp皮现直播消息我三加6",
+        "widgets": [
+          {
+            "text": "为了基于地理位置向你推荐用户，请授权我们获取位置权限。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_view_switch",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "权限申请",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-299-1764819598043.png",
+        "feature": {
+          "text": "事归3会GDEaEDOCa人CDCD视频速配同城速配同城附近守筛选芯儿仿eR西安51岁单身忆每个人都有脆弱的一面有人懂傻乐乐wRA人西安55岁单身名打招呼电团吃习一条没有眼泪的鱼em周西安32岁保密获取设备的定位信息爱聊拒绝习打招呼B发出人水从候1克坪仅在使用中人允许OO囊六3会乡上午1139图包语音速配视频速配同城速配盲念交友好佳同城附近守入先西安31岁单身急每个人都有脆弱的一面有人懂傻乐乐RA人西安35岁单身名台国至必一条没有眼泪的鱼em昌西安32岁保密获取设备的定位信息爱聊拒绝下打招呼已发出人水人他1克十仅在使用中人允许口求暴人会EHELOOCn民CDCC人视频速配同城速配交友同城附近守季先声儿合oem。西安31岁单身7每个人都有脆弱的一面有人懂傻乐乐纹R人西安35岁单身吃电团到的一条没有眼泪的鱼em西安32岁保客已获取设备的定位信息爱聊拒绝习打招呼已发出水从人把1了瑟证仅在使用中允许",
+          "widgets": [
+            {
+              "text": "获取设备的定位信息",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "爱聊",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-300-1764819598857.png",
+      "feature": {
+        "text": "上午1139蔬六31会GDCDGOCDCO视频速配同城速配盲盒交友同城附近守簿选遍儿全s双多西安131岁单身Ar扫用每个人都有脆弱的一面有人懂傻乐乐到og西安55岁单身as西安32岁保密轨打招呼攻相见不如怀念二Y西安129岁单身人打招呼姨丛区民加一和美好时光下人西安123岁单身轨2图四国感性的玫瑰如取妃西安1358岁单身Sn希望在这里能找到我的另一半。移O昌Ce发现直播消息我上午1139书六会GDCDCDCn全语音速配伪交友最佳视频速配同城速配让念交同城附近守筛选馨儿仿9双多西安31岁单身全登每个人都有脆弱的一面有人懂傻乐乐如下西安55岁单身9电团至一一条没有眼泪的鱼下西安32岁保密打招呼西安29岁单身17打招呼过美好时光下西安123岁单身罗。打招呼了了因轩及感性的玫瑰如耻西安138岁单身Was希望在这里能找到我的另一半。生OCPP上发现直播消息我上午1139图沁六2会GD视频速配同城速配同城附近守筛选可四儿人全9驮多西安31岁单身合体每个人都有脆弱的一面有人懂傻乐乐纤下西安55岁单身有团丁一一条没有眼泪的鱼问到西安32岁保密3Yesle-相见不如怀念9到。西安29岁单身1名打招呼西安123岁单身31打招呼和国因克感性的玫瑰如下人西安138岁单身慌2希望在这里能找到我的另一半。谷生O82发现直播消息我三",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "爱聊",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 27,
+            "score": 2.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 28,
+            "score": 2.0
+          },
+          {
+            "text": "直播",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 29,
+            "score": 2.0
+          },
+          {
+            "text": "2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_new_count",
+            "depth": 30,
+            "score": 2.0
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 31,
+            "score": 2.0
+          },
+          {
+            "text": "我",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 32,
+            "score": 2.0
+          },
+          {
+            "text": "爱聊",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 31,
+            "score": 2.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 31,
+            "score": 2.0
+          },
+          {
+            "text": "直播",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 31,
+            "score": 2.0
+          },
+          {
+            "text": "2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_new_count",
+            "depth": 31,
+            "score": 2.0
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 31,
+            "score": 2.0
+          },
+          {
+            "text": "我",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 31,
+            "score": 2.0
+          },
+          {
+            "text": "爱聊",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 29,
+            "score": 2.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 29,
+            "score": 2.0
+          },
+          {
+            "text": "直播",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 29,
+            "score": 2.0
+          },
+          {
+            "text": "2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_new_count",
+            "depth": 29,
+            "score": 2.0
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 29,
+            "score": 2.0
+          },
+          {
+            "text": "我",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 29,
+            "score": 2.0
+          },
+          {
+            "text": "爱聊",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 27,
+            "score": 2.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 27,
+            "score": 2.0
+          },
+          {
+            "text": "直播",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 27,
+            "score": 2.0
+          },
+          {
+            "text": "2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_new_count",
+            "depth": 27,
+            "score": 2.0
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 27,
+            "score": 2.0
+          },
+          {
+            "text": "我",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 27,
+            "score": 2.0
+          },
+          {
+            "text": "爱聊",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 25,
+            "score": 2.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 25,
+            "score": 2.0
+          },
+          {
+            "text": "直播",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 25,
+            "score": 2.0
+          },
+          {
+            "text": "2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_new_count",
+            "depth": 25,
+            "score": 2.0
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 25,
+            "score": 2.0
+          },
+          {
+            "text": "我",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 25,
+            "score": 2.0
+          },
+          {
+            "text": "爱聊",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 23,
+            "score": 2.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 23,
+            "score": 2.0
+          },
+          {
+            "text": "直播",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 23,
+            "score": 2.0
+          },
+          {
+            "text": "2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_new_count",
+            "depth": 23,
+            "score": 2.0
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 23,
+            "score": 2.0
+          },
+          {
+            "text": "我",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 23,
+            "score": 2.0
+          },
+          {
+            "text": "爱聊",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 21,
+            "score": 2.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 21,
+            "score": 2.0
+          },
+          {
+            "text": "直播",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 21,
+            "score": 2.0
+          },
+          {
+            "text": "2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_new_count",
+            "depth": 21,
+            "score": 2.0
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 21,
+            "score": 2.0
+          },
+          {
+            "text": "我",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 21,
+            "score": 2.0
+          },
+          {
+            "text": "爱聊",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 19,
+            "score": 2.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 19,
+            "score": 2.0
+          },
+          {
+            "text": "直播",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 19,
+            "score": 2.0
+          },
+          {
+            "text": "2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_new_count",
+            "depth": 19,
+            "score": 2.0
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 19,
+            "score": 2.0
+          },
+          {
+            "text": "我",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 19,
+            "score": 2.0
+          },
+          {
+            "text": "爱聊",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 17,
+            "score": 2.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 17,
+            "score": 2.0
+          },
+          {
+            "text": "直播",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 17,
+            "score": 2.0
+          },
+          {
+            "text": "2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_new_count",
+            "depth": 17,
+            "score": 2.0
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 17,
+            "score": 2.0
+          },
+          {
+            "text": "我",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 17,
+            "score": 2.0
+          },
+          {
+            "text": "爱聊",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 15,
+            "score": 2.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 15,
+            "score": 2.0
+          },
+          {
+            "text": "直播",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 15,
+            "score": 2.0
+          },
+          {
+            "text": "2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_new_count",
+            "depth": 15,
+            "score": 2.0
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 15,
+            "score": 2.0
+          },
+          {
+            "text": "我",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 15,
+            "score": 2.0
+          },
+          {
+            "text": "爱聊",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 13,
+            "score": 2.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 13,
+            "score": 2.0
+          },
+          {
+            "text": "直播",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 13,
+            "score": 2.0
+          },
+          {
+            "text": "2",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_new_count",
+            "depth": 13,
+            "score": 2.0
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 13,
+            "score": 2.0
+          },
+          {
+            "text": "我",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_text",
+            "depth": 13,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 8,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 9,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 10,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 11,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 12,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 13,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 14,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 15,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 16,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 17,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 18,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 19,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 20,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 21,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 22,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 23,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 24,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.mosheng:id/tabLayout",
+            "depth": 25,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.mosheng:id/tabLayout",
+            "depth": 24,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 25,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.mosheng:id/view_click",
+            "depth": 26,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 27,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 28,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 29,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 31,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.mosheng:id/tabLayout",
+            "depth": 29,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 30,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.mosheng:id/view_click",
+            "depth": 31,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 30,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 30,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 30,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 30,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.mosheng:id/tabLayout",
+            "depth": 27,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 28,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.mosheng:id/view_click",
+            "depth": 29,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 28,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 28,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 28,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 28,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.mosheng:id/tabLayout",
+            "depth": 25,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 26,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.mosheng:id/view_click",
+            "depth": 27,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 26,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 26,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 26,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 26,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.mosheng:id/tabLayout",
+            "depth": 23,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 24,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.mosheng:id/view_click",
+            "depth": 25,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 24,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 24,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 24,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 24,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.mosheng:id/tabLayout",
+            "depth": 21,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 22,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.mosheng:id/view_click",
+            "depth": 23,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 22,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 22,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 22,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 22,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.mosheng:id/tabLayout",
+            "depth": 19,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 20,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.mosheng:id/view_click",
+            "depth": 21,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 20,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 20,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 20,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 20,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.mosheng:id/tabLayout",
+            "depth": 17,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 18,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.mosheng:id/view_click",
+            "depth": 19,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 18,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 18,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 18,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 18,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.mosheng:id/tabLayout",
+            "depth": 15,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 16,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.mosheng:id/view_click",
+            "depth": 17,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 16,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 16,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 16,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 16,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.mosheng:id/tabLayout",
+            "depth": 13,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 14,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.mosheng:id/view_click",
+            "depth": 15,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 14,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 14,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 14,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 14,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.mosheng:id/tabLayout",
+            "depth": 11,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 12,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.mosheng:id/view_click",
+            "depth": 13,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 12,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 12,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 12,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "androidx.appcompat.app.ActionBar$Tab",
+            "resource-id": "",
+            "depth": 12,
+            "score": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 4,
+    "ui_before_grant": {
+      "file": "step-565-1764819832831.png",
+      "feature": {
+        "text": "BEISCE3相机胶卷取消权限申请爱聊需开启相机权限以便保存你在爱聊中的照片视频等内容。34完成相机胶卷取消民会GO权限申请爱聊需开局相机权限以便保存你在爱聊中的照片视频等内容。34完成相机胶卷取消权限申请爱聊需开司相机权限以便保存你在爱聊中的照片视频等内容。354元成",
+        "widgets": [
+          {
+            "text": "爱聊需开启相机权限，以便保存你在爱聊中的照片、视频等内容。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_view_switch",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "权限申请",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-566-1764819833512.png",
+        "feature": {
+          "text": "囊妾3会相机胶卷取消拍摄照片和录制视频爱聊仅在使用中允许OO书蜂会EGG相机胶卷取消拍摄照片和录制视频爱聊仅在使用中人允许口拍摄照请和录制视频爱聊仅在使用中允许",
+          "widgets": [
+            {
+              "text": "拍摄照片和录制视频",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "爱聊",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-567-1764819834121.png",
+      "feature": {
+        "text": "上午1143书妆2会区加4相机胶卷取消34完成山O八上午1143囊归细相机胶卷取消力路34元成册口人上午1143书履相机胶卷取消几小354元成用吕人",
+        "widgets": [
+          {
+            "text": "相机胶卷",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/picture_title",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_title_camera",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/picture_right",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "3/4 完成",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/picture_tv_ok",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/check",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/check",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/check",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/check",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/check",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/picture_left_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.mosheng:id/picture_recycler",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/id_ll_ok",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/ll_check",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/ll_check",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/ll_check",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/ll_check",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/ll_check",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 5,
+    "ui_before_grant": {
+      "file": "step-558-1764819827635.png",
+      "feature": {
+        "text": "BEISCE3相机胶卷取消权限申请爱聊需要开启存储权限以便保存你爱聊中的照片视频等内容。04完成书蜂2会ED相机胶卷取消权限申请爱聊需要开局存储权限以便保存你爱聊中的照片视频等内容。04元成水虹2会GO相机胶卷取消权限申请爱聊需要开局存储权限以便保存你爱聊中的照片视频等内容。04元成几吕从",
+        "widgets": [
+          {
+            "text": "爱聊需要开启存储权限，以便保存你在爱聊中的照片、视频等内容。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_view_switch",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "权限申请",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-559-1764819828370.png",
+        "feature": {
+          "text": "囊妾3会相机胶卷取消读写设备上的照片及文件爱聊生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八上上午1145图相机胶卷取消书蜂会EGG一人修四读写设备上的照片及文件爱聊移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许册口人上午1143图相机胶卷取消AAA四读写设备上的照片及文件爱聊设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "爱聊",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-560-1764819829054.png",
+      "feature": {
+        "text": "上午1143蔬六3会GD相机胶卷取消04完成山O八上午1143囊并2会区加4相机胶卷取消有中罗本Vrh四亿洛wd和人erlnCR04元成册口人上午1143书归2会区加4相机胶卷取消04元成用吕人",
+        "widgets": [
+          {
+            "text": "相机胶卷",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/picture_title",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "拍摄",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_title_camera",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/picture_right",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "0/4 完成",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/picture_tv_ok",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/check",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/check",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/check",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/check",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/check",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/picture_left_back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.mosheng:id/picture_recycler",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/id_ll_ok",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/ll_check",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/ll_check",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/ll_check",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/ll_check",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/ll_check",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 6,
+    "ui_before_grant": {
+      "file": "step-1145-1764820414834.png",
+      "feature": {
+        "text": "DBETSEC2GD权限申请爱聊需要开启存储权限以便保存你爱聊中的照片视频等内容。取消上午11535国BETSEYGD权限申请爱聊需要开局存储权限以便保存你爱聊中的照片视频等内容。取消上午1155国ETSEGD权限申请爱聊需要开局存储权限以便保存你在爱聊中的照片视频等内容。取消",
+        "widgets": [
+          {
+            "text": "爱聊需要开启存储权限，以便保存你在爱聊中的照片、视频等内容。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_view_switch",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "权限申请",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-1146-1764820415487.png",
+        "feature": {
+          "text": "EMmEDDBETSEC2CD写设备上的照片及文件爱聊生设置访问相册和社交应用文件v拒绝台终允许仅在使用中允许书贤3浊会攻天4am读写设备上的照片及文件爱聊移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许口amp书冯浊会固了读写设备上的照片及文件爱聊设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "爱聊",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-1147-1764820416126.png",
+      "feature": {
+        "text": "DBETSEC2CDBETSEYCD一人em四本一二一re本一。一+四一--RS站站亲om闪利克之2一2六ar人CemesiWeovlle个-二SN上MnRe人站区ET让六人后edS半。已娠1人Re1必CN人-NANORYANS2人27Ar42由2村SNSRee机0SS和SNRN可区直人并容党。ETSECD加一-一一虽吧把4Le一一圈9PR四内四人Le站加av加TeTa站TwoA7人人本12区ji人和2人12这草人省帮全人站0站和的下weLeMN1CE2Ps罗TSRS全SN和全大巡NA人YN4色INVe",
+        "widgets": [
+          {
+            "text": "今天 03:38",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/time_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "何时……才能渡过这个劫！",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/content_tv",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "7",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_blog_gift",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "评论",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_comments",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "打招呼",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_accost_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "转发",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_shares",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.mosheng:id/recycler_view",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/imageLeftReturn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/imageRightMore",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/layout_blog_send_gift",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/layout_blog_comment",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/ll_gift",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/layout_blog_share",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/image",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 7,
+    "ui_before_grant": {
+      "file": "step-1229-1764820497741.png",
+      "feature": {
+        "text": "SaEOSETISCEY呈大笨笨o亲密度吕22CD目基本资料30岁单身本科164cm所在城市西安距离319km加婚已页人认证他已实名认证全有1邀请上传权限申请爱聊需使用麦克风权限以正常使用语音视频直播等功能。本Am想跟你交个朋友四包b2G书六会ED日基本资料30岁单身本科164cm所在城市西安距离319km回全已页人认证他已实名认证权限申请爱聊需使用麦克风权限以正常使用语音视频直播等功能。一PPA想跟你交个朋友汶人会区乡日基本资料30岁单身本科164cm所在城市西安距离319km加人已页人认证候已实名认证权限申请爱聊需使用麦克风权限以正常使用语音视频直播等功能。想跟你交个朋友",
+        "widgets": [
+          {
+            "text": "爱聊需使用麦克风权限，以正常使用语音、视频、直播等功能。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_view_switch",
+            "depth": 1,
+            "score": 17.0
+          },
+          {
+            "text": "权限申请",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/control_customize_dialog_button_ok",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-1230-1764820498430.png",
+        "feature": {
+          "text": "上午1154图事归3会E国4-ca5日基本资料30岁单身本科164cm所在城市西安距离319km回人已AAX认证候已实名认证从所你抽到她的脱单言盒能遇到一个什么样的人会好好爱我吗进行通话录音或本地录音爱聊仅在使用中允许OO事蚊3会乡目基本资料30岁单身本科164cm所在城市西安距离319km回全已站人认证他已实名认证7c4这庆上伟擂你抽到她的脱单盲盒能遇到一个什么样的人会好好爱我吗进行通话录避或本地录音爱聊拒绝本炊运行允许仅在使用中人允许口上午1154图书六会医国4-sXD四基本资料30岁单身本科164cm所在城市西安距离319km加代已商人认证候已实名认证所你抽到她的脱单盲盒能遇到一个什么样的人会好好爱我吗进行通话录吾或本地录音爱聊仅在使用中允许",
+          "widgets": [
+            {
+              "text": "进行通话录音或本地录音",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "爱聊",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-1231-1764820499253.png",
+      "feature": {
+        "text": "上午1154国DBETSEE7大笨笨GD目基本资料30岁单身本科1164cm所在城市西安距离319km加钨已员人认证伟已实名认证所你抽到她的脱单言盒能遇到一个什么样的人会好好爱我吗1154人网请允许我做个自我介绍吧很跟你交个朋友二一一二一四晶三OIEIEURERTSIEY大笨笨人GD日基本资料30岁单身本科164cm所在城市西安距离319km固全已商人认证人已实名认证擂你抽到她的脱单盲盒能遇到一个什么样的人会好好爱我吗111154请允许我做个自我介绍吧想跟你交个朋友2一一一3三吕上午1154图囊六5会区加大笨条cp日基本资料30岁单身本科164cm所在城市西安距离319km固已商人认证人已实名认证擂你抽到她的脱单盲能遇到一个什么样的人会好好爱我吗请允许我做个目我介绍吧起跟你交个朋友加印三",
+        "widgets": [
+          {
+            "text": "请允许我做个自我介绍吧",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/right_iv_text",
+            "depth": 3,
+            "score": 9.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/newMeaasgeCount",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "大笨笨",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/textTitle",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "亲密度:0.7℃",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/tv_title_friendly",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "←你抽到她的脱单盲盒：\r\n能遇到一个什么样的人？会好好爱我吗？",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/left_iv_text",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "嘿, 陌生人！",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/left_iv_text",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "11:54",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/text",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "你好呀❤",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/right_iv_text",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "想跟你交个朋友",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/right_iv_text",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "基本资料：",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/basic_title_tv",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "30岁 | 单身 | 本科 | 164cm",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "所在城市：",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/location_title_tv",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "西安（距离31.9km）",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/location_tv",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/certification_title_tv",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "已真人认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/person_certification_tv",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "已实名认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/name_certification_tv",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TextView",
+            "resource-id": "com.mosheng:id/photo_title_tv",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/imageLeftReturn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/imageRightMore",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ListView",
+            "resource-id": "com.mosheng:id/list",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.mosheng:id/unread_msg_view",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/backButton",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.mosheng:id/editTextBox",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/imageGallery",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/imageTruth",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/imageCall",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/imageGift",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/imageEmoji",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.mosheng:id/imageMore",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "邀请上传",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/foldView",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/foldView",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/foldView",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/foldView",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/foldView",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.EditText",
+            "resource-id": "com.mosheng:id/editText",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.mosheng:id/all_layout",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.mosheng:id/left_fl_text_headpic",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.mosheng:id/left_fl_text_headpic",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.mosheng:id/right_fl_text_headpic",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.mosheng:id/right_fl_text_headpic",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.mosheng:id/right_fl_text_headpic",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.mosheng:id/add_photo_layout",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,2474 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-60-1764950950248.png",
+      "feature": {
+        "text": "蔬妆3合区回乡青少年模式登录一直播半夜1209图+86请输入手机号码获取验证码密码登录其他登录方式gee9e人同意服务协议与信息保护政策三O书发会区加青少年模式登录一直播半夜1209图+86请输入手机号码获取验证码密码登录其他登录方式四人同意服务协议与信息保护政策囊妆3会区加青少年模式登录一直播半夜1209+86vv请输入手机号码获取验证码密码登录其他登录方式e同意服务协议与信息保护政策",
+        "widgets": [
+          {
+            "text": "登录一直播",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tvTitle",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "获取验证码",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/btn_resend_emss",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "密码登录",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/but_switchType",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "其他登录方式",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tag1",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "同意服务协议与信息保护政策",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/use_agreement",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "青少年模式",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_youngster",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "+86",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/area_code",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "推荐",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/rl_dialog_self",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "tv.xiaoka.live:id/ll_login_code",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "tv.xiaoka.live:id/login_by_wb_btn",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "tv.xiaoka.live:id/login_by_wx_btn",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "tv.xiaoka.live:id/login_by_qq_btn",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.CheckBox",
+            "resource-id": "tv.xiaoka.live:id/use_agreement_radio_btn",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "tv.xiaoka.live:id/iv_close",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请输入手机号码",
+            "class": "android.widget.EditText",
+            "resource-id": "tv.xiaoka.live:id/phone_edit",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-61-1764950951018.png",
+        "feature": {
+          "text": "书蜂呈合攻玫乡Q请输入昵称ID上11G获取手机号及通话状态一直播拒绝O始终允许AN书妆人会国玫Q请输入昵称1DAN1ANG获取手机号及通话状态一直播拒绝OO始终允许AN书并会固儿Q请输入昵称ID2ANG获取手机己及通话状态一直播3DO始终允许AN",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一直播",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-62-1764950951653.png",
+      "feature": {
+        "text": "半夜1209蔬妆3合区回乡Q请输入昵称IDCN页面加载失败轻点屏幕刷新半夜1209书六会区回Q请输入昵称ID国4ev了本册网交交2到页面加载失败轻点屏幕刷新发现同城关注消息我的半夜1209书蚊全区加CC请输入昵称ID国4页面加载失败轻氮屏幕刷新发现同城关注消息我的",
+        "widgets": [
+          {
+            "text": "请输入昵称/ID",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_search",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "登录/注册",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/butLogin",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "同城",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "页面加载失败，轻点屏幕刷新",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "tv.xiaoka.live:id/custom_convenient_banner_cbLoopViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "tv.xiaoka.live:id/iv_create",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/index_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/find_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/follow_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/private_chat_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/mine_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "android:id/list",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "tv.xiaoka.live:id/reminder_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-109-1764951002200.png",
+      "feature": {
+        "text": "半夜1210蔬妆3合区回乡义青少年模式十OO小v避Coxx加上Le四三口半夜1210书六会区回义青少年模式登录一直播+86v708密码请输入密码忘记密码痘录短信验证码登录站GE半夜1210书吧吕伟区回X青少年模式登录一县描+86v708密码请输入密码环记密码登录短信验证码登录DBED",
+        "widgets": [
+          {
+            "text": "短信验证码登录",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/but_switchType",
+            "depth": 2,
+            "score": 16.4
+          },
+          {
+            "text": "登录一直播",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tvTitle",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "密码",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_pwd",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "忘记密码",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/btn_forget_password",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "登录",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/btn_confirm",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "同意服务协议与信息保护政策",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/use_agreement",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "青少年模式",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_youngster",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "+86",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/area_code",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "推荐",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/rl_dialog_self",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "tv.xiaoka.live:id/choose_country",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "请输入密码",
+            "class": "android.widget.EditText",
+            "resource-id": "tv.xiaoka.live:id/password_edit",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "tv.xiaoka.live:id/login_by_wb_btn",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "tv.xiaoka.live:id/login_by_wx_btn",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "tv.xiaoka.live:id/login_by_qq_btn",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.CheckBox",
+            "resource-id": "tv.xiaoka.live:id/use_agreement_radio_btn",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "tv.xiaoka.live:id/iv_close",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "708",
+            "class": "android.widget.EditText",
+            "resource-id": "tv.xiaoka.live:id/phone_edit",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-110-1764951002928.png",
+        "feature": {
+          "text": "书归合国玫乡Q请输入昵称IDG获取手机号及通话状态一直播拒绝O始终允许AN书妆人会故国Q请输入昵称1DG获取手机号及通话状态一直播拒绝OO始终允许AN书并会大儿Q请输入昵称ID一一G获取手机己及通话状态一直播和DO始终允许AN",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一直播",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-111-1764951003584.png",
+      "feature": {
+        "text": "半夜1210蔬妆3合区回乡Q请输入昵称IDCNva由开一-人页面加载失败轻点屏幕刷新半夜1210书六会区回Q请输入昵称ID国4间页面加载失败轻点屏幕刷新半夜1210书吧吕伟区回CO请输入昵称ID国4人亲吾an页面加载失败轻点屏幕刷新",
+        "widgets": [
+          {
+            "text": "请输入昵称/ID",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_search",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "登录/注册",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/butLogin",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "同城",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "页面加载失败，轻点屏幕刷新",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "tv.xiaoka.live:id/custom_convenient_banner_cbLoopViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "tv.xiaoka.live:id/iv_create",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/index_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/find_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/follow_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/private_chat_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/mine_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "android:id/list",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "tv.xiaoka.live:id/reminder_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 2,
+    "ui_before_grant": {
+      "file": "step-6-1764950886075.png",
+      "feature": {
+        "text": "半夜1208蔬妆3合区回乡请输入昵称ID取消来自剪贴板httpSswwwyixitvwxh5DT半夜1208书六会区回C请输入昵称ID取消来自剪贴板httpSswwwyixitvwxh5基NAAr人ArArAr人人rn人人of71si119qiwlielrlitliyliulilllioliPp站DER半夜1208目囊览会区回C请输入昵称ID取消来自剪贴板志httpswwwyixitvwxh5基四四GE",
+        "widgets": [
+          {
+            "text": "取消",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/cancel_btn",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "请输入昵称/ID",
+            "class": "android.widget.EditText",
+            "resource-id": "tv.xiaoka.live:id/search_user_et",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "tv.xiaoka.live:id/rc_recomend_content",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-8-1764950892715.png",
+        "feature": {
+          "text": "请输入昵称ID取消G获取手机号及通话状态一直播口请输入昵称ID取消SSG获取手机号及通话状态一直播口请输入昵称ID取消一一G获取手机己及通话状态一直播口",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一直播",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-9-1764950893400.png",
+      "feature": {
+        "text": "半夜1208蔬妆3合区回乡请输入昵称ID取消httpSswwwyixitvwxh5DOT半夜1208书六会区回C请输入昵称ID取消httpSswwwyixitvwxh5基NAAr人ArArAr人人rn人人of71si119qiwlielrlitliyliulilllioliPpDO自上半夜1208目囊览会区回C请输入昵称ID取消日httpswwwyixitvwxh5基四加GE",
+        "widgets": [
+          {
+            "text": "取消",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/cancel_btn",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "请输入昵称/ID",
+            "class": "android.widget.EditText",
+            "resource-id": "tv.xiaoka.live:id/search_user_et",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "tv.xiaoka.live:id/rc_recomend_content",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 3,
+    "ui_before_grant": {
+      "file": "step-146-1764951041872.png",
+      "feature": {
+        "text": "半夜1210囊妆3合区回乡Q请输入昵称IDCN页面加载失败轻点屏幕刷新半夜1210蔬六会区回Q请输入昵称ID国442页面加载失败轻氮屏幕刷新发现同城关注消息我的半夜1210书吧吕伟区回CO请输入昵称ID国4人站3页面加载失败轻氮屏幕刷新发现同城关注消息我的",
+        "widgets": [
+          {
+            "text": "请输入昵称/ID",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_search",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "登录/注册",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/butLogin",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "同城",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "页面加载失败，轻点屏幕刷新",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "tv.xiaoka.live:id/custom_convenient_banner_cbLoopViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "tv.xiaoka.live:id/iv_create",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/index_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/find_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/follow_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/private_chat_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/mine_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "android:id/list",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "tv.xiaoka.live:id/reminder_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-148-1764951045858.png",
+        "feature": {
+          "text": "事归会EE国乡请输入昵称IDCNARS获取手机号及通话状态直播ojig种searo同城关注发现消息我的二吕Q书六会乡请输入昵称ID四一六S获取手机号及通话状态县播把锡回攻SBO发现消息我的届囊冯会区C请输入了昵称ID图4ssS获取手机己及通话状态下播党和4几ojg到有有exro吕ii",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一直播",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-149-1764951046613.png",
+      "feature": {
+        "text": "半夜1210蔬妆3合区回乡Q请输入昵称IDCN页面加载失败轻点屏幕刷新半夜1210书六会区回Q请输入昵称ID国4页面加载失败轻点屏幕刷新发现同城关注消息我的半夜1210书吧吕伟区回CO请输入昵称ID国4页面加载失败轻点屏幕刷新发现同城关注消息我的",
+        "widgets": [
+          {
+            "text": "请输入昵称/ID",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_search",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "登录/注册",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/butLogin",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "同城",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "页面加载失败，轻点屏幕刷新",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "tv.xiaoka.live:id/custom_convenient_banner_cbLoopViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "tv.xiaoka.live:id/iv_create",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/index_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/find_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/follow_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/private_chat_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/mine_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "android:id/list",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "tv.xiaoka.live:id/reminder_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 4,
+    "ui_before_grant": {
+      "file": "step-122-1764951012884.png",
+      "feature": {
+        "text": "半夜1210囊妆3合区回乡Q请输入昵称IDCN页面加载失败轻点屏幕刷新人请先阅读并同意页面下方服务协议及信息保护政策半夜1210轿忆归吕伟回Q请输入昵称ID国44了二二C页面加载失败轻氮屏幕刷新人请先阅读并同意页面下方服务协议及信息保护政策忆UL半夜1210书吧吕伟区回CO请输入昵称ID国4帮的全一本二人aa站4页面加载失败轻氮屏幕刷新一请先阅读并同意页面下方服务协议及信息保护政策NS",
+        "widgets": [
+          {
+            "text": "请输入昵称/ID",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_search",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "登录/注册",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/butLogin",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "同城",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "页面加载失败，轻点屏幕刷新",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "tv.xiaoka.live:id/custom_convenient_banner_cbLoopViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "tv.xiaoka.live:id/iv_create",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/index_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/find_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/follow_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/private_chat_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/mine_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "android:id/list",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "tv.xiaoka.live:id/reminder_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-125-1764951017503.png",
+        "feature": {
+          "text": "替夜12101e广二忆Q请输入了昵称ID世国4人只号乓ATse页面加载失败轻点屏幕刷新下G获取手机号及通话状态一直播OO举夜121012一人Q请输入昵称ID区国4AN下人忆sc页面加载失败轻点屏幕刷新G获取手机号及通话状态一直播口举夜1210LeQ请输入昵称ID是丘全mwAp7se页面加载失败轻氮屏幕刷新一一G获取手机己及通话状态一直播口",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一直播",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-126-1764951018178.png",
+      "feature": {
+        "text": "半夜1210蔬妆3合区回乡Q请输入昵称IDCN页面加载失败轻点屏幕刷新半夜1210书六会区回Q请输入昵称ID国442页面加载失败轻氮屏幕刷新发现同城关注消息我的半夜1210书吧吕伟区回CO请输入昵称ID国4人站3页面加载失败轻氮屏幕刷新发现同城关注消息我的",
+        "widgets": [
+          {
+            "text": "请输入昵称/ID",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_search",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "登录/注册",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/butLogin",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "同城",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "页面加载失败，轻点屏幕刷新",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "tv.xiaoka.live:id/custom_convenient_banner_cbLoopViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "tv.xiaoka.live:id/iv_create",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/index_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/find_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/follow_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/private_chat_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/mine_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "android:id/list",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "tv.xiaoka.live:id/reminder_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 5,
+    "ui_before_grant": {
+      "file": "step-410-1764951274973.png",
+      "feature": {
+        "text": "半夜1214蔬妆3合区回乡Q请输入昵称IDCN筛选v无法定位开启定位发现更多精彩-也一人Ce页面加载失败轻点屏幕刷新发现同城关注消息我的半夜1214上四书六会区回Q请输入昵称ID国4筛选无法定位开局定位发现更多精彩也4页面加载失败轻氮屏幕刷新半夜1214可妆2仿区加CC请输入昵称ID国4季选v无法定位开局定位上友现更多精彩他页面加载失败轻氮屏幕刷新人人em一Er和发现同城关注消息我的",
+        "widgets": [
+          {
+            "text": "无法定位，开启定位发现更多精彩",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "请输入昵称/ID",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_search",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "登录/注册",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/butLogin",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "同城",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "筛选",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/nearbyLocationTv",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "页面加载失败，轻点屏幕刷新",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "tv.xiaoka.live:id/custom_convenient_banner_cbLoopViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "tv.xiaoka.live:id/iv_create",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/index_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/find_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/follow_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/private_chat_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/mine_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "tv.xiaoka.live:id/nearbySelectLl",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "android:id/list",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "tv.xiaoka.live:id/reminder_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "tv.xiaoka.live:id/custom_convenient_banner_cbLoopViewPager",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-411-1764951275747.png",
+        "feature": {
+          "text": "毕夜12141eQ请输入昵称IDan无法定位开启定位发现更多精彩获取设备的定位信息由障仅在使用中允许OOQ请输入昵称IDan筛选无法定位开局定位发现更多精彩外和A获取设备的定位信息串异仅在使用中人允许口半夜1214LeQ请输入昵称IDam筛选v无法定位开局定位上友现更多精彩获取设备的定位信息一直播仅在使用中允许",
+          "widgets": [
+            {
+              "text": "获取设备的定位信息",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一直播",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-412-1764951276554.png",
+      "feature": {
+        "text": "半夜1214蔬妆3合区回乡Q请输入昵称IDCN筛选v页面加载失败轻点屏幕刷新半夜1214上四书六会区回Q请输入昵称ID国4饥选也4页面加载失败轻氮屏幕刷新半夜1214可妆2仿区加CO请输入昵称ID国4饥选人站3页面加载失败轻氮屏幕刷新发现同城关注消息我的",
+        "widgets": [
+          {
+            "text": "请输入昵称/ID",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_search",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "登录/注册",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/butLogin",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "同城",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "筛选",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/nearbyLocationTv",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "页面加载失败，轻点屏幕刷新",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "tv.xiaoka.live:id/custom_convenient_banner_cbLoopViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "tv.xiaoka.live:id/iv_create",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/index_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/find_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/follow_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/private_chat_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/mine_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "tv.xiaoka.live:id/nearbySelectLl",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "android:id/list",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "tv.xiaoka.live:id/reminder_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "tv.xiaoka.live:id/custom_convenient_banner_cbLoopViewPager",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 6,
+    "ui_before_grant": {
+      "file": "step-1-1764950881179.png",
+      "feature": {
+        "text": "于书六会乡于",
+        "widgets": [
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-3-1764950883904.png",
+        "feature": {
+          "text": "半夜1208Q请输入昵称IDCN生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许请输入昵称IDCN移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许口半夜1208C请输入昵称ID国4读写设备上的照片及文件一直播设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一直播",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-4-1764950884641.png",
+      "feature": {
+        "text": "书归合国玫乡请输入昵称ID区十亿Co为呵护未成年人健康成长一直播特别推出青少年模式该模式下部分功能无法正常使用。请监护人主动选树人入青少年模式站品八半夜1208国囊必5会国台和请输入昵称ID国4Se必为呵护未成年人健康成长一直播特别推出青少年模式该模式下部分功能无法正常使用。请监护人主动选全失主炉定入青少年模式书冯浊会固儿C请输入昵称ID国45-昌坝他SereAL为呵护未成年人健康成长一直播特别推出青少年模式该模式下部分功能无法正常使用。请监护人主动选树人入青少年模式确定e4关口人",
+        "widgets": [
+          {
+            "text": "为呵护未成年人健康成长，一直播特别推出青少年模式，该模式下部分功能无法正常使用。请监护人主动选择，并设置监护密码",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "进入青少年模式",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_enter",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "确定",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_ok",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/root_view",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 7,
+    "ui_before_grant": {
+      "file": "step-134-1764951027828.png",
+      "feature": {
+        "text": "半夜1210囊妆3合区回乡Q请输入昵称IDCN页面加载失败轻点屏幕刷新半夜1210蔬六会区回Q请输入昵称ID国442页面加载失败轻氮屏幕刷新发现同城关注消息我的半夜1210书吧吕伟区回CO请输入昵称ID国4人站3页面加载失败轻氮屏幕刷新发现同城关注消息我的",
+        "widgets": [
+          {
+            "text": "请输入昵称/ID",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_search",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "登录/注册",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/butLogin",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "同城",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "页面加载失败，轻点屏幕刷新",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "tv.xiaoka.live:id/custom_convenient_banner_cbLoopViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "tv.xiaoka.live:id/iv_create",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/index_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/find_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/follow_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/private_chat_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/mine_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "android:id/list",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "tv.xiaoka.live:id/reminder_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-137-1764951032001.png",
+        "feature": {
+          "text": "替夜12101eQ请输入昵称IDON4-2页面加载失败轻点屏幕刷新下G获取手机号及通话状态一直播O绊夜12101e天人Q请输入昵称IDan可一过ES页面加载失败轻点屏幕刷新一G获取手机号及通话状态一直播口举夜1210LeQ请输入昵称ID页面加载失败轻点屏幕刷新一一G获取手机己及通话状态一直播口",
+          "widgets": [
+            {
+              "text": "获取手机号及通话状态",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button_1",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一直播",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-138-1764951032694.png",
+      "feature": {
+        "text": "半夜1210蔬妆3合区回乡Q请输入昵称IDCN页面加载失败轻点屏幕刷新半夜1210书六会区回Q请输入昵称ID国442页面加载失败轻氮屏幕刷新发现同城关注消息我的半夜1210书吧吕伟区回CO请输入昵称ID国4人站3页面加载失败轻氮屏幕刷新发现同城关注消息我的",
+        "widgets": [
+          {
+            "text": "请输入昵称/ID",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_search",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "登录/注册",
+            "class": "android.widget.Button",
+            "resource-id": "tv.xiaoka.live:id/butLogin",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "同城",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "关注",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "消息",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "tv.xiaoka.live:id/tv_tab_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "页面加载失败，轻点屏幕刷新",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.TabHost",
+            "resource-id": "android:id/tabhost",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v4.view.ViewPager",
+            "resource-id": "tv.xiaoka.live:id/custom_convenient_banner_cbLoopViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "tv.xiaoka.live:id/iv_create",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/index_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/find_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/follow_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/private_chat_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "tv.xiaoka.live:id/mine_btn",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.support.v7.widget.RecyclerView",
+            "resource-id": "android:id/list",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "tv.xiaoka.live:id/reminder_content",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,403 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-603-1764944368727.png",
+      "feature": {
+        "text": "学习目标用简单的材料就能做一个好玩又有趣的手偶做完之后还可以跟小伙伴一起表爱听吧-快乐夏es品红首页发现我的山O八学习目标用简单的材料就能做一个好玩又有趣的手偶做完之后还可以跟小伙伴一起表爱听吧-快乐学习目标用简单的材料融能做一个好玩又有趣的手偶做完之后还可以跟小伙伴一起表爱听吧快乐夏天呈地轧首页发现我的用吕人",
+        "widgets": [
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "发现",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "我的",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "游客",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/tv_user_name",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "捉泥鳅",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/tv_title",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "爱听吧-快乐夏天",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/tv_desc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.tianying.xuequyouer.activity:id/fgmt_tab_home",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "今日课程: 快乐的小青",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/tv_title",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "全部课程",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/tv_recommend_all",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "学习目标: 用简单的材料就能做一个好玩又有趣的手偶，做完之后还可以跟小伙伴一起表演小青蛙的故事，真是一举多得呢！",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/tv_desc",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/recyclerview",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.tianying.xuequyouer.activity:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.tianying.xuequyouer.activity:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.tianying.xuequyouer.activity:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/iv_avatar",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/iv_today_task",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/iv_scan",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.tianying.xuequyouer.activity:id/layout_root",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.tianying.xuequyouer.activity:id/layout_pic",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.tianying.xuequyouer.activity:id/layout_root",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 0.6
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-605-1764944370411.png",
+        "feature": {
+          "text": "囊蚊2会区加乡拍摄照片和录制视频学趣乐园12拒绝本次运行允许仅在使用中允许口囊六3会区加搬担摄照片和录制视频学趣乐园112拒绝本次运行允许仅在使用中人允许口囊并会区加乡4扫一扫担摄照片和录制钢频学趣乐园12拒绝本次运行允仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "拍摄照片和录制视频",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "学趣乐园(1/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-606-1764944371055.png",
+        "feature": {
+          "text": "囊蚊2会区加乡一一全读写设备上的照片及文件学趣乐园22拒绝始终允许仅在使用中允许山O八囊六3会区加搬一一四读写设备上的照片及文件学趣乐园22拒绝始终允许仅在使用中人允许册口人囊并会区加乡4扫一扫一四读写设备上的照片及文件学趣乐园22拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "学趣乐园(2/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-607-1764944372199.png",
+      "feature": {
+        "text": "晚上1019四国司囊妆2会GD乡扫一扫将二维码条形码放入框内即可自动扫措者响必山O八了晚上1019四园下囊览会GD和扫一扫覃三吕晚上1019四园瑟事六会Go乡扫一扫三",
+        "widgets": [
+          {
+            "text": "将二维码/条形码放入框内,即可自动扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageButton",
+            "resource-id": "com.tianying.xuequyouer.activity:id/ib_head_back",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "扫一扫",
+            "class": "android.widget.TextView",
+            "resource-id": "com.tianying.xuequyouer.activity:id/tv_head_center_title",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  }
+]

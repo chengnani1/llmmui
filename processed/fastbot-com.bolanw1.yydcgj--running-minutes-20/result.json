@@ -1,0 +1,3993 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-29-1764958398946.png",
+      "feature": {
+        "text": "音频拼接音频裁剪音频提取音频转码录音机也热门功能-本-一mr上由入一今aa加一大首页文件库通讯录工具设置他热门功能-全-一smr片首页文件库通讯录工具设置客热门应用四昌国八人音频拼接音频裁荔音频提取音频转码录音机从热门功能-全一上地mr人入今占口站区首页文件库通讯录工具设置",
+        "widgets": [
+          {
+            "text": "文件库",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "通讯录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "录音机",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "永久保存语音文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "云端文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "工具",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "工具",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "设置",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "热门应用",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "热门功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.bolanw1.yydcgj:id/home_hvp",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "音频拼接",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频裁剪",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频提取",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频转码",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "我要录制",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "专业语音编辑工具",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "上传云端",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_splicing",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_clipping",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_extraction",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_to_mp3",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_recorder",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/img_want_to_record",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/img_upload_voice_file",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_clear_wechat",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_cloud",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-31-1764958400593.png",
+        "feature": {
+          "text": "ESEDBEBETSEGYQQC请输入文件名全读写设备上的照片及文件语音导出工具拒绝始终允许仅在使用中允许山O八EEEDGCC6QQC请输入文件名四读写设备上的照片及文件语音导出工具拒绝始终允许仅在使用中人允许册口人EDSBQET3SkQQCC请输入文件名四读与设备上的照上请及文件语音导出工具拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "语音导出工具",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-32-1764958401281.png",
+      "feature": {
+        "text": "4煞6昌C请输入文件名为你写诗mp3000445109MB伴奏98c052mp3000210101MB伴奏bbe790mp3000311109MB告白气球mp30003535584254KB山O八GEEam4QQC请输入文件名为你写诗mp3000445109MB伴奏98c052mp3000210101MB伴奏bbe790mp3000311109MB告白气球mp3000355584234KB册口人EapQQCC请输入文件名为你写诗mp3000445109MB伴奏98c052mp3UU00210101MB伴奏bbe790mp30003511109MB告白气球mp30U0053584254KB用吕人",
+        "widgets": [
+          {
+            "text": "请输入文件名",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_et",
+            "depth": 1,
+            "score": 15.0
+          },
+          {
+            "text": "视频加载失败",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "更多",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/xui_tab_segment_item_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/xui_tab_segment_item_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "QQ",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/xui_tab_segment_item_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "为你写诗.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "00:04:45",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "1.09MB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "伴奏_98c052.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "00:02:10",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "1.01MB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "伴奏_bbe790.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "00:03:11",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "1.09MB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "告白气球.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "00:03:35",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "842.34KB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/back_bt",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/surface_container",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/poster",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ProgressBar",
+            "resource-id": "com.bolanw1.yydcgj:id/bottom_progress",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/start",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.bolanw1.yydcgj:id/tab_ts",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_rv",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-345-1764958691446.png",
+      "feature": {
+        "text": "音频拼接音频裁剪音频提取音频转码录音机也热门功能aa首页文件库通讯录工具音频拼接音频裁剪音频提取音频转码录音机人热门功能t一一aa作首页文件库通讯录工具客热门应用四田回全国音频拼接音频裁荔音频提取音频转码录音机从热门功能-一首页文件库通讯录工具",
+        "widgets": [
+          {
+            "text": "文件库",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "通讯录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "录音机",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "永久保存语音文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "云端文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "工具",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "工具",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "设置",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "热门应用",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "热门功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.bolanw1.yydcgj:id/home_hvp",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "音频拼接",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频裁剪",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频提取",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频转码",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "我要录制",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "专业语音编辑工具",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "上传云端",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_splicing",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_clipping",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_extraction",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_to_mp3",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_recorder",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/img_want_to_record",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/img_upload_voice_file",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_clear_wechat",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_cloud",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-348-1764958694667.png",
+        "feature": {
+          "text": "6录制进行通话录音或本地录音语音导出工具12拒绝本次运行允许仅在使用中允许OO录制书六会乡进行通话录音或本地录音语音导出工具12拒绝本次运行允仅在使用中人允许册口人GC录制囊并会区加入进行通话录音或本地录音语音导出工具12拒绝本次运行允仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "进行通话录音或本地录音",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "语音导出工具(1/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      },
+      {
+        "file": "step-349-1764958695421.png",
+        "feature": {
+          "text": "6录制读写设备上的照片及文件语音导出工具22拒绝仅在使用中允许山O八录制读与设备上的照片及文件语音导出工具22拒绝始终允许仅在使用中人允许册口人GC录制读写设备上的照片及文件语音导出工具22拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "语音导出工具(2/2)",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-350-1764958696121.png",
+      "feature": {
+        "text": "录制0000OO哄天得山O八6E0000加O芷性征册口人Q录制0000QGO了在4种用吕人",
+        "widgets": [
+          {
+            "text": "录制",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_title_text",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "暂停中",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_miaoshu",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/iv_title_left",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "00:00",
+            "class": "android.widget.Chronometer",
+            "resource-id": "com.bolanw1.yydcgj:id/timerView",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/iv_suspended_close",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/img_record_status",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/iv_suspended_save",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 2,
+    "ui_before_grant": {
+      "file": "step-1201-1764959527935.png",
+      "feature": {
+        "text": "音频拼接音频裁剪音频提取音频转码录音机也热门功能aaa首页文件库通讯录工具音频拼接音频裁剪音频提取音频转码录音机人热门功能t一一aa作首页文件库通讯录工具客热门应用四田回全国音频拼接音频裁荔音频提取音频转码录音机从热门功能-一首页文件库通讯录工具",
+        "widgets": [
+          {
+            "text": "文件库",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "通讯录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "录音机",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "永久保存语音文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "云端文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "工具",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "工具",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "设置",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "热门应用",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "热门功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.bolanw1.yydcgj:id/home_hvp",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "音频拼接",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频裁剪",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频提取",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频转码",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "我要录制",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "专业语音编辑工具",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "上传云端",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_splicing",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_clipping",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_extraction",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_to_mp3",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_recorder",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/img_want_to_record",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/img_upload_voice_file",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_clear_wechat",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_cloud",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-1203-1764959529737.png",
+        "feature": {
+          "text": "凌晨252国BEBETSEYQQC请输入文件名全读写设备上的照片及文件语音导出工具拒绝始终允许仅在使用中允许山O八eEEEDGCC6QQC请输入文件名四读写设备上的照片及文件语音导出工具拒绝始终允许仅在使用中人允许册口人ARCNDoEEEDKC9事六3CC请输入文件名四读与设备上的照上请及文件语音导出工具拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "语音导出工具",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-1204-1764959530380.png",
+      "feature": {
+        "text": "4煞6昌C请输入文件名为你写诗mp3吕000445109MB伴奏98c052mp3000210101MB伴奏bbe790mp3000311109MB告白气球mp3吕000353584234KB山O八ED4QQC请输入文件名为你写诗mp3000445109MB伴奏98c052mp3000210101MB伴奏bbe790mp3000311109MB告白气球mp3000355284254KB册口人epQQCC请输入文件名为你写诗mp3000445109MB伴奏98c052mp3UU00210101MB伴奏bbe790mp30003511109MB告白气球mp3000535284254KB用吕人",
+        "widgets": [
+          {
+            "text": "请输入文件名",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_et",
+            "depth": 1,
+            "score": 15.0
+          },
+          {
+            "text": "视频加载失败",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "共0个音频\n拼接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_next",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "更多",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/xui_tab_segment_item_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/xui_tab_segment_item_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "QQ",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/xui_tab_segment_item_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "为你写诗.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "00:04:45",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "1.09MB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "伴奏_98c052.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "00:02:10",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "1.01MB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "伴奏_bbe790.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "00:03:11",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "1.09MB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "告白气球.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "00:03:35",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "842.34KB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/back_bt",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/surface_container",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/poster",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ProgressBar",
+            "resource-id": "com.bolanw1.yydcgj:id/bottom_progress",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/start",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.bolanw1.yydcgj:id/tab_ts",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_rv",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 3,
+    "ui_before_grant": {
+      "file": "step-326-1764958671149.png",
+      "feature": {
+        "text": "ED导出记录作品外部导入7文件夹为空哦盖播放地址无效今La加一柳首页文件库通讯录工具设置导出记录作品外部导入7文件夹为空哦和一播放地址无效9愉1点加四町首页文件库通讯录工具二口导出记录作品CO一一一1。O一一三Se文件夹为空哦。播放地址无效首页文件库通讯录工具设置一加",
+        "widgets": [
+          {
+            "text": "文件库",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "文件库",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "通讯录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "录音",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "视频加载失败",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "工具",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "设置",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.bolanw1.yydcgj:id/home_hvp",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "导出记录",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "作品",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "外部导入",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/surface_container",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/poster",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ProgressBar",
+            "resource-id": "com.bolanw1.yydcgj:id/bottom_progress",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/start",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/back",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.yydcgj:id/recycler_file_library",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/img_import",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.bolanw1.yydcgj:id/tab_layout",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-327-1764958671964.png",
+        "feature": {
+          "text": "C请输入文件名全信和站生生QQ全读写设备上的照片及文件语音导出工具拒绝八厂人6经元十仅在使用中人允许OOCC请输入文件名和仙信中和让QQ四读写设备上的照片及文件语音导出工具拒绝八厂人x6和经元圭仅在使用中人允许口CC请输入文件名Ga四读与设备上的照上请及文件语音导出工具拒绝八厂x6经克填仅在使用中允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "语音导出工具",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-328-1764958672629.png",
+      "feature": {
+        "text": "4曙肛轩C请输入文件名为你写诗mp3000445109MB伴奏98c052mp3000210101MB伴奏bbe790mp3000311109MB告白气球mp30003535584254KB人AAA括放地址无效山O八Em4QQC请输入文件名为你写诗mp3000445109MB伴奏98c052mp3000210101MB伴奏bbe790mp3000311109MB告白气球mp3000355584234KB人撮放地址无效册口人EDQQCC请输入文件名为你写诗mp3000445109MB伴奏98c052mp3UU00210101MB伴奏bbe790mp30003511109MB告白气球mp30U0053584254KB一一撮放地址无效用吕人",
+        "widgets": [
+          {
+            "text": "请输入文件名",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_et",
+            "depth": 1,
+            "score": 15.0
+          },
+          {
+            "text": "视频加载失败",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "更多",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/xui_tab_segment_item_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/xui_tab_segment_item_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "QQ",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/xui_tab_segment_item_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "为你写诗.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "00:04:45",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "1.09MB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "伴奏_98c052.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "00:02:10",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "1.01MB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "伴奏_bbe790.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "00:03:11",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "1.09MB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "告白气球.mp3",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_name",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "00:03:35",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_time",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "842.34KB",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_size",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/back_bt",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/surface_container",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/poster",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ProgressBar",
+            "resource-id": "com.bolanw1.yydcgj:id/bottom_progress",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/start",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.bolanw1.yydcgj:id/tab_ts",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_rv",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_bg",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_play",
+            "depth": 3,
+            "score": 1.7999999999999998
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 4,
+    "ui_before_grant": {
+      "file": "step-377-1764958724686.png",
+      "feature": {
+        "text": "音频拼接音频裁剪音频提取音频转码录音机也热门功能-本-一nr由六今与四一奏首页文件库通讯录工具设置音频拼接音频裁剪音频提取音频转码录音机人热门功能t一一-一ar由入今各四一奏首页文件库通讯录工具设置客热门应用四田回全国音频拼接音频裁荔音频提取音频转码录音机从热门功能-一snr片兮总四奏首页文件库通讯录工具设置",
+        "widgets": [
+          {
+            "text": "文件库",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "通讯录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "录音机",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "永久保存语音文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "云端文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "工具",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "工具",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "设置",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "热门应用",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "热门功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.bolanw1.yydcgj:id/home_hvp",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "音频拼接",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频裁剪",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频提取",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频转码",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "我要录制",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "专业语音编辑工具",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "上传云端",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_splicing",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_clipping",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_extraction",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_to_mp3",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_recorder",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/img_want_to_record",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/img_upload_voice_file",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_clear_wechat",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_cloud",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-378-1764958725476.png",
+        "feature": {
+          "text": "读写设备上的照片及文件语音导出工具拒绝仅在使用中允许山O八读写设备上的照片及文件语音导出工具拒绝始终允许仅在使用中人允许册口人似信季国竹QQCC请输入文件名读与设备上的照上请及文件语音导出工具拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "语音导出工具",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-379-1764958726090.png",
+      "feature": {
+        "text": "4煞6昌C请输入文件名7文件夹为空哦山O八EEzDG人2QQC请输入文件名CO瑟1。ol定三4文件夹为空哦册口人EapQQ囊并会GO和CC请输入文件名二国一。o思三8文件夹为空哦用吕人",
+        "widgets": [
+          {
+            "text": "请输入文件名",
+            "class": "android.widget.EditText",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_et",
+            "depth": 1,
+            "score": 15.0
+          },
+          {
+            "text": "视频加载失败",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "更多",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/xui_tab_segment_item_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "微信",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/xui_tab_segment_item_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "QQ",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/xui_tab_segment_item_id",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/back_bt",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/surface_container",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/poster",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ProgressBar",
+            "resource-id": "com.bolanw1.yydcgj:id/bottom_progress",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/start",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/back",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.HorizontalScrollView",
+            "resource-id": "com.bolanw1.yydcgj:id/tab_ts",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.bolanw1.yydcgj:id/voice_rv",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.RelativeLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 5,
+    "ui_before_grant": {
+      "file": "step-278-1764958623932.png",
+      "feature": {
+        "text": "登录注册点击登录获取相关权益嗓新手教程合意见反馈起立即分享了他联系客服客服QQ209399552转x视频教程难趣语音转发蝎微信账号管理今占加栓首页文件库通讯录工具设置三O登录注册点击登录获取相关权益琶新手教程个意见反馈晤。联系客服客服QQ2098399552赎视频教程并趣语音转发驶微信账号管理今占加杂首页文件库通讯录工具设置三吕登录注册点击登录获取相关权益到新手教程合意见反馈X和联系客服客服QQ209399552号X视频教程Xe趣语音转发遍微信账号管理今占四一困首页文件库通讯录工具设置三",
+        "widgets": [
+          {
+            "text": "文件库",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "通讯录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "工具",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "设置",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "新手教程",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_fish_tutorial",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "意见反馈",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_feed_back",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.bolanw1.yydcgj:id/home_hvp",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "登录/注册",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_login",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "点击登录获取相关权益",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_login_info",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "VIP会员",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "享会员专属福利",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "刷新语音",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "清理空目录",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "导出记录",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "立即分享",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "联系客服",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "客服QQ:209399552",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_phone_number",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "视频教程",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "趣语音转发",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "微信账号管理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.bolanw1.yydcgj:id/cl_login",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_go_vip",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_refresh_voice",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_clean_empty_directory",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_export_record",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_share_app",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_contact",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_video_manual",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_funny_voice",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_wechat_account_mgr_enter",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/img_user_icon",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/img_copy",
+            "depth": 5,
+            "score": 0.6
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-279-1764958624641.png",
+        "feature": {
+          "text": "登录注册点击登录获取相关权益琶新手教程合意见反馈读写设备上的照片及文件语音导出工具拒绝仅在使用中允许山O八登录注册点击登录获取相关权益琶新手教如个意见反馈读写设备上的照片及文件语音导出工具拒绝仅在使用中人允许册口人登录注册点击登录获取相关权益LE新手教程外意见反馈孚会员专属福利县读与设备上的照上请及文件语音导出工具拒绝仅在使用中人允许",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "语音导出工具",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-280-1764958625290.png",
+      "feature": {
+        "text": "囊妆3会登录注册点击登录获取相关权益琶新手教程合意见反馈到联系客服客服QQ209399552赎虹趣语音转发蝎微信账号管理吕上日它姑首页文件库通讯录工具设置呈加囊几会医生登录注册点击登录获取相关权益五新手教程个意见反馈明联系客服客服QQ209399552屿视频教程喇直语音转发田微信账号管理吕与日疡郴首页文件库通讯录工具设置三加登录注册点击登录获取相关权益5新手教程合意见反馈坚联系客服客服QQ209399552转视频教程e趣语音转发NSW名微信人账号管理上与日它枪首页文件库通讯录工具壕秆三加",
+        "widgets": [
+          {
+            "text": "您确认清理空目录吗？",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/dialog_content",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_cancel",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "确认",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_determine",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 6,
+    "ui_before_grant": {
+      "file": "step-386-1764958733820.png",
+      "feature": {
+        "text": "音频拼接音频裁剪音频提取音频转码录音机也热门功能-本-一nr由六今与四一奏首页文件库通讯录工具设置音频拼接音频裁剪音频提取音频转码录音机人热门功能t一一-一ar由入今各四一奏首页文件库通讯录工具设置客热门应用四田回全国音频拼接音频裁荔音频提取音频转码录音机从热门功能-一snr片兮总四奏首页文件库通讯录工具设置",
+        "widgets": [
+          {
+            "text": "文件库",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "通讯录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 15.8
+          },
+          {
+            "text": "录音机",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "永久保存语音文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "云端文件",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 14.6
+          },
+          {
+            "text": "工具",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "首页",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "工具",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "设置",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_title",
+            "depth": 3,
+            "score": 3.8
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "热门应用",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "热门功能",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.bolanw1.yydcgj:id/home_hvp",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "音频拼接",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频裁剪",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频提取",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "音频转码",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "我要录制",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "专业语音编辑工具",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "上传云端",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_container",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.bolanw1.yydcgj:id/fixed_bottom_navigation_icon",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_splicing",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_clipping",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_extraction",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_audio_to_mp3",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_recorder",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/img_want_to_record",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/img_upload_voice_file",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_clear_wechat",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.LinearLayout",
+            "resource-id": "com.bolanw1.yydcgj:id/ll_cloud",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-390-1764958737120.png",
+        "feature": {
+          "text": "进行通话录音或本地录音仅在使用中允许OO进行通话录音或本地录音册口人进行通话录音或本地录音三",
+          "widgets": [
+            {
+              "text": "进行通话录音或本地录音",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "语音导出工具",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-391-1764958737876.png",
+      "feature": {
+        "text": "囊六2会EE3ED会热门应用Q已到全于交大由上基二坟nSD卡语音询表请点击授向允许五立他热门功能录取消授权进行通晶话录音或本地录音7一一语音导出工具一一您微信清理本次运行允许仅在使用中人允许首页文件库通讯录工具设置三口会热门应用O音频拼根保部状呈1千叔直联细天生多扫捧音机SD卡语音询表请点击授权按钮允许王立已出工目法党v多热门功能孙取消拔权入4一人进行通话录音或本地录音1一人一语音导出工具一你微信清理本次运行允仅在使用中允许oa首页文件库通讯录工具设阅三口安热门应用B必针全全音频拼搜保后红1庆状质蒋鲁央和多扫和音机SD卡语音询表请点击授权按钮允许人RE-受权AN一4进行通话录音或本地录音2一语音导出工具-一-拒绝-1你微信清理本次运行允许-仅在使用中人允许首页文件库通讯录工具设吊三口",
+        "widgets": [
+          {
+            "text": "为保证安卓11及以上系统能正常扫描SD卡语音列表，请点击授权按钮允许语音导出工具访问/Android/data目录",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_dialog_content",
+            "depth": 2,
+            "score": 10.4
+          },
+          {
+            "text": "权限申请",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/tv_dialog_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "取消",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/btn_dialog_left",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "授权",
+            "class": "android.widget.TextView",
+            "resource-id": "com.bolanw1.yydcgj:id/btn_dialog_right",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "android.widget.ScrollView",
+            "resource-id": "com.bolanw1.yydcgj:id/nsv_content_container",
+            "depth": 1,
+            "score": 3.0
+          }
+        ]
+      }
+    }
+  }
+]

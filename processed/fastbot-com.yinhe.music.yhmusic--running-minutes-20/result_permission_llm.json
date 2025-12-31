@@ -1,0 +1,36 @@
+[
+  {
+    "chain_id": 0,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-68-1764944495929.png",
+      "granting": [
+        "step-74-1764944503195.png"
+      ],
+      "after": "step-75-1764944503792.png"
+    }
+  },
+  {
+    "chain_id": 1,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-96-1764944531034.png",
+      "granting": [
+        "step-98-1764944533073.png",
+        "step-99-1764944534012.png"
+      ],
+      "after": "step-100-1764944534661.png"
+    }
+  },
+  {
+    "chain_id": 2,
+    "predicted_permissions": [],
+    "files": {
+      "before": "step-56-1764944484008.png",
+      "granting": [
+        "step-58-1764944485616.png"
+      ],
+      "after": "step-59-1764944486215.png"
+    }
+  }
+]

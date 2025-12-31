@@ -1,0 +1,2976 @@
+[
+  {
+    "chain_id": 0,
+    "ui_before_grant": {
+      "file": "step-1108-1764949459906.png",
+      "feature": {
+        "text": "事归3会区加乡一键WiFi连接WiFi已连接ouruee5c有ED个慌多各AR网络测速防足网安全监沉附近WiFi会XJTUGUEST-cf相免费连接可能需要网页认证会XJTUSTU-cf相免费连接可能需要网页认证免费连续全XJTUWLANcf4免费连接可能需要网页认证会浊tu1x2智能连接会laofan2cT知能连接全键加速wiFi机WiFi清理三OO一键WiFi连接WiFi已连接ouTUEIE-5G到事蚁2会乡WIFI加速网络测速防踏网安全监测手机加速附近WiFi会XJTUGUEST可能需要网页认证df4免费连接会XJTUSTU可能需要网页认证免费连接会XJTUWLAN激fov上上上上上cf免费连接可能需要网页认证会xjtu1x2智能连接会laofan能连接去键加速WiFiWiFi清理三口事六会区加乡一键WiFi连接WiFi已连接amCE人不人日4网络测速防路网安全监测手机加速附近WiFi合XJTUGUESTcf免费连接可能需要网页认证免费连会XJTUSTUcf免费连接可能需要网页认证免费连全XJTUWLANdc4免费连接可能需要网页认证会Xjtu1xTS会laofanTS长鲁加速wiFi本WiFi清理一加",
+        "widgets": [
+          {
+            "text": "一键加速WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvTabWifiBig",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键WiFi连接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeWifiAppName",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "WiFi已连接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiConnectStatus",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTUEIE_5G",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiConnectName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "分享WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvShareWifiPwd",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "网络延时",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvNetworkDelayTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "优化延时",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvOptimizationNetworkDelayTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "51MS",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvNetworkDelay",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "34%",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvOptimizationNetworkDelay",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "WIFI加速",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnWifiHomeSpeedUp",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "附近WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiNearbyTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_GUEST",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_STU",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_WLAN",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "xjtu1x",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "智能连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "laofan",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "智能连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tabViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_wifi",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_clean",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "网络测速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeNetworkSpeedTest",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "防蹭网",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeAntiRubbingNet",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "安全监测",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeSafetyMonitoring",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomePhoneAcceleration",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/ivHomeWifiSetting",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/rvHomeFunction",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeNetworkSpeedTest",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeAntiRubbingNet",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeSafetyMonitoring",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomePhoneAcceleration",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-1111-1764949462365.png",
+        "feature": {
+          "text": "晚上1144图四晚上1144图回史上1144国占书冯浊会大儿",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键WiFi连接",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-1112-1764949463108.png",
+      "feature": {
+        "text": "KE一键WiFi连接一键WiFi连接免费WiFi热点正在识别中一键WiFi连接",
+        "widgets": [
+          {
+            "text": "免费WiFi热点正在识别中…",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_prepare",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 1,
+    "ui_before_grant": {
+      "file": "step-1119-1764949468040.png",
+      "feature": {
+        "text": "地JEAN衬KE一键WiFi连接三回一键WiFi连接目回免费WiFi热点正在识别中一键WiFi连接目回",
+        "widgets": [
+          {
+            "text": "免费WiFi热点正在识别中…",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_prepare",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-1120-1764949468760.png",
+        "feature": {
+          "text": "同一键WiF面清理手机力设置访问相册和社交应用深度加速定期检查磁盘优化空间拒给微信清理深度清理微信垃始终允这Wi公在使用WiFi上2仿回国乡兮免费WiFi热点正在识和一键WiFiCO读写设备上的一键WiFi面清理手机力设置访问相册和社交应用深度加束定期检查磁盘优化空间拒绝微信清理深度清理微信垃始终各书妆人会故国国一键WiFi妈e丰晚上1144图和TEST六四读写设备上的一键WiF面清理手机设置访问相册和社交应用深度加速定期检查磁盘优化空间FE兮微信清理人免费WiFi热点正在识和加速WA公在使用KE一键WiFiWiFi上回",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键WiFi连接",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-1121-1764949469455.png",
+      "feature": {
+        "text": "晚上1144拓心经常清理让手机洁净如新和全面清理手机加速手机降温深度加速国OO定期检查磁盘优化空间全sz微信清理键清理深度清理微信垃圾聊天更流畅在sa帮全键加速wiFi洛Wiri清理三O晚上1144拓也经常清理让手机洁净如新中全面清理手机加速手机降温深度加速二定期检查磁盘优化空间代欠法理微信清理键清理深度清理微信垃圾聊天更流畅息saCEWiFi了疯人三口必2会GD晚上1144ss忆力全面清理手机加速手机降温深度加速国OO定期检查磁盘优化空间环运汪微信清理键清理深度清理微信垃圾聊天更流畅所全人键加速wiFi一WiFi清理一口",
+        "widgets": [
+          {
+            "text": "一键加速WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvTabWifiBig",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tabViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_wifi",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_clean",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "经常清理让手机洁净如新",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_status",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "深度加速",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "定期检查磁盘，优化空间",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "一键清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_home_deep_clean",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "深度清理微信垃圾，聊天更流畅",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "一键清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_home_wx_clean",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "通知栏清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/parent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageButton",
+            "resource-id": "com.wifi.yjwifilj1scma:id/ib_permission_warn",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "快捷清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_function_name",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "点击扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_function_des",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "全面清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/iv_home_square_title1",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/iv_home_square_title2",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/iv_home_square_title3",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/rv_home_clean",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/rv_home_fast_clean",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/cv_home_square_full_clean",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/cv_home_square_phone_speed_up",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/cv_home_square_phone_cooling",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_circle_outer",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_circle_inner",
+            "depth": 7,
+            "score": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 2,
+    "ui_before_grant": {
+      "file": "step-62-1764948366515.png",
+      "feature": {
+        "text": "一键WiFi连接WiFi已连接事归3会区加乡网络测速防足网安全监测手机加速附近WiFi8网CPP。CPPoO一9需开启定位权限查看附近可使用的免费WiFiET速WiFiWiri章政山O八一键WiFi连接WiFi已连接未获取到WiFi名称3优化延时WIFI加速52MS3796网络测速防路网安全监测加手机加速附近WiFi2一9需开启定位权限查看附近可使用的免费WiFi去键加速WiFiWiFi间匆册口人晚上1126图捍囊六会区加儿一键WiFi连接WiFi已连接未获取到WiFi名称网络延时优化延时替塘网络测速防足网安全监测手机加速附返WiFi8四ON。CEae需开启定位权限查看附近可使用的免费WiFi全键加速WiFiWiFi章激用吕人",
+        "widgets": [
+          {
+            "text": "需开启定位权限，查看附近\n可使用的免费WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_empty_status_des",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "一键加速WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvTabWifiBig",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键WiFi连接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeWifiAppName",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "WiFi已连接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiConnectStatus",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "未获取到WiFi名称",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiConnectName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "网络延时",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvNetworkDelayTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "优化延时",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvOptimizationNetworkDelayTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "52MS",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvNetworkDelay",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "37%",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvOptimizationNetworkDelay",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "WIFI加速",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnWifiHomeSpeedUp",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "附近WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiNearbyTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "开启权限",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btn_turn_on_wi_fi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tabViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_wifi",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_clean",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "网络测速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeNetworkSpeedTest",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "防蹭网",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeAntiRubbingNet",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "安全监测",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeSafetyMonitoring",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomePhoneAcceleration",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/ivHomeWifiSetting",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/rvHomeFunction",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeNetworkSpeedTest",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeAntiRubbingNet",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeSafetyMonitoring",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomePhoneAcceleration",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-64-1764948367979.png",
+        "feature": {
+          "text": "晚上1126图日事归会ED乡GWiFi已连接未获取到WiFi名称CE优化延时WIFI加速52MS5796仆娄急外网络测速防足网安全监测手机加速附近WiFi获取设备的定位信息一键WiFi连接拒绝本次运行允许仅在使用中允许OODTEEY一键WiFi连接人WiFi已连接未获取到WiFi名称网络延时优化延时WIFI加速52MS756仆发外急网络测速防路网安全监测手机加速附近WiFi获取设备的定位信息一键WiFi连接拒绝本次运行允许仅在使用中允许口CEITDOD囊六5会EGG加一键WiFi连接你未获取到WiFi名称ED3EDWIFI加速52MS3796网络测速防中网安全监测手机加速附近WiEi一一获取设备的定位信息一键WiFi连接仅在使用中允许",
+          "widgets": [
+            {
+              "text": "获取设备的定位信息",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一键WiFi连接",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-65-1764948368635.png",
+      "feature": {
+        "text": "晚上1126图日吕囊六会区加乡虽WiFi已连接mmCE网络延时优化延时CEWIFI加速和目员党车湖际党网络测速防足网安全监测附近WiF会XJTUSTU-cf相免费连接可和有要册页会XJTUGUEST-cf相免费连接可能需要网页认证至轨全XJTUWLAN可能需要网页认证df免费连接会XJTUSTU1可能需要网页认证df免费连接全XJTUGUEST1人sin连wipiWiridf免费连接通洒三OO八晚上1126图日-1溃红会区加乡日WiFi已连接XUTUEIE-5GWIFI加速目AAA站贞网络测速防踏网安全监测手机加速附近WiFi全XJTUSTU可能需要网页认证df4免费连接会XJTUGUEST可能需要网页认证免费连接会XJTUWLAN可能需要网页认证免费连接会XJTUSTU1可能需要网页认证免费连接会XJTUGOUEST1候键加速WiFiWiFi费连接泊候ovovov上上上上上入山册口人晚上1126图旧-1囊括会区加儿eWiFi已连接ooTUEE5G合网络延时优化延时WIFI加速IT俱导叫入网络测速防蹄网安全监测手机加速附近WiFi全XJTIUSTU可能需要网页认证d克免费连接全XJTUGUEST可能需要网页认证d克免费连接全XJTUWLAN可能需要网页认证d懈免于连接全XJTUSTUI可能需要网页认证d懈免于连接全XJTUGUEST1dc免费连接全键加速WiFi流WiFi清理三品",
+        "widgets": [
+          {
+            "text": "一键加速WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvTabWifiBig",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键WiFi连接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeWifiAppName",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "WiFi已连接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiConnectStatus",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTUEIE_5G",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiConnectName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "分享WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvShareWifiPwd",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "网络延时",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvNetworkDelayTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "优化延时",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvOptimizationNetworkDelayTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "54MS",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvNetworkDelay",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "37%",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvOptimizationNetworkDelay",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "WIFI加速",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnWifiHomeSpeedUp",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "附近WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiNearbyTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_STU",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_GUEST",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_WLAN",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_STU1",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_GUEST1",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tabViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_wifi",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_clean",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "网络测速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeNetworkSpeedTest",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "防蹭网",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeAntiRubbingNet",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "安全监测",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeSafetyMonitoring",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomePhoneAcceleration",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/ivHomeWifiSetting",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/rvHomeFunction",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeNetworkSpeedTest",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeAntiRubbingNet",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeSafetyMonitoring",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomePhoneAcceleration",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 3,
+    "ui_before_grant": {
+      "file": "step-713-1764949071633.png",
+      "feature": {
+        "text": "经常清理让手机洁净如新图多全面清理手机加速手机降温深度加速定期检查磁盘优化空间内入上微信清理键清理深度清理微信垃圾聊天更流畅在sa通知栏清理键清理智能拦截垃圾信息免除骚扰在sz会可WiFi清理山口八捷清理经常清理让手机洁净如新人全面清理手机加速手机降温深度加速定期检查磁盘优化空间微信清理深度清理微信垃极聊天更流畅通知栏清理键清理智能拦截垃圾信息免除骚扰息sss加议WiFi清理册口人经党清理让手机洁净如新0全面清理手机加速手机降温深度加速国OO定期检查磁盘优化空间从和洁理徽信清理键清理深度清理微信垃圾聊天更流畅二通知栏清理键清理智能拦截垃圾信息免除骚扰息s二公习WiFi洁理用吕人",
+        "widgets": [
+          {
+            "text": "WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tabViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_wifi",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_clean",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "经常清理让手机洁净如新",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_status",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "深度加速",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "定期检查磁盘，优化空间",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "一键清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_home_deep_clean",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "深度清理微信垃圾，聊天更流畅",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "一键清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_home_wx_clean",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "通知栏清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "智能拦截垃圾信息，免除骚扰",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "一键清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_home_toolbar_clean",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/parent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "快捷清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_function_name",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "点击扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_function_des",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "全面清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/iv_home_square_title1",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/iv_home_square_title2",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/iv_home_square_title3",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/rv_home_clean",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/rv_home_fast_clean",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/cv_home_square_full_clean",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/cv_home_square_phone_speed_up",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/cv_home_square_phone_cooling",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_circle_outer",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_circle_inner",
+            "depth": 7,
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-715-1764949073120.png",
+        "feature": {
+          "text": "事归会ED乡隐上1137图目日读写设备上的照片及文件一键WiFi连接生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八冰六3会乡晚上1137图目日读与设备上的照片及文件一键WiFi连接移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许口晚上1137国四日Sw读写设备上的照片及文件一键WiFi连接设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键WiFi连接",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-716-1764949073743.png",
+      "feature": {
+        "text": "事归会医国乡隐上1137图上目全面清理克杂记-人SR-好艇衣VcV2YCO检测到您是高版本系统需要开启应用使用权限内存扫描和系统缓存扫描功能均受限制需要手动开启权限。KEEEB友和首-从AR-煌妈放VcV2YCj检测到您是高版本系统需要开启应用使用权限内存扫描和系统缓存扫描功能均受限制需要手动开启权限。书并会医玫和会清再有-缚NE才妊VYcV2Y检测到您是高版本系统需要开局应用使用权限内存扫描和系统缓存扫描功能均受限制需要手动开司权限。",
+        "widgets": [
+          {
+            "text": "检测到您是高版本系统，需要开启应用使用权限",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_title",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "内存扫描和系统缓存扫描功能均受限制，需要手动开启权限。",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_desc",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "立即设置",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/setting_btn",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 4,
+    "ui_before_grant": {
+      "file": "step-88-1764948390942.png",
+      "feature": {
+        "text": "晚上1126图昌事归3会区加乡一键WiFi连接9WiFi已连接未获取到WiFi名称网络延时优化延时于二2荔网络测速防蹄网安全监测手机加速附近WiFi8eeCPP。CPPoO一9需开启定位权限查看附近可使用的免费WiFi。再按一次退出一键WiFi连接UL全键加速wiFiWiri章政山O八晚上1126图电一键WiFi连接WiFi已连接未获取到WiFi名称网络延时优化延时有于二4236俱数外龟网络测速防路网安全监测手机加速附近WiFi8四CE。CPP29需开启定位权限查看附近可使用的免费WiFi。再按一次退出一键WiFij连接WUGE下WiFi一间匆册口人晚上1126图捍书疾5会区加一键WiFi连接WiFi已连接未获取到WiFi名称WIFI加速CE全发包急网络测速防中网安全监测手机加速附近WiEieeON。CEae需开启定位权限查看附近可使用的免费WiFi开局权限。再按一次退出一键WiFi连接CaWiFi一一一章激用吕人",
+        "widgets": [
+          {
+            "text": "需开启定位权限，查看附近\n可使用的免费WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_empty_status_des",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "一键加速WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvTabWifiBig",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键WiFi连接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeWifiAppName",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "WiFi已连接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiConnectStatus",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "未获取到WiFi名称",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiConnectName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "网络延时",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvNetworkDelayTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "优化延时",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvOptimizationNetworkDelayTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "0MS",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvNetworkDelay",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "42%",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvOptimizationNetworkDelay",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "WIFI加速",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnWifiHomeSpeedUp",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "附近WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiNearbyTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "开启权限",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btn_turn_on_wi_fi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tabViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_wifi",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_clean",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "网络测速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeNetworkSpeedTest",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "防蹭网",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeAntiRubbingNet",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "安全监测",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeSafetyMonitoring",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomePhoneAcceleration",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/ivHomeWifiSetting",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/rvHomeFunction",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeNetworkSpeedTest",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeAntiRubbingNet",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeSafetyMonitoring",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomePhoneAcceleration",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-91-1764948393321.png",
+        "feature": {
+          "text": "事归会ED乡晚上1126图日读写设备上的照片及文件一键WiFi连接生设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许山O八冰六3会乡史上1126图日四读与设备上的照片及文件一键WiFi连接移设置访问相册和社交应用文件v拒绝始终允许仅在使用中人允许口史上1126国目Sw读写设备上的照片及文件一键WiFi连接设置访问相册和社交应用文件v拒绝始终允许仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "读写设备上的照片及文件",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "始终允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "设置访问相册和社交应用文件",
+              "class": "android.widget.TextView",
+              "resource-id": "",
+              "depth": 3,
+              "score": 15.8
+            },
+            {
+              "text": "一键WiFi连接",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.RelativeLayout",
+              "resource-id": "com.lbe.security.miui:id/storage_perm_list",
+              "depth": 2,
+              "score": 12.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-92-1764948394041.png",
+      "feature": {
+        "text": "风上1126经常清理让手机洁净如新图多全面清理手机加速手机降温深度加速国OO定期检查磁盘优化空间全as微信清理键清理深度清理微信垃圾聊天更流畅在sa全可WiFi清理晚上1126让经常清理让手机洁净如新中全面清理手机加速手机降温深度加速二定期检查磁盘优化空间代欠法理微信清理键清理深度清理微信垃圾聊天更流畅息sa全必2会GD晚上1126让力全面清理手机加速手机降温深度加速国OO定期检查磁盘优化空间环运汪微信清理键清理深度清理微信垃圾聊天更流畅外乞公习WiFi洁理用吕人",
+        "widgets": [
+          {
+            "text": "WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tabViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_wifi",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_clean",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "经常清理让手机洁净如新",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_status",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "深度加速",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "定期检查磁盘，优化空间",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "一键清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_home_deep_clean",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "微信清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "深度清理微信垃圾，聊天更流畅",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "一键清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_home_wx_clean",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "通知栏清理",
+            "class": "android.widget.TextView",
+            "resource-id": "",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/parent",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageButton",
+            "resource-id": "com.wifi.yjwifilj1scma:id/ib_permission_warn",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "快捷清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_function_name",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "点击扫描",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_function_des",
+            "depth": 7,
+            "score": 2.0
+          },
+          {
+            "text": "全面清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/iv_home_square_title1",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/iv_home_square_title2",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "手机降温",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/iv_home_square_title3",
+            "depth": 6,
+            "score": 2.0
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/rv_home_clean",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/rv_home_fast_clean",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/cv_home_square_full_clean",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/cv_home_square_phone_speed_up",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/cv_home_square_phone_cooling",
+            "depth": 5,
+            "score": 0.6
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 6,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_circle_outer",
+            "depth": 7,
+            "score": 0.0
+          },
+          {
+            "text": "",
+            "class": "android.view.View",
+            "resource-id": "com.wifi.yjwifilj1scma:id/monitor_circle_inner",
+            "depth": 7,
+            "score": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "chain_id": 5,
+    "ui_before_grant": {
+      "file": "step-658-1764949012682.png",
+      "feature": {
+        "text": "一键WiFi连接WiFi已连接未获取到WiFi名称网络延时优化延时WIFI加速60MS46事归3会区加乡网络测速防踏网安全监测手机加速附近WiFi1++。Fr。LAoO一9需开启定位权限查看附近可使用的免费WiFiET速WiFiWiri章政山O八一键WiFi连接WiFi已连接未获取到WiFi名称网络延时优化延时COwuiFin旭60M4626剑热外息网络测速防足网安全监测手机加速附近WiFi。AAA2二9需开启定位权限查看附近可使用的免费WiFi去键加速WiFiWiFi间匆册口人一键WiFi连接WiFi已连接未获取到WiFi名称囊六会加儿网络延时优化延时WIFI加速0M4076NN网络测速防路网安全监测0手机加速附近WiFi。几一49+。Am9需开启定位权限查看附近可使用的免费WiFi全键加速WiFiWiFi章激用吕人",
+        "widgets": [
+          {
+            "text": "需开启定位权限，查看附近\n可使用的免费WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_empty_status_des",
+            "depth": 4,
+            "score": 15.2
+          },
+          {
+            "text": "一键加速WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvTabWifiBig",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键WiFi连接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeWifiAppName",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "WiFi已连接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiConnectStatus",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "未获取到WiFi名称",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiConnectName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "网络延时",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvNetworkDelayTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "优化延时",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvOptimizationNetworkDelayTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "60MS",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvNetworkDelay",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "46%",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvOptimizationNetworkDelay",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "WIFI加速",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnWifiHomeSpeedUp",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "附近WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiNearbyTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "开启权限",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btn_turn_on_wi_fi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tabViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_wifi",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_clean",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "网络测速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeNetworkSpeedTest",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "防蹭网",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeAntiRubbingNet",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "安全监测",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeSafetyMonitoring",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomePhoneAcceleration",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/ivHomeWifiSetting",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/rvHomeFunction",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeNetworkSpeedTest",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeAntiRubbingNet",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeSafetyMonitoring",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomePhoneAcceleration",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    },
+    "ui_granting": [
+      {
+        "file": "step-659-1764949013458.png",
+        "feature": {
+          "text": "GWiFi已连接未获取到WiFi名称网络延时过G晚上1136国四日事归会ED乡仆娄急外网络测速防足网安全监测手机加速附近WiFi获取设备的定位信息一键WiFi连接拒绝雯尝dl和邓仅在使用中允许山O八一键WiFi连接WiFi已连接未获取到WiFi名称60MS4696企竹名久网络测速防蹦网安全监测手机加速附近WiFi获取设备的定位信息一键WiFi连接拒绝革轩dl守-必仅在使用中人允许册口人一键WiFi连接未获取到WiFi名称WIFI加速60MS网络测速防中网安全监测手机加速附近WiEi获取设备的定位信息一键WiFi连接拒绝堵河风Di呈仅在使用中允许用吕人",
+          "widgets": [
+            {
+              "text": "获取设备的定位信息",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_group_title",
+              "depth": 2,
+              "score": 26.4
+            },
+            {
+              "text": "拒绝",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_deny_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "本次运行允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_onetime_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "仅在使用中允许",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_allow_foreground_only_button",
+              "depth": 1,
+              "score": 21.0
+            },
+            {
+              "text": "一键WiFi连接",
+              "class": "android.widget.TextView",
+              "resource-id": "com.lbe.security.miui:id/permission_applicant",
+              "depth": 2,
+              "score": 14.4
+            },
+            {
+              "text": "",
+              "class": "android.widget.FrameLayout",
+              "resource-id": "",
+              "depth": 0,
+              "score": 3.5999999999999996
+            },
+            {
+              "text": "",
+              "class": "android.widget.ScrollView",
+              "resource-id": "",
+              "depth": 1,
+              "score": 3.0
+            }
+          ]
+        }
+      }
+    ],
+    "ui_after_grant": {
+      "file": "step-660-1764949014164.png",
+      "feature": {
+        "text": "CDEBETSEEY一键WiFi连接9WiFi已连接mmCE网络延时优化延时CEWIFI加速46和目员党车湖际党网络测速防足网安全监测附近WiFi会XJTUGUEST-cf相免费连接可和有要册页会XJTUSTU-cf相免费连接可能需要网页认证至轨全XJTUWLAN可能需要网页认证df免费连接全XJTUGUEST1可能需要网页认证df免费连接会XJTUWLANI人sin连wipiWiridf免费连接通洒三OO八EXSEBETSIEY一键WiFi连接9WiFi已连接WuTUEIE-5G2WIFI加速目AAA站贞网络测速防踏网安全监测手机加速附近WiFi会XJTUGUEST可能需要网页认证df4免费连接会XJTUSTU可能需要网页认证免费连接会XJTUWLAN可能需要网页认证免费连接会XJTUGUEST1可能需要网页认证免费连接会XJTUWLANI1候键加速WiFiWiFi费连接泊候ovovov上上上上上入山三口人CSEBRERTSIEEY一键WiFi连接9WiFi已连接CEBSB合网络延时优化延时WIFI加速59MS46略俱委C音网络测速防足网安全点测手机加速附近WiFi全XJTUGOUESTdf有免费连接可能需要网页认证秽费连接全XJTUSTUdf有免费连接可能需要网页认证免费连接全XJTUWLAN免费连接可能需要网页认证全XJTUGUEST1可能需要网页认证免费连接全XJTUWLANI全键加速WiFiWiFi费连接泊人QvQv目目目入赔三人",
+        "widgets": [
+          {
+            "text": "一键加速WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvTabWifiBig",
+            "depth": 1,
+            "score": 5.0
+          },
+          {
+            "text": "一键WiFi连接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeWifiAppName",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "清理",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tv_name",
+            "depth": 2,
+            "score": 4.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 0,
+            "score": 3.5999999999999996
+          },
+          {
+            "text": "WiFi已连接",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiConnectStatus",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTUEIE_5G",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiConnectName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "分享WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvShareWifiPwd",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "网络延时",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvNetworkDelayTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "优化延时",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvOptimizationNetworkDelayTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "59MS",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvNetworkDelay",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "46%",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvOptimizationNetworkDelay",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "WIFI加速",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnWifiHomeSpeedUp",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "附近WiFi",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiNearbyTitle",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_GUEST",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_STU",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_WLAN",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_GUEST1",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "XJTU_WLAN1",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiName",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "可能需要网页认证",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvWifiStatusDesc",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "免费连接",
+            "class": "android.widget.Button",
+            "resource-id": "com.wifi.yjwifilj1scma:id/btnConnectWifi",
+            "depth": 4,
+            "score": 3.2
+          },
+          {
+            "text": "",
+            "class": "androidx.viewpager.widget.ViewPager",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tabViewPager",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_wifi",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "com.wifi.yjwifilj1scma:id/selector_clean",
+            "depth": 1,
+            "score": 3.0
+          },
+          {
+            "text": "网络测速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeNetworkSpeedTest",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "防蹭网",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeAntiRubbingNet",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "安全监测",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomeSafetyMonitoring",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "手机加速",
+            "class": "android.widget.TextView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/tvHomePhoneAcceleration",
+            "depth": 5,
+            "score": 2.6
+          },
+          {
+            "text": "",
+            "class": "android.widget.ImageView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/ivHomeWifiSetting",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "androidx.recyclerview.widget.RecyclerView",
+            "resource-id": "com.wifi.yjwifilj1scma:id/rvHomeFunction",
+            "depth": 2,
+            "score": 2.4
+          },
+          {
+            "text": "",
+            "class": "android.widget.FrameLayout",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "",
+            "depth": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeNetworkSpeedTest",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeAntiRubbingNet",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomeSafetyMonitoring",
+            "depth": 4,
+            "score": 1.2
+          },
+          {
+            "text": "",
+            "class": "android.view.ViewGroup",
+            "resource-id": "com.wifi.yjwifilj1scma:id/clHomePhoneAcceleration",
+            "depth": 4,
+            "score": 1.2
+          }
+        ]
+      }
+    }
+  }
+]
