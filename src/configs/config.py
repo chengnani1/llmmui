@@ -41,7 +41,9 @@ PROMPT_PERMISSION_NECESSITY_PATH = os.path.join(__module_dir, "prompts", "permis
 PROMPT_PURPOSE_TEXTS_PATH = os.path.join(__module_dir, "prompts", "purpose_texts.txt")
 # 权限使用目的分析prompt的路径
 PROMPT_PERMISSION_USAGE_PATH = os.path.join(__module_dir, "prompts", "permission_usage.txt")
+
 # 权限说明prompt的路径
 PROMPT_PERMISSIONS_INFO_PATH = os.path.join(__module_dir, "prompts", "permissions_info.txt")
+
 # 场景权限映射表的路径
 PERMISSION_MAP_PATH = os.path.join(__module_dir, "permission_map.json")
