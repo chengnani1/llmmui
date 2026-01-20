@@ -18,8 +18,10 @@ from tqdm import tqdm
 # ============================================================
 PROCESSED_ROOT = "/Users/charon/Downloads/code/llmui/llmmui/data/processed"
 
-PRED_FILENAME = "results_scene_llm.json"
+PRED_FILENAME = "results_scene_gpt_5.1.json"
 LABEL_FILENAME = "labels_scene.json"
+
+OUTFILENAME = "evaluation_scene_gpt_5.1.json"
 
 # ============================================================
 #  评估单个 APP
@@ -146,7 +148,7 @@ def evaluate_all():
         "apps": results,
     }
 
-    out_path = os.path.join(PROCESSED_ROOT, "evaluation_scene_v5.json")
+    out_path = os.path.join(PROCESSED_ROOT, OUTFILENAME)
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2, ensure_ascii=False)
 

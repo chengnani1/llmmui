@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-run_rule_judgement_batch.py
+run_rule_judgement.py
 
-批量规则裁决（16 类场景）：
-- 遍历 processed 下所有 fastbot-* APK
-- 对每个 chain 做规则初判
-- 输出 result_rule_judgement.json
-- 最后打印整体统计
+批量规则裁决（16 类场景）
+【修正版】确保 permissions 不会丢
 """
 
 import os
@@ -15,14 +12,14 @@ from collections import defaultdict
 from typing import Dict, List
 
 # =========================
-# 路径配置（按你真实环境）
+# 路径配置
 # =========================
 
 PROCESSED_DIR = "/Users/charon/Downloads/code/llmui/llmmui/data/processed"
-RULE_FILE = "configs/scene_permission_rules_16.json"
+RULE_FILE = "src/configs/scene_permission_rules_16.json"
 
 # =========================
-# 常量定义
+# 常量
 # =========================
 
 CLEARLY_ALLOWED = "CLEARLY_ALLOWED"
@@ -65,7 +62,7 @@ def judge_permission(scene: str, permission: str, rules: Dict) -> str:
 # chain 级裁决
 # =========================
 
-def judge_chain(scene: str, permissions: List[str], rules: Dict) -> Dict:
+def judge_chain(scene: str, permissions: List[str], rules: Dict):
     decisions = {}
     score = 0
 
@@ -90,14 +87,15 @@ def judge_chain(scene: str, permissions: List[str], rules: Dict) -> Dict:
 # =========================
 # 主流程
 # =========================
-
 def main():
     rules = load_scene_rules(RULE_FILE)
 
-    # 全局统计
     total_chains = 0
+    missing_perm_chains = 0
+
+    # 🔢 全局统计
     risk_counter = defaultdict(int)
-    permission_counter = defaultdict(int)
+    permission_decision_counter = defaultdict(int)
 
     apk_dirs = [
         d for d in os.listdir(PROCESSED_DIR)
@@ -105,7 +103,7 @@ def main():
         os.path.isdir(os.path.join(PROCESSED_DIR, d))
     ]
 
-    print(f"📦 检测到 APK 数量: {len(apk_dirs)}\n")
+    print(f"📦 检测到 APK 数量: {len(apk_dirs)}")
 
     for apk in apk_dirs:
         apk_dir = os.path.join(PROCESSED_DIR, apk)
@@ -126,51 +124,60 @@ def main():
 
         for chain_id, scene_item in scene_map.items():
             perm_item = perm_map.get(chain_id)
+
             if not perm_item:
+                missing_perm_chains += 1
                 continue
 
+            permissions = (
+                perm_item.get("predicted_permissions")
+                or perm_item.get("true_permissions")
+                or []
+            )
+
             scene = scene_item.get("predicted_scene")
-            permissions = perm_item.get("predicted_permissions", [])
+            intent = scene_item.get("intent")
 
             decisions, overall = judge_chain(scene, permissions, rules)
+
+            # 🔢 统计
+            risk_counter[overall] += 1
+            for d in decisions.values():
+                permission_decision_counter[d] += 1
 
             results.append({
                 "chain_id": chain_id,
                 "scene": scene,
-                "intent": scene_item.get("intent"),
+                "intent": intent,
                 "permissions": permissions,
                 "permission_decisions": decisions,
                 "overall_rule_signal": overall
             })
 
-            # ===== 统计 =====
             total_chains += 1
-            risk_counter[overall] += 1
-            for d in decisions.values():
-                permission_counter[d] += 1
 
-        # 写 APK 内结果
         out_path = os.path.join(apk_dir, "result_rule_judgement.json")
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
 
     # =========================
-    # 打印统计结果
+    # 📊 最终统计输出
     # =========================
+    print("\n========== 规则裁决统计 ==========")
+    print(f"总 chain 数量: {total_chains}")
+    print(f"缺失 / 空权限 chain 数: {missing_perm_chains}")
 
-    print("========== 规则裁决统计 ==========")
-    print(f"总 chain 数量: {total_chains}\n")
-
-    print("【整体风险分布】")
-    for k in [LOW_RISK, MEDIUM_RISK, HIGH_RISK]:
-        print(f"  {k:<12}: {risk_counter[k]}")
+    print("\n【整体风险分布】")
+    print(f"  LOW_RISK    : {risk_counter[LOW_RISK]}")
+    print(f"  MEDIUM_RISK : {risk_counter[MEDIUM_RISK]}")
+    print(f"  HIGH_RISK   : {risk_counter[HIGH_RISK]}")
 
     print("\n【权限裁决分布】")
-    for k in [CLEARLY_ALLOWED, NEEDS_REVIEW, CLEARLY_PROHIBITED]:
-        print(f"  {k:<18}: {permission_counter[k]}")
+    print(f"  CLEARLY_ALLOWED   : {permission_decision_counter[CLEARLY_ALLOWED]}")
+    print(f"  NEEDS_REVIEW      : {permission_decision_counter[NEEDS_REVIEW]}")
+    print(f"  CLEARLY_PROHIBITED: {permission_decision_counter[CLEARLY_PROHIBITED]}")
 
     print("\n✅ 批量规则裁决完成")
-
 # =========================
 # 入口
 # =========================
