@@ -1,0 +1,29 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0 Helvetica;}}
+\fs22
+\b llmui - One-Page Summary\b0\par
+\par
+\b What it is\b0\par
+A three-phase Android permission-scenario analysis pipeline that collects app UI traces, processes them into structured data, and performs scene, permission, and rule-based analysis. Supports LLM or vLLM backends and optional agent orchestration.\par
+\par
+\b Who it is for\b0\par
+Android security/privacy researchers or app analysts evaluating permission usage scenarios.\par
+\par
+\b What it does\b0\par
+- Collects APK UI interaction traces using adb + fastbot (Phase1).\par
+- Pulls and organizes raw fastbot outputs into a local data/raw store.\par
+- Processes raw data with OCR and widget parsing to build permission chains (Phase2).\par
+- Runs scene recognition via LLM or vLLM (Phase3 scene).\par
+- Infers permissions and applies rule judgement; outputs structured JSON results (Phase3).\par
+- Optionally performs LLM-based compliance analysis.\par
+- Can orchestrate Phase3 steps via a LangGraph agent.\par
+\par
+\b How it works (architecture)\b0\par
+APK(s) -[Phase1: adb+fastbot]-> fastbot-* output in data/raw -[Phase2: data_process.py]-> processed JSON/images in data/processed -[Phase3: scene + permission + judge modules]-> analysis results JSON; optional LangGraph agent coordinates Phase3.\par
+\par
+\b How to run (minimal)\b0\par
+- Install: python3 -m pip install -r requirements.txt\par
+- Ensure: Android device connected via adb; vLLM or OpenAI-compatible endpoints available (set in env or settings.py).\par
+- Run all phases: python3 src/main.py full /path/to/apk_or_dir\par
+- Run only analysis: python3 src/main.py phase3 /path/to/processed_root --scene-mode text\par
+\par
+}

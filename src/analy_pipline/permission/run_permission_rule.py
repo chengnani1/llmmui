@@ -13,19 +13,26 @@ NO LLM involved.
 """
 
 import os
+import sys
 import json
 import re
 from typing import Dict, Any, List
-from src.configs.permission_config import BASE_PERMISSION_TABLE
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
+
+from configs import settings
+from configs.domain.permission_config import BASE_PERMISSION_TABLE
 
 
 # =========================================================
 # 🔒 HARD-CODED CONFIG (DEBUG PURPOSE)
 # =========================================================
 
-ROOT_DIR = "/Users/charon/Downloads/llmui/data/processed"
-VENDOR = "MI"
-WIDGET_SCORE_THRESHOLD = 10.0
+DEFAULT_ROOT_DIR = settings.DATA_PROCESSED_DIR
+VENDOR = os.getenv("PERMISSION_VENDOR", "MI")
+WIDGET_SCORE_THRESHOLD = float(os.getenv("WIDGET_SCORE_THRESHOLD", "10.0"))
 
 # =========================================================
 # Text normalization
@@ -155,14 +162,19 @@ def process_one_app(app_dir: str):
 # Main (FORCE RUN)
 # =========================================================
 
-def main():
-    print("🚀 FORCE RUN RULE-ONLY PERMISSION RECOGNITION")
-    print("📂 ROOT_DIR =", ROOT_DIR)
+def run(root_dir: str):
+    print("🚀 RULE-ONLY PERMISSION RECOGNITION")
+    print("📂 ROOT_DIR =", root_dir)
 
-    assert os.path.exists(ROOT_DIR), f"ROOT_DIR not exist: {ROOT_DIR}"
+    assert os.path.exists(root_dir), f"ROOT_DIR not exist: {root_dir}"
 
-    for d in sorted(os.listdir(ROOT_DIR)):
-        app_dir = os.path.join(ROOT_DIR, d)
+    if os.path.exists(os.path.join(root_dir, "result.json")):
+        process_one_app(root_dir)
+        print("\n🎉 DONE")
+        return
+
+    for d in sorted(os.listdir(root_dir)):
+        app_dir = os.path.join(root_dir, d)
         print("\nCHECK:", app_dir)
 
         if not os.path.isdir(app_dir):
@@ -178,4 +190,10 @@ def main():
 # =========================================================
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Rule-only permission recognition")
+    parser.add_argument("--root", default=os.getenv("DATA_PROCESSED_DIR", DEFAULT_ROOT_DIR))
+    args = parser.parse_args()
+
+    run(args.root)

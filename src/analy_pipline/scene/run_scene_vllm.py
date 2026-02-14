@@ -4,7 +4,7 @@ run_scene_vllm.py
 vLLM + Qwen3-VL 场景识别（修复 400 错误）
 - 使用 vLLM 原生 images 参数
 - 强制读取 chain_{chain_id}.png
-- 仅输出 top1 / top3 / top5
+- 仅输出 top1 / top3
 """
 
 # =====================================================
@@ -20,7 +20,7 @@ if ROOT not in sys.path:
 # =====================================================
 # 配置导入
 # =====================================================
-from configs.scene_config import (
+from configs.domain.scene_config import (
     SCENE_LIST,
     SCENE_PROMPT,
     MAX_WIDGETS,
@@ -29,8 +29,8 @@ from configs.scene_config import (
     MAX_TOTAL_LEN,
 )
 
-MODEL_NAME = "Qwen3-VL-8B"
-VLLM_URL = "http://localhost:8002/v1/chat/completions"
+MODEL_NAME = os.getenv("VLLM_VL_MODEL", "Qwen3-VL-8B")
+VLLM_URL = os.getenv("VLLM_VL_URL", "http://localhost:8002/v1/chat/completions")
 
 # =====================================================
 # 标准库
@@ -159,18 +159,16 @@ def recognize_scene(ui_item: Dict[str, Any], result_json_path: str, idx: int):
         raw = call_vllm_vl(prompt, image_path)
     except Exception as e:
         print(f"[WARN] vLLM 调用失败 chain_id={chain_id}: {e}")
-        return {"intent": "失败", "top1": "其他", "top3": ["其他"], "top5": ["其他"]}
+        return {"intent": "失败", "top1": "其他", "top3": ["其他"]}
 
     obj = extract_json(raw)
     top1 = obj.get("top1", "其他")
     top3 = [x for x in obj.get("top3", []) if x in SCENE_LIST][:3]
-    top5 = [x for x in obj.get("top5", []) if x in SCENE_LIST][:5]
 
     return {
         "intent": obj.get("intent", ""),
         "top1": top1 if top1 in SCENE_LIST else "其他",
         "top3": top3 or ["其他"],
-        "top5": top5 or ["其他"],
     }
 
 # =====================================================
@@ -186,7 +184,6 @@ def process_result_json(path: str):
             "chain_id": ui_item.get("chain_id", idx),
             "predicted_scene": res["top1"],
             "scene_top3": res["top3"],
-            "scene_top5": res["top5"],
         })
 
     save_path = os.path.join(os.path.dirname(path), "results_scene_vllm.json")

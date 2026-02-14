@@ -1,7 +1,7 @@
 import os
 import re
 import json
-import hashlib 
+import hashlib
 from collections import defaultdict
 from typing import List, Optional
 from PIL import Image
@@ -13,12 +13,14 @@ import pytesseract
 import unicodedata
 from tqdm import tqdm
 
+from configs import settings
+
 # =========================================================
-# PATH CONFIG
+# PATH CONFIG (override via env or CLI)
 # =========================================================
 
-RAW_ROOT = "/Volumes/Charon/data/code/llm_ui/code/data/version2.11/raw_full"
-DST_ROOT = "/Users/charon/Downloads/llmui/data/processed"
+RAW_ROOT = settings.DATA_RAW_DIR
+DST_ROOT = settings.DATA_PROCESSED_DIR
 
 STEP_RE = re.compile(r"step-(\d+)-.*\.png$")
 FIXED_HEIGHT = 1600
@@ -321,12 +323,12 @@ def repair_chain(app_dir, steps, idx2png, seq) -> Optional[List[str]]:
 # Main
 # =========================================================
 
-def main():
-    safe_mkdir(DST_ROOT)
+def process_raw_root(raw_root: str, dst_root: str):
+    safe_mkdir(dst_root)
     stat = defaultdict(int)
 
-    for app in tqdm(sorted(os.listdir(RAW_ROOT)), desc="APKs"):
-        app_dir = os.path.join(RAW_ROOT, app)
+    for app in tqdm(sorted(os.listdir(raw_root)), desc="APKs"):
+        app_dir = os.path.join(raw_root, app)
         if not os.path.isdir(app_dir):
             continue
 
@@ -378,7 +380,7 @@ def main():
         if not result:
             continue
 
-        out_app = os.path.join(DST_ROOT, app)
+        out_app = os.path.join(dst_root, app)
         safe_mkdir(out_app)
 
         for i, chain in enumerate(new_tp):
@@ -388,8 +390,19 @@ def main():
         write_json(result, os.path.join(out_app, "result.json"))
         write_json(new_tp, os.path.join(out_app, "tupleOfPermissions.json"))
 
-    write_json(dict(stat), os.path.join(DST_ROOT, "summary.json"))
+    write_json(dict(stat), os.path.join(dst_root, "summary.json"))
     print("DONE:", dict(stat))
+
+
+def main():
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Process raw fastbot outputs into structured chains.")
+    parser.add_argument("--raw-root", default=os.getenv("DATA_RAW_DIR", RAW_ROOT))
+    parser.add_argument("--dst-root", default=os.getenv("DATA_PROCESSED_DIR", DST_ROOT))
+    args = parser.parse_args()
+
+    process_raw_root(args.raw_root, args.dst_root)
 
 if __name__ == "__main__":
     main()

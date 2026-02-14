@@ -5,7 +5,7 @@ run_scene.py
 """
 
 # =====================================================
-# 路径修正（保证可以 import configs.scene_config）
+# 路径修正（保证可以 import configs.domain.scene_config）
 # =====================================================
 import os
 import sys
@@ -19,7 +19,7 @@ if ROOT not in sys.path:
 # =====================================================
 # 统一配置导入
 # =====================================================
-from configs.scene_config import (
+from configs.domain.scene_config import (
     SCENE_LIST,
     SCENE_PROMPT,
     MAX_WIDGETS,
@@ -133,14 +133,22 @@ def compress_ui_sequence(ui_item, before, granting, after) -> str:
 # =====================================================
 # LLM 调用
 # =====================================================
-def call_llm(feature: str) -> str:
+VLLM_URL = os.getenv("VLLM_URL", VLLM_URL)
+MODEL_NAME = os.getenv("VLLM_MODEL", MODEL_NAME)
+
+def build_prompt(feature: str, strict: bool = False) -> str:
     scene_list_str = "\n".join(f"- {s}" for s in SCENE_LIST)
 
     # 不使用 format，手动替换占位符
     prompt = SCENE_PROMPT
     prompt = prompt.replace("{FEATURE}", feature)
     prompt = prompt.replace("{SCENE_LIST}", scene_list_str)
+    if strict:
+        prompt += "\n\n【补充要求】\n如果不是完全无法判断，请尽量避免输出“其他”。必须给出清晰的 top1 与 top3。\n"
+    return prompt
 
+
+def call_llm(prompt: str) -> str:
     payload = {
         "model": MODEL_NAME,
         "messages": [{"role": "user", "content": prompt}],
@@ -182,19 +190,16 @@ def recognize_scene(ui_item: Dict[str, Any]) -> Dict[str, Any]:
             "intent": "无法识别",
             "top1": "其他",
             "top3": ["其他"],
-            "top5": ["其他"],
-            "top7": ["其他"],
         }
 
     feature = compress_ui_sequence(ui_item, before, granting, after)
-    raw = call_llm(feature)
+    raw = call_llm(build_prompt(feature, strict=False))
     obj = extract_json(raw)
 
     intent = obj.get("intent", "未能可靠提取功能意图")
     top1 = obj.get("top1", "其他")
     top3 = obj.get("top3", [])
-    top5 = obj.get("top5", [])
-    top7 = obj.get("top7", [])
+    top3 = obj.get("top3", [])
 
     def clean(lst, fallback):
         out = []
@@ -205,24 +210,28 @@ def recognize_scene(ui_item: Dict[str, Any]) -> Dict[str, Any]:
 
     top1 = top1 if top1 in SCENE_LIST else "其他"
     top3 = clean(top3, top1)[:3]
-    top5 = clean(top5, top1)[:5]
-    top7 = clean(top7, top1)[:7]
+
+    # 不确定性触发重跑：top1 为“其他”或 top3 太弱
+    if top1 == "其他" or len(top3) < 2:
+        raw2 = call_llm(build_prompt(feature, strict=True))
+        obj2 = extract_json(raw2)
+        top1_2 = obj2.get("top1", "其他")
+        top3_2 = obj2.get("top3", [])
+        top1 = top1_2 if top1_2 in SCENE_LIST else top1
+        top3 = clean(top3_2, top1)[:3]
 
     # 权限先验补充
     perms = ui_item.get("predicted_permissions") or []
     for p in perms:
         s = PERMISSION_SCENE_PRIORS.get(p)
         if s:
-            for lst in (top3, top5, top7):
-                if s not in lst:
-                    lst.append(s)
+            if s not in top3:
+                top3.append(s)
 
     return {
         "intent": intent,
         "top1": top1,
         "top3": top3,
-        "top5": top5,
-        "top7": top7,
     }
 
 # =====================================================
@@ -242,8 +251,6 @@ def process_result_json(path: str):
             "intent": res["intent"],
             "predicted_scene": res["top1"],
             "scene_top3": res["top3"],
-            "scene_top5": res["top5"],
-            "scene_top7": res["top7"],
         })
 
     out = os.path.join(os.path.dirname(path), "results_scene_llm.json")

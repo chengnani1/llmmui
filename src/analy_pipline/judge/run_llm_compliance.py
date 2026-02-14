@@ -10,6 +10,7 @@ run_llm_compliance_v3.py
 """
 
 import os
+import sys
 import json
 import requests
 from typing import Dict, List
@@ -19,16 +20,22 @@ from tqdm import tqdm
 # 路径配置（写死，避免歧义）
 # =========================================================
 
-PROCESSED_DIR = "/Users/charon/Downloads/code/llmui/llmmui/data/processed"
-PROMPT_DIR = "/Users/charon/Downloads/code/llmui/llmmui/src/configs/prompt"
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
 
-PROMPT_NECESSITY = os.path.join(PROMPT_DIR, "permission_necessity.txt")
-PROMPT_CONSISTENCY = os.path.join(PROMPT_DIR, "scene_consistency.txt")
-PROMPT_FINAL = os.path.join(PROMPT_DIR, "finaly_analy.txt")
+from configs import settings
+
+DEFAULT_PROCESSED_DIR = settings.DATA_PROCESSED_DIR
+DEFAULT_PROMPT_DIR = os.path.join(ROOT, "configs", "prompt")
+
+PROMPT_NECESSITY = "permission_necessity.txt"
+PROMPT_CONSISTENCY = "scene_consistency.txt"
+PROMPT_FINAL = "finaly_analy.txt"
 
 # LLM 配置
-VLLM_URL = "http://localhost:8003/v1/chat/completions"
-MODEL_NAME = "Qwen2.5-7B"
+VLLM_URL = os.getenv("VLLM_TEXT_URL", settings.VLLM_TEXT_URL)
+MODEL_NAME = os.getenv("VLLM_TEXT_MODEL", settings.VLLM_TEXT_MODEL)
 
 TARGET_RISK = {"HIGH_RISK", "MEDIUM_RISK"}
 
@@ -62,14 +69,14 @@ def safe_json_load(text: str) -> Dict:
     return {"_parse_error": text}
 
 
-def call_llm(prompt: str) -> Dict:
+def call_llm(prompt: str, vllm_url: str, model: str) -> Dict:
     payload = {
-        "model": MODEL_NAME,
+        "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0
     }
     try:
-        r = requests.post(VLLM_URL, json=payload, timeout=90)
+        r = requests.post(vllm_url, json=payload, timeout=90)
         r.raise_for_status()
         content = r.json()["choices"][0]["message"]["content"]
         return safe_json_load(content)
@@ -110,7 +117,7 @@ def detect_permission_hallucination(
 # 三段式分析（单 chain）
 # =========================================================
 
-def analyze_chain(chain: Dict, prompts: Dict) -> Dict:
+def analyze_chain(chain: Dict, prompts: Dict, vllm_url: str, model: str) -> Dict:
     scene = chain.get("scene")
     intent = chain.get("intent")
     permissions = chain.get("permissions", [])
@@ -125,7 +132,7 @@ def analyze_chain(chain: Dict, prompts: Dict) -> Dict:
         intent=intent,
         permissions=permissions
     )
-    necessity_res = call_llm(p1)
+    necessity_res = call_llm(p1, vllm_url=vllm_url, model=model)
 
     hallucinated_1 = detect_permission_hallucination(
         permissions,
@@ -141,7 +148,7 @@ def analyze_chain(chain: Dict, prompts: Dict) -> Dict:
         intent=intent,
         permissions=permissions
     )
-    consistency_res = call_llm(p2)
+    consistency_res = call_llm(p2, vllm_url=vllm_url, model=model)
 
     # ===============================
     # Stage 3: 最终合规裁决
@@ -155,7 +162,7 @@ def analyze_chain(chain: Dict, prompts: Dict) -> Dict:
         necessity_json=necessity_res,
         consistency_json=consistency_res
     )
-    final_res = call_llm(p3)
+    final_res = call_llm(p3, vllm_url=vllm_url, model=model)
 
     return {
         "chain_id": chain.get("chain_id"),
@@ -178,26 +185,19 @@ def analyze_chain(chain: Dict, prompts: Dict) -> Dict:
 # 主流程（批量）
 # =========================================================
 
-def main():
+def run(processed_dir: str, prompt_dir: str, vllm_url: str, model: str):
     prompts = {
-        "necessity": load_prompt(PROMPT_NECESSITY),
-        "consistency": load_prompt(PROMPT_CONSISTENCY),
-        "final": load_prompt(PROMPT_FINAL),
+        "necessity": load_prompt(os.path.join(prompt_dir, PROMPT_NECESSITY)),
+        "consistency": load_prompt(os.path.join(prompt_dir, PROMPT_CONSISTENCY)),
+        "final": load_prompt(os.path.join(prompt_dir, PROMPT_FINAL)),
     }
 
-    apk_dirs = [
-        os.path.join(PROCESSED_DIR, d)
-        for d in os.listdir(PROCESSED_DIR)
-        if d.startswith("fastbot-")
-    ]
+    def process_app_dir(apk_dir: str):
+        nonlocal total_chains, analyzed_apks
 
-    total_chains = 0
-    analyzed_apks = 0
-
-    for apk_dir in tqdm(apk_dirs, desc="LLM 合规分析（强约束）"):
         rule_path = os.path.join(apk_dir, "result_rule_judgement.json")
         if not os.path.exists(rule_path):
-            continue
+            return
 
         chains = json.load(open(rule_path, "r", encoding="utf-8"))
         results = []
@@ -206,7 +206,7 @@ def main():
             if chain.get("overall_rule_signal") not in TARGET_RISK:
                 continue
 
-            res = analyze_chain(chain, prompts)
+            res = analyze_chain(chain, prompts, vllm_url=vllm_url, model=model)
             results.append(res)
             total_chains += 1
 
@@ -215,6 +215,25 @@ def main():
             with open(out_path, "w", encoding="utf-8") as f:
                 json.dump(results, f, indent=2, ensure_ascii=False)
             analyzed_apks += 1
+
+    if os.path.exists(os.path.join(processed_dir, "result_rule_judgement.json")):
+        process_app_dir(processed_dir)
+        print("\n========== LLM 合规分析完成（单 APK） ==========")
+        print(f"分析 chain 数量: {total_chains}")
+        print("=================================================")
+        return
+
+    apk_dirs = [
+        os.path.join(processed_dir, d)
+        for d in os.listdir(processed_dir)
+        if d.startswith("fastbot-")
+    ]
+
+    total_chains = 0
+    analyzed_apks = 0
+
+    for apk_dir in tqdm(apk_dirs, desc="LLM 合规分析（强约束）"):
+        process_app_dir(apk_dir)
 
     print("\n========== LLM 合规分析完成（强约束版） ==========")
     print(f"处理 APK 数量: {analyzed_apks}")
@@ -226,4 +245,18 @@ def main():
 # =========================================================
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="LLM compliance analysis")
+    parser.add_argument("--processed-dir", default=os.getenv("PROCESSED_DIR", DEFAULT_PROCESSED_DIR))
+    parser.add_argument("--prompt-dir", default=os.getenv("PROMPT_DIR", DEFAULT_PROMPT_DIR))
+    parser.add_argument("--vllm-url", default=VLLM_URL)
+    parser.add_argument("--model", default=MODEL_NAME)
+    args = parser.parse_args()
+
+    run(
+        args.processed_dir,
+        prompt_dir=args.prompt_dir,
+        vllm_url=args.vllm_url,
+        model=args.model,
+    )

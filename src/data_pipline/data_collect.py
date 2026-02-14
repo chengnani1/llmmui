@@ -5,16 +5,25 @@ import time
 import os
 import concurrent.futures
 import adbutils
-
-import configs.config as config
 import src.utils.utils as utils
 from src.utils.utils import logger
+
+from configs import settings
+
+ANDROID_DATA_DIR = "/sdcard/fastbotOutput"
+FASTBOT_OUTPUT = "fastbot-{package}--running-minutes-{time}"
+FASTBOT_COMMAND = (
+    "CLASSPATH=/sdcard/monkeyq.jar:/sdcard/framework.jar:/sdcard/fastbot-thirdpart.jar "
+    "exec app_process /system/bin com.android.commands.monkey.Monkey "
+    "-p {package} --agent reuseq --running-minutes {time} --throttle {throttle} -v -v"
+)
+DEFAULT_THROTTLE = 500
 
 
 class DataCollectAgent:
 
     def __init__(
-        self, apk_path=None, package=None, time=config.TIME_LIMIT, throttle=config.THROTTLE, output_dir=None
+        self, apk_path=None, package=None, time=settings.TIME_LIMIT, throttle=DEFAULT_THROTTLE, output_dir=None
     ) -> None:
         self._adb = adbutils.AdbClient(host="127.0.0.1", port=5037)
         self._device = self._adb.device()
@@ -29,10 +38,10 @@ class DataCollectAgent:
             apk = APK(self._apk_path)
             self._package = apk.get_manifest()["@package"]
 
-        self.fastbot_output_dir = config.FASTBOT_OUTPUT.format(package=self._package, time=self._time)
+        self.fastbot_output_dir = FASTBOT_OUTPUT.format(package=self._package, time=self._time)
 
         if output_dir is None:
-            self.output_dir = config.DATA_RAW_DIR
+            self.output_dir = settings.DATA_RAW_DIR
         else:
             self.output_dir = output_dir
 
@@ -40,7 +49,7 @@ class DataCollectAgent:
         return self._package
 
     def _clear_res(self):
-        command = ["adb", "shell", "rm", "-rf", f"{config.ANDROID_DATA_DIR}/{self.fastbot_output_dir}/"]
+        command = ["adb", "shell", "rm", "-rf", f"{ANDROID_DATA_DIR}/{self.fastbot_output_dir}/"]
         utils.exec(command)
 
     def _install_apk(self):
@@ -62,12 +71,12 @@ class DataCollectAgent:
         command = [
             "adb",
             "shell",
-            config.FASTBOT_COMMAND.format(package=self._package, time=self._time, throttle=self._throttle),
+            FASTBOT_COMMAND.format(package=self._package, time=self._time, throttle=self._throttle),
         ]
         utils.exec(command)
 
     def _pull_result(self):
-        android_data_dir = config.ANDROID_DATA_DIR + "/" + self.fastbot_output_dir + "/"
+        android_data_dir = ANDROID_DATA_DIR + "/" + self.fastbot_output_dir + "/"
         utils.delete_directory(os.path.join(self.output_dir, self.fastbot_output_dir))
         os.makedirs(self.output_dir, exist_ok=True)
 
@@ -102,12 +111,28 @@ class DataCollectAgent:
 
 
 if __name__ == "__main__":
-    #root = r""
-    for path in utils.list_apk_file_path(root):
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Phase1 data collect (fastbot/adb)")
+    parser.add_argument("target", nargs="?", help="APK path or directory containing APKs")
+    args = parser.parse_args()
+
+    target = args.target
+    if not target:
+        raise SystemExit("Missing target. Use: python data_collect.py /path/to/apk_or_dir")
+
+    if os.path.isdir(target):
+        for path in utils.list_apk_file_path(target):
+            try:
+                DataCollectAgent(path).run(skip_if_result_exist=True)
+            except KeyboardInterrupt:
+                raise
+            except Exception:
+                traceback.print_exc()
+    else:
         try:
-            agent = DataCollectAgent(path).run(skip_if_result_exist=True)
+            DataCollectAgent(target).run(skip_if_result_exist=True)
         except KeyboardInterrupt:
             raise
-        except:
+        except Exception:
             traceback.print_exc()
-            pass

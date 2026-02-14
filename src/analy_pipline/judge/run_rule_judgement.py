@@ -7,6 +7,7 @@ run_rule_judgement.py
 """
 
 import os
+import sys
 import json
 from collections import defaultdict
 from typing import Dict, List
@@ -15,8 +16,14 @@ from typing import Dict, List
 # 路径配置
 # =========================
 
-PROCESSED_DIR = "/Users/charon/Downloads/code/llmui/llmmui/data/processed"
-RULE_FILE = "src/configs/scene_permission_rules_16.json"
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
+
+from configs import settings
+
+DEFAULT_PROCESSED_DIR = settings.DATA_PROCESSED_DIR
+DEFAULT_RULE_FILE = os.path.join(ROOT, "configs", "domain", "scene_permission_rules_16.json")
 
 # =========================
 # 常量
@@ -87,8 +94,8 @@ def judge_chain(scene: str, permissions: List[str], rules: Dict):
 # =========================
 # 主流程
 # =========================
-def main():
-    rules = load_scene_rules(RULE_FILE)
+def run(processed_dir: str, rule_file: str):
+    rules = load_scene_rules(rule_file)
 
     total_chains = 0
     missing_perm_chains = 0
@@ -97,22 +104,18 @@ def main():
     risk_counter = defaultdict(int)
     permission_decision_counter = defaultdict(int)
 
-    apk_dirs = [
-        d for d in os.listdir(PROCESSED_DIR)
-        if d.startswith("fastbot-") and
-        os.path.isdir(os.path.join(PROCESSED_DIR, d))
-    ]
-
-    print(f"📦 检测到 APK 数量: {len(apk_dirs)}")
-
-    for apk in apk_dirs:
-        apk_dir = os.path.join(PROCESSED_DIR, apk)
+    def process_app_dir(apk_dir: str):
+        nonlocal total_chains, missing_perm_chains
 
         scene_path = os.path.join(apk_dir, "results_scene_llm.json")
+        if not os.path.exists(scene_path):
+            scene_path = os.path.join(apk_dir, "results_scene_vllm.json")
         perm_path = os.path.join(apk_dir, "result_permission_rule.json")
+        if not os.path.exists(perm_path):
+            perm_path = os.path.join(apk_dir, "result_permission_llm.json")
 
         if not os.path.exists(scene_path) or not os.path.exists(perm_path):
-            continue
+            return
 
         scenes = json.load(open(scene_path, "r", encoding="utf-8"))
         perms = json.load(open(perm_path, "r", encoding="utf-8"))
@@ -160,6 +163,22 @@ def main():
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
 
+    if os.path.exists(os.path.join(processed_dir, "results_scene_llm.json")):
+        process_app_dir(processed_dir)
+        print("\n✅ 规则裁决完成（单 APK）")
+        return
+
+    apk_dirs = [
+        d for d in os.listdir(processed_dir)
+        if d.startswith("fastbot-") and
+        os.path.isdir(os.path.join(processed_dir, d))
+    ]
+
+    print(f"📦 检测到 APK 数量: {len(apk_dirs)}")
+
+    for apk in apk_dirs:
+        process_app_dir(os.path.join(processed_dir, apk))
+
     # =========================
     # 📊 最终统计输出
     # =========================
@@ -183,4 +202,11 @@ def main():
 # =========================
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Rule-based judgement")
+    parser.add_argument("--processed-dir", default=os.getenv("PROCESSED_DIR", DEFAULT_PROCESSED_DIR))
+    parser.add_argument("--rule-file", default=os.getenv("RULE_FILE", DEFAULT_RULE_FILE))
+    args = parser.parse_args()
+
+    run(args.processed_dir, rule_file=args.rule_file)
