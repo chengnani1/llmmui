@@ -13,7 +13,6 @@ import argparse
 import os
 import sys
 import json
-import re
 from typing import Dict, Any, List
 from dataclasses import dataclass
 
@@ -26,9 +25,10 @@ from langchain_openai import ChatOpenAI
 from langgraph.prebuilt import create_react_agent
 
 from configs import settings
+from utils.http_retry import post_json_with_retry
 
-PROMPT_DIR = os.path.join(ROOT, "configs", "prompt")
-RULE_FILE = os.path.join(ROOT, "configs", "domain", "scene_permission_rules_16.json")
+PROMPT_DIR = settings.PROMPT_DIR
+RULE_FILE = settings.SCENE_RULE_FILE
 ARBITER_PROMPT = os.path.join(PROMPT_DIR, "arbiter.txt")
 from analy_pipline.scene import run_scene_llm as scene_llm
 from analy_pipline.scene import run_scene_vllm as scene_vl
@@ -196,11 +196,10 @@ def _load_json(path: str) -> Any:
 
 
 def _call_arbiter_llm(cfg: AgentConfig, payload: Dict[str, Any]) -> Dict[str, Any]:
-    import requests
-
     if not os.path.exists(ARBITER_PROMPT):
         return {}
-    prompt = open(ARBITER_PROMPT, "r", encoding="utf-8").read().strip()
+    with open(ARBITER_PROMPT, "r", encoding="utf-8") as f:
+        prompt = f.read().strip()
     prompt = prompt.replace("{INPUT}", json.dumps(payload, ensure_ascii=False, indent=2))
     body = {
         "model": cfg.vllm_model,
@@ -208,7 +207,13 @@ def _call_arbiter_llm(cfg: AgentConfig, payload: Dict[str, Any]) -> Dict[str, An
         "temperature": 0,
     }
     try:
-        r = requests.post(cfg.vllm_url, json=body, timeout=90)
+        r = post_json_with_retry(
+            cfg.vllm_url,
+            body,
+            timeout=settings.LLM_RESPONSE_TIMEOUT,
+            max_retries=3,
+            backoff_factor=1.5,
+        )
         r.raise_for_status()
         content = r.json()["choices"][0]["message"]["content"]
         s, e = content.find("{"), content.rfind("}")

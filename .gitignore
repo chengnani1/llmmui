@@ -98,6 +98,7 @@ tensorboard/
 .env.local
 .env.*.local
 *.key
-*.pem.DS_Store
-__pycache__/
-.DS_Store
+*.pem
+
+# Temp generated artifacts
+tmp/

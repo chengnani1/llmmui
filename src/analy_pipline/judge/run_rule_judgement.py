@@ -21,9 +21,10 @@ if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 from configs import settings
+from utils.validators import validate_permission_results, validate_scene_results
 
 DEFAULT_PROCESSED_DIR = settings.DATA_PROCESSED_DIR
-DEFAULT_RULE_FILE = os.path.join(ROOT, "configs", "domain", "scene_permission_rules_16.json")
+DEFAULT_RULE_FILE = settings.SCENE_RULE_FILE
 
 # =========================
 # 常量
@@ -117,8 +118,14 @@ def run(processed_dir: str, rule_file: str):
         if not os.path.exists(scene_path) or not os.path.exists(perm_path):
             return
 
-        scenes = json.load(open(scene_path, "r", encoding="utf-8"))
-        perms = json.load(open(perm_path, "r", encoding="utf-8"))
+        try:
+            with open(scene_path, "r", encoding="utf-8") as f:
+                scenes = validate_scene_results(json.load(f))
+            with open(perm_path, "r", encoding="utf-8") as f:
+                perms = validate_permission_results(json.load(f))
+        except ValueError as exc:
+            print(f"[WARN] schema validation failed for {apk_dir}: {exc}")
+            return
 
         scene_map = {x["chain_id"]: x for x in scenes}
         perm_map = {x["chain_id"]: x for x in perms}
@@ -205,8 +212,8 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Rule-based judgement")
-    parser.add_argument("--processed-dir", default=os.getenv("PROCESSED_DIR", DEFAULT_PROCESSED_DIR))
-    parser.add_argument("--rule-file", default=os.getenv("RULE_FILE", DEFAULT_RULE_FILE))
+    parser.add_argument("--processed-dir", default=os.getenv("LLMMUI_PROCESSED_DIR", os.getenv("PROCESSED_DIR", DEFAULT_PROCESSED_DIR)))
+    parser.add_argument("--rule-file", default=os.getenv("LLMMUI_SCENE_RULE_FILE", os.getenv("RULE_FILE", DEFAULT_RULE_FILE)))
     args = parser.parse_args()
 
     run(args.processed_dir, rule_file=args.rule_file)

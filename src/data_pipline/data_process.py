@@ -1,9 +1,8 @@
 import os
 import re
 import json
-import hashlib
 from collections import defaultdict
-from typing import List, Optional
+from typing import Any, Dict, List, Optional
 from PIL import Image
 from xml.etree import ElementTree as ET
 
@@ -24,6 +23,7 @@ DST_ROOT = settings.DATA_PROCESSED_DIR
 
 STEP_RE = re.compile(r"step-(\d+)-.*\.png$")
 FIXED_HEIGHT = 1600
+_WIDGET_PARSE_CACHE: Dict[str, List[Dict[str, Any]]] = {}
 
 # =========================================================
 # IO
@@ -106,10 +106,17 @@ ACTION_WORDS = [
 ]
 
 def parse_widgets(xml_path: str):
+    xml_path = os.path.abspath(xml_path)
     if not os.path.exists(xml_path):
         return []
+
+    cached = _WIDGET_PARSE_CACHE.get(xml_path)
+    if cached is not None:
+        return [w.copy() for w in cached]
+
     try:
-        root = ET.fromstring(open(xml_path, encoding="utf-8").read())
+        with open(xml_path, encoding="utf-8") as f:
+            root = ET.fromstring(f.read())
     except Exception:
         return []
 
@@ -126,7 +133,8 @@ def parse_widgets(xml_path: str):
             dfs(c, depth + 1)
 
     dfs(root)
-    return widgets
+    _WIDGET_PARSE_CACHE[xml_path] = widgets
+    return [w.copy() for w in widgets]
 
 def widget_score(w):
     score = 0
@@ -326,6 +334,8 @@ def repair_chain(app_dir, steps, idx2png, seq) -> Optional[List[str]]:
 def process_raw_root(raw_root: str, dst_root: str):
     safe_mkdir(dst_root)
     stat = defaultdict(int)
+    ocr_cache: Dict[str, str] = {}
+    enrich_cache: Dict[str, List[Dict[str, Any]]] = {}
 
     for app in tqdm(sorted(os.listdir(raw_root)), desc="APKs"):
         app_dir = os.path.join(raw_root, app)
@@ -358,11 +368,15 @@ def process_raw_root(raw_root: str, dst_root: str):
             def build_entry(p):
                 img = os.path.join(app_dir, p)
                 xml = img.replace(".png", ".xml")
+                if img not in ocr_cache:
+                    ocr_cache[img] = ocr_image(img)
+                if xml not in enrich_cache:
+                    enrich_cache[xml] = enrich_widgets(xml)
                 return {
                     "file": p,
                     "feature": {
-                        "text": ocr_image(img),
-                        "widgets": enrich_widgets(xml),
+                        "text": ocr_cache[img],
+                        "widgets": [w.copy() for w in enrich_cache[xml]],
                     }
                 }
 
@@ -398,8 +412,8 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(description="Process raw fastbot outputs into structured chains.")
-    parser.add_argument("--raw-root", default=os.getenv("DATA_RAW_DIR", RAW_ROOT))
-    parser.add_argument("--dst-root", default=os.getenv("DATA_PROCESSED_DIR", DST_ROOT))
+    parser.add_argument("--raw-root", default=os.getenv("LLMMUI_RAW_DIR", os.getenv("DATA_RAW_DIR", RAW_ROOT)))
+    parser.add_argument("--dst-root", default=os.getenv("LLMMUI_PROCESSED_DIR", os.getenv("DATA_PROCESSED_DIR", DST_ROOT)))
     args = parser.parse_args()
 
     process_raw_root(args.raw_root, args.dst_root)

@@ -26,16 +26,16 @@ from configs.domain.scene_config import (
     MAX_TEXT_LEN,
     MAX_STEPS,
     MAX_TOTAL_LEN,
-    MODEL_NAME,
-    VLLM_URL,
 )
+from configs import settings
+from utils.http_retry import post_json_with_retry
+from utils.validators import validate_result_json_chains
 
 # =====================================================
 # 标准库 & 第三方
 # =====================================================
 import json
 import re
-import requests
 from typing import Any, Dict, List
 from tqdm import tqdm  # type: ignore
 
@@ -133,8 +133,9 @@ def compress_ui_sequence(ui_item, before, granting, after) -> str:
 # =====================================================
 # LLM 调用
 # =====================================================
-VLLM_URL = os.getenv("VLLM_URL", VLLM_URL)
-MODEL_NAME = os.getenv("VLLM_MODEL", MODEL_NAME)
+VLLM_URL = settings.VLLM_TEXT_URL
+MODEL_NAME = settings.VLLM_TEXT_MODEL
+LLM_TIMEOUT = settings.LLM_RESPONSE_TIMEOUT
 
 def build_prompt(feature: str, strict: bool = False) -> str:
     scene_list_str = "\n".join(f"- {s}" for s in SCENE_LIST)
@@ -155,7 +156,13 @@ def call_llm(prompt: str) -> str:
         "temperature": 0,
     }
 
-    r = requests.post(VLLM_URL, json=payload, timeout=60)
+    r = post_json_with_retry(
+        VLLM_URL,
+        payload,
+        timeout=LLM_TIMEOUT,
+        max_retries=3,
+        backoff_factor=1.5,
+    )
     r.raise_for_status()
     return r.json()["choices"][0]["message"]["content"]
 
@@ -199,7 +206,6 @@ def recognize_scene(ui_item: Dict[str, Any]) -> Dict[str, Any]:
     intent = obj.get("intent", "未能可靠提取功能意图")
     top1 = obj.get("top1", "其他")
     top3 = obj.get("top3", [])
-    top3 = obj.get("top3", [])
 
     def clean(lst, fallback):
         out = []
@@ -239,7 +245,7 @@ def recognize_scene(ui_item: Dict[str, Any]) -> Dict[str, Any]:
 # =====================================================
 def process_result_json(path: str):
     with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+        data = validate_result_json_chains(json.load(f))
 
     results = []
     for idx, ui_item in enumerate(

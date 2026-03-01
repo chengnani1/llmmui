@@ -12,7 +12,6 @@ run_llm_compliance_v3.py
 import os
 import sys
 import json
-import requests
 from typing import Dict, List
 from tqdm import tqdm
 
@@ -25,6 +24,7 @@ if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 from configs import settings
+from utils.http_retry import post_json_with_retry
 
 DEFAULT_PROCESSED_DIR = settings.DATA_PROCESSED_DIR
 DEFAULT_PROMPT_DIR = os.path.join(ROOT, "configs", "prompt")
@@ -76,7 +76,13 @@ def call_llm(prompt: str, vllm_url: str, model: str) -> Dict:
         "temperature": 0
     }
     try:
-        r = requests.post(vllm_url, json=payload, timeout=90)
+        r = post_json_with_retry(
+            vllm_url,
+            payload,
+            timeout=settings.LLM_RESPONSE_TIMEOUT,
+            max_retries=3,
+            backoff_factor=1.5,
+        )
         r.raise_for_status()
         content = r.json()["choices"][0]["message"]["content"]
         return safe_json_load(content)
@@ -186,6 +192,9 @@ def analyze_chain(chain: Dict, prompts: Dict, vllm_url: str, model: str) -> Dict
 # =========================================================
 
 def run(processed_dir: str, prompt_dir: str, vllm_url: str, model: str):
+    total_chains = 0
+    analyzed_apks = 0
+
     prompts = {
         "necessity": load_prompt(os.path.join(prompt_dir, PROMPT_NECESSITY)),
         "consistency": load_prompt(os.path.join(prompt_dir, PROMPT_CONSISTENCY)),
@@ -199,7 +208,11 @@ def run(processed_dir: str, prompt_dir: str, vllm_url: str, model: str):
         if not os.path.exists(rule_path):
             return
 
-        chains = json.load(open(rule_path, "r", encoding="utf-8"))
+        with open(rule_path, "r", encoding="utf-8") as f:
+            chains = json.load(f)
+        if not isinstance(chains, list):
+            print(f"[WARN] invalid rule judgement format: {rule_path}")
+            return
         results = []
 
         for chain in chains:
@@ -229,9 +242,6 @@ def run(processed_dir: str, prompt_dir: str, vllm_url: str, model: str):
         if d.startswith("fastbot-")
     ]
 
-    total_chains = 0
-    analyzed_apks = 0
-
     for apk_dir in tqdm(apk_dirs, desc="LLM 合规分析（强约束）"):
         process_app_dir(apk_dir)
 
@@ -248,8 +258,8 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="LLM compliance analysis")
-    parser.add_argument("--processed-dir", default=os.getenv("PROCESSED_DIR", DEFAULT_PROCESSED_DIR))
-    parser.add_argument("--prompt-dir", default=os.getenv("PROMPT_DIR", DEFAULT_PROMPT_DIR))
+    parser.add_argument("--processed-dir", default=os.getenv("LLMMUI_PROCESSED_DIR", os.getenv("PROCESSED_DIR", DEFAULT_PROCESSED_DIR)))
+    parser.add_argument("--prompt-dir", default=os.getenv("LLMMUI_PROMPT_DIR", os.getenv("PROMPT_DIR", DEFAULT_PROMPT_DIR)))
     parser.add_argument("--vllm-url", default=VLLM_URL)
     parser.add_argument("--model", default=MODEL_NAME)
     args = parser.parse_args()

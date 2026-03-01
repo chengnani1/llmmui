@@ -24,11 +24,8 @@ if ROOT not in sys.path:
 
 from configs import settings
 from configs.domain.permission_config import BASE_PERMISSION_TABLE
+from utils.validators import validate_result_json_chains
 
-
-# =========================================================
-# 🔒 HARD-CODED CONFIG (DEBUG PURPOSE)
-# =========================================================
 
 DEFAULT_ROOT_DIR = settings.DATA_PROCESSED_DIR
 VENDOR = os.getenv("PERMISSION_VENDOR", "MI")
@@ -130,7 +127,7 @@ def process_one_app(app_dir: str):
         return
 
     with open(result_json, "r", encoding="utf-8") as f:
-        chains = json.load(f)
+        chains = validate_result_json_chains(json.load(f))
 
     outputs = []
 
@@ -193,7 +190,7 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Rule-only permission recognition")
-    parser.add_argument("--root", default=os.getenv("DATA_PROCESSED_DIR", DEFAULT_ROOT_DIR))
+    parser.add_argument("--root", default=os.getenv("LLMMUI_PROCESSED_DIR", os.getenv("DATA_PROCESSED_DIR", DEFAULT_ROOT_DIR)))
     args = parser.parse_args()
 
     run(args.root)

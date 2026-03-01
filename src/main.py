@@ -10,8 +10,11 @@ Modes:
 """
 
 import argparse
+import json
 import os
 import sys
+import traceback
+from datetime import datetime
 from typing import List
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -20,8 +23,8 @@ if ROOT not in sys.path:
 
 from configs import settings
 
-PROMPT_DIR = os.path.join(ROOT, "src", "configs", "prompt")
-RULE_FILE = os.path.join(ROOT, "src", "configs", "domain", "scene_permission_rules_16.json")
+PROMPT_DIR = settings.PROMPT_DIR
+RULE_FILE = settings.SCENE_RULE_FILE
 from data_pipline.data_collect import DataCollectAgent
 from data_pipline import data_process
 from analy_pipline.scene import run_scene_llm, run_scene_vllm
@@ -42,13 +45,177 @@ def list_valid_apks(directory: str) -> List[str]:
     return apk_files
 
 
+def _phase1_checkpoint_path() -> str:
+    return os.path.join(settings.DATA_RAW_DIR, "phase1_checkpoint.json")
+
+
+def _phase1_runlog_path() -> str:
+    return os.path.join(settings.DATA_RAW_DIR, f"phase1_runlog_{settings.RUN_ID}.json")
+
+
+def _write_phase1_checkpoint(payload: dict) -> None:
+    os.makedirs(settings.DATA_RAW_DIR, exist_ok=True)
+    payload = dict(payload)
+    payload["updated_at"] = datetime.now().isoformat(timespec="seconds")
+    payload["run_id"] = settings.RUN_ID
+    with open(_phase1_checkpoint_path(), "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+
+
+def _write_phase1_runlog(payload: dict) -> None:
+    os.makedirs(settings.DATA_RAW_DIR, exist_ok=True)
+    with open(_phase1_runlog_path(), "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+
+
 def run_phase1(target: str) -> None:
     if os.path.isdir(target):
         apk_files = list_valid_apks(target)
         print(f"[INFO] Found {len(apk_files)} APKs.")
-        for apk in apk_files:
+        started_at = datetime.now()
+        _write_phase1_checkpoint(
+            {
+                "status": "running",
+                "target": target,
+                "total_apks": len(apk_files),
+                "current_index": 0,
+                "current_apk": "",
+                "last_success_apk": "",
+                "failed_count": 0,
+                "failures": [],
+            }
+        )
+        runlog = {
+            "run_id": settings.RUN_ID,
+            "status": "running",
+            "target": target,
+            "time_limit_minutes": settings.TIME_LIMIT,
+            "total_apks": len(apk_files),
+            "started_at": started_at.isoformat(timespec="seconds"),
+            "finished_at": "",
+            "summary": {
+                "success": 0,
+                "skipped_existing": 0,
+                "recovered_with_output": 0,
+                "failed": 0,
+            },
+            "failed_apks": [],
+            "records": [],
+        }
+        failed = []
+        last_success_apk = ""
+        for idx, apk in enumerate(apk_files, 1):
             full_apk_path = os.path.join(target, apk)
-            DataCollectAgent(full_apk_path, time=settings.TIME_LIMIT).run(skip_if_result_exist=True)
+            item_started = datetime.now()
+            print(f"[INFO] Phase1 {idx}/{len(apk_files)} -> {apk}")
+            _write_phase1_checkpoint(
+                {
+                    "status": "running",
+                    "target": target,
+                    "total_apks": len(apk_files),
+                    "current_index": idx,
+                    "current_apk": apk,
+                    "last_success_apk": last_success_apk,
+                    "failed_count": len(failed),
+                    "failures": failed,
+                }
+            )
+            try:
+                result = DataCollectAgent(full_apk_path, time=settings.TIME_LIMIT).run(skip_if_result_exist=True)
+                result = result or "success"
+                if result in ("success", "recovered_with_output"):
+                    last_success_apk = apk
+                if result not in runlog["summary"]:
+                    result = "success"
+                runlog["summary"][result] += 1
+                runlog["records"].append(
+                    {
+                        "index": idx,
+                        "apk": apk,
+                        "status": result,
+                        "started_at": item_started.isoformat(timespec="seconds"),
+                        "finished_at": datetime.now().isoformat(timespec="seconds"),
+                    }
+                )
+                _write_phase1_checkpoint(
+                    {
+                        "status": "running",
+                        "target": target,
+                        "total_apks": len(apk_files),
+                        "current_index": idx,
+                        "current_apk": apk,
+                        "last_success_apk": last_success_apk,
+                        "failed_count": len(failed),
+                        "failures": failed,
+                    }
+                )
+            except KeyboardInterrupt:
+                runlog["status"] = "interrupted"
+                runlog["finished_at"] = datetime.now().isoformat(timespec="seconds")
+                _write_phase1_runlog(runlog)
+                _write_phase1_checkpoint(
+                    {
+                        "status": "interrupted",
+                        "target": target,
+                        "total_apks": len(apk_files),
+                        "current_index": idx,
+                        "current_apk": apk,
+                        "last_success_apk": last_success_apk,
+                        "failed_count": len(failed),
+                        "failures": failed,
+                    }
+                )
+                raise
+            except Exception as exc:
+                failed.append({"apk": apk, "error": str(exc)})
+                runlog["summary"]["failed"] += 1
+                runlog["failed_apks"].append({"apk": apk, "error": str(exc)})
+                runlog["records"].append(
+                    {
+                        "index": idx,
+                        "apk": apk,
+                        "status": "failed",
+                        "error": str(exc),
+                        "started_at": item_started.isoformat(timespec="seconds"),
+                        "finished_at": datetime.now().isoformat(timespec="seconds"),
+                    }
+                )
+                print(f"[WARN] Phase1 failed for {apk}: {exc}")
+                traceback.print_exc()
+                _write_phase1_checkpoint(
+                    {
+                        "status": "running",
+                        "target": target,
+                        "total_apks": len(apk_files),
+                        "current_index": idx,
+                        "current_apk": apk,
+                        "last_success_apk": last_success_apk,
+                        "failed_count": len(failed),
+                        "failures": failed,
+                    }
+                )
+                continue
+        runlog["status"] = "done_with_failures" if failed else "done"
+        runlog["finished_at"] = datetime.now().isoformat(timespec="seconds")
+        _write_phase1_runlog(runlog)
+        _write_phase1_checkpoint(
+            {
+                "status": "done_with_failures" if failed else "done",
+                "target": target,
+                "total_apks": len(apk_files),
+                "current_index": len(apk_files),
+                "current_apk": "",
+                "last_success_apk": last_success_apk,
+                "failed_count": len(failed),
+                "failures": failed,
+            }
+        )
+        if failed:
+            print(f"[WARN] Phase1 completed with {len(failed)} failures.")
+            for item in failed:
+                print(f"  - {item['apk']}: {item['error']}")
+        print(f"[INFO] Phase1 checkpoint: {_phase1_checkpoint_path()}")
+        print(f"[INFO] Phase1 runlog: {_phase1_runlog_path()}")
     else:
         DataCollectAgent(target, time=settings.TIME_LIMIT).run(skip_if_result_exist=True)
 
@@ -107,6 +274,7 @@ def main() -> None:
     parser.add_argument("--agent-instruction", default="执行完整三阶段分析")
 
     args = parser.parse_args()
+    print(f"[run_id={settings.RUN_ID}] mode={args.mode}")
 
     if args.mode == "phase1":
         run_phase1(args.target)

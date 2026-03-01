@@ -28,9 +28,13 @@ from configs.domain.scene_config import (
     MAX_STEPS,
     MAX_TOTAL_LEN,
 )
+from configs import settings
+from utils.http_retry import post_json_with_retry
+from utils.validators import validate_result_json_chains
 
-MODEL_NAME = os.getenv("VLLM_VL_MODEL", "Qwen3-VL-8B")
-VLLM_URL = os.getenv("VLLM_VL_URL", "http://localhost:8002/v1/chat/completions")
+MODEL_NAME = settings.VLLM_VL_MODEL
+VLLM_URL = settings.VLLM_VL_URL
+LLM_TIMEOUT = settings.LLM_RESPONSE_TIMEOUT
 
 # =====================================================
 # 标准库
@@ -38,7 +42,6 @@ VLLM_URL = os.getenv("VLLM_VL_URL", "http://localhost:8002/v1/chat/completions")
 import json
 import re
 import base64
-import requests
 from typing import Any, Dict, List, Optional
 from tqdm import tqdm
 
@@ -122,7 +125,13 @@ def call_vllm_vl(prompt: str, image_path: Optional[str]) -> str:
     if image_b64:
         payload["images"] = [image_b64]
 
-    r = requests.post(VLLM_URL, json=payload, timeout=120)
+    r = post_json_with_retry(
+        VLLM_URL,
+        payload,
+        timeout=LLM_TIMEOUT,
+        max_retries=3,
+        backoff_factor=1.5,
+    )
     r.raise_for_status()
     return r.json()["choices"][0]["message"]["content"]
 
@@ -175,7 +184,8 @@ def recognize_scene(ui_item: Dict[str, Any], result_json_path: str, idx: int):
 # 批处理
 # =====================================================
 def process_result_json(path: str):
-    data = json.load(open(path, "r", encoding="utf-8"))
+    with open(path, "r", encoding="utf-8") as f:
+        data = validate_result_json_chains(json.load(f))
     out = []
 
     for idx, ui_item in enumerate(tqdm(data, desc="VL 场景识别")):

@@ -7,8 +7,13 @@ import json
 import time
 from contextlib import contextmanager
 
+from configs import settings
 
-logging.basicConfig(level=logging.DEBUG, format="[%(asctime)s - %(name)s - %(levelname)s] - %(message)s")
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format=f"[run_id={settings.RUN_ID}] [%(asctime)s - %(name)s - %(levelname)s] - %(message)s",
+)
 logger = logging.getLogger("yama")
 
 
@@ -34,9 +39,10 @@ def delete_file(file):
         logger.error(f"Error: {e}")
 
 
-def exec(command, capcure_result=False):
+def exec(command, capture_result=False, capcure_result=False, timeout=None):
+    want_capture = bool(capture_result or capcure_result)
     try:
-        if capcure_result:
+        if want_capture:
             return subprocess.run(
                 command,
                 text=True,
@@ -44,9 +50,10 @@ def exec(command, capcure_result=False):
                 capture_output=True,
                 encoding="utf-8",
                 errors="ignore",
+                timeout=timeout,
             )
         else:
-            subprocess.run(
+            return subprocess.run(
                 command,
                 stdout=sys.stdout,
                 stderr=sys.stderr,
@@ -54,11 +61,16 @@ def exec(command, capcure_result=False):
                 check=True,
                 encoding="utf-8",
                 errors="ignore",
+                timeout=timeout,
             )
-    except subprocess.CalledProcessError as e:
-        pass
-    except UnicodeDecodeError as e:
-        pass
+    except subprocess.CalledProcessError as exc:
+        logger.error("Command failed: %s", command)
+        if exc.stderr:
+            logger.error("stderr: %s", str(exc.stderr).strip())
+        raise
+    except UnicodeDecodeError:
+        logger.error("Unicode decode error while running command: %s", command)
+        raise
 
 
 def dump_json(jobj, file_path):
