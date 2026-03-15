@@ -1,0 +1,947 @@
+# -*- coding: utf-8 -*-
+"""
+Phase3 final decision builder (non-agent workflow).
+
+Inputs:
+  - result_rule_screening.json
+  - optional result_llm_review.json
+
+Output:
+  - result_final_decision.json
+"""
+
+from __future__ import annotations
+
+import json
+import os
+import sys
+from dataclasses import dataclass
+from typing import Any, Dict, List, Optional, Set, Tuple
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
+
+from analy_pipline.common.schema_utils import (  # noqa: E402
+    FINAL_DECISIONS,
+    FINAL_RISKS,
+    LLM_FINAL_DECISIONS,
+    LLM_FINAL_RISKS,
+    RULE_SIGNALS,
+    normalize_final_decision_record,
+    validate_final_decision_results,
+    validate_llm_review_results,
+    validate_rule_screening_results,
+)
+from configs import settings  # noqa: E402
+from configs.domain.scene_config import SCENE_LIST  # noqa: E402
+from utils.http_retry import post_json_with_retry  # noqa: E402
+
+
+ARBITER_PROMPT = os.path.join(settings.PROMPT_DIR, "arbiter.txt")
+
+
+@dataclass
+class FinalizeConfig:
+    vllm_url: str
+    vllm_model: str
+    prompt_dir: str
+    use_arbiter: bool = True
+    arbitration_strategy: str = "semantic_fusion_v1"
+
+
+def _rule_only_map(rule_signal: str) -> Tuple[str, str]:
+    if rule_signal == "LOW_RISK":
+        return "CLEARLY_OK", "LOW"
+    if rule_signal == "HIGH_RISK":
+        return "CLEARLY_RISKY", "HIGH"
+    return "NEED_REVIEW", "MEDIUM"
+
+
+def _llm_to_final(llm_decision: str, llm_risk: str) -> Tuple[str, str]:
+    if llm_decision == "COMPLIANT":
+        return "CLEARLY_OK", "LOW" if llm_risk == "LOW" else "MEDIUM"
+    if llm_decision == "NON_COMPLIANT":
+        return "CLEARLY_RISKY", "HIGH" if llm_risk == "HIGH" else "MEDIUM"
+    return "NEED_REVIEW", "MEDIUM"
+
+
+def _load_json(path: str) -> Any:
+    if not os.path.exists(path):
+        return None
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _iter_app_dirs(target: str) -> List[str]:
+    if os.path.exists(os.path.join(target, "result.json")):
+        return [target]
+    out: List[str] = []
+    for d in sorted(os.listdir(target)):
+        app_dir = os.path.join(target, d)
+        if os.path.isdir(app_dir):
+            out.append(app_dir)
+    return out
+
+
+def _build_rule_summary(rule_item: Dict[str, Any]) -> str:
+    regulatory = str(rule_item.get("regulatory_scene_top1", "")).strip()
+    mapping_reason = str(rule_item.get("mapping_reason", "")).strip()
+    matched = rule_item.get("matched_rules", [])
+    if isinstance(matched, list) and matched:
+        parts = []
+        for x in matched[:2]:
+            if not isinstance(x, dict):
+                continue
+            perm = str(x.get("permission", "")).strip()
+            decision = str(x.get("decision", "")).strip()
+            evidence = str(x.get("evidence", "")).strip()
+            snippet = f"{perm}:{decision}" if perm else decision
+            if evidence:
+                snippet += f" ({evidence})"
+            parts.append(snippet)
+        if parts:
+            prefix = f"regulatory_scene={regulatory}. " if regulatory else ""
+            suffix = f" mapping={mapping_reason}" if mapping_reason else ""
+            return prefix + "; ".join(parts) + suffix
+    signal = str(rule_item.get("overall_rule_signal", "MEDIUM_RISK"))
+    return f"rule screening signal={signal}"
+
+
+def _maybe_arbiter_llm(cfg: FinalizeConfig, payload: Dict[str, Any]) -> Dict[str, Any]:
+    if not cfg.use_arbiter:
+        return {}
+    prompt_path = ARBITER_PROMPT if os.path.exists(ARBITER_PROMPT) else os.path.join(cfg.prompt_dir, "arbiter.txt")
+    if not os.path.exists(prompt_path):
+        return {}
+    with open(prompt_path, "r", encoding="utf-8") as f:
+        template = f.read().strip()
+    prompt = template.replace("{INPUT}", json.dumps(payload, ensure_ascii=False, indent=2))
+    body = {
+        "model": cfg.vllm_model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0,
+    }
+    try:
+        resp = post_json_with_retry(
+            cfg.vllm_url,
+            body,
+            timeout=settings.LLM_RESPONSE_TIMEOUT,
+            max_retries=2,
+            backoff_factor=1.5,
+        )
+        resp.raise_for_status()
+        text = resp.json()["choices"][0]["message"]["content"]
+        s, e = text.find("{"), text.rfind("}")
+        if s != -1 and e != -1 and e > s:
+            obj = json.loads(text[s : e + 1])
+            d = str(obj.get("final_decision", ""))
+            r = str(obj.get("final_risk", ""))
+            if d in FINAL_DECISIONS and r in FINAL_RISKS:
+                return {
+                    "final_decision": d,
+                    "final_risk": r,
+                    "final_summary": str(obj.get("rationale", "")),
+                }
+    except Exception:
+        return {}
+    return {}
+
+
+def _arbitrate(
+    rule_signal: str,
+    llm_final_decision: str,
+    llm_final_risk: str,
+    cfg: FinalizeConfig,
+    context: Dict[str, Any],
+) -> Tuple[bool, str, str, str, str]:
+    """
+    Returns:
+      arbiter_triggered, arbiter_reason, final_decision, final_risk, final_summary
+    """
+    strategy = str(cfg.arbitration_strategy or "llm_dominant_v2")
+    llm_item = context.get("llm", {}) if isinstance(context.get("llm"), dict) else {}
+    rule_item = context.get("rule", {}) if isinstance(context.get("rule"), dict) else {}
+
+    necessity_label = str(llm_item.get("necessity_analysis", {}).get("label", ""))
+    consistency_label = str(llm_item.get("consistency_analysis", {}).get("label", ""))
+    minimality_label = str(llm_item.get("minimality_analysis", {}).get("label", ""))
+    perms = {str(x).strip().upper() for x in (rule_item.get("permissions") or []) if str(x).strip()}
+    has_camera = "CAMERA" in perms
+    has_record_audio = "RECORD_AUDIO" in perms
+    has_location = bool({"ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"} & perms)
+    has_phone = bool({"READ_PHONE_STATE", "READ_PHONE_NUMBERS"} & perms)
+    has_storage = bool({"READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"} & perms)
+    has_high_risk_combo = has_location or has_phone
+    non_sensitive_set = {
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA",
+        "RECORD_AUDIO",
+    }
+    only_non_sensitive = bool(perms) and perms.issubset(non_sensitive_set)
+
+    strict_risky_scenes_high = {
+        "设备清理与系统优化",
+        "网络连接与设备管理",
+        "内容浏览与搜索",
+    }
+    safe_scenes_high = {
+        "用户反馈与客服",
+        "媒体拍摄与扫码",
+        "商品浏览与消费",
+        "社交互动与通信",
+        "地图与位置服务",
+    }
+
+    enable_suspicious_scene_tier = strategy in {
+        "suspicious_scene_tier_v1",
+        "suspicious_scene_tier_v2",
+        "storage_tool_refine_v1",
+        "aggressive_balanced_v1",
+        "aggressive_balanced_v2",
+        "aggressive_balanced_v3",
+        "aggressive_balanced_v4",
+        "aggressive_balanced_v5",
+        "aggressive_balanced_v6",
+        "aggressive_balanced_v7",
+        "aggressive_balanced_v8",
+        "aggressive_balanced_v9",
+    }
+    enable_suspicious_medium_tier = strategy in {
+        "suspicious_scene_tier_v2",
+        "storage_tool_refine_v1",
+        "aggressive_balanced_v1",
+        "aggressive_balanced_v2",
+        "aggressive_balanced_v3",
+        "aggressive_balanced_v4",
+        "aggressive_balanced_v5",
+        "aggressive_balanced_v6",
+        "aggressive_balanced_v7",
+        "aggressive_balanced_v8",
+        "aggressive_balanced_v9",
+        "medium_nav_guard_v1",
+    }
+    enable_compliant_scene_guard = strategy in {
+        "compliant_scene_guard_v2",
+        "medium_nav_guard_v1",
+        "storage_tool_refine_v1",
+        "aggressive_balanced_v1",
+        "aggressive_balanced_v2",
+        "aggressive_balanced_v3",
+        "aggressive_balanced_v4",
+        "aggressive_balanced_v5",
+        "aggressive_balanced_v6",
+        "aggressive_balanced_v7",
+        "aggressive_balanced_v8",
+        "aggressive_balanced_v9",
+    }
+    enable_non_compliant_relax = strategy in {
+        "non_compliant_relax_social_v1",
+        "aggressive_balanced_v1",
+        "aggressive_balanced_v2",
+        "aggressive_balanced_v3",
+        "aggressive_balanced_v4",
+        "aggressive_balanced_v5",
+        "aggressive_balanced_v6",
+        "aggressive_balanced_v7",
+        "aggressive_balanced_v8",
+        "aggressive_balanced_v9",
+    }
+
+    # Lightweight fusion: LLM dominates, rule is used as bounded prior.
+    # This strategy intentionally avoids long case stacking in final arbitration.
+    if strategy == "semantic_fusion_v1":
+        if llm_final_decision == "NON_COMPLIANT":
+            if (
+                rule_signal == "LOW_RISK"
+                and necessity_label == "necessary"
+                and consistency_label == "consistent"
+                and minimality_label == "minimal"
+            ):
+                return (
+                    True,
+                    "non_compliant_low_rule_softened_to_review",
+                    "NEED_REVIEW",
+                    "MEDIUM",
+                    f"[{strategy}] llm non-compliant conflicts with strong semantic positives under low-risk prior",
+                )
+            return (
+                rule_signal == "LOW_RISK",
+                "llm_non_compliant",
+                "CLEARLY_RISKY",
+                "HIGH",
+                f"[{strategy}] llm non-compliant -> final risky",
+            )
+
+        if llm_final_decision == "COMPLIANT":
+            if rule_signal == "HIGH_RISK" and (
+                consistency_label == "inconsistent"
+                or necessity_label == "unnecessary"
+                or minimality_label == "over_privileged"
+            ):
+                return (
+                    True,
+                    "compliant_high_rule_conflict_to_review",
+                    "NEED_REVIEW",
+                    "MEDIUM",
+                    f"[{strategy}] llm compliant but high-risk prior conflicts with reasoning labels",
+                )
+            if rule_signal == "MEDIUM_RISK" and consistency_label == "inconsistent" and necessity_label != "necessary":
+                return (
+                    True,
+                    "compliant_medium_rule_conflict_to_review",
+                    "NEED_REVIEW",
+                    "MEDIUM",
+                    f"[{strategy}] llm compliant but medium-risk prior and weak reasoning",
+                )
+            return (
+                rule_signal in {"MEDIUM_RISK", "HIGH_RISK"},
+                "llm_compliant",
+                "CLEARLY_OK",
+                "LOW",
+                f"[{strategy}] llm compliant -> final safe",
+            )
+
+        # suspicious or unknown
+        if rule_signal == "LOW_RISK" and consistency_label == "consistent" and necessity_label in {"necessary", "helpful"}:
+            return (
+                True,
+                "suspicious_low_rule_promoted_to_safe",
+                "CLEARLY_OK",
+                "LOW",
+                f"[{strategy}] suspicious softened by low-risk prior + positive semantics",
+            )
+        if rule_signal == "HIGH_RISK" and (
+            consistency_label == "inconsistent"
+            or necessity_label == "unnecessary"
+            or minimality_label == "over_privileged"
+        ):
+            return (
+                True,
+                "suspicious_high_rule_promoted_to_risky",
+                "CLEARLY_RISKY",
+                "HIGH",
+                f"[{strategy}] suspicious escalated by high-risk prior + negative semantics",
+            )
+        return (
+            False,
+            "suspicious_default_review",
+            "NEED_REVIEW",
+            "MEDIUM",
+            f"[{strategy}] suspicious -> need review",
+        )
+
+    if llm_final_decision == "NON_COMPLIANT":
+        if enable_non_compliant_relax:
+            strict_non_compliant_relax = strategy in {
+                "aggressive_balanced_v4",
+                "aggressive_balanced_v5",
+                "aggressive_balanced_v6",
+                "aggressive_balanced_v7",
+                "aggressive_balanced_v8",
+                "aggressive_balanced_v9",
+            }
+            # Relax a very narrow safe pocket to reduce obvious false positives.
+            if (
+                rule_item.get("regulatory_scene_top1", "") == "网络社区"
+                and not has_phone
+                and not has_location
+                and (not strict_non_compliant_relax or not has_camera)
+            ):
+                return (
+                    True,
+                    "non_compliant_relaxed_network_community",
+                    "CLEARLY_OK",
+                    "LOW",
+                    f"[{strategy}] non-compliant relaxed in network community without phone/location",
+                )
+            if (
+                rule_item.get("ui_task_scene", "") in {"用户反馈与客服", "社交互动与通信"}
+                and rule_item.get("regulatory_scene_top1", "") in {"即时通信聊天服务", "网络社区"}
+                and not has_phone
+                and not has_location
+                and only_non_sensitive
+                and (not strict_non_compliant_relax or not has_camera)
+            ):
+                return (
+                    True,
+                    "non_compliant_relaxed_feedback_social_non_sensitive",
+                    "CLEARLY_OK",
+                    "LOW",
+                    f"[{strategy}] non-compliant relaxed for feedback/social with non-sensitive permissions",
+                )
+        conflict = rule_signal == "LOW_RISK"
+        return (
+            conflict,
+            "llm_non_compliant_overrides_rule" if conflict else "llm_non_compliant",
+            "CLEARLY_RISKY",
+            "HIGH",
+            f"[{strategy}] llm NON_COMPLIANT -> final risky",
+        )
+
+    if llm_final_decision == "COMPLIANT":
+        # Strategy B: limited guarded tightening for compliant on high/medium-risk rule.
+        if strategy in {"compliant_guarded_v1", "hybrid_reasoning_gate_v1"}:
+            if rule_signal == "HIGH_RISK" and has_high_risk_combo:
+                return (
+                    True,
+                    "compliant_high_rule_guarded_to_review",
+                    "NEED_REVIEW",
+                    "MEDIUM",
+                    f"[{strategy}] compliant + high-risk prior + location/phone perms -> need review",
+                )
+            if rule_signal == "MEDIUM_RISK" and has_location:
+                return (
+                    True,
+                    "compliant_medium_rule_guarded_to_review",
+                    "NEED_REVIEW",
+                    "MEDIUM",
+                    f"[{strategy}] compliant + medium-risk prior + location perms -> need review",
+                )
+        if enable_compliant_scene_guard:
+            ui_scene = rule_item.get("ui_task_scene", "")
+            reg_scene = rule_item.get("regulatory_scene_top1", "")
+            if rule_signal == "HIGH_RISK":
+                if (
+                    strategy in {"aggressive_balanced_v6", "aggressive_balanced_v7", "aggressive_balanced_v8"}
+                    and reg_scene == "实用工具"
+                    and ui_scene == "文件与数据管理"
+                    and has_location
+                    and has_storage
+                ):
+                    return (
+                        True,
+                        "compliant_high_rule_file_tool_location_storage_to_review",
+                        "NEED_REVIEW",
+                        "MEDIUM",
+                        f"[{strategy}] compliant + high-risk + tool/file + location/storage -> need review",
+                    )
+                if (
+                    strategy in {"aggressive_balanced_v8", "aggressive_balanced_v9"}
+                    and reg_scene == "实用工具"
+                    and ui_scene == "相册选择与媒体上传"
+                    and has_camera
+                    and has_storage
+                ):
+                    return (
+                        True,
+                        "compliant_high_rule_album_tool_camera_storage_to_review",
+                        "NEED_REVIEW",
+                        "MEDIUM",
+                        f"[{strategy}] compliant + high-risk + album/tool + camera/storage -> need review",
+                    )
+                if (
+                    strategy == "aggressive_balanced_v9"
+                    and reg_scene == "在线影音"
+                    and ui_scene == "相册选择与媒体上传"
+                    and has_storage
+                    and "水印" in f"{rule_item.get('task_phrase', '')}{rule_item.get('intent', '')}"
+                ):
+                    return (
+                        True,
+                        "compliant_high_rule_album_video_watermark_to_review",
+                        "NEED_REVIEW",
+                        "MEDIUM",
+                        f"[{strategy}] compliant + high-risk watermark-like video task -> need review",
+                    )
+                if ui_scene in {"设备清理与系统优化", "地图与位置服务"}:
+                    return (
+                        True,
+                        "compliant_high_rule_scene_guarded_to_review",
+                        "NEED_REVIEW",
+                        "MEDIUM",
+                        f"[{strategy}] compliant + high-risk + risky ui scene -> need review",
+                    )
+                if reg_scene == "实用工具" and has_storage and ui_scene in {"设备清理与系统优化", "网络连接与设备管理"}:
+                    return (
+                        True,
+                        "compliant_high_rule_storage_tool_guarded_to_review",
+                        "NEED_REVIEW",
+                        "MEDIUM",
+                        f"[{strategy}] compliant + high-risk + storage in tool-like scene -> need review",
+                    )
+            if strategy in {
+                "medium_nav_guard_v1",
+                "storage_tool_refine_v1",
+                "aggressive_balanced_v1",
+                "aggressive_balanced_v2",
+                "aggressive_balanced_v3",
+                "aggressive_balanced_v4",
+                "aggressive_balanced_v5",
+                "aggressive_balanced_v6",
+                "aggressive_balanced_v7",
+                "aggressive_balanced_v8",
+                "aggressive_balanced_v9",
+            }:
+                if (
+                    rule_signal == "MEDIUM_RISK"
+                    and reg_scene == "地图导航"
+                    and ui_scene != "地图与位置服务"
+                ):
+                    return (
+                        True,
+                        "compliant_medium_nav_non_map_guarded_to_review",
+                        "NEED_REVIEW",
+                        "MEDIUM",
+                        f"[{strategy}] compliant + medium-risk map regulatory but non-map ui -> need review",
+                    )
+            if (
+                strategy in {"aggressive_balanced_v7", "aggressive_balanced_v8", "aggressive_balanced_v9"}
+                and rule_signal == "MEDIUM_RISK"
+                and ui_scene == "媒体拍摄与扫码"
+                and has_record_audio
+                and not has_camera
+            ):
+                return (
+                    True,
+                    "compliant_medium_media_record_audio_only_to_review",
+                    "NEED_REVIEW",
+                    "MEDIUM",
+                    f"[{strategy}] compliant + medium-risk + media with record-audio-only -> need review",
+                )
+        conflict = rule_signal in {"MEDIUM_RISK", "HIGH_RISK"}
+        return (
+            conflict,
+            "llm_compliant_overrides_rule" if conflict else "llm_compliant",
+            "CLEARLY_OK",
+            "LOW",
+            f"[{strategy}] llm COMPLIANT -> final safe",
+        )
+
+    # llm_final_decision == "SUSPICIOUS" or unknown
+    if rule_signal == "LOW_RISK":
+        return (
+            True,
+            "llm_suspicious_but_rule_low",
+            "CLEARLY_OK",
+            "LOW",
+            f"[{strategy}] suspicious + low rule -> safe",
+        )
+
+    if strategy == "suspicious_relaxed_v1":
+        if rule_signal == "MEDIUM_RISK":
+            return (
+                True,
+                "llm_suspicious_medium_rule_relaxed_to_safe",
+                "CLEARLY_OK",
+                "LOW",
+                f"[{strategy}] suspicious + medium rule -> safe",
+            )
+        return (
+            False,
+            "llm_suspicious_high_rule_keep_risky",
+            "NEED_REVIEW",
+            "MEDIUM",
+            f"[{strategy}] suspicious + high rule -> risky",
+        )
+
+    if enable_suspicious_scene_tier:
+        ui_scene = rule_item.get("ui_task_scene", "")
+        reg_scene = rule_item.get("regulatory_scene_top1", "")
+        if rule_signal == "HIGH_RISK":
+            if ui_scene in strict_risky_scenes_high:
+                return (
+                    False,
+                    "suspicious_high_risky_scene_keep_risky",
+                    "NEED_REVIEW",
+                    "MEDIUM",
+                    f"[{strategy}] suspicious + high-risk + risky scene -> risky",
+                )
+            if ui_scene in safe_scenes_high:
+                return (
+                    True,
+                    "suspicious_high_safe_scene_downgraded_to_safe",
+                    "CLEARLY_OK",
+                    "LOW",
+                    f"[{strategy}] suspicious + high-risk + safe scene -> safe",
+                )
+            if ui_scene == "相册选择与媒体上传":
+                if consistency_label == "consistent":
+                    return (
+                        True,
+                        "suspicious_high_album_consistent_to_safe",
+                        "CLEARLY_OK",
+                        "LOW",
+                        f"[{strategy}] suspicious + high-risk album + consistent -> safe",
+                    )
+                return (
+                    False,
+                    "suspicious_high_album_not_consistent_keep_risky",
+                    "NEED_REVIEW",
+                    "MEDIUM",
+                    f"[{strategy}] suspicious + high-risk album not consistent -> risky",
+                )
+            if ui_scene == "文件与数据管理":
+                if (
+                    strategy in {"aggressive_balanced_v5", "aggressive_balanced_v6", "aggressive_balanced_v7", "aggressive_balanced_v8", "aggressive_balanced_v9"}
+                    and has_location
+                    and has_storage
+                ):
+                    return (
+                        False,
+                        "suspicious_high_file_location_storage_keep_risky",
+                        "NEED_REVIEW",
+                        "MEDIUM",
+                        f"[{strategy}] suspicious + high-risk file with location/storage -> risky",
+                    )
+                if consistency_label == "consistent" and necessity_label == "necessary":
+                    return (
+                        True,
+                        "suspicious_high_file_consistent_necessary_to_safe",
+                        "CLEARLY_OK",
+                        "LOW",
+                        f"[{strategy}] suspicious + high-risk file + consistent/necessary -> safe",
+                    )
+                return (
+                    False,
+                    "suspicious_high_file_keep_risky",
+                    "NEED_REVIEW",
+                    "MEDIUM",
+                    f"[{strategy}] suspicious + high-risk file not strong-positive -> risky",
+                )
+            # v2/v3: small extra relaxation for specific regulatory classes.
+            if strategy in {
+                "aggressive_balanced_v2",
+                "aggressive_balanced_v3",
+                "aggressive_balanced_v4",
+                "aggressive_balanced_v5",
+                "aggressive_balanced_v6",
+                "aggressive_balanced_v7",
+                "aggressive_balanced_v8",
+                "aggressive_balanced_v9",
+            }:
+                if reg_scene in {"拍摄美化", "在线影音", "即时通信聊天服务"} and not has_phone and not has_location:
+                    return (
+                        True,
+                        "suspicious_high_regulatory_relaxed_to_safe",
+                        "CLEARLY_OK",
+                        "LOW",
+                        f"[{strategy}] suspicious + high-risk but low-sensitive media/social regulatory scene -> safe",
+                    )
+            return (
+                False,
+                "suspicious_high_default_keep_risky",
+                "NEED_REVIEW",
+                "MEDIUM",
+                f"[{strategy}] suspicious + high-risk default -> risky",
+            )
+
+    if enable_suspicious_medium_tier and rule_signal == "MEDIUM_RISK":
+        ui_scene = rule_item.get("ui_task_scene", "")
+        reg_scene = rule_item.get("regulatory_scene_top1", "")
+        if ui_scene in {"网络连接与设备管理", "设备清理与系统优化"}:
+            return (
+                False,
+                "suspicious_medium_tool_net_keep_risky",
+                "NEED_REVIEW",
+                "MEDIUM",
+                f"[{strategy}] suspicious + medium-risk tool/network scene -> risky",
+            )
+        if ui_scene == "媒体拍摄与扫码":
+            if consistency_label == "consistent":
+                return (
+                    True,
+                    "suspicious_medium_media_consistent_to_safe",
+                    "CLEARLY_OK",
+                    "LOW",
+                    f"[{strategy}] suspicious + medium-risk media + consistent -> safe",
+                )
+            return (
+                False,
+                "suspicious_medium_media_not_consistent_keep_risky",
+                "NEED_REVIEW",
+                "MEDIUM",
+                f"[{strategy}] suspicious + medium-risk media not consistent -> risky",
+            )
+        if ui_scene == "内容浏览与搜索":
+            return (
+                True,
+                "suspicious_medium_browse_to_safe",
+                "CLEARLY_OK",
+                "LOW",
+                f"[{strategy}] suspicious + medium-risk browse scene -> safe",
+            )
+        if strategy in {
+            "aggressive_balanced_v3",
+            "aggressive_balanced_v4",
+            "aggressive_balanced_v5",
+            "aggressive_balanced_v6",
+            "aggressive_balanced_v7",
+            "aggressive_balanced_v8",
+            "aggressive_balanced_v9",
+        }:
+            if reg_scene in {"即时通信聊天服务", "在线影音"} and not has_phone and not has_location:
+                return (
+                    True,
+                    "suspicious_medium_regulatory_relaxed_to_safe",
+                    "CLEARLY_OK",
+                    "LOW",
+                    f"[{strategy}] suspicious + medium-risk low-sensitive regulatory scene -> safe",
+                )
+        return (
+            False,
+            "suspicious_medium_default_keep_risky",
+            "NEED_REVIEW",
+            "MEDIUM",
+            f"[{strategy}] suspicious + medium-risk default -> risky",
+        )
+
+    if strategy in {"suspicious_consistency_gate_v1", "hybrid_reasoning_gate_v1"}:
+        if rule_signal == "HIGH_RISK":
+            if consistency_label == "consistent" and necessity_label == "necessary":
+                return (
+                    True,
+                    "llm_suspicious_high_but_consistent_to_safe",
+                    "CLEARLY_OK",
+                    "LOW",
+                    f"[{strategy}] suspicious + high rule but consistent/necessary -> safe",
+                )
+            return (
+                False,
+                "llm_suspicious_high_rule_keep_risky",
+                "NEED_REVIEW",
+                "MEDIUM",
+                f"[{strategy}] suspicious + high rule -> risky",
+            )
+        if strategy == "hybrid_reasoning_gate_v1" and rule_signal == "MEDIUM_RISK":
+            # cautious relaxation only when semantic cues are strong.
+            if consistency_label == "consistent" and necessity_label == "necessary" and minimality_label == "minimal":
+                return (
+                    True,
+                    "llm_suspicious_medium_but_strong_reasoning_to_safe",
+                    "CLEARLY_OK",
+                    "LOW",
+                    f"[{strategy}] suspicious + medium rule but strong reasoning labels -> safe",
+                )
+        return (
+            False,
+            "llm_suspicious_and_rule_risky",
+            "NEED_REVIEW",
+            "MEDIUM",
+            f"[{strategy}] suspicious + medium/high rule -> risky",
+        )
+
+    # default llm_dominant_v2
+    return (
+        False,
+        "llm_suspicious_and_rule_risky",
+        "NEED_REVIEW",
+        "MEDIUM",
+        f"[{strategy}] suspicious + medium/high rule -> risky",
+    )
+
+
+def _build_final_decision_for_app(
+    app_dir: str,
+    cfg: FinalizeConfig,
+    chain_ids_filter: Optional[Set[int]] = None,
+) -> Tuple[int, int]:
+    rule_path = os.path.join(app_dir, "result_rule_screening.json")
+    llm_path = os.path.join(app_dir, "result_llm_review.json")
+    if not os.path.exists(rule_path):
+        print(f"[FinalDecision][WARN] skip app={app_dir} missing {rule_path}")
+        return 0, 0
+
+    rule_raw = _load_json(rule_path)
+    rules, invalid_rule = validate_rule_screening_results(rule_raw, SCENE_LIST)
+
+    llm_map: Dict[int, Dict[str, Any]] = {}
+    invalid_llm = 0
+    if os.path.exists(llm_path):
+        llm_raw = _load_json(llm_path)
+        llm_items, invalid_llm = validate_llm_review_results(llm_raw)
+        llm_map = {int(x["chain_id"]): x for x in llm_items}
+
+    out: List[Dict[str, Any]] = []
+    invalid = invalid_rule + invalid_llm
+
+    for item in rules:
+        chain_id = int(item["chain_id"])
+        if chain_ids_filter is not None and chain_id not in chain_ids_filter:
+            continue
+        scene = item.get("scene", "UNKNOWN")
+        ui_task_scene = item.get("ui_task_scene", scene)
+        ui_task_scene_top3 = item.get("ui_task_scene_top3", [])
+        regulatory_scene_top1 = item.get("regulatory_scene_top1", "")
+        regulatory_scene_top3 = item.get("regulatory_scene_top3", [])
+        task_phrase = item.get("task_phrase", "")
+        intent = item.get("intent", "")
+        page_function = item.get("page_function", "")
+        trigger_action = item.get("trigger_action", "")
+        visible_actions = item.get("visible_actions", [])
+        task_relevance_cues = item.get("task_relevance_cues", [])
+        permission_context = item.get("permission_context", "")
+        chain_summary = item.get("chain_summary", "")
+        permissions = item.get("permissions", [])
+        allowed_permissions = item.get("allowed_permissions", [])
+        banned_permissions = item.get("banned_permissions", [])
+        rule_signal = item.get("overall_rule_signal", "MEDIUM_RISK")
+        llm_item = llm_map.get(chain_id, {})
+
+        rollback = False
+        rollback_reason = ""
+        arbiter_triggered = False
+        arbiter_reason = ""
+        llm_required = rule_signal in {"MEDIUM_RISK", "HIGH_RISK"}
+        rule_summary = _build_rule_summary(item)
+
+        output_valid = bool(llm_item.get("output_valid", False))
+        llm_final_decision = str(llm_item.get("llm_final_decision", "SUSPICIOUS"))
+        llm_final_risk = str(llm_item.get("llm_final_risk", "MEDIUM"))
+        llm_summary = str(llm_item.get("llm_explanation", ""))
+
+        if not llm_item:
+            if llm_required:
+                rollback = True
+                rollback_reason = "invalid_llm_output"
+                final_decision, final_risk = _rule_only_map(rule_signal)
+                final_summary = f"[{cfg.arbitration_strategy}] rollback to rule-only decision (missing llm review)"
+            else:
+                llm_final_decision = "COMPLIANT"
+                llm_final_risk = "LOW"
+                llm_summary = "llm review skipped for low-risk chain"
+                final_decision, final_risk = _rule_only_map(rule_signal)
+                final_summary = f"[{cfg.arbitration_strategy}] low-risk rule-only decision"
+        elif not output_valid:
+            if llm_required:
+                rollback = True
+                rollback_reason = "invalid_llm_output"
+                final_decision, final_risk = _rule_only_map(rule_signal)
+                final_summary = f"[{cfg.arbitration_strategy}] rollback to rule-only decision (invalid llm output)"
+            else:
+                llm_final_decision = "COMPLIANT"
+                llm_final_risk = "LOW"
+                llm_summary = "invalid llm output ignored for low-risk chain"
+                final_decision, final_risk = _rule_only_map(rule_signal)
+                final_summary = f"[{cfg.arbitration_strategy}] low-risk rule-only decision"
+        else:
+            arbiter_triggered, arbiter_reason, final_decision, final_risk, final_summary = _arbitrate(
+                rule_signal=rule_signal,
+                llm_final_decision=llm_final_decision,
+                llm_final_risk=llm_final_risk,
+                cfg=cfg,
+                context={"rule": item, "llm": llm_item},
+            )
+
+        rec = normalize_final_decision_record(
+            {
+                "chain_id": chain_id,
+                "scene": scene,
+                "ui_task_scene": ui_task_scene,
+                "ui_task_scene_top3": ui_task_scene_top3,
+                "regulatory_scene_top1": regulatory_scene_top1,
+                "regulatory_scene_top3": regulatory_scene_top3,
+                "task_phrase": task_phrase,
+                "intent": intent,
+                "page_function": page_function,
+                "trigger_action": trigger_action,
+                "visible_actions": visible_actions,
+                "task_relevance_cues": task_relevance_cues,
+                "permission_context": permission_context,
+                "chain_summary": chain_summary,
+                "permissions": permissions,
+                "allowed_permissions": allowed_permissions,
+                "banned_permissions": banned_permissions,
+                "rule_signal": rule_signal,
+                "llm_final_decision": llm_final_decision if llm_final_decision in LLM_FINAL_DECISIONS else "SUSPICIOUS",
+                "llm_final_risk": llm_final_risk if llm_final_risk in LLM_FINAL_RISKS else "MEDIUM",
+                "final_decision": final_decision,
+                "final_risk": final_risk,
+                "arbiter_triggered": arbiter_triggered,
+                "arbiter_reason": arbiter_reason,
+                "rollback": rollback,
+                "rollback_reason": rollback_reason,
+                "explain": {
+                    "rule_signal": rule_signal if rule_signal in RULE_SIGNALS else "MEDIUM_RISK",
+                    "rule_summary": rule_summary,
+                    "llm_summary": llm_summary,
+                    "final_summary": final_summary,
+                },
+            }
+        )
+        out.append(rec)
+
+    normalized, dropped = validate_final_decision_results(out)
+    invalid += dropped
+    out_path = os.path.join(app_dir, "result_final_decision.json")
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(normalized, f, ensure_ascii=False, indent=2)
+    print(f"[FinalDecision] finish app={app_dir} chains={len(normalized)} invalid={invalid} out={out_path}")
+    return len(normalized), invalid
+
+
+def finalize_results(
+    target: str,
+    cfg: FinalizeConfig,
+    chain_ids: Optional[List[int]] = None,
+) -> Tuple[int, int]:
+    total = 0
+    invalid = 0
+    app_dirs = _iter_app_dirs(target)
+    chain_filter: Optional[Set[int]] = None
+    if chain_ids:
+        chain_filter = {int(x) for x in chain_ids}
+    for idx, app_dir in enumerate(app_dirs, 1):
+        if not os.path.exists(os.path.join(app_dir, "result.json")):
+            continue
+        print(f"[FinalDecision] start app={idx}/{len(app_dirs)} path={app_dir}")
+        try:
+            c, i = _build_final_decision_for_app(app_dir, cfg, chain_ids_filter=chain_filter)
+            total += c
+            invalid += i
+        except Exception as exc:
+            print(f"[FinalDecision][WARN] failed app={app_dir}: {exc}")
+    print(f"[FinalDecision] done total_chains={total} invalid={invalid}")
+    return total, invalid
+
+
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Build result_final_decision.json from rule + llm outputs")
+    parser.add_argument(
+        "target",
+        nargs="?",
+        default=settings.DATA_PROCESSED_DIR,
+        help="processed root or one app dir (default: settings.DATA_PROCESSED_DIR)",
+    )
+    parser.add_argument("--vllm-url", default=os.getenv("VLLM_TEXT_URL", settings.VLLM_TEXT_URL))
+    parser.add_argument("--model", default=os.getenv("VLLM_TEXT_MODEL", settings.VLLM_TEXT_MODEL))
+    parser.add_argument("--prompt-dir", default=settings.PROMPT_DIR)
+    parser.add_argument(
+        "--strategy",
+        default=os.getenv("LLMMUI_FINAL_STRATEGY", "semantic_fusion_v1"),
+        help=(
+            "arbitration strategy: llm_dominant_v2 | suspicious_relaxed_v1 | "
+            "suspicious_consistency_gate_v1 | compliant_guarded_v1 | hybrid_reasoning_gate_v1 | "
+            "suspicious_scene_tier_v1 | suspicious_scene_tier_v2 | compliant_scene_guard_v2 | "
+            "medium_nav_guard_v1 | non_compliant_relax_social_v1 | storage_tool_refine_v1 | "
+            "aggressive_balanced_v1 | aggressive_balanced_v2 | aggressive_balanced_v3 | "
+            "aggressive_balanced_v4 | aggressive_balanced_v5 | aggressive_balanced_v6 | "
+            "aggressive_balanced_v7 | aggressive_balanced_v8 | aggressive_balanced_v9 | "
+            "semantic_fusion_v1"
+        ),
+    )
+    parser.add_argument("--disable-arbiter", action="store_true", help="disable extra LLM arbiter calls")
+    parser.add_argument("--chain-ids", default="", help="comma-separated chain ids, e.g. 1,3,9")
+    args = parser.parse_args()
+
+    cfg = FinalizeConfig(
+        vllm_url=args.vllm_url,
+        vllm_model=args.model,
+        prompt_dir=args.prompt_dir,
+        use_arbiter=not args.disable_arbiter,
+        arbitration_strategy=args.strategy,
+    )
+    chain_ids: List[int] = []
+    if args.chain_ids.strip():
+        for seg in args.chain_ids.split(","):
+            seg = seg.strip()
+            if not seg:
+                continue
+            try:
+                chain_ids.append(int(seg))
+            except Exception:
+                continue
+    finalize_results(args.target, cfg, chain_ids=chain_ids or None)

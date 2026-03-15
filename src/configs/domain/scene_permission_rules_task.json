@@ -1,0 +1,183 @@
+{
+  "账号与身份认证": {
+    "clearly_allowed": [],
+    "clearly_prohibited": [
+      "CAMERA",
+      "RECORD_AUDIO",
+      "READ_CONTACTS",
+      "READ_CALL_LOG",
+      "READ_SMS",
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_BACKGROUND_LOCATION"
+    ],
+    "needs_review": [
+      "READ_PHONE_NUMBERS"
+    ]
+  },
+  "地图与位置服务": {
+    "clearly_allowed": [
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION"
+    ],
+    "clearly_prohibited": [
+      "READ_CALL_LOG",
+      "READ_SMS",
+      "READ_CONTACTS"
+    ],
+    "needs_review": [
+      "ACCESS_BACKGROUND_LOCATION"
+    ]
+  },
+  "内容浏览与搜索": {
+    "clearly_allowed": [],
+    "clearly_prohibited": [
+      "READ_CONTACTS",
+      "READ_CALL_LOG",
+      "READ_SMS",
+      "RECORD_AUDIO",
+      "ACCESS_BACKGROUND_LOCATION"
+    ],
+    "needs_review": [
+      "ACCESS_FINE_LOCATION"
+    ]
+  },
+  "社交互动与通信": {
+    "clearly_allowed": [
+      "RECORD_AUDIO",
+      "CAMERA",
+      "READ_PHONE_NUMBERS"
+    ],
+    "clearly_prohibited": [
+      "ACCESS_BACKGROUND_LOCATION",
+      "READ_CALL_LOG"
+    ],
+    "needs_review": [
+      "READ_CONTACTS"
+    ]
+  },
+  "媒体拍摄与扫码": {
+    "clearly_allowed": [
+      "CAMERA"
+    ],
+    "clearly_prohibited": [
+      "READ_CALL_LOG",
+      "READ_SMS",
+      "READ_CONTACTS",
+      "ACCESS_BACKGROUND_LOCATION"
+    ],
+    "needs_review": [
+      "RECORD_AUDIO",
+      "READ_MEDIA_IMAGES",
+      "READ_MEDIA_VIDEO",
+      "WRITE_EXTERNAL_STORAGE"
+    ]
+  },
+  "相册选择与媒体上传": {
+    "clearly_allowed": [
+      "READ_MEDIA_IMAGES",
+      "READ_MEDIA_VIDEO",
+      "WRITE_EXTERNAL_STORAGE"
+    ],
+    "clearly_prohibited": [
+      "READ_CALL_LOG",
+      "READ_SMS",
+      "ACCESS_BACKGROUND_LOCATION"
+    ],
+    "needs_review": [
+      "CAMERA"
+    ]
+  },
+  "商品浏览与消费": {
+    "clearly_allowed": [],
+    "clearly_prohibited": [
+      "READ_CALL_LOG",
+      "READ_SMS",
+      "RECORD_AUDIO"
+    ],
+    "needs_review": [
+      "CAMERA",
+      "ACCESS_FINE_LOCATION"
+    ]
+  },
+  "支付与金融交易": {
+    "clearly_allowed": [
+      "READ_PHONE_NUMBERS"
+    ],
+    "clearly_prohibited": [
+      "CAMERA",
+      "RECORD_AUDIO",
+      "READ_CONTACTS",
+      "READ_CALL_LOG",
+      "READ_SMS",
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_BACKGROUND_LOCATION"
+    ],
+    "needs_review": []
+  },
+  "文件与数据管理": {
+    "clearly_allowed": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE",
+      "READ_MEDIA_IMAGES",
+      "READ_MEDIA_VIDEO"
+    ],
+    "clearly_prohibited": [
+      "READ_CALL_LOG",
+      "READ_SMS",
+      "READ_CONTACTS",
+      "ACCESS_BACKGROUND_LOCATION"
+    ],
+    "needs_review": [
+      "CAMERA"
+    ]
+  },
+  "设备清理与系统优化": {
+    "clearly_allowed": [],
+    "clearly_prohibited": [
+      "READ_CONTACTS",
+      "READ_SMS",
+      "READ_CALL_LOG"
+    ],
+    "needs_review": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE",
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION"
+    ]
+  },
+  "网络连接与设备管理": {
+    "clearly_allowed": [],
+    "clearly_prohibited": [
+      "READ_CONTACTS",
+      "READ_SMS",
+      "READ_CALL_LOG"
+    ],
+    "needs_review": [
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION",
+      "RECORD_AUDIO",
+      "CAMERA"
+    ]
+  },
+  "用户反馈与客服": {
+    "clearly_allowed": [],
+    "clearly_prohibited": [
+      "READ_CALL_LOG",
+      "READ_SMS",
+      "ACCESS_BACKGROUND_LOCATION"
+    ],
+    "needs_review": [
+      "CAMERA",
+      "RECORD_AUDIO",
+      "READ_MEDIA_IMAGES",
+      "READ_MEDIA_VIDEO"
+    ]
+  },
+  "其他": {
+    "clearly_allowed": [],
+    "clearly_prohibited": [],
+    "needs_review": [
+      "ALL"
+    ]
+  }
+}

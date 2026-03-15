@@ -1,0 +1,715 @@
+# -*- coding: utf-8 -*-
+"""
+Phase3 semantic pre-stage:
+VLM-based chain semantic interpretation.
+
+Input:
+  <processed>/<app>/result.json + chain_*.png
+
+Output:
+  <processed>/<app>/result_chain_semantics.json
+  <processed|app>/chain_semantics_summary.json
+"""
+
+from __future__ import annotations
+
+import argparse
+import base64
+import json
+import os
+import re
+import sys
+from collections import Counter
+from typing import Any, Dict, List, Optional, Set, Tuple
+
+import requests
+from tqdm import tqdm
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
+
+from analy_pipline.common.chain_summary import load_chain_summary_map  # noqa: E402
+from analy_pipline.common.schema_utils import (  # noqa: E402
+    CONF_LEVELS,
+    normalize_chain_semantic_record,
+    validate_chain_semantic_results,
+)
+from configs import settings  # noqa: E402
+from utils.http_retry import post_json_with_retry  # noqa: E402
+from utils.validators import validate_result_json_chains  # noqa: E402
+
+
+OUTPUT_FILENAME = "result_chain_semantics.json"
+SUMMARY_FILENAME = "chain_semantics_summary.json"
+DEFAULT_PROMPT_FILE = os.path.join(settings.PROMPT_DIR, "chain_semantic_interpreter_vision.txt")
+PERMISSION_FILENAME = "result_permission.json"
+
+
+def load_prompt_template(path: str) -> str:
+    with open(path, "r", encoding="utf-8") as f:
+        return f.read().strip()
+
+
+def extract_json_obj(text: str) -> Dict[str, Any]:
+    if not text:
+        return {}
+    text = text.strip()
+    text = re.sub(r"^```(?:json)?\n", "", text, flags=re.I)
+    text = re.sub(r"```$", "", text).strip()
+    try:
+        return json.loads(text)
+    except Exception:
+        s, e = text.find("{"), text.rfind("}")
+        if s != -1 and e != -1 and e > s:
+            try:
+                return json.loads(text[s : e + 1])
+            except Exception:
+                return {}
+    return {}
+
+
+def _extract_tokens(text: str, limit: int = 8) -> List[str]:
+    out: List[str] = []
+    for seg in re.split(r"[\s,;，。！？、|/]+", text or ""):
+        seg = seg.strip()
+        if len(seg) < 2:
+            continue
+        if len(seg) > 20:
+            continue
+        if seg not in out:
+            out.append(seg)
+        if len(out) >= limit:
+            break
+    return out
+
+
+_PERM_UI_HINTS = (
+    "权限",
+    "授权",
+    "允许",
+    "拒绝",
+    "始终允许",
+    "仅在使用中",
+    "去授权",
+    "弹窗",
+)
+
+
+def _is_permission_ui_text(text: str) -> bool:
+    s = (text or "").strip()
+    if not s:
+        return True
+    return any(x in s for x in _PERM_UI_HINTS)
+
+
+def _pick_task_phrase(top_widgets: List[Any]) -> str:
+    for w in top_widgets:
+        s = str(w).strip()
+        if not s:
+            continue
+        if len(s) > 20:
+            continue
+        if _is_permission_ui_text(s):
+            continue
+        return s
+    return ""
+
+
+def _pick_trigger_action(actions: List[str], task_phrase: str) -> str:
+    for a in actions:
+        if a.startswith(("点击", "切换", "输入", "选择", "上传", "开始", "打开", "浏览", "查看", "搜索", "使用")):
+            return a
+    if actions:
+        return actions[0]
+    return f"执行{task_phrase}" if task_phrase else "unknown"
+
+
+def _infer_page_transition(before: str, after: str, task_phrase: str) -> str:
+    if before and after and before[:50] != after[:50]:
+        return "页面从前一状态切换到当前任务相关视图。"
+    if task_phrase:
+        return ""
+    return ""
+
+
+def _infer_page_cues_from_text(text: str) -> List[str]:
+    cue_rules = [
+        (("同城", "附近", "本地"), "local_content_entry"),
+        (("定位", "位置", "地图", "导航"), "location_related_tab"),
+        (("搜索", "搜"), "search_bar"),
+        (("上传", "相册", "头像"), "upload_entry"),
+        (("录音", "音频", "清唱"), "recording_controls"),
+        (("验证码", "密码", "手机号"), "form_input_fields"),
+        (("参数", "配置", "规格", "型号"), "technical_spec_table"),
+        (("商品", "店铺", "购物"), "product_list"),
+    ]
+    out: List[str] = []
+    for terms, cue in cue_rules:
+        if any(t in text for t in terms) and cue not in out:
+            out.append(cue)
+    return out[:4]
+
+
+def _extract_popup_text(granting_text: str, top_widgets: List[Any]) -> str:
+    parts: List[str] = []
+    gtxt = str(granting_text or "").strip()
+    if gtxt:
+        parts.append(gtxt[:220])
+    for w in top_widgets[:10]:
+        ws = str(w).strip()
+        if not ws:
+            continue
+        if any(k in ws for k in _PERM_UI_HINTS) and ws not in parts:
+            parts.append(ws)
+    return " | ".join(parts)[:320]
+
+
+def _default_semantics(chain_summary: Dict[str, Any]) -> Dict[str, Any]:
+    before = str(chain_summary.get("before_text", "")).strip()
+    granting = str(chain_summary.get("granting_text", "")).strip()
+    after = str(chain_summary.get("after_text", "")).strip()
+    top_widgets = chain_summary.get("top_widgets", []) if isinstance(chain_summary.get("top_widgets"), list) else []
+    task_phrase = _pick_task_phrase(top_widgets)
+    if not task_phrase:
+        task_phrase = "完成当前页面任务"
+    intent = f"用户希望在当前页面完成{task_phrase}。"
+    page_function = f"页面提供与“{task_phrase}”相关的功能入口。"
+    clean_actions = [
+        str(x).strip()
+        for x in top_widgets[:8]
+        if str(x).strip() and not _is_permission_ui_text(str(x).strip()) and len(str(x).strip()) <= 20
+    ]
+    if not clean_actions:
+        clean_actions = [task_phrase]
+    trigger_action = _pick_trigger_action(clean_actions, task_phrase)
+    page_transition = _infer_page_transition(before, after, task_phrase)
+    all_text = " ".join([before, granting, after, " ".join(clean_actions)])
+    page_cues = _infer_page_cues_from_text(all_text)
+    task_relevance_cues = page_cues[:]
+    for x in clean_actions[:3]:
+        if x and x not in task_relevance_cues:
+            task_relevance_cues.append(x[:24])
+    popup_text = _extract_popup_text(granting, top_widgets)
+    summary = f"用户在当前页面{task_phrase}时，系统出现权限请求弹窗。"
+    hint_permissions = [str(x) for x in chain_summary.get("permissions", []) if isinstance(x, str)]
+    return {
+        "task_phrase": task_phrase,
+        "intent": intent,
+        "page_function": page_function,
+        "trigger_action": trigger_action,
+        "page_transition": page_transition,
+        "visible_actions": clean_actions[:6],
+        "permission_event": {
+            "permissions": hint_permissions,
+            "ui_observation": "系统出现权限请求弹窗。",
+            "recognition_status": "recognized" if hint_permissions else "missing",
+        },
+        "task_relevance_cues": task_relevance_cues[:8],
+        "chain_summary": summary[:800],
+        "evidence": {
+            "keywords": _extract_tokens(" ".join([before[:200], granting[:160], after[:200]])),
+            "widgets": [str(x).strip() for x in top_widgets[:8] if str(x).strip() and len(str(x).strip()) <= 20],
+            "page_cues": page_cues,
+        },
+        "permission_popup_text": popup_text,
+        "confidence": "low",
+    }
+
+
+def _non_empty(v: Any) -> bool:
+    if v is None:
+        return False
+    if isinstance(v, str):
+        return bool(v.strip())
+    if isinstance(v, list):
+        return any(_non_empty(x) for x in v)
+    if isinstance(v, dict):
+        return any(_non_empty(x) for x in v.values())
+    return True
+
+
+def _deep_merge_semantic(fallback: Dict[str, Any], model_obj: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Merge model output into fallback while preventing empty values from wiping structured fallback.
+    """
+    merged = dict(fallback)
+    if not isinstance(model_obj, dict):
+        return merged
+
+    for k, v in model_obj.items():
+        if k in {"permission_event", "evidence"} and isinstance(v, dict):
+            base = dict(merged.get(k, {}))
+            for sk, sv in v.items():
+                if _non_empty(sv):
+                    base[sk] = sv
+            merged[k] = base
+            continue
+        if _non_empty(v):
+            merged[k] = v
+    return merged
+
+
+def _build_input_payload(
+    chain_id: int,
+    chain: Dict[str, Any],
+    chain_summary_obj: Dict[str, Any],
+    image_path: str,
+    permissions_hint: List[str],
+) -> Dict[str, Any]:
+    popup_text = _extract_popup_text(
+        str(chain_summary_obj.get("granting_text", "")),
+        chain_summary_obj.get("top_widgets", []),
+    )
+    text_blob = " ".join(
+        [
+            str(chain_summary_obj.get("before_text", "")),
+            str(chain_summary_obj.get("granting_text", "")),
+            str(chain_summary_obj.get("after_text", "")),
+            " ".join(str(x) for x in chain_summary_obj.get("top_widgets", [])[:10]),
+        ]
+    )
+    task_relevance_hint = _infer_page_cues_from_text(text_blob)
+    fallback = _default_semantics(chain_summary_obj)
+
+    return {
+        "chain_id": chain_id,
+        "package": chain.get("package") or chain.get("pkg") or "",
+        "image_exists": os.path.exists(image_path),
+        "chain_summary": chain_summary_obj,
+        "before_text": chain_summary_obj.get("before_text", ""),
+        "granting_text": chain_summary_obj.get("granting_text", ""),
+        "after_text": chain_summary_obj.get("after_text", ""),
+        "top_widgets": chain_summary_obj.get("top_widgets", []),
+        "popup_text": popup_text,
+        "permission_context_hint": popup_text,
+        "task_relevance_cues_hint": task_relevance_hint,
+        "ocr_context": {
+            "before_text": chain_summary_obj.get("before_text", "")[:420],
+            "granting_text": chain_summary_obj.get("granting_text", "")[:420],
+            "after_text": chain_summary_obj.get("after_text", "")[:420],
+        },
+        "widget_context": chain_summary_obj.get("top_widgets", [])[:14],
+        "semantic_hints": {
+            "task_phrase_hint": fallback.get("task_phrase", ""),
+            "intent_hint": fallback.get("intent", ""),
+            "page_function_hint": fallback.get("page_function", ""),
+            "trigger_action_hint": fallback.get("trigger_action", ""),
+            "visible_actions_hint": fallback.get("visible_actions", []),
+            "evidence_keywords_hint": (fallback.get("evidence") or {}).get("keywords", []),
+            "evidence_widgets_hint": (fallback.get("evidence") or {}).get("widgets", []),
+            "page_cues_hint": (fallback.get("evidence") or {}).get("page_cues", []),
+        },
+        "permissions_hint": permissions_hint,
+    }
+
+
+def normalize_semantics_record(
+    chain_id: int,
+    obj: Dict[str, Any],
+    rerun: bool,
+    rerun_reason: str,
+    fallback: Dict[str, Any],
+    error: str = "",
+) -> Dict[str, Any]:
+    merged = _deep_merge_semantic(fallback, obj)
+    merged.update({"chain_id": chain_id, "rerun": rerun, "rerun_reason": rerun_reason})
+    rec = normalize_chain_semantic_record(merged)
+    if error:
+        rec["error"] = str(error)[:240]
+    # Protect against useless empty output.
+    if not rec.get("task_phrase"):
+        rec["task_phrase"] = fallback.get("task_phrase", "")
+    if not rec.get("intent"):
+        rec["intent"] = fallback.get("intent", "")
+    if not rec.get("chain_summary"):
+        rec["chain_summary"] = fallback.get("chain_summary", "")
+    if rec.get("confidence") not in CONF_LEVELS:
+        rec["confidence"] = "low"
+    return rec
+
+
+def should_rerun(rec: Dict[str, Any]) -> str:
+    if not str(rec.get("task_phrase", "")).strip():
+        return "missing_task_phrase"
+    if len(str(rec.get("intent", "")).strip()) < 6:
+        return "intent_too_short"
+    if not rec.get("visible_actions"):
+        return "missing_visible_actions"
+    if len(str(rec.get("chain_summary", "")).strip()) < 8:
+        return "summary_too_short"
+    return ""
+
+
+def build_prompt(template: str, input_payload: Dict[str, Any], strict: bool) -> str:
+    prompt = template.replace("{INPUT_JSON}", json.dumps(input_payload, ensure_ascii=False, indent=2))
+    if strict:
+        prompt += (
+            "\n\n【重试补充要求】\n"
+            "1) task_phrase 必须是短语，不要以“用户正在/用户在”开头。\n"
+            "2) intent 至少 8 个字，且不含权限用途解释。\n"
+            "3) trigger_action 需给出最可能触发动作；无法判断可写 unknown。\n"
+            "4) confidence 只能是 high|medium|low。\n"
+        )
+    return prompt
+
+
+def encode_image_base64(path: str) -> Optional[str]:
+    if not path or not os.path.exists(path):
+        return None
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode("utf-8")
+
+
+def call_vllm_vl(prompt: str, image_path: str, vllm_url: str, model: str) -> str:
+    # Avoid local proxy hijacking when hitting local vLLM.
+    os.environ.setdefault("NO_PROXY", "127.0.0.1,localhost")
+    os.environ.setdefault("no_proxy", "127.0.0.1,localhost")
+
+    image_b64 = encode_image_base64(image_path)
+
+    payload_legacy: Dict[str, Any] = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0,
+    }
+    if image_b64:
+        payload_legacy["images"] = [image_b64]
+
+    payload_openai_mm: Dict[str, Any] = {
+        "model": model,
+        "messages": [
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": prompt},
+                    {
+                        "type": "image_url",
+                        "image_url": {"url": f"data:image/png;base64,{image_b64}"},
+                    },
+                ]
+                if image_b64
+                else [{"type": "text", "text": prompt}],
+            }
+        ],
+        "temperature": 0,
+    }
+
+    errors: List[str] = []
+    for payload in [payload_legacy, payload_openai_mm]:
+        try:
+            r = post_json_with_retry(
+                vllm_url,
+                payload,
+                timeout=settings.LLM_RESPONSE_TIMEOUT,
+                max_retries=2,
+                backoff_factor=1.5,
+            )
+            r.raise_for_status()
+            data = r.json()
+            return data["choices"][0]["message"]["content"]
+        except Exception as exc:
+            detail = str(exc)
+            if isinstance(exc, requests.HTTPError) and getattr(exc, "response", None) is not None:
+                resp = exc.response
+                body = ""
+                try:
+                    body = resp.text[:300]
+                except Exception:
+                    body = ""
+                detail = f"HTTP {resp.status_code}: {body}"
+            errors.append(detail)
+            continue
+
+    raise RuntimeError(" | ".join(errors) if errors else "vlm_call_failed")
+
+
+def infer_chain_semantics(
+    chain_id: int,
+    image_path: str,
+    input_payload: Dict[str, Any],
+    prompt_template: str,
+    vllm_url: str,
+    model: str,
+) -> Dict[str, Any]:
+    fallback = _default_semantics(input_payload.get("chain_summary", {}))
+    fallback_permission = [str(x) for x in input_payload.get("permissions_hint", []) if isinstance(x, str)]
+    if fallback_permission:
+        fallback["permission_event"]["permissions"] = fallback_permission[:8]
+        fallback["permission_event"]["recognition_status"] = "recognized"
+    try:
+        raw = call_vllm_vl(
+            build_prompt(prompt_template, input_payload, strict=False),
+            image_path,
+            vllm_url,
+            model,
+        )
+        obj = extract_json_obj(raw)
+        rec = normalize_semantics_record(
+            chain_id=chain_id,
+            obj=obj,
+            rerun=False,
+            rerun_reason="",
+            fallback=fallback,
+        )
+        reason = should_rerun(rec)
+        if not reason:
+            return rec
+
+        raw2 = call_vllm_vl(
+            build_prompt(prompt_template, input_payload, strict=True),
+            image_path,
+            vllm_url,
+            model,
+        )
+        obj2 = extract_json_obj(raw2)
+        rec2 = normalize_semantics_record(
+            chain_id=chain_id,
+            obj=obj2,
+            rerun=True,
+            rerun_reason=reason,
+            fallback=fallback,
+        )
+        reason2 = should_rerun(rec2)
+        if reason2:
+            return normalize_semantics_record(
+                chain_id=chain_id,
+                obj={},
+                rerun=True,
+                rerun_reason=reason2,
+                fallback=fallback,
+                error=f"rerun_failed:{reason2}",
+            )
+        return rec2
+    except Exception as exc:
+        print(f"[ChainSemantic][WARN] chain_id={chain_id} vllm_failed: {exc}")
+        return normalize_semantics_record(
+            chain_id=chain_id,
+            obj={},
+            rerun=False,
+            rerun_reason=f"exception:{type(exc).__name__}",
+            fallback=fallback,
+            error=str(exc),
+        )
+
+
+def iter_app_dirs(target: str) -> List[str]:
+    if os.path.exists(os.path.join(target, "result.json")):
+        return [target]
+    out = []
+    for d in sorted(os.listdir(target)):
+        app_dir = os.path.join(target, d)
+        if os.path.isdir(app_dir) and os.path.exists(os.path.join(app_dir, "result.json")):
+            out.append(app_dir)
+    return out
+
+
+def _load_permission_map(app_dir: str) -> Dict[int, List[str]]:
+    path = os.path.join(app_dir, PERMISSION_FILENAME)
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            raw = json.load(f)
+    except Exception:
+        return {}
+    out: Dict[int, List[str]] = {}
+    if not isinstance(raw, list):
+        return out
+    for item in raw:
+        if not isinstance(item, dict):
+            continue
+        try:
+            cid = int(item.get("chain_id"))
+        except Exception:
+            continue
+        perms = item.get("predicted_permissions", [])
+        if isinstance(perms, list):
+            out[cid] = [str(x).strip() for x in perms if str(x).strip()]
+    return out
+
+
+def process_app(app_dir: str, prompt_template: str, vllm_url: str, model: str) -> Tuple[List[Dict[str, Any]], int]:
+    result_json_path = os.path.join(app_dir, "result.json")
+    with open(result_json_path, "r", encoding="utf-8") as f:
+        chains = validate_result_json_chains(json.load(f))
+    permission_map = _load_permission_map(app_dir)
+    summary_map = load_chain_summary_map(result_json_path, permissions_map=permission_map)
+
+    records: List[Dict[str, Any]] = []
+    invalid = 0
+    for idx, chain in enumerate(tqdm(chains, desc=f"ChainSemantic {os.path.basename(app_dir)}", ncols=90)):
+        chain_id = int(chain.get("chain_id", idx))
+        image_path = os.path.join(app_dir, f"chain_{chain_id}.png")
+        chain_summary_obj = summary_map.get(chain_id, {"chain_summary": {}}).get("chain_summary", {})
+        permissions_hint = (
+            permission_map.get(chain_id)
+            or chain.get("predicted_permissions")
+            or chain.get("true_permissions")
+            or chain_summary_obj.get("permissions", [])
+        )
+        input_payload = _build_input_payload(
+            chain_id=chain_id,
+            chain=chain,
+            chain_summary_obj=chain_summary_obj,
+            image_path=image_path,
+            permissions_hint=permissions_hint,
+        )
+        rec = infer_chain_semantics(chain_id, image_path, input_payload, prompt_template, vllm_url, model)
+        if rec.get("confidence") == "low":
+            invalid += 1
+        records.append(rec)
+
+    normalized, dropped = validate_chain_semantic_results(records)
+    invalid += dropped
+
+    out_path = os.path.join(app_dir, OUTPUT_FILENAME)
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(normalized, f, ensure_ascii=False, indent=2)
+    print(f"[ChainSemantic] finish app={app_dir} chains={len(normalized)} low_conf={invalid} out={out_path}")
+    return normalized, invalid
+
+
+def _parse_chain_ids(chain_ids: Optional[List[int]]) -> Optional[Set[int]]:
+    if not chain_ids:
+        return None
+    out: Set[int] = set()
+    for x in chain_ids:
+        try:
+            out.add(int(x))
+        except Exception:
+            continue
+    return out if out else None
+
+
+def build_summary(records: List[Dict[str, Any]], apps_processed: int, low_conf_count: int) -> Dict[str, Any]:
+    total = len(records)
+    conf_counter = Counter()
+    rerun_counter = Counter()
+    phrase_counter = Counter()
+    low_conf_counter = Counter()
+
+    for rec in records:
+        conf = str(rec.get("confidence", "low"))
+        phrase = str(rec.get("task_phrase", "")).strip()
+        reason = str(rec.get("rerun_reason", "")).strip()
+        conf_counter[conf] += 1
+        if rec.get("rerun"):
+            rerun_counter[reason or "rerun_true_no_reason"] += 1
+        if phrase:
+            phrase_counter[phrase] += 1
+        if conf == "low":
+            low_conf_counter[str(rec.get("task_phrase", "")).strip() or ""] += 1
+
+    return {
+        "apps_processed": apps_processed,
+        "total_chains": total,
+        "low_conf_count": low_conf_count,
+        "confidence_distribution": [
+            {"confidence": k, "count": conf_counter[k], "ratio": round(conf_counter[k] / total, 4) if total else 0.0}
+            for k in ["high", "medium", "low"]
+        ],
+        "top_task_phrases": [{"task_phrase": k, "count": v} for k, v in phrase_counter.most_common(20)],
+        "low_conf_distribution": [{"task_phrase": k, "count": v} for k, v in low_conf_counter.most_common(20)],
+        "rerun_distribution": [{"reason": k, "count": v} for k, v in rerun_counter.most_common()],
+    }
+
+
+def run(
+    target: str,
+    prompt_file: str,
+    vllm_url: str,
+    model: str,
+    chain_ids: Optional[List[int]] = None,
+) -> None:
+    prompt_template = load_prompt_template(prompt_file)
+    app_dirs = iter_app_dirs(target)
+    all_records: List[Dict[str, Any]] = []
+    low_conf = 0
+    chain_filter = _parse_chain_ids(chain_ids)
+    for app_dir in app_dirs:
+        try:
+            if chain_filter is None:
+                records, invalid = process_app(app_dir, prompt_template, vllm_url, model)
+            else:
+                # Local override with chain filtering.
+                result_json_path = os.path.join(app_dir, "result.json")
+                with open(result_json_path, "r", encoding="utf-8") as f:
+                    chains = validate_result_json_chains(json.load(f))
+                permission_map = _load_permission_map(app_dir)
+                summary_map = load_chain_summary_map(result_json_path, permissions_map=permission_map)
+                records = []
+                invalid = 0
+                for idx, chain in enumerate(
+                    tqdm(chains, desc=f"ChainSemantic {os.path.basename(app_dir)}", ncols=90)
+                ):
+                    chain_id = int(chain.get("chain_id", idx))
+                    if chain_id not in chain_filter:
+                        continue
+                    image_path = os.path.join(app_dir, f"chain_{chain_id}.png")
+                    chain_summary_obj = summary_map.get(chain_id, {"chain_summary": {}}).get("chain_summary", {})
+                    permissions_hint = (
+                        permission_map.get(chain_id)
+                        or chain.get("predicted_permissions")
+                        or chain.get("true_permissions")
+                        or chain_summary_obj.get("permissions", [])
+                    )
+                    input_payload = _build_input_payload(
+                        chain_id=chain_id,
+                        chain=chain,
+                        chain_summary_obj=chain_summary_obj,
+                        image_path=image_path,
+                        permissions_hint=permissions_hint,
+                    )
+                    rec = infer_chain_semantics(
+                        chain_id, image_path, input_payload, prompt_template, vllm_url, model
+                    )
+                    if rec.get("confidence") == "low":
+                        invalid += 1
+                    records.append(rec)
+                normalized, dropped = validate_chain_semantic_results(records)
+                invalid += dropped
+                out_path = os.path.join(app_dir, OUTPUT_FILENAME)
+                with open(out_path, "w", encoding="utf-8") as f:
+                    json.dump(normalized, f, ensure_ascii=False, indent=2)
+                print(
+                    f"[ChainSemantic] finish app={app_dir} chains={len(normalized)} "
+                    f"low_conf={invalid} out={out_path}"
+                )
+                records = normalized
+            all_records.extend(records)
+            low_conf += invalid
+        except Exception as exc:
+            print(f"[ChainSemantic][WARN] app failed app={app_dir} err={exc}")
+
+    summary = build_summary(all_records, apps_processed=len(app_dirs), low_conf_count=low_conf)
+    summary_dir = (
+        target
+        if not os.path.exists(os.path.join(target, "result.json"))
+        else os.path.dirname(os.path.join(target, "result.json"))
+    )
+    summary_path = os.path.join(summary_dir, SUMMARY_FILENAME)
+    with open(summary_path, "w", encoding="utf-8") as f:
+        json.dump(summary, f, ensure_ascii=False, indent=2)
+    print(f"[ChainSemantic] done apps={len(app_dirs)} total_chains={len(all_records)} summary={summary_path}")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="VLM chain semantic interpreter")
+    parser.add_argument("target", help="processed root or one app dir")
+    parser.add_argument("--prompt-file", default=DEFAULT_PROMPT_FILE)
+    parser.add_argument("--vllm-url", default=os.getenv("VLLM_VL_URL", settings.VLLM_VL_URL))
+    parser.add_argument("--model", default=os.getenv("VLLM_VL_MODEL", settings.VLLM_VL_MODEL))
+    parser.add_argument("--chain-ids", default="", help="comma-separated chain ids, e.g. 1,3,9")
+    args = parser.parse_args()
+    chain_ids = []
+    if args.chain_ids.strip():
+        for seg in args.chain_ids.split(","):
+            seg = seg.strip()
+            if not seg:
+                continue
+            try:
+                chain_ids.append(int(seg))
+            except Exception:
+                continue
+    run(args.target, args.prompt_file, args.vllm_url, args.model, chain_ids=chain_ids or None)

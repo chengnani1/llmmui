@@ -100,10 +100,10 @@ VLLM_TEXT_MODEL = _env_first(
 
 VLLM_VL_URL = _env_first(
     ["LLMMUI_VLLM_VL_URL", "VLLM_VL_URL"],
-    "http://127.0.0.1:8010/v1/chat/completions",
+    VLLM_TEXT_URL,
 )
 VLLM_VL_MODEL = _env_first(
     ["LLMMUI_VLLM_VL_MODEL", "VLLM_VL_MODEL"],
-    "/home/fanm/zxc/model/Qwen3-VL-30B-A3B-Instruct",
+    VLLM_TEXT_MODEL,
 )
 LLM_RESPONSE_TIMEOUT = _env_int(["LLMMUI_LLM_RESPONSE_TIMEOUT", "LLM_RESPONSE_TIMEOUT"], 120)

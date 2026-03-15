@@ -11,7 +11,7 @@ import json
 import os
 import re
 import sys
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Tuple
 
 from tqdm import tqdm
 
@@ -26,7 +26,6 @@ from analy_pipline.common.schema_utils import (  # noqa: E402
     LLM_FINAL_RISKS,
     MINIMALITY_LABELS,
     NECESSITY_LABELS,
-    validate_chain_semantic_results,
     normalize_llm_review_record,
     validate_llm_review_results,
     validate_rule_screening_results,
@@ -42,10 +41,8 @@ DEFAULT_PROMPT_DIR = settings.PROMPT_DIR
 VLLM_URL = os.getenv("VLLM_TEXT_URL", settings.VLLM_TEXT_URL)
 MODEL_NAME = os.getenv("VLLM_TEXT_MODEL", settings.VLLM_TEXT_MODEL)
 TARGET_RISK = {"HIGH_RISK", "MEDIUM_RISK"}
-CHAIN_TIMEOUT_SECONDS = int(os.getenv("LLMMUI_CHAIN_TIMEOUT_SECONDS", "120"))
 
 OUTPUT_FILENAME = "result_llm_review.json"
-SEMANTIC_FILENAME = "result_chain_semantics.json"
 PROMPT_STAGE_A_FILE = "llm_stage_a_necessity.txt"
 PROMPT_STAGE_B_FILE = "llm_stage_b_consistency.txt"
 PROMPT_STAGE_C_FILE = "llm_stage_c_final.txt"
@@ -146,13 +143,13 @@ def _load_prompt(prompt_dir: str, filename: str, fallback: str) -> str:
     return fallback
 
 
-def _call_llm(prompt: str, vllm_url: str, model: str, timeout_seconds: int, max_retries: int = 0) -> str:
+def _call_llm(prompt: str, vllm_url: str, model: str) -> str:
     payload = {"model": model, "messages": [{"role": "user", "content": prompt}], "temperature": 0}
     r = post_json_with_retry(
         vllm_url,
         payload,
-        timeout=timeout_seconds,
-        max_retries=max_retries,
+        timeout=settings.LLM_RESPONSE_TIMEOUT,
+        max_retries=3,
         backoff_factor=1.5,
     )
     r.raise_for_status()
@@ -177,109 +174,29 @@ def _validate_stage_c(obj: Dict[str, Any]) -> bool:
     )
 
 
-def _clip_text(v: Any, max_len: int = 320) -> str:
-    s = str(v or "").strip()
-    return s[:max_len] if len(s) > max_len else s
-
-
-def _permission_capability_hints(permissions: List[str]) -> List[str]:
-    mapping = {
-        "ACCESS_FINE_LOCATION": "定位/附近发现/地图导航",
-        "ACCESS_COARSE_LOCATION": "粗定位/同城内容推荐",
-        "CAMERA": "拍照/扫码/视频采集",
-        "RECORD_AUDIO": "语音输入/录音/通话",
-        "READ_EXTERNAL_STORAGE": "读取本地文件/媒体",
-        "WRITE_EXTERNAL_STORAGE": "保存导出文件/媒体",
-        "MANAGE_EXTERNAL_STORAGE": "管理存储与文件清理",
-        "READ_CONTACTS": "读取联系人",
-        "READ_PHONE_STATE": "读取设备电话状态",
-        "READ_SMS": "读取短信验证码",
-        "READ_MEDIA_IMAGES": "读取图片媒体",
-        "READ_MEDIA_VIDEO": "读取视频媒体",
-        "READ_MEDIA_AUDIO": "读取音频媒体",
-    }
-    out: List[str] = []
-    for p in permissions:
-        p = str(p).strip().upper()
-        if p in mapping:
-            out.append(f"{p}:{mapping[p]}")
-    return out[:8]
-
-
-def _load_semantics_map(app_dir: str) -> Dict[int, Dict[str, Any]]:
-    sem_path = os.path.join(app_dir, SEMANTIC_FILENAME)
-    if not os.path.exists(sem_path):
-        return {}
-    try:
-        with open(sem_path, "r", encoding="utf-8") as f:
-            raw = json.load(f)
-        sem_items, _ = validate_chain_semantic_results(raw)
-        return {int(x["chain_id"]): x for x in sem_items}
-    except Exception:
-        return {}
-
-
-def _synthesize_stage_c(stage_a: Dict[str, Any], stage_b: Dict[str, Any]) -> Dict[str, Any]:
-    a = str(stage_a.get("label", "helpful"))
-    b = str(stage_b.get("label", "weakly_consistent"))
-    if a == "necessary" and b == "consistent":
-        return {
-            "minimality_label": "minimal",
-            "minimality_reason": "Stage A/B indicate direct need and semantic consistency.",
-            "llm_final_decision": "COMPLIANT",
-            "llm_final_risk": "LOW",
-            "llm_explanation": "Synthesized from valid Stage A/B: necessary + consistent.",
-        }
-    if a == "unnecessary" or b == "inconsistent":
-        return {
-            "minimality_label": "over_privileged",
-            "minimality_reason": "Stage A/B indicate weak necessity or semantic mismatch.",
-            "llm_final_decision": "NON_COMPLIANT",
-            "llm_final_risk": "HIGH",
-            "llm_explanation": "Synthesized from valid Stage A/B: unnecessary or inconsistent.",
-        }
-    return {
-        "minimality_label": "potentially_over_privileged",
-        "minimality_reason": "Stage A/B are not strong enough for clear compliant/non-compliant.",
-        "llm_final_decision": "SUSPICIOUS",
-        "llm_final_risk": "MEDIUM",
-        "llm_explanation": "Synthesized from valid Stage A/B: weak evidence.",
-    }
-
-
 def _call_stage(
     prompt_template: str,
     payload: Dict[str, Any],
     validator,
     vllm_url: str,
     model: str,
-    timeout_seconds: int,
-) -> Tuple[Dict[str, Any], bool, str, str]:
+) -> Tuple[Dict[str, Any], bool, str]:
     """
-    Returns: (parsed_obj, valid, raw_output, fail_reason)
+    Returns: (parsed_obj, valid, raw_output)
     """
     prompt = prompt_template.replace("{INPUT}", json.dumps(payload, ensure_ascii=False, indent=2))
     last_raw = ""
     for _ in range(2):  # one retry for invalid format
         try:
-            raw = _call_llm(
-                prompt,
-                vllm_url=vllm_url,
-                model=model,
-                timeout_seconds=timeout_seconds,
-                max_retries=0,
-            )
+            raw = _call_llm(prompt, vllm_url=vllm_url, model=model)
         except Exception as exc:
             last_raw = str(exc)
-            msg = str(exc).lower()
-            if "timed out" in msg or "timeout" in msg:
-                return {}, False, last_raw, "timeout"
             continue
         last_raw = raw
         obj = _extract_json(raw)
         if validator(obj):
-            return obj, True, raw, ""
-    return {}, False, last_raw, "format_error"
+            return obj, True, raw
+    return {}, False, last_raw
 
 
 def _build_review_record(
@@ -291,7 +208,6 @@ def _build_review_record(
     output_valid: bool,
     format_error: bool,
     raw_output: str,
-    fallback_reason: str = "",
 ) -> Dict[str, Any]:
     record = {
         "chain_id": chain.get("chain_id"),
@@ -303,9 +219,6 @@ def _build_review_record(
         "task_phrase": chain.get("task_phrase", ""),
         "intent": chain.get("intent"),
         "page_function": chain.get("page_function", ""),
-        "trigger_action": chain.get("trigger_action", ""),
-        "visible_actions": chain.get("visible_actions", []),
-        "task_relevance_cues": chain.get("task_relevance_cues", []),
         "permission_context": chain.get("permission_context", ""),
         "permissions": chain.get("permissions", []),
         "allowed_permissions": chain.get("allowed_permissions", []),
@@ -331,8 +244,6 @@ def _build_review_record(
     }
     if not output_valid:
         record["raw_output"] = raw_output
-    if fallback_reason:
-        record["fallback_reason"] = fallback_reason
     # include compact context for later audit; prefer semantics summary in chain.
     record["chain_summary"] = chain.get("chain_summary") or chain_summary.get("chain_summary", {})
     return normalize_llm_review_record(record)
@@ -350,7 +261,6 @@ def process_app_dir(
     stage_a_prompt: str,
     stage_b_prompt: str,
     stage_c_prompt: str,
-    chain_ids_filter: Optional[Set[int]] = None,
 ) -> Tuple[int, int]:
     rule_path = _rule_screening_path(app_dir)
     result_json_path = os.path.join(app_dir, "result.json")
@@ -364,7 +274,6 @@ def process_app_dir(
     with open(rule_path, "r", encoding="utf-8") as f:
         screening_raw = json.load(f)
     screening, invalid = validate_rule_screening_results(screening_raw, SCENE_LIST)
-    sem_map = _load_semantics_map(app_dir)
 
     permissions_map = {int(x["chain_id"]): x.get("permissions", []) for x in screening}
     summary_map = load_chain_summary_map(result_json_path, permissions_map=permissions_map)
@@ -376,18 +285,7 @@ def process_app_dir(
         if chain.get("overall_rule_signal") not in TARGET_RISK:
             continue
         chain_id = int(chain.get("chain_id", -1))
-        if chain_ids_filter is not None and chain_id not in chain_ids_filter:
-            continue
         chain_summary = summary_map.get(chain_id, {"chain_id": chain_id, "chain_summary": {}})
-        sem_item = sem_map.get(chain_id, {})
-        stage_timeout = max(10, CHAIN_TIMEOUT_SECONDS // 3)
-        chain_summary_obj = chain_summary.get("chain_summary", {})
-        if not isinstance(chain_summary_obj, dict):
-            chain_summary_obj = {}
-
-        sem_evidence = sem_item.get("evidence", {}) if isinstance(sem_item.get("evidence", {}), dict) else {}
-        sem_permission_event = sem_item.get("permission_event", {}) if isinstance(sem_item.get("permission_event", {}), dict) else {}
-        effective_permissions = chain.get("permissions", []) if isinstance(chain.get("permissions", []), list) else []
 
         base_payload = {
             "chain_id": chain_id,
@@ -396,82 +294,46 @@ def process_app_dir(
             "ui_task_scene_top3": chain.get("ui_task_scene_top3", []),
             "regulatory_scene_top1": chain.get("regulatory_scene_top1", ""),
             "regulatory_scene_top3": chain.get("regulatory_scene_top3", []),
-            "task_phrase": chain.get("task_phrase", "") or sem_item.get("task_phrase", ""),
-            "intent": chain.get("intent") or sem_item.get("intent", ""),
-            "page_function": chain.get("page_function", "") or sem_item.get("page_function", ""),
-            "trigger_action": chain.get("trigger_action", "") or sem_item.get("trigger_action", ""),
-            "page_transition": sem_item.get("page_transition", ""),
-            "visible_actions": chain.get("visible_actions", []) or sem_item.get("visible_actions", []),
-            "task_relevance_cues": chain.get("task_relevance_cues", []) or sem_item.get("task_relevance_cues", []),
-            "permission_context": chain.get("permission_context", "") or sem_permission_event.get("ui_observation", ""),
-            "permissions": effective_permissions,
-            "permission_capability_hints": _permission_capability_hints(effective_permissions),
+            "task_phrase": chain.get("task_phrase", ""),
+            "intent": chain.get("intent"),
+            "page_function": chain.get("page_function", ""),
+            "permission_context": chain.get("permission_context", ""),
+            "permissions": chain.get("permissions", []),
             "allowed_permissions": chain.get("allowed_permissions", []),
             "banned_permissions": chain.get("banned_permissions", []),
-            "permission_decisions": chain.get("permission_decisions", {}),
-            "matched_rules": chain.get("matched_rules", [])[:4],
             "rule_signal": chain.get("overall_rule_signal"),
             "chain_summary": chain.get("chain_summary") or chain_summary.get("chain_summary", {}),
-            "ocr_triplet": {
-                "before_text": _clip_text(chain_summary_obj.get("before_text", ""), 320),
-                "granting_text": _clip_text(chain_summary_obj.get("granting_text", ""), 320),
-                "after_text": _clip_text(chain_summary_obj.get("after_text", ""), 320),
-            },
-            "top_widgets": [str(x)[:36] for x in chain_summary_obj.get("top_widgets", [])[:10]],
-            "evidence": {
-                "keywords": [str(x)[:24] for x in sem_evidence.get("keywords", [])[:12]],
-                "widgets": [str(x)[:24] for x in sem_evidence.get("widgets", [])[:12]],
-                "page_cues": [str(x)[:32] for x in sem_evidence.get("page_cues", [])[:6]],
-            },
-            "analysis_focus": [
-                "先判断 trigger_action 是否直接需要该权限能力",
-                "再检查 intent/page_function 与权限是否一致",
-                "最后判断是否满足最小权限原则",
-            ],
         }
 
-        a_obj, a_ok, a_raw, a_fail = _call_stage(
+        a_obj, a_ok, a_raw = _call_stage(
             stage_a_prompt,
             base_payload,
             _validate_stage_a,
             vllm_url=vllm_url,
             model=model,
-            timeout_seconds=stage_timeout,
         )
         b_payload = dict(base_payload)
         b_payload["necessity_analysis"] = a_obj if a_ok else {}
-        b_obj, b_ok, b_raw, b_fail = _call_stage(
+        b_obj, b_ok, b_raw = _call_stage(
             stage_b_prompt,
             b_payload,
             _validate_stage_b,
             vllm_url=vllm_url,
             model=model,
-            timeout_seconds=stage_timeout,
         )
         c_payload = dict(base_payload)
         c_payload["necessity_analysis"] = a_obj if a_ok else {}
         c_payload["consistency_analysis"] = b_obj if b_ok else {}
-        c_obj, c_ok, c_raw, c_fail = _call_stage(
+        c_obj, c_ok, c_raw = _call_stage(
             stage_c_prompt,
             c_payload,
             _validate_stage_c,
             vllm_url=vllm_url,
             model=model,
-            timeout_seconds=stage_timeout,
         )
-        if (not c_ok) and a_ok and b_ok:
-            c_obj = _synthesize_stage_c(a_obj, b_obj)
-            c_ok = True
-            c_fail = ""
-            c_raw = (c_raw + "\n\n[synthesized_stage_c_from_ab]")[:1200]
 
         output_valid = bool(a_ok and b_ok and c_ok)
-        fallback_reason = ""
-        if not output_valid and "timeout" in {a_fail, b_fail, c_fail}:
-            fallback_reason = "timeout"
-        elif not output_valid:
-            fallback_reason = "format_error"
-        format_error = fallback_reason == "format_error"
+        format_error = not output_valid
         if not output_valid:
             invalid_outputs += 1
         raw_output = "\n\n".join([f"stage_a:\n{a_raw}", f"stage_b:\n{b_raw}", f"stage_c:\n{c_raw}"])
@@ -486,7 +348,6 @@ def process_app_dir(
                 output_valid=output_valid,
                 format_error=format_error,
                 raw_output=raw_output,
-                fallback_reason=fallback_reason,
             )
         )
 
@@ -504,22 +365,12 @@ def process_app_dir(
     return len(normalized), invalid_outputs
 
 
-def run(
-    processed_dir: str,
-    prompt_dir: str,
-    vllm_url: str,
-    model: str,
-    chain_ids: Optional[List[int]] = None,
-) -> None:
+def run(processed_dir: str, prompt_dir: str, vllm_url: str, model: str) -> None:
     stage_a_prompt = _load_prompt(prompt_dir, PROMPT_STAGE_A_FILE, STAGE_A_PROMPT)
     stage_b_prompt = _load_prompt(prompt_dir, PROMPT_STAGE_B_FILE, STAGE_B_PROMPT)
     stage_c_prompt = _load_prompt(prompt_dir, PROMPT_STAGE_C_FILE, STAGE_C_PROMPT)
     total = 0
     invalid = 0
-
-    chain_filter: Optional[Set[int]] = None
-    if chain_ids:
-        chain_filter = {int(x) for x in chain_ids}
 
     if os.path.exists(os.path.join(processed_dir, "result.json")):
         c, i = process_app_dir(
@@ -529,7 +380,6 @@ def run(
             stage_a_prompt=stage_a_prompt,
             stage_b_prompt=stage_b_prompt,
             stage_c_prompt=stage_c_prompt,
-            chain_ids_filter=chain_filter,
         )
         total += c
         invalid += i
@@ -546,7 +396,6 @@ def run(
                     stage_a_prompt=stage_a_prompt,
                     stage_b_prompt=stage_b_prompt,
                     stage_c_prompt=stage_c_prompt,
-                    chain_ids_filter=chain_filter,
                 )
                 total += c
                 invalid += i
@@ -569,22 +418,5 @@ if __name__ == "__main__":
     parser.add_argument("--prompt-dir", default=os.getenv("LLMMUI_PROMPT_DIR", os.getenv("PROMPT_DIR", DEFAULT_PROMPT_DIR)))
     parser.add_argument("--vllm-url", default=VLLM_URL)
     parser.add_argument("--model", default=MODEL_NAME)
-    parser.add_argument("--chain-ids", default="", help="comma-separated chain ids, e.g. 1,3,9")
     args = parser.parse_args()
-    chain_ids: List[int] = []
-    if args.chain_ids.strip():
-        for seg in args.chain_ids.split(","):
-            seg = seg.strip()
-            if not seg:
-                continue
-            try:
-                chain_ids.append(int(seg))
-            except Exception:
-                continue
-    run(
-        args.processed_dir,
-        prompt_dir=args.prompt_dir,
-        vllm_url=args.vllm_url,
-        model=args.model,
-        chain_ids=chain_ids or None,
-    )
+    run(args.processed_dir, prompt_dir=args.prompt_dir, vllm_url=args.vllm_url, model=args.model)

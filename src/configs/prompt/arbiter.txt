@@ -6,7 +6,7 @@
 【输出要求】
 仅输出 JSON：
 {
-  "final_decision": "CLEARLY_OK | CLEARLY_VIOLATION | NEEDS_HUMAN_REVIEW",
+  "final_decision": "CLEARLY_OK | NEED_REVIEW | CLEARLY_RISKY",
   "final_risk": "LOW | MEDIUM | HIGH",
   "rationale": "一句话理由"
 }
