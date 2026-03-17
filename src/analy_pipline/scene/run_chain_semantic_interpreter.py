@@ -13,21 +13,12 @@ Output:
 Schema (per chain):
 {
   "chain_id": 0,
-  "ui_task_scene": "...",
-  "user_intent": "...",
-  "trigger_action": "...",
   "page_observation": "...",
-  "visual_evidence": ["...", "..."],
-  "permission_task_cues": ["..."],
-  "storage_read_cues": ["..."],
-  "storage_write_cues": ["..."],
-  "location_task_cues": ["..."],
-  "upload_task_cues": ["..."],
-  "cleanup_task_cues": ["..."],
-  "confidence": "high|medium|low",
-  "rerun": false,
-  "rerun_reason": "",
-  "error": ""  # optional
+  "page_elements": {"buttons": [], "labels": [], "indicators": [], "dialogs": []},
+  "evidence": {"observations": [], "interactions": [], "inferences": []},
+  "scene": {"ui_task_scene": "...", "refined_scene": "...", "confidence": 0.0},
+  "page_semantics": {"page_type": "...", "primary_function": "...", "user_goal": "...", "interaction_flow": []},
+  "permission_context": {"permissions": [], "relevance_to_page_function": "...", "relevance_to_user_goal": "..."}
 }
 """
 
@@ -67,19 +58,41 @@ CONF_LEVELS = {"high", "medium", "low"}
 SCENE_SET = set(SCENE_LIST)
 REFINED_SCENE_LIST = [
     "login_verification",
-    "profile_or_identity_upload",
+    "profile_or_identity_update",
     "file_management",
     "file_recovery",
     "system_cleanup",
     "album_selection",
     "media_upload",
+    "media_capture_or_recording",
     "map_navigation",
-    "wifi_scan_or_nearby_devices",
+    "nearby_service_or_wifi_scan",
     "content_browsing",
     "customer_support",
     "social_chat_or_share",
+    "other",
 ]
 REFINED_SCENE_SET = set(REFINED_SCENE_LIST)
+REFINED_SCENE_ALIASES = {
+    "profile_or_identity_upload": "profile_or_identity_update",
+    "wifi_scan_or_nearby_devices": "nearby_service_or_wifi_scan",
+}
+REFINED_SCENE_V1_TO_LEGACY = {
+    "login_verification": "login_verification",
+    "profile_or_identity_update": "profile_or_identity_upload",
+    "file_management": "file_management",
+    "file_recovery": "file_recovery",
+    "system_cleanup": "system_cleanup",
+    "album_selection": "album_selection",
+    "media_upload": "media_upload",
+    "media_capture_or_recording": "media_upload",
+    "map_navigation": "map_navigation",
+    "nearby_service_or_wifi_scan": "wifi_scan_or_nearby_devices",
+    "content_browsing": "content_browsing",
+    "customer_support": "customer_support",
+    "social_chat_or_share": "social_chat_or_share",
+    "other": "content_browsing",
+}
 
 _PERMISSION_UI_TERMS = {
     "权限",
@@ -97,7 +110,8 @@ _SCENE_KEYWORDS = [
     (("地图", "定位", "附近", "同城", "导航"), "地图与位置服务"),
     (("搜索", "浏览", "资讯", "内容", "推荐"), "内容浏览与搜索"),
     (("聊天", "消息", "评论", "私信", "社区"), "社交互动与通信"),
-    (("扫码", "拍照", "相机", "拍摄"), "媒体拍摄与扫码"),
+    (("录音", "清唱", "k歌", "K歌", "配音", "语音创作", "音频作品", "麦克风"), "音频录制与创作"),
+    (("扫码", "拍照", "相机", "拍摄", "录像", "视频录制"), "图像视频拍摄与扫码"),
     (("相册", "上传", "头像", "图片", "照片"), "相册选择与媒体上传"),
     (("商品", "店铺", "购物", "下单", "购买"), "商品浏览与消费"),
     (("支付", "转账", "收款", "账单", "金融"), "支付与金融交易"),
@@ -112,47 +126,50 @@ UI_TO_REFINED_BASE = {
     "地图与位置服务": "map_navigation",
     "内容浏览与搜索": "content_browsing",
     "社交互动与通信": "social_chat_or_share",
-    "媒体拍摄与扫码": "media_upload",
+    "音频录制与创作": "media_capture_or_recording",
+    "图像视频拍摄与扫码": "media_capture_or_recording",
+    "媒体拍摄与扫码": "media_capture_or_recording",
     "相册选择与媒体上传": "album_selection",
     "商品浏览与消费": "content_browsing",
     "支付与金融交易": "login_verification",
     "文件与数据管理": "file_management",
     "设备清理与系统优化": "system_cleanup",
-    "网络连接与设备管理": "wifi_scan_or_nearby_devices",
+    "网络连接与设备管理": "nearby_service_or_wifi_scan",
     "用户反馈与客服": "customer_support",
-    "其他": "content_browsing",
+    "其他": "other",
 }
 
 STORAGE_READ_CUE_RULES = [
-    ("select_local_media", ("相册选择", "选择图片", "选择视频", "选择媒体", "选择文件")),
-    ("browse_local_file", ("浏览本地", "本地文件", "文件浏览", "打开文件", "读取媒体", "读取文件")),
-    ("import_local_file", ("导入", "本地导入", "添加附件", "导入文件", "导入图片", "导入视频")),
+    ("album_selection_present", ("相册选择", "选择图片", "选择视频", "选择媒体", "选择文件")),
+    ("local_file_browser_present", ("浏览本地", "本地文件", "文件浏览", "打开文件", "读取媒体", "读取文件")),
+    ("local_import_entry_present", ("导入", "本地导入", "添加附件", "导入文件", "导入图片", "导入视频")),
 ]
 
 STORAGE_WRITE_CUE_RULES = [
-    ("save_or_export", ("保存", "导出", "另存为", "下载到本地", "写入文件", "写入存储", "落盘")),
-    ("edit_write_back", ("编辑后保存", "恢复回写", "回写", "覆盖保存")),
-    ("backup_restore_write", ("备份", "恢复文件", "恢复图片", "恢复视频", "恢复到本地")),
-    ("cache_local_copy", ("缓存到本地", "离线缓存", "本地副本")),
+    ("save_to_local_action_present", ("保存", "另存为", "下载到本地", "写入文件", "写入存储", "落盘")),
+    ("export_action_present", ("导出", "分享到本地", "生成文件")),
+    ("restore_to_local_action_present", ("编辑后保存", "恢复回写", "回写", "覆盖保存", "恢复文件", "恢复图片", "恢复视频", "恢复到本地")),
+    ("offline_cache_write_present", ("缓存到本地", "离线缓存", "本地副本")),
 ]
 
 LOCATION_TASK_CUE_RULES = [
-    ("map_navigation", ("导航", "路线", "路径", "到这去", "位置导航")),
-    ("nearby_search", ("附近", "周边", "同城", "网点", "附近的人", "附近商家")),
-    ("location_service", ("定位", "当前位置", "位置服务", "地理位置", "实时位置")),
-    ("wifi_or_nearby_scan", ("wifi扫描", "wi-fi扫描", "搜索wifi", "附近设备", "nearby devices", "蓝牙扫描")),
+    ("navigation_intent_present", ("导航", "路线", "路径", "到这去", "位置导航")),
+    ("nearby_service_intent_present", ("附近", "周边", "同城", "网点", "附近的人", "附近商家")),
+    ("location_service_context_present", ("定位", "当前位置", "位置服务", "地理位置", "实时位置")),
+    ("wifi_scan_intent_present", ("wifi扫描", "wi-fi扫描", "搜索wifi", "附近设备", "nearby devices", "蓝牙扫描")),
 ]
 
 UPLOAD_TASK_CUE_RULES = [
-    ("upload_media", ("上传图片", "上传视频", "上传文件", "上传头像", "发布", "提交")),
-    ("attach_or_send_file", ("附件", "发送文件", "选择媒体", "选择相册", "上传附件")),
+    ("upload_entry_present", ("上传图片", "上传视频", "上传文件", "上传头像", "上传附件")),
+    ("submit_or_publish_action_present", ("发布", "提交", "发送", "确认上传")),
+    ("attachment_send_action_present", ("附件", "发送文件", "选择媒体", "选择相册")),
 ]
 
 CLEANUP_TASK_CUE_RULES = [
-    ("junk_cleanup", ("垃圾清理", "缓存清理", "清理缓存", "清理垃圾")),
-    ("space_cleanup", ("清理空间", "释放空间", "深度清理", "一键清理")),
-    ("duplicate_cleanup", ("重复文件", "相似图片", "视频清理", "微信清理", "相册清理")),
-    ("optimize_speedup", ("加速", "优化", "手机加速", "内存优化")),
+    ("cleanup_action_present", ("垃圾清理", "缓存清理", "清理缓存", "清理垃圾")),
+    ("storage_release_action_present", ("清理空间", "释放空间", "深度清理", "一键清理")),
+    ("duplicate_cleanup_action_present", ("重复文件", "相似图片", "视频清理", "微信清理", "相册清理")),
+    ("device_optimize_action_present", ("加速", "优化", "手机加速", "内存优化")),
 ]
 
 STRUCTURED_CUE_FIELDS = (
@@ -174,54 +191,87 @@ def _confidence_to_score(label: str) -> float:
     return 0.35
 
 
+def _confidence_score_to_label(score: float) -> str:
+    if score >= 0.8:
+        return "high"
+    if score >= 0.5:
+        return "medium"
+    return "low"
+
+
+def _scene_terms(text: str) -> Dict[str, List[str]]:
+    t = str(text or "").lower()
+    groups: Dict[str, Tuple[str, ...]] = {
+        "login": ("登录", "账号", "认证", "验证码", "密码", "手机号"),
+        "identity_update": ("头像", "实名认证", "证件", "人脸", "身份核验", "资料完善", "昵称"),
+        "file_recovery": ("恢复", "找回", "误删", "已恢复", "文档恢复", "图片恢复", "视频恢复", "回收站"),
+        "cleanup": ("清理", "垃圾", "加速", "优化", "释放空间", "缓存清理", "重复文件"),
+        "album": ("相册", "选择图片", "选择视频", "本地图片", "本地视频"),
+        "upload": ("上传", "发布", "发送", "提交", "附件"),
+        "capture": ("拍照", "拍摄", "扫码", "录像", "录制视频", "扫描二维码", "camera", "scan"),
+        "audio_record": ("录音", "录制音频", "麦克风", "语音输入", "record_audio", "microphone"),
+        "map_nav": ("地图", "导航", "路线", "到这去", "位置导航"),
+        "nearby_or_wifi": ("附近", "周边", "同城", "wifi", "wi-fi", "蓝牙", "附近设备", "nearby"),
+        "chat_or_share": ("聊天", "消息", "私信", "分享", "发送给好友"),
+        "support": ("客服", "反馈", "帮助中心", "工单"),
+        "browse": ("浏览", "搜索", "推荐", "资讯", "内容"),
+    }
+    out: Dict[str, List[str]] = {}
+    for key, terms in groups.items():
+        hits = [term for term in terms if term in t]
+        out[key] = hits
+    return out
+
+
 def _extract_camera_audio_cues(rec: Dict[str, Any]) -> Tuple[List[str], List[str]]:
     blob = " ".join(
         [
             _as_text(rec.get("user_intent"), max_len=220),
             _as_text(rec.get("trigger_action"), max_len=120),
-            _as_text(rec.get("page_observation"), max_len=280),
-            " ".join([_as_text(x, max_len=40) for x in _as_list(rec.get("visual_evidence"))[:8] if _as_text(x, max_len=40)]),
+            _as_text(rec.get("page_observation"), max_len=320),
+            _as_text(rec.get("scene_reason"), max_len=240),
+            " ".join([_as_text(x, max_len=40) for x in _as_list(rec.get("visual_evidence"))[:10] if _as_text(x, max_len=40)]),
+            " ".join([_as_text(x, max_len=60) for x in _as_list(rec.get("supporting_evidence"))[:8] if _as_text(x, max_len=60)]),
         ]
     ).lower()
-    camera_terms = ["拍照", "拍摄", "相机", "扫码", "录制视频", "camera", "scan"]
-    audio_terms = ["录音", "语音", "音频", "麦克风", "通话", "record_audio", "microphone"]
+    terms = _scene_terms(blob)
 
-    camera_hits = [k for k in camera_terms if k in blob]
-    audio_hits = [k for k in audio_terms if k in blob]
-    camera_cues = ["camera_task_present"] if camera_hits else []
-    audio_cues = ["audio_task_present"] if audio_hits else []
-    return camera_cues, audio_cues
+    camera_cues: List[str] = []
+    audio_cues: List[str] = []
+    if terms["capture"] or ("相机" in blob):
+        camera_cues.append("camera_entry_present")
+    if any(x in blob for x in ["拍照", "拍摄", "扫码", "录像", "开始拍摄", "开始录制视频"]):
+        camera_cues.append("capture_button_present")
+    if any(x in blob for x in ["扫码", "扫描二维码", "scan"]):
+        camera_cues.append("scan_mode_present")
+    if any(x in blob for x in ["录制视频", "录像中", "视频录制"]):
+        camera_cues.append("video_recording_indicator_present")
+    if any(x in blob for x in ["相机权限", "camera permission", "拍摄照片和录制视频"]):
+        camera_cues.append("camera_permission_context_present")
 
+    if terms["audio_record"] or ("语音" in blob):
+        audio_cues.append("record_button_present")
+    if any(x in blob for x in ["录音中", "录制中", "波形", "计时"]):
+        audio_cues.append("recording_indicator_present")
+    if any(x in blob for x in ["麦克风", "microphone", "record_audio"]):
+        audio_cues.append("microphone_usage_context_present")
+    if any(x in blob for x in ["语音消息", "语音发送", "通话"]):
+        audio_cues.append("voice_message_context_present")
+    if any(x in blob for x in ["清唱", "k歌", "K歌", "配音", "语音创作", "音频作品"]):
+        audio_cues.append("singing_or_voice_creation_context_present")
 
-def to_semantic_v2_record(rec: Dict[str, Any]) -> Dict[str, Any]:
-    camera_cues, audio_cues = _extract_camera_audio_cues(rec)
-    confidence_label = _as_text(rec.get("confidence"), max_len=10).lower()
-    confidence_score = _confidence_to_score(confidence_label)
-
-    out = dict(rec)
-    out["task_cues"] = {
-        "storage_read": _as_list(rec.get("storage_read_cues")),
-        "storage_write": _as_list(rec.get("storage_write_cues")),
-        "location": _as_list(rec.get("location_task_cues")),
-        "upload": _as_list(rec.get("upload_task_cues")),
-        "cleanup": _as_list(rec.get("cleanup_task_cues")),
-        "camera": camera_cues,
-        "audio": audio_cues,
-    }
-    # V2 keeps old confidence label in compatibility field while exposing numeric confidence.
-    out["confidence_label"] = confidence_label if confidence_label in CONF_LEVELS else "low"
-    out["confidence"] = round(confidence_score, 3)
-    return out
+    return _dedupe_keep_order(camera_cues, max_items=8), _dedupe_keep_order(audio_cues, max_items=8)
 
 
 def _infer_refined_scene(ui_task_scene: str, text_blob: str) -> str:
     scene = str(ui_task_scene or "其他")
     t = str(text_blob or "")
+    terms = _scene_terms(t)
 
     if scene == "文件与数据管理":
-        if any(k in t for k in ["恢复", "找回", "误删", "已恢复", "文档恢复", "图片恢复", "视频恢复"]):
+        if terms["file_recovery"]:
             return "file_recovery"
-        if any(k in t for k in ["清理", "垃圾", "加速", "优化", "释放空间"]):
+        if terms["cleanup"]:
             return "system_cleanup"
         return "file_management"
 
@@ -229,22 +279,33 @@ def _infer_refined_scene(ui_task_scene: str, text_blob: str) -> str:
         return "system_cleanup"
 
     if scene == "相册选择与媒体上传":
-        if any(k in t for k in ["上传", "发布", "发送", "头像", "提交"]):
+        if terms["upload"]:
             return "media_upload"
         return "album_selection"
 
-    if scene == "媒体拍摄与扫码":
-        return "media_upload"
+    if scene in {"图像视频拍摄与扫码", "媒体拍摄与扫码"}:
+        if terms["capture"] or terms["audio_record"]:
+            return "media_capture_or_recording"
+        if terms["upload"]:
+            return "media_upload"
+        return "media_capture_or_recording"
+
+    if scene == "音频录制与创作":
+        if terms["audio_record"] or any(k in t for k in ["录音", "清唱", "k歌", "K歌", "配音"]):
+            return "media_capture_or_recording"
+        return "other"
 
     if scene == "地图与位置服务":
+        if terms["nearby_or_wifi"] and not terms["map_nav"]:
+            return "nearby_service_or_wifi_scan"
         return "map_navigation"
 
     if scene == "网络连接与设备管理":
-        return "wifi_scan_or_nearby_devices"
+        return "nearby_service_or_wifi_scan"
 
     if scene == "账号与身份认证":
-        if any(k in t for k in ["头像", "证件", "实名认证", "人脸", "身份核验"]):
-            return "profile_or_identity_upload"
+        if terms["identity_update"]:
+            return "profile_or_identity_update"
         return "login_verification"
 
     if scene == "用户反馈与客服":
@@ -256,14 +317,472 @@ def _infer_refined_scene(ui_task_scene: str, text_blob: str) -> str:
     if scene == "内容浏览与搜索":
         return "content_browsing"
 
-    return UI_TO_REFINED_BASE.get(scene, "content_browsing")
+    if terms["cleanup"]:
+        return "system_cleanup"
+    if terms["file_recovery"]:
+        return "file_recovery"
+    if terms["capture"] or terms["audio_record"]:
+        return "media_capture_or_recording"
+    if terms["upload"]:
+        return "media_upload"
+    if terms["map_nav"]:
+        return "map_navigation"
+    if terms["nearby_or_wifi"]:
+        return "nearby_service_or_wifi_scan"
+    if terms["support"]:
+        return "customer_support"
+    if terms["chat_or_share"]:
+        return "social_chat_or_share"
+    if terms["browse"]:
+        return "content_browsing"
+    return UI_TO_REFINED_BASE.get(scene, "other")
 
 
 def _normalize_refined_scene(v: Any, ui_task_scene: str, text_blob: str) -> str:
     s = _as_text(v, max_len=64).strip().lower()
+    s = REFINED_SCENE_ALIASES.get(s, s)
     if s in REFINED_SCENE_SET:
         return s
     return _infer_refined_scene(ui_task_scene, text_blob)
+
+
+def _legacy_refined_scene(refined_scene: str) -> str:
+    rs = _as_text(refined_scene, max_len=64).lower()
+    return REFINED_SCENE_V1_TO_LEGACY.get(rs, "content_browsing")
+
+
+def _infer_primary_function(refined_scene: str, text_blob: str) -> str:
+    rs = _as_text(refined_scene, max_len=64).lower()
+    terms = _scene_terms(text_blob)
+    mapping = {
+        "login_verification": "登录验证",
+        "profile_or_identity_update": "资料/身份信息更新",
+        "file_management": "文件管理",
+        "file_recovery": "文件恢复",
+        "system_cleanup": "系统清理",
+        "album_selection": "相册选择",
+        "media_upload": "媒体上传",
+        "media_capture_or_recording": "媒体拍摄或录音",
+        "map_navigation": "地图导航",
+        "nearby_service_or_wifi_scan": "附近服务或Wi-Fi扫描",
+        "content_browsing": "内容浏览",
+        "customer_support": "客服支持",
+        "social_chat_or_share": "社交聊天或分享",
+        "other": "其他任务",
+    }
+    if rs == "media_capture_or_recording":
+        if terms["audio_record"]:
+            return "录音创作"
+        if terms["capture"]:
+            return "视频拍摄"
+    primary = mapping.get(rs, "其他任务")
+    if rs == "other":
+        if terms["audio_record"]:
+            return "录音创作"
+        if terms["capture"]:
+            return "视频拍摄"
+        if terms["upload"] and terms["album"]:
+            return "图片上传"
+        if terms["file_recovery"]:
+            return "文件恢复"
+        if terms["cleanup"]:
+            return "系统清理"
+        if terms["map_nav"]:
+            return "地图导航"
+    return primary
+
+
+def _align_ui_task_scene(
+    ui_task_scene: str,
+    refined_scene: str,
+    primary_function: str,
+    text_blob: str,
+) -> str:
+    scene = _clean_scene(ui_task_scene)
+    refined = _as_text(refined_scene, max_len=64).lower()
+    primary = _as_text(primary_function, max_len=80)
+    terms = _scene_terms(text_blob)
+
+    audio_signal = bool(
+        terms["audio_record"]
+        or any(k in primary for k in ["录音", "清唱", "K歌", "k歌", "配音", "音频"])
+    )
+    camera_signal = bool(
+        terms["capture"]
+        or any(k in primary for k in ["拍摄", "视频", "扫码", "相机"])
+    )
+
+    if refined == "media_capture_or_recording":
+        if audio_signal:
+            return "音频录制与创作"
+        if camera_signal:
+            return "图像视频拍摄与扫码"
+        if scene in {"其他", "媒体拍摄与扫码"}:
+            return "图像视频拍摄与扫码"
+
+    if refined == "album_selection":
+        return "相册选择与媒体上传"
+    if refined == "media_upload" and scene == "其他":
+        return "相册选择与媒体上传"
+
+    if scene == "其他":
+        fallback = {
+            "login_verification": "账号与身份认证",
+            "profile_or_identity_update": "账号与身份认证",
+            "file_management": "文件与数据管理",
+            "file_recovery": "文件与数据管理",
+            "system_cleanup": "设备清理与系统优化",
+            "map_navigation": "地图与位置服务",
+            "nearby_service_or_wifi_scan": "网络连接与设备管理",
+            "content_browsing": "内容浏览与搜索",
+            "customer_support": "用户反馈与客服",
+            "social_chat_or_share": "社交互动与通信",
+        }
+        if refined in fallback:
+            return fallback[refined]
+
+    if scene == "媒体拍摄与扫码":
+        if audio_signal:
+            return "音频录制与创作"
+        return "图像视频拍摄与扫码"
+    return scene
+
+
+def _calc_scene_confidence(
+    confidence_label: str,
+    refined_scene: str,
+    supporting: List[str],
+    conflicting: List[str],
+) -> float:
+    score = _confidence_to_score(confidence_label)
+    if _as_text(refined_scene, 64).lower() == "other":
+        score = min(score, 0.45)
+    if len(supporting) >= 3:
+        score += 0.05
+    if conflicting:
+        score -= 0.08 * len(conflicting[:2])
+    if len(supporting) <= len(conflicting) and conflicting:
+        score -= 0.08
+    if score < 0.05:
+        return 0.05
+    if score > 0.98:
+        return 0.98
+    return round(score, 3)
+
+
+def to_semantic_v2_record(rec: Dict[str, Any]) -> Dict[str, Any]:
+    def _cap(values: Any, max_items: int, max_len: int) -> List[str]:
+        return _dedupe_keep_order(
+            [_as_text(x, max_len=max_len) for x in _as_list(values) if _as_text(x, max_len=max_len)],
+            max_items=max_items,
+        )
+
+    def _to_score(raw: Any) -> float:
+        try:
+            return max(0.05, min(0.98, round(float(raw), 3)))
+        except Exception:
+            label = _as_text(raw, max_len=16).lower()
+            if label in CONF_LEVELS:
+                return _confidence_to_score(label)
+            return 0.35
+
+    def _pick_scene_from_refined(refined_scene: str) -> str:
+        mapping = {
+            "login_verification": "账号与身份认证",
+            "profile_or_identity_update": "账号与身份认证",
+            "file_management": "文件与数据管理",
+            "file_recovery": "文件与数据管理",
+            "system_cleanup": "设备清理与系统优化",
+            "album_selection": "相册选择与媒体上传",
+            "media_upload": "相册选择与媒体上传",
+            "media_capture_or_recording": "图像视频拍摄与扫码",
+            "map_navigation": "地图与位置服务",
+            "nearby_service_or_wifi_scan": "网络连接与设备管理",
+            "content_browsing": "内容浏览与搜索",
+            "customer_support": "用户反馈与客服",
+            "social_chat_or_share": "社交互动与通信",
+            "other": "其他",
+        }
+        return mapping.get(_as_text(refined_scene, 64).lower(), "其他")
+
+    def _quote_join(items: List[str], max_items: int = 3) -> str:
+        vals = [f"“{_as_text(x, 20)}”" for x in items[:max_items] if _as_text(x, 20)]
+        return "、".join(vals)
+
+    def _clean_elements(values: Any, max_items: int, max_len: int) -> List[str]:
+        out: List[str] = []
+        for raw in _as_list(values):
+            t = _as_text(raw, max_len=max_len)
+            if not t:
+                continue
+            if not _is_readable_ui_token(t):
+                continue
+            if _contains_perm_ui_word(t):
+                continue
+            if any(x in t for x in ["页面显示", "页面包含", "按钮位于", "用户点击", "系统弹出", "权限请求"]):
+                continue
+            out.append(t)
+        return _dedupe_keep_order(out, max_items=max_items)
+
+    def _is_generic_goal(text: str) -> bool:
+        t = _as_text(text, max_len=120)
+        if not t:
+            return True
+        bad_phrases = ("相关任务", "进行相关操作", "当前页面任务", "执行操作")
+        return any(p in t for p in bad_phrases) or len(t) < 6
+
+    def _build_page_observation(
+        labels: List[str],
+        buttons: List[str],
+        indicators: List[str],
+        dialogs: List[str],
+        visual_tokens: List[str],
+        fallback_text: str,
+    ) -> str:
+        sentences: List[str] = []
+        text_tokens = _dedupe_keep_order(labels + visual_tokens, max_items=6)
+        if text_tokens:
+            sentences.append(f"页面可见文本包括{_quote_join(text_tokens, 3)}。")
+        if buttons:
+            sentences.append(f"可点击入口有{_quote_join(buttons, 3)}。")
+        if indicators:
+            sentences.append(f"状态信息显示{_quote_join(indicators, 2)}。")
+        elif dialogs:
+            sentences.append(f"页面存在业务弹窗{_quote_join(dialogs, 1)}。")
+        if len(sentences) < 2 and fallback_text:
+            toks = [t for t in _tokens_from_text(fallback_text, max_items=8) if _is_readable_ui_token(t) and not _contains_perm_ui_word(t)]
+            if toks:
+                sentences.append(f"页面上下文还出现{_quote_join(toks, 3)}。")
+        if len(sentences) < 2:
+            sentences.append("页面展示了当前任务入口与相关文本信息。")
+        return _as_text("".join(sentences[:4]), max_len=260)
+
+    def _permission_match_ratio(perms: List[str], text: str) -> float:
+        if not perms:
+            return 0.0
+        blob = str(text or "").lower()
+        total = 0
+        hit = 0
+        for p in perms:
+            key = _as_text(p, max_len=80).upper()
+            total += 1
+            if key == "CAMERA":
+                if any(k in blob for k in ["拍照", "拍摄", "录像", "扫码", "相机", "视频"]):
+                    hit += 1
+            elif key == "RECORD_AUDIO":
+                if any(k in blob for k in ["录音", "清唱", "配音", "语音", "音频", "麦克风"]):
+                    hit += 1
+            elif key in {"ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"}:
+                if any(k in blob for k in ["地图", "导航", "定位", "附近", "同城"]):
+                    hit += 1
+            elif key in {"READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE", "READ_MEDIA_IMAGES", "READ_MEDIA_VIDEO", "READ_MEDIA_AUDIO"}:
+                if any(k in blob for k in ["相册", "上传", "下载", "保存", "导入", "文件", "图片", "视频", "音频"]):
+                    hit += 1
+        return round(hit / max(total, 1), 3)
+
+    def _relation_text(ratio: float) -> str:
+        if ratio >= 0.8:
+            return "关联较强：页面证据与权限用途一致。"
+        if ratio >= 0.4:
+            return "关联中等：页面存在部分对应证据。"
+        return "关联较弱或不确定：页面证据不足。"
+
+    scene_obj = rec.get("scene") if isinstance(rec.get("scene"), dict) else {}
+    page_sem_obj = rec.get("page_semantics") if isinstance(rec.get("page_semantics"), dict) else {}
+    page_desc_obj = rec.get("page_description") if isinstance(rec.get("page_description"), dict) else {}
+    task_under_obj = rec.get("task_understanding") if isinstance(rec.get("task_understanding"), dict) else {}
+    page_elements_obj = rec.get("page_elements") if isinstance(rec.get("page_elements"), dict) else {}
+    key_ui_obj = page_desc_obj.get("key_ui_elements") if isinstance(page_desc_obj.get("key_ui_elements"), dict) else {}
+    evidence_obj = rec.get("evidence") if isinstance(rec.get("evidence"), dict) else {}
+
+    ui_task_scene = _clean_scene(scene_obj.get("ui_task_scene") or rec.get("ui_task_scene"))
+    text_blob = " ".join(
+        [
+            _as_text(rec.get("user_intent"), 220),
+            _as_text(rec.get("trigger_action"), 100),
+            _as_text(rec.get("page_observation"), 360),
+            _as_text(page_sem_obj.get("primary_function"), 80),
+            _as_text(page_desc_obj.get("current_page_summary"), 360),
+            " ".join([_as_text(x, 40) for x in _as_list(rec.get("visual_evidence"))[:10] if _as_text(x, 40)]),
+        ]
+    )
+    refined_scene = _normalize_refined_scene(
+        scene_obj.get("refined_scene") or rec.get("refined_scene"),
+        ui_task_scene=ui_task_scene,
+        text_blob=text_blob,
+    )
+
+    raw_conf = scene_obj.get("confidence")
+    if raw_conf is None:
+        raw_conf = rec.get("scene_confidence")
+    if raw_conf is None:
+        raw_conf = rec.get("confidence")
+    scene_confidence = _to_score(raw_conf)
+
+    buttons = _clean_elements(page_elements_obj.get("buttons") or key_ui_obj.get("buttons"), max_items=5, max_len=40)
+    labels = _clean_elements(page_elements_obj.get("labels") or key_ui_obj.get("labels"), max_items=6, max_len=40)
+    indicators = _clean_elements(page_elements_obj.get("indicators") or key_ui_obj.get("indicators"), max_items=4, max_len=40)
+    dialogs = _clean_elements(page_elements_obj.get("dialogs") or key_ui_obj.get("dialogs"), max_items=4, max_len=60)
+
+    raw_trigger = _as_text(
+        (page_sem_obj.get("permission_context", {}) if isinstance(page_sem_obj.get("permission_context"), dict) else {}).get("trigger_source")
+        or rec.get("trigger_action")
+        or task_under_obj.get("trigger_action")
+        or "",
+        max_len=80,
+    )
+    chosen_button = ""
+    for b in buttons:
+        if b and b in raw_trigger:
+            chosen_button = b
+            break
+    if not chosen_button and buttons:
+        chosen_button = buttons[0]
+
+    if chosen_button:
+        action_step = f"用户点击“{chosen_button}”入口"
+    else:
+        action_step = "用户执行页面入口操作"
+
+    visual_tokens = _cap(
+        evidence_obj.get("visual_evidence") or rec.get("visual_evidence"),
+        max_items=8,
+        max_len=60,
+    )
+    visual_tokens = [x for x in visual_tokens if _is_readable_ui_token(x) and not _contains_perm_ui_word(x)][:6]
+    if len(visual_tokens) < 3:
+        visual_tokens = _dedupe_keep_order(
+            visual_tokens + labels[:3] + buttons[:2] + indicators[:2],
+            max_items=6,
+        )
+
+    fallback_obs_text = " ".join(
+        [
+            _as_text(rec.get("page_observation"), 160),
+            _as_text(page_desc_obj.get("context_before_popup"), 120),
+            _as_text(page_desc_obj.get("context_after_popup"), 120),
+        ]
+    )
+    page_observation = _build_page_observation(
+        labels=labels,
+        buttons=buttons,
+        indicators=indicators,
+        dialogs=dialogs,
+        visual_tokens=visual_tokens,
+        fallback_text=fallback_obs_text,
+    )
+
+    primary_function = _as_text(
+        page_sem_obj.get("primary_function")
+        or task_under_obj.get("primary_function")
+        or _infer_primary_function(refined_scene, text_blob),
+        max_len=80,
+    )
+    ui_task_scene = _align_ui_task_scene(
+        ui_task_scene=ui_task_scene,
+        refined_scene=refined_scene,
+        primary_function=primary_function,
+        text_blob=" ".join([text_blob, page_observation]),
+    )
+    if ui_task_scene == "其他":
+        ui_task_scene = _pick_scene_from_refined(refined_scene)
+        if ui_task_scene != "其他":
+            scene_confidence = max(0.45, scene_confidence)
+
+    page_type = _as_text(page_sem_obj.get("page_type") or page_desc_obj.get("page_type"), max_len=80)
+    if not page_type:
+        page_type = _infer_page_type(refined_scene, popup_present=False)
+
+    user_goal = _as_text(
+        page_sem_obj.get("user_goal") or task_under_obj.get("user_goal") or rec.get("user_intent"),
+        max_len=220,
+    )
+    if _is_generic_goal(user_goal):
+        if chosen_button:
+            user_goal = _as_text(f"用户希望点击“{chosen_button}”继续{primary_function}流程。", max_len=220)
+        else:
+            user_goal = _as_text(f"用户希望继续当前页面并完成{primary_function}。", max_len=220)
+
+    interaction_flow: List[str] = [f"用户进入{primary_function}相关页面", action_step]
+    if indicators:
+        interaction_flow.append(f"页面进入“{_as_text(indicators[0], 20)}”状态")
+    elif dialogs:
+        interaction_flow.append(f"页面出现业务弹窗“{_as_text(dialogs[0], 20)}”")
+    else:
+        interaction_flow.append("页面进入下一步任务流程")
+    interaction_flow = _normalize_text_list(interaction_flow, max_items=4, max_len=48)
+
+    observations = _normalize_text_list(
+        [
+            f"页面出现文本：{_quote_join((labels + visual_tokens)[:3], 3)}" if (labels or visual_tokens) else "",
+            f"页面存在入口：{_quote_join(buttons[:3], 3)}" if buttons else "",
+            f"页面状态：{_quote_join(indicators[:2], 2)}" if indicators else "",
+            f"页面弹窗：{_quote_join(dialogs[:1], 1)}" if dialogs else "",
+        ],
+        max_items=5,
+        max_len=80,
+    )
+    interactions = _normalize_text_list(
+        [
+            interaction_flow[0] if interaction_flow else "",
+            interaction_flow[1] if len(interaction_flow) > 1 else "",
+            interaction_flow[2] if len(interaction_flow) > 2 else "",
+        ],
+        max_items=4,
+        max_len=80,
+    )
+    inferences = _normalize_text_list(
+        [
+            "页面以可点击入口驱动后续操作" if buttons else "页面以文本信息引导后续操作",
+            "存在状态指示，流程不是静态浏览" if indicators else "",
+            f"页面能力集中在{primary_function}相关操作",
+        ],
+        max_items=3,
+        max_len=80,
+    )
+
+    known_permissions = _cap(rec.get("permissions_hint"), max_items=8, max_len=60)
+    if not known_permissions:
+        known_permissions = _cap(
+            (page_sem_obj.get("permission_context", {}) if isinstance(page_sem_obj.get("permission_context"), dict) else {}).get("requested_permissions")
+            or ((page_desc_obj.get("permission_popup") or {}) if isinstance(page_desc_obj.get("permission_popup"), dict) else {}).get("requested_permissions"),
+            max_items=8,
+            max_len=60,
+        )
+    function_ratio = _permission_match_ratio(known_permissions, " ".join([primary_function, page_observation, " ".join(observations)]))
+    goal_ratio = _permission_match_ratio(known_permissions, " ".join([user_goal, " ".join(interaction_flow)]))
+
+    return {
+        "chain_id": int(rec.get("chain_id", -1)),
+        "page_observation": page_observation,
+        "page_elements": {
+            "buttons": buttons,
+            "labels": labels,
+            "indicators": indicators,
+            "dialogs": dialogs,
+        },
+        "evidence": {
+            "observations": observations,
+            "interactions": interactions,
+            "inferences": inferences,
+        },
+        "scene": {
+            "ui_task_scene": ui_task_scene,
+            "refined_scene": refined_scene,
+            "confidence": round(scene_confidence, 3),
+        },
+        "page_semantics": {
+            "page_type": page_type,
+            "primary_function": primary_function,
+            "user_goal": user_goal,
+            "interaction_flow": interaction_flow,
+        },
+        "permission_context": {
+            "permissions": known_permissions,
+            "relevance_to_page_function": _relation_text(function_ratio) if known_permissions else "无已知权限。",
+            "relevance_to_user_goal": _relation_text(goal_ratio) if known_permissions else "无已知权限。",
+        },
+    }
 
 
 def load_prompt_template(path: str) -> str:
@@ -322,7 +841,10 @@ def _clean_scene(scene: Any) -> str:
         "地图定位": "地图与位置服务",
         "浏览搜索": "内容浏览与搜索",
         "社交通信": "社交互动与通信",
-        "拍摄扫码": "媒体拍摄与扫码",
+        "拍摄扫码": "图像视频拍摄与扫码",
+        "媒体拍摄与扫码": "图像视频拍摄与扫码",
+        "音频录制": "音频录制与创作",
+        "音频创作": "音频录制与创作",
         "相册上传": "相册选择与媒体上传",
         "商品消费": "商品浏览与消费",
         "支付交易": "支付与金融交易",
@@ -460,6 +982,8 @@ def _pick_trigger_action(top_widgets: List[Any], fallback_scene: str) -> str:
     default_by_scene = {
         "地图与位置服务": "查看附近内容",
         "相册选择与媒体上传": "选择并上传图片",
+        "音频录制与创作": "点击开始入口",
+        "图像视频拍摄与扫码": "点击拍摄或扫码入口",
         "媒体拍摄与扫码": "点击拍摄或扫码入口",
         "文件与数据管理": "浏览本地文件",
         "设备清理与系统优化": "开始清理或优化",
@@ -485,6 +1009,263 @@ def _build_visual_evidence(chain_summary: Dict[str, Any]) -> List[str]:
     return _dedupe_keep_order(out, max_items=8)
 
 
+def _normalize_text_list(values: Any, max_items: int = 8, max_len: int = 80) -> List[str]:
+    return _dedupe_keep_order(
+        [_as_text(x, max_len=max_len) for x in _as_list(values) if _as_text(x, max_len=max_len)],
+        max_items=max_items,
+    )
+
+
+def _is_readable_ui_token(token: str) -> bool:
+    s = _as_text(token, max_len=80)
+    if not s or len(s) < 2 or len(s) > 28:
+        return False
+    if "..." in s or "：" in s:
+        return False
+    if re.fullmatch(r"[\W_]+", s):
+        return False
+    if re.search(r"[A-Za-z]", s) and re.search(r"[\u4e00-\u9fff]", s):
+        return False
+    if len(set(s)) <= 1 and len(s) >= 3:
+        return False
+    return True
+
+
+def _build_key_ui_elements(
+    widgets: List[str],
+    visual_evidence: List[str],
+    granting_text: str,
+) -> Dict[str, List[str]]:
+    tokens = _normalize_text_list(widgets + visual_evidence, max_items=24, max_len=40)
+    if granting_text:
+        tokens.extend(_tokens_from_text(granting_text, max_items=8))
+    tokens = _normalize_text_list(tokens, max_items=24, max_len=40)
+    tokens = [t for t in tokens if _is_readable_ui_token(t)]
+
+    buttons: List[str] = []
+    tabs: List[str] = []
+    labels: List[str] = []
+    indicators: List[str] = []
+    dialogs: List[str] = []
+    for token in tokens:
+        t = token.lower()
+        if any(k in token for k in ["按钮", "点击", "开始", "继续", "上传", "拍照", "拍摄", "录音", "登录", "提交", "确定", "允许", "拒绝"]):
+            buttons.append(token)
+            continue
+        if any(k in token for k in ["tab", "首页", "发现", "消息", "我的", "附近", "地图", "设置", "频道"]):
+            tabs.append(token)
+            continue
+        if any(k in token for k in ["中", "中...", "loading", "定位", "扫描", "录制", "进度", "已选", "已连接"]):
+            indicators.append(token)
+            continue
+        if any(k in token for k in ["权限", "允许", "拒绝", "仅在使用中", "去设置", "对话框", "弹窗", "dialog"]):
+            dialogs.append(token)
+            continue
+        if len(t) <= 24:
+            labels.append(token)
+
+    return {
+        "buttons": _normalize_text_list(buttons, max_items=5, max_len=40),
+        "tabs": _normalize_text_list(tabs, max_items=8, max_len=40),
+        "labels": _normalize_text_list(labels, max_items=6, max_len=40),
+        "indicators": _normalize_text_list(indicators, max_items=4, max_len=40),
+        "dialogs": _normalize_text_list(dialogs, max_items=4, max_len=60),
+    }
+
+
+def _build_permission_popup(
+    granting_text: str,
+    permissions_hint: List[str],
+    trigger_action: str,
+) -> Dict[str, Any]:
+    popup_present = bool(granting_text and _contains_perm_ui_word(granting_text)) or bool(permissions_hint)
+    popup_text = _as_text(granting_text, max_len=260)
+    if popup_present and (not popup_text):
+        popup_text = "系统权限请求弹窗出现。"
+    return {
+        "present": bool(popup_present),
+        "requested_permissions": _normalize_text_list(permissions_hint, max_items=8, max_len=60),
+        "popup_text": popup_text,
+        "trigger_source": _as_text(trigger_action, max_len=100),
+    }
+
+
+def _infer_page_type(refined_scene: str, popup_present: bool) -> str:
+    rs = _as_text(refined_scene, max_len=64).lower()
+    mapping = {
+        "login_verification": "authentication_page",
+        "profile_or_identity_update": "profile_update_page",
+        "file_management": "file_management_page",
+        "file_recovery": "file_recovery_page",
+        "system_cleanup": "system_cleanup_page",
+        "album_selection": "album_picker_page",
+        "media_upload": "media_upload_page",
+        "media_capture_or_recording": "capture_or_recording_page",
+        "map_navigation": "map_navigation_page",
+        "nearby_service_or_wifi_scan": "nearby_or_wifi_scan_page",
+        "content_browsing": "content_browsing_page",
+        "customer_support": "customer_support_page",
+        "social_chat_or_share": "social_chat_or_share_page",
+    }
+    base = mapping.get(rs, "generic_task_page")
+    if popup_present:
+        return f"{base}_with_permission_popup"
+    return base
+
+
+def _default_action_by_primary_function(primary_function: str) -> str:
+    func = _as_text(primary_function, max_len=40)
+    mapping = [
+        (("录音", "音频"), "点击“开始录音”按钮"),
+        (("拍摄", "视频", "扫码"), "点击“开始拍摄”按钮"),
+        (("上传", "相册"), "点击“上传”入口"),
+        (("导航", "地图"), "点击“开始导航”按钮"),
+        (("清理",), "点击“开始清理”按钮"),
+        (("登录", "验证"), "点击“登录”按钮"),
+        (("恢复",), "点击“开始恢复”按钮"),
+        (("聊天", "分享"), "点击“发送”按钮"),
+    ]
+    for terms, action in mapping:
+        if any(t in func for t in terms):
+            return action
+    return "执行当前页面操作"
+
+
+def _normalize_trigger_action(primary_function: str, trigger_action: str) -> str:
+    action = _as_text(trigger_action, max_len=40)
+    if not action or action == "unknown":
+        return _default_action_by_primary_function(primary_function)
+    if action in {"开始", "启动", "录制", "拍摄", "清唱", "上传", "导航"}:
+        return f"点击“{action}”入口"
+    good_terms = ("点击", "选择", "输入", "开始", "上传", "拍摄", "录音", "登录", "导航", "清理", "扫描", "打开", "提交", "发送")
+    if any(t in action for t in good_terms):
+        if (len(action) <= 3) and ("点击" not in action):
+            return f"点击“{action}”入口"
+        return action
+    return _default_action_by_primary_function(primary_function)
+
+
+def _build_interaction_flow(
+    page_type: str,
+    primary_function: str,
+    trigger_action: str,
+    popup_present: bool,
+    requested_permissions: Optional[List[str]] = None,
+) -> List[str]:
+    primary = _as_text(primary_function, max_len=40) or "当前任务"
+    ptype = _as_text(page_type, max_len=60).lower()
+    requested_permissions = requested_permissions or []
+
+    def _page_name(func: str, ptype_norm: str) -> str:
+        if func and func != "其他任务":
+            return f"{func}页面"
+        if "recording" in ptype_norm or "capture" in ptype_norm:
+            return "媒体创作页面"
+        if "navigation" in ptype_norm or "map" in ptype_norm:
+            return "地图导航页面"
+        if "cleanup" in ptype_norm:
+            return "系统清理页面"
+        if "upload" in ptype_norm or "album" in ptype_norm:
+            return "媒体上传页面"
+        return "当前功能页面"
+
+    action_text = _normalize_trigger_action(primary, trigger_action)
+    page_name = _page_name(primary, ptype)
+
+    flow: List[str] = [f"用户进入{page_name}", f"用户{action_text}"]
+    if popup_present:
+        if requested_permissions:
+            perms = "、".join([_as_text(x, max_len=30) for x in requested_permissions[:2] if _as_text(x, max_len=30)])
+            flow.append(f"系统弹出{perms}权限请求" if perms else "系统弹出权限请求")
+        else:
+            flow.append("系统弹出权限请求")
+    else:
+        flow.append("页面进入任务执行状态")
+
+    flow = _normalize_text_list(flow, max_items=4, max_len=44)
+    if len(flow) < 2:
+        flow = ["用户进入当前功能页面", "页面进入任务执行状态"]
+    return flow[:4]
+
+
+def _build_supporting_evidence(
+    primary_function: str,
+    trigger_source: str,
+    requested_permissions: List[str],
+    popup_present: bool,
+    page_elements: Dict[str, List[str]],
+) -> List[str]:
+    primary = _as_text(primary_function, max_len=40) or "当前任务"
+    trigger = _as_text(trigger_source, max_len=40) or "执行页面操作"
+    buttons = _as_list(page_elements.get("buttons"))
+    labels = _as_list(page_elements.get("labels"))
+    indicators = _as_list(page_elements.get("indicators"))
+
+    flow: List[str] = []
+    if buttons:
+        flow.append(f"页面存在“{_as_text(buttons[0], max_len=20)}”操作入口")
+    elif labels:
+        flow.append(f"页面包含“{_as_text(labels[0], max_len=20)}”功能标识")
+
+    if trigger != "unknown":
+        if trigger.startswith("点击"):
+            if "“" in trigger or "\"" in trigger:
+                flow.append(f"页面记录到用户执行{trigger}")
+            else:
+                flow.append(f"页面记录到用户执行“{trigger}”操作")
+        else:
+            flow.append(f"页面记录到用户执行{trigger}")
+
+    if popup_present:
+        perms = "、".join([_as_text(x, max_len=30) for x in requested_permissions[:2] if _as_text(x, max_len=30)])
+        if perms:
+            flow.append(f"权限请求明确涉及{perms}")
+        else:
+            flow.append("页面出现系统权限请求")
+
+    if indicators:
+        flow.append(f"页面状态指示为“{_as_text(indicators[0], max_len=20)}”")
+
+    if len(flow) < 2:
+        flow.append(f"页面主功能为{primary}")
+
+    return _normalize_text_list(flow, max_items=4, max_len=48)
+
+
+def _build_scene_reason(
+    refined_scene: str,
+    ui_task_scene: str,
+    trigger_action: str,
+    page_summary: str,
+) -> str:
+    rs = _as_text(refined_scene, max_len=64)
+    reason = (
+        f"根据页面描述与交互链路（场景:{ui_task_scene}，触发动作:{trigger_action or 'unknown'}），"
+        f"页面语义更接近 {rs}。"
+    )
+    hint = _as_text(page_summary, max_len=120)
+    if hint:
+        reason += f" 关键依据：{hint}"
+    return _as_text(reason, max_len=320)
+
+
+def _build_conflicting_evidence(refined_scene: str, text_blob: str) -> List[str]:
+    rs = _as_text(refined_scene, max_len=64).lower()
+    terms = _scene_terms(text_blob)
+    out: List[str] = []
+    if rs == "media_upload" and (terms["capture"] or terms["audio_record"]):
+        out.append("页面同时出现拍摄/录音信号，上传场景存在歧义")
+    if rs == "media_capture_or_recording" and terms["upload"]:
+        out.append("页面同时出现上传信号，可能是拍摄后上传流程")
+    if rs == "map_navigation" and terms["upload"]:
+        out.append("出现上传语义，和导航主任务不完全一致")
+    if rs == "file_management" and terms["cleanup"]:
+        out.append("出现清理优化语义，可能应归类为 system_cleanup")
+    if rs == "other":
+        out.append("场景证据不足，暂不强行归类")
+    return _normalize_text_list(out, max_items=4, max_len=90)
+
+
 def _default_semantics(chain_summary: Dict[str, Any], permissions_hint: List[str]) -> Dict[str, Any]:
     before = _as_text(chain_summary.get("before_text", ""), max_len=320)
     granting = _as_text(chain_summary.get("granting_text", ""), max_len=320)
@@ -496,16 +1277,11 @@ def _default_semantics(chain_summary: Dict[str, Any], permissions_hint: List[str
     trigger_action = _pick_trigger_action(widgets, scene)
     text_blob = " ".join([before, granting, after, " ".join(widget_texts[:12])])
     refined_scene = _infer_refined_scene(scene, text_blob)
-    user_intent = f"用户希望在当前页面进行{scene}相关操作。"
+    primary_function = _infer_primary_function(refined_scene, text_blob)
+    user_intent = _as_text(f"用户希望完成“{primary_function}”相关操作。", max_len=220)
     page_observation = _as_text(
-        " ".join(
-            [
-                f"页面主要呈现{scene}相关内容。",
-                "系统权限请求弹窗出现。",
-                granting[:120],
-            ]
-        ),
-        max_len=260,
+        f"用户在{scene}页面执行“{trigger_action}”后，系统弹出权限请求；页面上下文包含：{before[:70]} {granting[:70]} {after[:70]}",
+        max_len=280,
     )
     evidence = _build_visual_evidence(chain_summary)
 
@@ -521,21 +1297,98 @@ def _default_semantics(chain_summary: Dict[str, Any], permissions_hint: List[str
         widgets=widget_texts,
         ocr_triplet=[before, granting, after],
     )
+    permission_popup = _build_permission_popup(granting, permissions_hint, trigger_action)
+    key_ui_elements = _build_key_ui_elements(widget_texts, evidence, granting)
+    interaction_flow = _build_interaction_flow(
+        page_type=_infer_page_type(refined_scene, permission_popup["present"]),
+        primary_function=primary_function,
+        trigger_action=trigger_action,
+        popup_present=permission_popup["present"],
+        requested_permissions=_as_list(permission_popup.get("requested_permissions")),
+    )[:4]
+    visual_evidence = _normalize_text_list(evidence or ["页面出现系统权限请求弹窗"], max_items=6, max_len=80)
+    visual_evidence = [x for x in visual_evidence if _is_readable_ui_token(x)][:6]
+    supporting_evidence = _build_supporting_evidence(
+        primary_function=primary_function,
+        trigger_source=_normalize_trigger_action(primary_function, trigger_action),
+        requested_permissions=_as_list(permission_popup.get("requested_permissions")),
+        popup_present=bool(permission_popup["present"]),
+        page_elements={
+            "buttons": key_ui_elements.get("buttons", []),
+            "labels": key_ui_elements.get("labels", []),
+            "indicators": key_ui_elements.get("indicators", []),
+            "dialogs": key_ui_elements.get("dialogs", []),
+        },
+    )
+    conflicting_evidence = _normalize_text_list(
+        _build_conflicting_evidence(refined_scene, text_blob),
+        max_items=2,
+        max_len=90,
+    )
+
+    task_cues = {
+        "storage_read": _normalize_text_list(cues["storage_read_cues"], max_items=3, max_len=60),
+        "storage_write": _normalize_text_list(cues["storage_write_cues"], max_items=3, max_len=60),
+        "location": _normalize_text_list(cues["location_task_cues"], max_items=3, max_len=60),
+        "upload": _normalize_text_list(cues["upload_task_cues"], max_items=3, max_len=60),
+        "cleanup": _normalize_text_list(cues["cleanup_task_cues"], max_items=3, max_len=60),
+        "camera": [],
+        "audio": [],
+    }
+    scene_confidence = _calc_scene_confidence(
+        confidence_label="low",
+        refined_scene=refined_scene,
+        supporting=supporting_evidence,
+        conflicting=conflicting_evidence,
+    )
 
     return {
+        "scene": {
+            "ui_task_scene": scene,
+            "refined_scene": refined_scene,
+            "confidence": scene_confidence,
+        },
+        "page_semantics": {
+            "page_type": _infer_page_type(refined_scene, permission_popup["present"]),
+            "primary_function": primary_function,
+            "user_goal": user_intent,
+            "interaction_flow": interaction_flow[:4],
+            "permission_context": {
+                "popup_present": bool(permission_popup["present"]),
+                "requested_permissions": _normalize_text_list(permission_popup.get("requested_permissions"), max_items=6, max_len=60),
+                "trigger_source": _as_text(trigger_action, max_len=80),
+            },
+        },
+        "page_elements": {
+            "buttons": _normalize_text_list(key_ui_elements.get("buttons"), max_items=5, max_len=40),
+            "labels": _normalize_text_list(key_ui_elements.get("labels"), max_items=6, max_len=40),
+            "indicators": _normalize_text_list(key_ui_elements.get("indicators"), max_items=4, max_len=40),
+            "dialogs": _normalize_text_list(key_ui_elements.get("dialogs"), max_items=4, max_len=60),
+        },
+        "evidence": {
+            "visual_evidence": visual_evidence[:6],
+            "supporting_evidence": supporting_evidence[:4],
+            "conflicting_evidence": conflicting_evidence[:2],
+        },
+        "task_cues": task_cues,
+        # fallback keeps minimal compatibility aliases
         "ui_task_scene": scene,
         "refined_scene": refined_scene,
         "user_intent": user_intent,
         "trigger_action": trigger_action,
-        "page_observation": page_observation,
-        "visual_evidence": evidence or ["页面出现系统权限请求弹窗"],
-        "permission_task_cues": cues["permission_task_cues"],
-        "storage_read_cues": cues["storage_read_cues"],
-        "storage_write_cues": cues["storage_write_cues"],
-        "location_task_cues": cues["location_task_cues"],
-        "upload_task_cues": cues["upload_task_cues"],
-        "cleanup_task_cues": cues["cleanup_task_cues"],
+        "page_observation": _as_text("；".join(interaction_flow[:2]), max_len=220),
+        "visual_evidence": visual_evidence[:6],
         "confidence": "low",
+        "storage_read_cues": task_cues["storage_read"],
+        "storage_write_cues": task_cues["storage_write"],
+        "location_task_cues": task_cues["location"],
+        "upload_task_cues": task_cues["upload"],
+        "cleanup_task_cues": task_cues["cleanup"],
+        "permission_task_cues": _normalize_text_list(
+            task_cues["storage_read"] + task_cues["storage_write"] + task_cues["location"] + task_cues["upload"] + task_cues["cleanup"],
+            max_items=10,
+            max_len=60,
+        ),
     }
 
 
@@ -567,18 +1420,34 @@ def _build_input_payload(
         ],
         "permissions_hint": permissions_hint[:10],
         "output_schema": {
-            "ui_task_scene": "from fixed taxonomy",
-            "refined_scene": "from refined taxonomy: login_verification|profile_or_identity_upload|file_management|file_recovery|system_cleanup|album_selection|media_upload|map_navigation|wifi_scan_or_nearby_devices|content_browsing|customer_support|social_chat_or_share",
-            "user_intent": "short intent sentence",
-            "trigger_action": "most likely user action before permission prompt",
-            "page_observation": "concise objective page observation",
-            "visual_evidence": ["3-8 concise UI clues"],
-            "permission_task_cues": ["optional cue tags"],
-            "storage_read_cues": ["optional cue tags"],
-            "storage_write_cues": ["optional cue tags"],
-            "location_task_cues": ["optional cue tags"],
-            "upload_task_cues": ["optional cue tags"],
-            "cleanup_task_cues": ["optional cue tags"],
+            "page_observation": "2-4 objective sentences with visible text, key entries and status",
+            "page_elements": {
+                "buttons": [],
+                "labels": [],
+                "indicators": [],
+                "dialogs": [],
+            },
+            "evidence": {
+                "observations": ["visible facts from page"],
+                "interactions": ["chain-confirmed actions and transitions"],
+                "inferences": ["minimal inference supported by observations + interactions"],
+            },
+            "scene": {
+                "ui_task_scene": "from fixed taxonomy",
+                "refined_scene": "from scene taxonomy v1",
+                "confidence": 0.0,
+            },
+            "page_semantics": {
+                "page_type": "page type",
+                "primary_function": "specific function",
+                "user_goal": "user goal",
+                "interaction_flow": ["2-4 concise steps"],
+            },
+            "permission_context": {
+                "permissions": permissions_hint[:10],
+                "relevance_to_page_function": "strong|medium|weak with short rationale",
+                "relevance_to_user_goal": "strong|medium|weak with short rationale",
+            },
         },
         "fallback_hints": fallback,
     }
@@ -592,44 +1461,93 @@ def normalize_semantics_record(
     rerun_reason: str,
     error: str = "",
 ) -> Dict[str, Any]:
+    scene_obj = obj.get("scene") if isinstance(obj.get("scene"), dict) else {}
+    page_sem_obj = obj.get("page_semantics") if isinstance(obj.get("page_semantics"), dict) else {}
+    permission_ctx_top = obj.get("permission_context") if isinstance(obj.get("permission_context"), dict) else {}
+    system_dialog_obj = obj.get("system_permission_dialog") if isinstance(obj.get("system_permission_dialog"), dict) else {}
+    evidence_obj_new = obj.get("evidence") if isinstance(obj.get("evidence"), dict) else {}
+    task_cues_obj_new = obj.get("task_cues") if isinstance(obj.get("task_cues"), dict) else {}
+    page_elements_obj_new = obj.get("page_elements") if isinstance(obj.get("page_elements"), dict) else {}
+
+    page_desc_obj = obj.get("page_description") if isinstance(obj.get("page_description"), dict) else {}
+    task_under_obj = obj.get("task_understanding") if isinstance(obj.get("task_understanding"), dict) else {}
+    scene_inf_obj = obj.get("scene_inference") if isinstance(obj.get("scene_inference"), dict) else {}
+    decision_support_obj = obj.get("decision_support") if isinstance(obj.get("decision_support"), dict) else {}
+    fallback_page_desc = fallback.get("page_description") if isinstance(fallback.get("page_description"), dict) else {}
+    fallback_task_under = fallback.get("task_understanding") if isinstance(fallback.get("task_understanding"), dict) else {}
+    fallback_scene_inf = fallback.get("scene_inference") if isinstance(fallback.get("scene_inference"), dict) else {}
+
     # Accept a few key aliases for robustness.
     scene = _clean_scene(
+        scene_obj.get("ui_task_scene")
+        or
         obj.get("ui_task_scene")
+        or scene_inf_obj.get("ui_task_scene")
         or obj.get("scene")
         or obj.get("predicted_scene")
         or fallback.get("ui_task_scene")
     )
     text_blob = " ".join(
         [
-            _as_text(obj.get("user_intent") or obj.get("intent"), max_len=200),
-            _as_text(obj.get("page_observation") or obj.get("page_function"), max_len=260),
-            _as_text(obj.get("trigger_action"), max_len=80),
+            _as_text(obj.get("page_overview"), max_len=120),
+            _as_text(obj.get("user_intent") or obj.get("intent") or page_sem_obj.get("user_goal") or task_under_obj.get("user_goal"), max_len=220),
+            _as_text(obj.get("page_observation") or obj.get("page_function") or page_sem_obj.get("primary_function") or page_desc_obj.get("current_page_summary"), max_len=320),
+            _as_text(
+                obj.get("trigger_action")
+                or (page_sem_obj.get("permission_context", {}).get("trigger_source") if isinstance(page_sem_obj.get("permission_context"), dict) else "")
+                or task_under_obj.get("trigger_action"),
+                max_len=80,
+            ),
             _as_text(fallback.get("user_intent"), max_len=200),
             _as_text(fallback.get("page_observation"), max_len=260),
+            _as_text(page_desc_obj.get("context_before_popup"), max_len=220),
+            _as_text(page_desc_obj.get("context_after_popup"), max_len=220),
             " ".join([_as_text(x, max_len=30) for x in _as_list(obj.get("visual_evidence"))[:8]]),
+            " ".join([_as_text(x, max_len=30) for x in _as_list(evidence_obj_new.get("visual_evidence"))[:8]]),
+            " ".join([_as_text(x, max_len=30) for x in _as_list(evidence_obj_new.get("observations"))[:8]]),
         ]
     )
     refined_scene = _normalize_refined_scene(
-        obj.get("refined_scene") or obj.get("scene_refined"),
+        scene_obj.get("refined_scene") or obj.get("refined_scene") or scene_inf_obj.get("refined_scene") or obj.get("scene_refined"),
         ui_task_scene=scene,
         text_blob=text_blob,
     )
-    intent = _as_text(obj.get("user_intent") or obj.get("intent") or fallback.get("user_intent"), max_len=220)
-    trigger = _as_text(obj.get("trigger_action") or fallback.get("trigger_action"), max_len=80)
+    intent = _as_text(
+        page_sem_obj.get("user_goal") or obj.get("user_intent") or obj.get("intent") or task_under_obj.get("user_goal") or fallback.get("user_intent"),
+        max_len=220,
+    )
+    trigger = _as_text(
+        (page_sem_obj.get("permission_context", {}).get("trigger_source") if isinstance(page_sem_obj.get("permission_context"), dict) else "")
+        or
+        permission_ctx_top.get("trigger_source")
+        or
+        obj.get("trigger_action")
+        or task_under_obj.get("trigger_action")
+        or ((page_desc_obj.get("permission_popup") or {}).get("trigger_source") if isinstance(page_desc_obj.get("permission_popup"), dict) else "")
+        or fallback.get("trigger_action"),
+        max_len=80,
+    )
     page_observation = _as_text(
         obj.get("page_observation")
         or obj.get("page_function")
+        or obj.get("page_overview")
+        or page_sem_obj.get("primary_function")
+        or page_desc_obj.get("current_page_summary")
         or fallback.get("page_observation"),
-        max_len=280,
+        max_len=520,
     )
 
     ve_raw = obj.get("visual_evidence")
     if not isinstance(ve_raw, list):
         ve_raw = []
+        ve_raw.extend(evidence_obj_new.get("visual_evidence") if isinstance(evidence_obj_new.get("visual_evidence"), list) else [])
+        ve_raw.extend(evidence_obj_new.get("observations") if isinstance(evidence_obj_new.get("observations"), list) else [])
         evidence = obj.get("evidence") if isinstance(obj.get("evidence"), dict) else {}
         ve_raw.extend(evidence.get("keywords") if isinstance(evidence.get("keywords"), list) else [])
         ve_raw.extend(evidence.get("widgets") if isinstance(evidence.get("widgets"), list) else [])
-    visual_evidence = _dedupe_keep_order([_as_text(x, max_len=40) for x in ve_raw if _as_text(x, max_len=40)], max_items=8)
+    if not ve_raw:
+        ve_raw = _as_list(decision_support_obj.get("supporting_evidence"))
+    visual_evidence = _dedupe_keep_order([_as_text(x, max_len=40) for x in ve_raw if _as_text(x, max_len=40)], max_items=10)
 
     if not intent:
         intent = fallback.get("user_intent", "用户希望完成当前页面任务。")
@@ -640,35 +1558,282 @@ def normalize_semantics_record(
     if not visual_evidence:
         visual_evidence = fallback.get("visual_evidence", ["页面出现系统权限请求弹窗"])
 
-    confidence = _as_text(obj.get("confidence") or fallback.get("confidence"), max_len=10).lower()
+    confidence_raw = obj.get("confidence")
+    if confidence_raw is None:
+        confidence_raw = scene_obj.get("confidence")
+    if confidence_raw is None:
+        confidence_raw = fallback.get("confidence")
+    confidence: str
+    try:
+        confidence = _confidence_score_to_label(float(confidence_raw))
+    except Exception:
+        confidence = _as_text(confidence_raw, max_len=10).lower()
     if confidence not in CONF_LEVELS:
         confidence = "low"
 
     widget_terms = [_as_text(x, max_len=40) for x in _as_list(obj.get("widgets"))[:16] if _as_text(x, max_len=40)]
+    if not widget_terms:
+        for k in ("buttons", "labels", "indicators", "dialogs"):
+            widget_terms.extend([_as_text(x, max_len=40) for x in _as_list(page_elements_obj_new.get(k)) if _as_text(x, max_len=40)])
+        key_ui = page_desc_obj.get("key_ui_elements") if isinstance(page_desc_obj.get("key_ui_elements"), dict) else {}
+        for k in ("buttons", "tabs", "labels", "indicators", "dialogs"):
+            widget_terms.extend([_as_text(x, max_len=40) for x in _as_list(key_ui.get(k)) if _as_text(x, max_len=40)])
+    widget_terms = _normalize_text_list(widget_terms, max_items=20, max_len=40)
+
+    popup_fallback = fallback_page_desc.get("permission_popup") if isinstance(fallback_page_desc.get("permission_popup"), dict) else {}
+    popup_obj = page_desc_obj.get("permission_popup") if isinstance(page_desc_obj.get("permission_popup"), dict) else {}
+    permission_ctx_obj = page_sem_obj.get("permission_context") if isinstance(page_sem_obj.get("permission_context"), dict) else {}
+    popup_present = bool(
+        system_dialog_obj.get("present")
+        if system_dialog_obj.get("present") is not None
+        else permission_ctx_obj.get("popup_present")
+        if permission_ctx_obj.get("popup_present") is not None
+        else
+        popup_obj.get("present")
+        if popup_obj.get("present") is not None
+        else popup_fallback.get("present")
+    )
+    if not popup_present:
+        popup_present = _contains_perm_ui_word(_as_text(popup_obj.get("popup_text") or "", 260)) or _contains_perm_ui_word(_as_text(page_observation, 280))
+
+    popup_permissions = _normalize_text_list(
+        system_dialog_obj.get("requested_permissions")
+        or permission_ctx_obj.get("requested_permissions")
+        or permission_ctx_top.get("permissions")
+        or
+        popup_obj.get("requested_permissions")
+        or popup_fallback.get("requested_permissions")
+        or obj.get("permissions_hint")
+        or fallback.get("permissions_hint"),
+        max_items=8,
+        max_len=60,
+    )
+    popup_text = _as_text(
+        " ".join([_as_text(x, max_len=80) for x in _as_list(system_dialog_obj.get("permission_text"))[:3]])
+        or
+        popup_obj.get("popup_text")
+        or popup_fallback.get("popup_text")
+        or _as_text(page_desc_obj.get("context_before_popup"), max_len=120),
+        max_len=260,
+    )
+    key_ui_elements = _build_key_ui_elements(
+        widgets=widget_terms,
+        visual_evidence=visual_evidence,
+        granting_text=popup_text,
+    )
+    key_ui_obj = page_desc_obj.get("key_ui_elements") if isinstance(page_desc_obj.get("key_ui_elements"), dict) else {}
+    fallback_key_ui_obj = fallback_page_desc.get("key_ui_elements") if isinstance(fallback_page_desc.get("key_ui_elements"), dict) else {}
+    for k in ("buttons", "tabs", "labels", "indicators", "dialogs"):
+        key_ui_elements[k] = _normalize_text_list(
+            key_ui_obj.get(k) or fallback_key_ui_obj.get(k) or key_ui_elements.get(k),
+            max_items=12,
+            max_len=40,
+        )
+
+    context_before = _as_text(
+        page_desc_obj.get("context_before_popup") or fallback_page_desc.get("context_before_popup"),
+        max_len=220,
+    )
+    context_after = _as_text(
+        page_desc_obj.get("context_after_popup") or fallback_page_desc.get("context_after_popup"),
+        max_len=220,
+    )
+    if not context_before:
+        context_before = _as_text(page_observation, max_len=160)
+
+    current_page_summary = _as_text(
+        page_desc_obj.get("current_page_summary") or fallback_page_desc.get("current_page_summary"),
+        max_len=520,
+    )
+    if len(current_page_summary) < 16:
+        current_page_summary = _as_text(
+            f"页面主任务围绕{_infer_primary_function(refined_scene, text_blob)}展开。"
+            f"用户执行“{trigger}”后出现权限请求弹窗；"
+            f"弹窗前上下文：{context_before[:90]}；弹窗后状态：{context_after[:90]}。",
+            max_len=520,
+        )
+
+    page_type = _as_text(page_desc_obj.get("page_type") or fallback_page_desc.get("page_type"), max_len=80)
+    if not page_type:
+        page_type = _infer_page_type(refined_scene, popup_present)
+
+    page_description = {
+        "current_page_summary": current_page_summary,
+        "context_before_popup": context_before,
+        "context_after_popup": context_after,
+        "page_type": page_type,
+        "key_ui_elements": key_ui_elements,
+        "permission_popup": {
+            "present": bool(popup_present),
+            "requested_permissions": popup_permissions,
+            "popup_text": popup_text,
+            "trigger_source": _as_text(popup_obj.get("trigger_source") or trigger, max_len=100),
+        },
+    }
+
+    interaction_flow = _normalize_text_list(
+        page_sem_obj.get("interaction_flow")
+        or
+        task_under_obj.get("interaction_flow") or fallback_task_under.get("interaction_flow"),
+        max_items=6,
+        max_len=120,
+    )
+    if not interaction_flow:
+        interaction_flow = _build_interaction_flow(
+            page_type=page_type,
+            primary_function=_infer_primary_function(refined_scene, text_blob),
+            trigger_action=trigger,
+            popup_present=bool(popup_present),
+            requested_permissions=popup_permissions,
+        )
+    primary_function = _as_text(
+        page_sem_obj.get("primary_function")
+        or
+        task_under_obj.get("primary_function")
+        or fallback_task_under.get("primary_function")
+        or _infer_primary_function(refined_scene, text_blob),
+        max_len=80,
+    )
+    if not primary_function:
+        primary_function = "其他任务"
+    task_understanding = {
+        "primary_function": primary_function,
+        "user_goal": _as_text(task_under_obj.get("user_goal") or intent, max_len=220),
+        "trigger_action": _as_text(task_under_obj.get("trigger_action") or trigger, max_len=80),
+        "interaction_flow": interaction_flow,
+    }
+
     extracted_cues = _extract_structured_cues(
         user_intent=intent,
         trigger_action=trigger,
-        page_observation=page_observation,
+        page_observation=current_page_summary,
         visual_evidence=visual_evidence,
         widgets=widget_terms,
-        ocr_triplet=[text_blob],
+        ocr_triplet=[context_before, popup_text, context_after],
     )
+    decision_task_cues = decision_support_obj.get("task_cues") if isinstance(decision_support_obj.get("task_cues"), dict) else {}
+    top_task_cues = obj.get("task_cues") if isinstance(obj.get("task_cues"), dict) else {}
+    storage_from_new = _normalize_text_list(_as_list(task_cues_obj_new.get("storage")), max_items=10, max_len=60)
+    storage_read_from_old = _normalize_text_list(decision_task_cues.get("storage_read") or top_task_cues.get("storage_read"), max_items=10, max_len=60)
+    storage_write_from_old = _normalize_text_list(decision_task_cues.get("storage_write") or top_task_cues.get("storage_write"), max_items=10, max_len=60)
+    cue_bridge = {
+        "permission_task_cues": _normalize_text_list(obj.get("permission_task_cues"), max_items=12, max_len=60),
+        "storage_read_cues": _normalize_text_list(storage_from_new + storage_read_from_old, max_items=10, max_len=60),
+        "storage_write_cues": _normalize_text_list(storage_from_new + storage_write_from_old, max_items=10, max_len=60),
+        "location_task_cues": _normalize_text_list(task_cues_obj_new.get("location") or decision_task_cues.get("location") or top_task_cues.get("location"), max_items=10, max_len=60),
+        "upload_task_cues": _normalize_text_list(task_cues_obj_new.get("upload") or decision_task_cues.get("upload") or top_task_cues.get("upload"), max_items=10, max_len=60),
+        "cleanup_task_cues": _normalize_text_list(decision_task_cues.get("cleanup") or top_task_cues.get("cleanup"), max_items=10, max_len=60),
+    }
 
     cue_values: Dict[str, List[str]] = {}
     for field in STRUCTURED_CUE_FIELDS:
         merged = _merge_cue_lists(obj.get(field), fallback.get(field), max_items=12)
+        merged = _merge_cue_lists(merged, cue_bridge.get(field, []), max_items=12)
         merged = _merge_cue_lists(merged, extracted_cues.get(field, []), max_items=12)
         cue_values[field] = merged
+
+    supporting_evidence = _normalize_text_list(
+        evidence_obj_new.get("interaction_evidence")
+        or evidence_obj_new.get("inferred_evidence")
+        or evidence_obj_new.get("observations")
+        or evidence_obj_new.get("interactions")
+        or evidence_obj_new.get("inferences")
+        or
+        decision_support_obj.get("supporting_evidence")
+        or obj.get("supporting_evidence")
+        or fallback.get("supporting_evidence"),
+        max_items=10,
+        max_len=90,
+    )
+    if not supporting_evidence:
+        supporting_evidence = _normalize_text_list(
+            visual_evidence
+            + [f"主功能:{primary_function}", f"触发动作:{trigger}"]
+            + [_as_text(x, max_len=90) for x in interaction_flow[:3]],
+            max_items=10,
+            max_len=90,
+        )
+    conflicting_evidence = _normalize_text_list(
+        evidence_obj_new.get("conflicting_evidence")
+        or
+        decision_support_obj.get("conflicting_evidence")
+        or obj.get("conflicting_evidence")
+        or fallback.get("conflicting_evidence"),
+        max_items=6,
+        max_len=90,
+    )
+    if not conflicting_evidence:
+        conflicting_evidence = _build_conflicting_evidence(refined_scene, text_blob)
+
+    scene_reason = _as_text(
+        scene_inf_obj.get("scene_reason") or obj.get("scene_reason") or fallback_scene_inf.get("scene_reason"),
+        max_len=320,
+    )
+    if not scene_reason:
+        scene_reason = _build_scene_reason(
+            refined_scene=refined_scene,
+            ui_task_scene=scene,
+            trigger_action=trigger,
+            page_summary=current_page_summary,
+        )
+
+    raw_scene_conf = scene_inf_obj.get("scene_confidence")
+    if raw_scene_conf is None:
+        raw_scene_conf = obj.get("scene_confidence")
+    if raw_scene_conf is None:
+        raw_scene_conf = fallback_scene_inf.get("scene_confidence")
+    try:
+        scene_confidence = float(raw_scene_conf)
+    except Exception:
+        scene_confidence = _calc_scene_confidence(
+            confidence_label=confidence,
+            refined_scene=refined_scene,
+            supporting=supporting_evidence,
+            conflicting=conflicting_evidence,
+        )
+    scene_confidence = max(0.05, min(0.98, round(scene_confidence, 3)))
+
+    decision_task_cues_full = {
+        "storage_read": cue_values["storage_read_cues"],
+        "storage_write": cue_values["storage_write_cues"],
+        "location": cue_values["location_task_cues"],
+        "upload": cue_values["upload_task_cues"],
+        "cleanup": cue_values["cleanup_task_cues"],
+        "camera": _normalize_text_list(decision_task_cues.get("camera") or top_task_cues.get("camera"), max_items=8, max_len=60),
+        "audio": _normalize_text_list(decision_task_cues.get("audio") or top_task_cues.get("audio"), max_items=8, max_len=60),
+    }
+    scene_inference = {
+        "ui_task_scene": scene,
+        "refined_scene": refined_scene,
+        "scene_confidence": scene_confidence,
+        "scene_reason": scene_reason,
+        "refined_scene_legacy": _legacy_refined_scene(refined_scene),
+    }
+    decision_support = {
+        "supporting_evidence": supporting_evidence,
+        "conflicting_evidence": conflicting_evidence,
+        "task_cues": decision_task_cues_full,
+    }
 
     rec = {
         "chain_id": chain_id,
         "ui_task_scene": scene,
         "refined_scene": refined_scene,
+        "refined_scene_legacy": _legacy_refined_scene(refined_scene),
         "user_intent": intent,
         "trigger_action": trigger,
-        "page_observation": page_observation,
+        "page_observation": _as_text(current_page_summary or page_observation, max_len=520),
         "visual_evidence": visual_evidence,
         "confidence": confidence,
+        "confidence_label": confidence,
+        "scene_confidence": scene_confidence,
+        "scene_reason": scene_reason,
+        "supporting_evidence": supporting_evidence,
+        "conflicting_evidence": conflicting_evidence,
+        "page_description": page_description,
+        "task_understanding": task_understanding,
+        "scene_inference": scene_inference,
+        "decision_support": decision_support,
         "rerun": bool(rerun),
         "rerun_reason": _as_text(rerun_reason, max_len=120),
         "permission_task_cues": cue_values["permission_task_cues"],
@@ -696,6 +1861,10 @@ def should_rerun(rec: Dict[str, Any]) -> str:
         return "missing_page_observation"
     if not isinstance(rec.get("visual_evidence"), list) or not rec.get("visual_evidence"):
         return "missing_visual_evidence"
+    if not isinstance(rec.get("page_description"), dict):
+        return "missing_page_description"
+    if not isinstance(rec.get("task_understanding"), dict):
+        return "missing_task_understanding"
     return ""
 
 
@@ -704,13 +1873,15 @@ def build_prompt(template: str, input_payload: Dict[str, Any], strict: bool) -> 
     if strict:
         prompt += (
             "\n\n【重试补充要求】\n"
-            "1) ui_task_scene 必须从固定 taxonomy 选择；无法判断时输出“其他”。\n"
-            "2) refined_scene 必须从给定 refined taxonomy 选择。\n"
-            "3) user_intent 需为简洁目标句，长度至少 8 个字。\n"
-            "4) trigger_action 必须是具体动作，无法判断时写 unknown。\n"
-            "5) page_observation 必须是客观页面观察描述。\n"
-            "6) visual_evidence 输出 3~8 个短语。\n"
-            "7) 只输出严格 JSON，不要额外文字。\n"
+            "1) 必须按 page_observation/page_elements/evidence/scene/page_semantics/permission_context 输出。\n"
+            "2) scene.ui_task_scene 必须从固定 taxonomy 选择；不确定时 refined_scene 可输出 other。\n"
+            "3) scene.confidence 必须是 0~1 浮点数。\n"
+            "4) page_observation 必须 2~4 句客观描述可见文本、入口和状态，不要直接给场景结论。\n"
+            "5) interaction_flow 必须是动作链，且涉及按钮必须来自 page_elements.buttons。\n"
+            "6) evidence 仅保留 observations/interactions/inferences；不要输出 task_cues 或 reasoning_basis。\n"
+            "7) permission_context.permissions 直接使用已知 permissions_hint，不要重新识别权限。\n"
+            "8) page_elements 只放原始可见元素，禁止解释句、推断句、权限弹窗按钮。\n"
+            "9) 只输出严格 JSON，不要额外文字。\n"
         )
     return prompt
 
@@ -969,9 +2140,15 @@ def build_summary(records: List[Dict[str, Any]], apps_processed: int, low_conf_c
     low_scene_counter = Counter()
 
     for rec in records:
+        scene_obj = rec.get("scene") if isinstance(rec.get("scene"), dict) else {}
+        page_sem = rec.get("page_semantics") if isinstance(rec.get("page_semantics"), dict) else {}
+        perm_ctx = page_sem.get("permission_context") if isinstance(page_sem.get("permission_context"), dict) else {}
+
         conf = _as_text(rec.get("confidence_label"), max_len=10).lower()
         if conf not in CONF_LEVELS:
-            raw_conf = rec.get("confidence")
+            raw_conf = scene_obj.get("confidence")
+            if raw_conf is None:
+                raw_conf = rec.get("confidence")
             try:
                 score = float(raw_conf)
             except Exception:
@@ -982,9 +2159,13 @@ def build_summary(records: List[Dict[str, Any]], apps_processed: int, low_conf_c
                 conf = "medium"
             else:
                 conf = "low"
-        scene = _as_text(rec.get("ui_task_scene", "其他"), max_len=30) or "其他"
-        trigger = _as_text(rec.get("trigger_action", ""), max_len=80)
-        refined_scene = _as_text(rec.get("refined_scene", "content_browsing"), max_len=64) or "content_browsing"
+        scene = _as_text(scene_obj.get("ui_task_scene") or rec.get("ui_task_scene") or "其他", max_len=30) or "其他"
+        trigger = _as_text(
+            perm_ctx.get("trigger_source")
+            or rec.get("trigger_action", ""),
+            max_len=80,
+        )
+        refined_scene = _as_text(scene_obj.get("refined_scene") or rec.get("refined_scene") or "other", max_len=64) or "other"
         rerun_reason = _as_text(rec.get("rerun_reason", ""), max_len=120)
 
         conf_counter[conf] += 1
