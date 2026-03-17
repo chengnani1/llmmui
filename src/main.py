@@ -34,7 +34,7 @@ from analy_pipline.scene import (
 )
 from analy_pipline.permission import run_permission_rule
 from analy_pipline.judge import run_rule_judgement, run_llm_compliance
-from analy_pipline.judge.finalize_decision import FinalizeConfig, finalize_results
+from analy_pipline.judge.finalize_decision import FinalizeConfig, finalize_results, finalize_results_v2
 
 
 def list_valid_apks(directory: str) -> List[str]:
@@ -581,6 +581,78 @@ def run_phase3_final(processed_root: str, app_name: str, force: bool, chain_ids:
     return summary
 
 
+def run_phase3_v2(processed_root: str, app_name: str, force: bool, chain_ids: Optional[List[int]]) -> Dict[str, Any]:
+    app_dirs = _resolve_phase3_app_dirs(processed_root, app_name=app_name)
+
+    permission_stats = _run_apps_with_incremental(
+        app_dirs,
+        output_filename="result_permission.json",
+        force=force,
+        runner=lambda app_dir: run_permission_rule.run(app_dir, chain_ids=chain_ids),
+    )
+
+    semantic_stats = _run_apps_with_incremental(
+        app_dirs,
+        output_filename="result_semantic_v2.json",
+        force=force,
+        runner=lambda app_dir: run_chain_semantic_interpreter.run(
+            target=app_dir,
+            prompt_file=os.path.join(PROMPT_DIR, "chain_semantic_interpreter_vision.txt"),
+            vllm_url=settings.VLLM_VL_URL,
+            model=settings.VLLM_VL_MODEL,
+            output_filename="result_semantic_v2.json",
+            summary_filename="semantic_v2_summary.json",
+            schema_version="v2",
+            single_pass_only=True,
+            chain_ids=chain_ids,
+        ),
+    )
+
+    llm_stats = _run_apps_with_incremental(
+        app_dirs,
+        output_filename="result_retrieved_knowledge.json",
+        force=force,
+        runner=lambda app_dir: run_llm_compliance.run_v2(
+            app_dir,
+            prompt_dir=PROMPT_DIR,
+            vllm_url=settings.VLLM_TEXT_URL,
+            model=settings.VLLM_TEXT_MODEL,
+            chain_ids=chain_ids,
+            semantic_filename="result_semantic_v2.json",
+            retrieval_output_filename="result_retrieved_knowledge.json",
+        ),
+    )
+
+    cfg = FinalizeConfig(
+        vllm_url=settings.VLLM_TEXT_URL,
+        vllm_model=settings.VLLM_TEXT_MODEL,
+        prompt_dir=PROMPT_DIR,
+        arbitration_strategy="lightweight_single_pass_v2",
+    )
+    final_stats = _run_apps_with_incremental(
+        app_dirs,
+        output_filename="result_final_decision.json",
+        force=force,
+        runner=lambda app_dir: finalize_results_v2(app_dir, cfg, chain_ids=chain_ids),
+    )
+
+    summary = {
+        "pipeline": "phase3_v2",
+        "permission_stage": permission_stats,
+        "semantic_v2_stage": semantic_stats,
+        "llm_v2_stage": llm_stats,
+        "final_v2_stage": final_stats,
+        "total_semantic_v2_records": sum(len(_read_json_list(os.path.join(app_dir, "result_semantic_v2.json"))) for app_dir in app_dirs),
+        "total_retrieval_records": sum(len(_read_json_list(os.path.join(app_dir, "result_retrieved_knowledge.json"))) for app_dir in app_dirs),
+        "total_llm_records": sum(len(_read_json_list(os.path.join(app_dir, "result_llm_review.json"))) for app_dir in app_dirs),
+        "total_final_records": sum(len(_read_json_list(os.path.join(app_dir, "result_final_decision.json"))) for app_dir in app_dirs),
+    }
+    summary_path = os.path.join(_summary_dir(processed_root), "phase3_v2_summary.json")
+    _write_json(summary_path, summary)
+    print(f"[phase3_v2] summary={summary_path}")
+    return summary
+
+
 def run_phase3(
     processed_root: str,
     scene_mode: str,
@@ -612,6 +684,7 @@ def main() -> None:
             "phase1",
             "phase2",
             "phase3",
+            "phase3_v2",
             "phase3_semantics",
             "phase3_scene",
             "phase3_rule",
@@ -648,6 +721,15 @@ def main() -> None:
             processed_root=args.target or args.processed_root,
             scene_mode=args.scene_mode,
             run_compliance=not args.no_compliance,
+            app_name=args.app,
+            force=args.force,
+            chain_ids=chain_ids,
+        )
+        return
+
+    if args.mode == "phase3_v2":
+        run_phase3_v2(
+            processed_root=args.target or args.processed_root,
             app_name=args.app,
             force=args.force,
             chain_ids=chain_ids,

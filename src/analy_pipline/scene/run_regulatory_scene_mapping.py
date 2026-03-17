@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Map UI task scene + chain semantics to regulatory scene space.
+Map UI task semantics to regulatory scene space (soft prior stage).
 
 Input:
   - result_chain_semantics.json
@@ -11,6 +11,15 @@ Input:
 Output:
   - result_regulatory_scene.json
   - regulatory_scene_summary.json
+
+Primary per-chain fields:
+  - regulatory_scene
+  - mapping_reason
+  - confidence
+
+Compatibility fields (kept for downstream):
+  - regulatory_scene_top1
+  - regulatory_scene_top3
 """
 
 from __future__ import annotations
@@ -31,7 +40,6 @@ if ROOT not in sys.path:
 
 from analy_pipline.common.schema_utils import (  # noqa: E402
     normalize_permission_name,
-    validate_chain_semantic_results,
     validate_permission_results,
     validate_regulatory_scene_results,
     validate_ui_task_scene_results,
@@ -76,6 +84,25 @@ REG_ALIAS = {
     "工具": "实用工具",
 }
 
+# Keep a stable regulatory scene space (<=15) for better prior consistency.
+STABLE_REG_SCENE_CANDIDATES = [
+    "用户登录",
+    "地图导航",
+    "打车服务",
+    "即时通信聊天服务",
+    "网络支付",
+    "网上购物",
+    "新闻资讯",
+    "在线影音",
+    "网络直播",
+    "文件管理",
+    "实用工具",
+    "网络邮箱",
+    "旅游服务",
+    "餐饮外卖",
+    "网络社区",
+]
+
 
 def ui_scene_file(app_dir: str) -> str:
     path = os.path.join(app_dir, UI_FILENAME)
@@ -85,6 +112,51 @@ def ui_scene_file(app_dir: str) -> str:
 def load_json(path: str) -> Any:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def _as_text(v: Any, max_len: int = 280) -> str:
+    s = str(v or "").strip()
+    return s[:max_len] if len(s) > max_len else s
+
+
+def _load_sem_items(path: str) -> Tuple[List[Dict[str, Any]], int]:
+    try:
+        raw = load_json(path)
+    except Exception:
+        return [], 1
+    if not isinstance(raw, list):
+        return [], 1
+
+    out: List[Dict[str, Any]] = []
+    invalid = 0
+    for idx, item in enumerate(raw):
+        if not isinstance(item, dict):
+            invalid += 1
+            continue
+        try:
+            chain_id = int(item.get("chain_id", idx))
+        except Exception:
+            invalid += 1
+            continue
+        ui_scene = _as_text(item.get("ui_task_scene"), max_len=80)
+        trigger_action = _as_text(item.get("trigger_action"), max_len=120)
+        user_intent = _as_text(item.get("user_intent"), max_len=240)
+        page_observation = _as_text(item.get("page_observation"), max_len=320)
+        visual_evidence = item.get("visual_evidence") if isinstance(item.get("visual_evidence"), list) else []
+
+        rec = {
+            "chain_id": chain_id,
+            "ui_task_scene": ui_scene,
+            "task_phrase": _as_text(item.get("task_phrase") or trigger_action or ui_scene, max_len=120),
+            "intent": _as_text(item.get("intent") or user_intent, max_len=240),
+            "user_intent": user_intent,
+            "trigger_action": trigger_action,
+            "chain_summary": _as_text(item.get("chain_summary") or page_observation, max_len=500),
+            "page_observation": page_observation,
+            "visual_evidence": [str(x)[:40] for x in visual_evidence[:8] if str(x).strip()],
+        }
+        out.append(rec)
+    return out, invalid
 
 
 def load_prompt_template(path: str) -> str:
@@ -123,9 +195,8 @@ def build_prompt(
     if strict:
         prompt += (
             "\n\n【重试补充约束】\n"
-            "1) top1/top3 必须来自给定 Regulatory Scene 列表。\n"
-            "2) top3 必须为长度3且去重。\n"
-            "3) confidence 只能是 high|medium|low。\n"
+            "1) regulatory_scene 必须来自给定 Regulatory Scene 列表。\n"
+            "2) confidence 只能是 high|medium|low。\n"
         )
     if avoid_first:
         prompt += f"\n【重试提示】上次候选不稳定，请避免再次输出 {avoid_first}，优先选择更具体候选。\n"
@@ -223,10 +294,8 @@ def heuristic_candidates(
 
 
 def should_rerun(rec: Dict[str, Any]) -> str:
-    if rec.get("regulatory_scene_top1", "UNKNOWN") == "UNKNOWN":
-        return "missing_regulatory_top1"
-    if len(rec.get("regulatory_scene_top3", [])) < 3:
-        return "regulatory_top3_incomplete"
+    if rec.get("regulatory_scene", "UNKNOWN") == "UNKNOWN":
+        return "missing_regulatory_scene"
     if rec.get("confidence") == "low":
         return "low_confidence"
     return ""
@@ -247,16 +316,20 @@ def normalize_record(
     ui_scene = str(ui.get("ui_task_scene") or ui.get("predicted_scene") or "其他")
     ui_top3 = ui.get("ui_task_scene_top3") or ui.get("scene_top3") or [ui_scene]
 
-    top1 = normalize_reg_scene_label(obj.get("regulatory_scene_top1"), reg_scene_list)
+    top1 = normalize_reg_scene_label(
+        obj.get("regulatory_scene")
+        or obj.get("regulatory_scene_top1"),
+        reg_scene_list,
+    )
     top3_raw = obj.get("regulatory_scene_top3") or []
     top3 = [normalize_reg_scene_label(x, reg_scene_list) for x in top3_raw]
     top3 = [x for x in top3 if x != "UNKNOWN"]
 
     fallback_top3 = heuristic_candidates(
         ui_scene=ui_scene,
-        task_phrase=str(sem.get("task_phrase", "")),
-        intent=str(sem.get("intent", "")),
-        chain_summary=str(sem.get("chain_summary", "")),
+        task_phrase=str(sem.get("task_phrase") or sem.get("trigger_action", "")),
+        intent=str(sem.get("intent") or sem.get("user_intent", "")),
+        chain_summary=str(sem.get("chain_summary") or sem.get("page_observation", "")),
         permissions=permissions,
         reg_scene_list=reg_scene_list,
     )
@@ -282,17 +355,22 @@ def normalize_record(
 
     allowed_permissions = [normalize_permission_name(x) for x in allowed_map.get(top1, [])]
     banned_permissions = [normalize_permission_name(x) for x in banned_map.get(top1, [])]
+    mapping_reason = str(obj.get("mapping_reason", ""))[:280].strip()
+    if not mapping_reason:
+        mapping_reason = "基于页面任务语义和触发动作映射到最接近的法规规则场景。"
+
     return {
         "chain_id": chain_id,
-        "task_phrase": sem.get("task_phrase", ""),
-        "intent": sem.get("intent", ""),
-        "chain_summary": sem.get("chain_summary", ""),
+        "task_phrase": sem.get("task_phrase") or sem.get("trigger_action", ""),
+        "intent": sem.get("intent") or sem.get("user_intent", ""),
+        "chain_summary": sem.get("chain_summary") or sem.get("page_observation", ""),
         "permissions": permissions,
         "ui_task_scene": ui_scene,
         "ui_task_scene_top3": ui_top3,
+        "regulatory_scene": top1,
         "regulatory_scene_top1": top1,
         "regulatory_scene_top3": top3,
-        "mapping_reason": str(obj.get("mapping_reason", ""))[:280],
+        "mapping_reason": mapping_reason,
         "allowed_permissions": allowed_permissions,
         "banned_permissions": banned_permissions,
         "confidence": confidence,
@@ -315,10 +393,15 @@ def infer_regulatory_scene(
 ) -> Dict[str, Any]:
     payload = {
         "chain_id": chain_id,
-        "task_phrase": sem.get("task_phrase", ""),
-        "intent": sem.get("intent", ""),
-        "chain_summary": sem.get("chain_summary", ""),
-        "ui_task_scene": ui.get("ui_task_scene") or ui.get("predicted_scene", "其他"),
+        "ui_task_scene": sem.get("ui_task_scene") or ui.get("ui_task_scene") or ui.get("predicted_scene", "其他"),
+        "user_intent": sem.get("user_intent") or sem.get("intent", ""),
+        "trigger_action": sem.get("trigger_action") or sem.get("task_phrase", ""),
+        "page_observation": sem.get("page_observation") or sem.get("chain_summary", ""),
+        "visual_evidence": sem.get("visual_evidence", []),
+        # compatibility fields
+        "task_phrase": sem.get("task_phrase") or sem.get("trigger_action", ""),
+        "intent": sem.get("intent") or sem.get("user_intent", ""),
+        "chain_summary": sem.get("chain_summary") or sem.get("page_observation", ""),
         "ui_task_scene_top3": ui.get("ui_task_scene_top3") or ui.get("scene_top3", []),
         "permissions": permissions,
     }
@@ -425,7 +508,7 @@ def process_app(
     model: str,
     chain_ids_filter: Optional[Set[int]] = None,
 ) -> Tuple[List[Dict[str, Any]], int]:
-    sem_items, sem_invalid = validate_chain_semantic_results(load_json(os.path.join(app_dir, SEM_FILENAME)))
+    sem_items, sem_invalid = _load_sem_items(os.path.join(app_dir, SEM_FILENAME))
     ui_path = ui_scene_file(app_dir)
     if not ui_path:
         raise RuntimeError(f"missing ui scene file in app: {app_dir}")
@@ -515,7 +598,10 @@ def run(
     knowledge = load_json(knowledge_file)
     allowed_map = knowledge.get("allowed_map", {})
     banned_map = knowledge.get("banned_map", {})
-    reg_scene_list = sorted(set(allowed_map.keys()) & set(banned_map.keys()))
+    all_reg_scene_list = sorted(set(allowed_map.keys()) & set(banned_map.keys()))
+    reg_scene_list = [x for x in STABLE_REG_SCENE_CANDIDATES if x in all_reg_scene_list]
+    if len(reg_scene_list) < 8:
+        reg_scene_list = all_reg_scene_list
     if not reg_scene_list:
         raise RuntimeError(f"No regulatory scenes found in knowledge file: {knowledge_file}")
 

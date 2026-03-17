@@ -546,7 +546,8 @@ def normalize_regulatory_scene_record(
         ui_top3 = [ui_scene] + [x for x in ui_top3 if x != ui_scene]
         ui_top3 = ui_top3[:3]
 
-    reg_top1 = _as_str(item.get("regulatory_scene_top1"), default="")
+    reg_raw = _as_str(item.get("regulatory_scene"), default="") or _as_str(item.get("regulatory_scene_top1"), default="")
+    reg_top1 = reg_raw
     if reg_top1 not in regulatory_scene_list:
         reg_top1 = "UNKNOWN"
     reg_top3 = [x for x in _as_list(item.get("regulatory_scene_top3")) if isinstance(x, str) and x in regulatory_scene_list]
@@ -578,6 +579,7 @@ def normalize_regulatory_scene_record(
         "permissions": [normalize_permission_name(x) for x in _as_list(item.get("permissions")) if isinstance(x, str)],
         "ui_task_scene": ui_scene,
         "ui_task_scene_top3": ui_top3,
+        "regulatory_scene": reg_top1,
         "regulatory_scene_top1": reg_top1,
         "regulatory_scene_top3": reg_top3,
         "mapping_reason": _normalize_short_text(item.get("mapping_reason"), max_len=280),
@@ -745,6 +747,7 @@ def normalize_rule_screening_record(item: Dict[str, Any], scene_list: List[str])
         "scene_top3": scene_top3,
         "ui_task_scene": _normalize_short_text(item.get("ui_task_scene") or scene, max_len=120),
         "ui_task_scene_top3": [x for x in _as_list(item.get("ui_task_scene_top3") or scene_top3) if isinstance(x, str)][:3],
+        "regulatory_scene": _normalize_short_text(item.get("regulatory_scene") or item.get("regulatory_scene_top1"), max_len=120),
         "regulatory_scene_top1": _normalize_short_text(item.get("regulatory_scene_top1"), max_len=120),
         "regulatory_scene_top3": [x for x in _as_list(item.get("regulatory_scene_top3")) if isinstance(x, str)][:3],
         "task_phrase": _normalize_short_text(item.get("task_phrase"), max_len=120),
@@ -759,6 +762,8 @@ def normalize_rule_screening_record(item: Dict[str, Any], scene_list: List[str])
         "allowed_permissions": [normalize_permission_name(x) for x in _as_list(item.get("allowed_permissions")) if isinstance(x, str)],
         "banned_permissions": [normalize_permission_name(x) for x in _as_list(item.get("banned_permissions")) if isinstance(x, str)],
         "mapping_reason": _normalize_short_text(item.get("mapping_reason"), max_len=280),
+        "rule_prior": _enum(item.get("rule_prior"), {"expected", "suspicious", "unexpected"}, "suspicious"),
+        "rule_notes": [_normalize_short_text(x, max_len=160) for x in _as_list(item.get("rule_notes")) if _as_str(x)],
         "permission_decisions": clean_pdec,
         "overall_rule_signal": _enum(item.get("overall_rule_signal"), RULE_SIGNALS, "MEDIUM_RISK"),
         "matched_rules": norm_rules,
@@ -796,11 +801,44 @@ def _normalize_analysis_block(
 
 def normalize_llm_review_record(item: Dict[str, Any]) -> Dict[str, Any]:
     chain_id = _as_int(item.get("chain_id"), default=-1)
+    necessity_obj = item.get("necessity") if isinstance(item.get("necessity"), dict) else {}
+    consistency_obj = item.get("consistency") if isinstance(item.get("consistency"), dict) else {}
+    over_scope_obj = item.get("over_scope") if isinstance(item.get("over_scope"), dict) else {}
+    raw_conf = item.get("confidence")
+    conf_label = "low"
+    conf_score = 0.35
+    if isinstance(raw_conf, str):
+        label = _as_str(raw_conf, default="").lower()
+        if label in CONF_LEVELS:
+            conf_label = label
+            conf_score = {"low": 0.35, "medium": 0.65, "high": 0.9}[label]
+        else:
+            try:
+                score = float(raw_conf)
+                conf_score = max(0.0, min(1.0, score))
+                if conf_score >= 0.8:
+                    conf_label = "high"
+                elif conf_score >= 0.5:
+                    conf_label = "medium"
+                else:
+                    conf_label = "low"
+            except Exception:
+                pass
+    elif isinstance(raw_conf, (int, float)):
+        conf_score = max(0.0, min(1.0, float(raw_conf)))
+        if conf_score >= 0.8:
+            conf_label = "high"
+        elif conf_score >= 0.5:
+            conf_label = "medium"
+        else:
+            conf_label = "low"
+
     out = {
         "chain_id": chain_id,
         "scene": _as_str(item.get("scene"), default=SCENE_UNKNOWN),
         "ui_task_scene": _normalize_short_text(item.get("ui_task_scene") or item.get("scene"), max_len=120),
         "ui_task_scene_top3": [x for x in _as_list(item.get("ui_task_scene_top3")) if isinstance(x, str)][:3],
+        "regulatory_scene": _normalize_short_text(item.get("regulatory_scene") or item.get("regulatory_scene_top1"), max_len=120),
         "regulatory_scene_top1": _normalize_short_text(item.get("regulatory_scene_top1"), max_len=120),
         "regulatory_scene_top3": [x for x in _as_list(item.get("regulatory_scene_top3")) if isinstance(x, str)][:3],
         "task_phrase": _normalize_short_text(item.get("task_phrase"), max_len=120),
@@ -815,6 +853,29 @@ def normalize_llm_review_record(item: Dict[str, Any]) -> Dict[str, Any]:
         "allowed_permissions": [normalize_permission_name(x) for x in _as_list(item.get("allowed_permissions")) if isinstance(x, str)],
         "banned_permissions": [normalize_permission_name(x) for x in _as_list(item.get("banned_permissions")) if isinstance(x, str)],
         "rule_signal": _enum(item.get("rule_signal"), RULE_SIGNALS, "MEDIUM_RISK"),
+        "rule_prior": _enum(item.get("rule_prior"), {"expected", "suspicious", "unexpected"}, "suspicious"),
+        "rule_notes": [_normalize_short_text(x, max_len=160) for x in _as_list(item.get("rule_notes")) if _as_str(x)],
+        "necessity": {
+            "label": _enum(necessity_obj.get("label"), NECESSITY_LABELS, "helpful"),
+            "reason": _as_str(necessity_obj.get("reason"), default=""),
+        },
+        "consistency": {
+            "label": _enum(consistency_obj.get("label"), CONSISTENCY_LABELS, "weakly_consistent"),
+            "reason": _as_str(consistency_obj.get("reason"), default=""),
+        },
+        "over_scope": {
+            "label": _enum(
+                over_scope_obj.get("label"),
+                {"minimal", "potentially_over_scoped", "over_scoped"},
+                "potentially_over_scoped",
+            ),
+            "reason": _as_str(over_scope_obj.get("reason"), default=""),
+        },
+        "final_risk": _enum(item.get("final_risk"), {"low", "medium", "high"}, "medium"),
+        "final_decision": _enum(item.get("final_decision"), {"compliant", "suspicious", "non_compliant"}, "suspicious"),
+        "confidence": round(conf_score, 3),
+        "confidence_label": conf_label,
+        "analysis_summary": _as_str(item.get("analysis_summary"), default=""),
         "necessity_analysis": _normalize_analysis_block(
             item.get("necessity_analysis"),
             "label",
@@ -868,6 +929,7 @@ def normalize_final_decision_record(item: Dict[str, Any]) -> Dict[str, Any]:
         "scene": _as_str(item.get("scene"), default=SCENE_UNKNOWN),
         "ui_task_scene": _normalize_short_text(item.get("ui_task_scene") or item.get("scene"), max_len=120),
         "ui_task_scene_top3": [x for x in _as_list(item.get("ui_task_scene_top3")) if isinstance(x, str)][:3],
+        "regulatory_scene": _normalize_short_text(item.get("regulatory_scene") or item.get("regulatory_scene_top1"), max_len=120),
         "regulatory_scene_top1": _normalize_short_text(item.get("regulatory_scene_top1"), max_len=120),
         "regulatory_scene_top3": [x for x in _as_list(item.get("regulatory_scene_top3")) if isinstance(x, str)][:3],
         "task_phrase": _normalize_short_text(item.get("task_phrase"), max_len=120),
@@ -890,6 +952,10 @@ def normalize_final_decision_record(item: Dict[str, Any]) -> Dict[str, Any]:
         "arbiter_reason": _as_str(item.get("arbiter_reason"), default=""),
         "rollback": bool(item.get("rollback", False)),
         "rollback_reason": _as_str(item.get("rollback_reason"), default=""),
+        "rule_prior": _enum(item.get("rule_prior"), {"expected", "suspicious", "unexpected"}, "suspicious"),
+        "rule_notes": [_normalize_short_text(x, max_len=160) for x in _as_list(item.get("rule_notes")) if _as_str(x)],
+        "arbitration_strategy": _as_str(item.get("arbitration_strategy"), default=""),
+        "arbitration_reason": _as_str(item.get("arbitration_reason"), default=""),
         "explain": {
             "rule_signal": _as_str(explain.get("rule_signal"), default=""),
             "rule_summary": _as_str(explain.get("rule_summary"), default=""),

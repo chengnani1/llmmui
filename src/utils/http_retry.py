@@ -1,11 +1,28 @@
 import time
 from typing import Any, Dict, Iterable, Optional, Set
 import os
+from urllib.parse import urlparse
+import ipaddress
 
 import requests
 
 
 DEFAULT_RETRYABLE_STATUS: Set[int] = {429, 500, 502, 503, 504}
+
+
+def _is_loopback_url(url: str) -> bool:
+    try:
+        host = (urlparse(url).hostname or "").strip().lower()
+    except Exception:
+        return False
+    if not host:
+        return False
+    if host in {"localhost", "127.0.0.1", "::1"}:
+        return True
+    try:
+        return ipaddress.ip_address(host).is_loopback
+    except ValueError:
+        return False
 
 
 def post_json_with_retry(
@@ -27,12 +44,17 @@ def post_json_with_retry(
     last_exc: Optional[Exception] = None
 
     session = requests.Session()
-    # Force local direct connection and ignore inherited proxy settings.
-    session.trust_env = False
+    # Loopback endpoints should bypass proxy to avoid local proxy hijack.
+    bypass_proxy = _is_loopback_url(url)
+    if bypass_proxy:
+        session.trust_env = False
 
     for attempt in range(max_retries + 1):
         try:
-            resp = session.post(url, json=payload, timeout=timeout, proxies={"http": None, "https": None})
+            request_kwargs = {"json": payload, "timeout": timeout}
+            if bypass_proxy:
+                request_kwargs["proxies"] = {"http": None, "https": None}
+            resp = session.post(url, **request_kwargs)
             if resp.status_code in status_set:
                 raise requests.HTTPError(
                     f"Retryable HTTP status {resp.status_code}",

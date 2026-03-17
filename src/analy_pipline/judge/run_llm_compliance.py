@@ -1,11 +1,29 @@
 # -*- coding: utf-8 -*-
 """
-Phase3 Step4: decomposed LLM compliance review.
+Phase3 Step4: single-pass LLM compliance analysis.
 
-Stage A: Necessity Analysis
-Stage B: Consistency Analysis
-Stage C: Minimality + Final Compliance
+Input (per chain):
+- multimodal semantics
+- permissions
+- weak rule prior
+- OCR/widgets evidence
+
+Output (per chain):
+{
+  "necessity": {"label", "reason"},
+  "consistency": {"label", "reason"},
+  "over_scope": {"label", "reason"},
+  "final_risk": "low|medium|high",
+  "final_decision": "compliant|suspicious|non_compliant",
+  "analysis_summary": "..."
+}
+
+Compatibility fields are kept:
+- necessity_analysis / consistency_analysis / minimality_analysis
+- llm_final_decision / llm_final_risk / llm_explanation
 """
+
+from __future__ import annotations
 
 import json
 import os
@@ -21,15 +39,15 @@ if ROOT not in sys.path:
 
 from analy_pipline.common.chain_summary import load_chain_summary_map  # noqa: E402
 from analy_pipline.common.schema_utils import (  # noqa: E402
-    CONSISTENCY_LABELS,
-    LLM_FINAL_DECISIONS,
-    LLM_FINAL_RISKS,
-    MINIMALITY_LABELS,
-    NECESSITY_LABELS,
-    validate_chain_semantic_results,
     normalize_llm_review_record,
-    validate_llm_review_results,
     validate_rule_screening_results,
+)
+from analy_pipline.judge.knowledge_retriever import (  # noqa: E402
+    load_case_knowledge_entries,
+    load_pattern_knowledge_entries,
+    load_prior_knowledge_entries,
+    load_skill_knowledge_entries,
+    retrieve_scene_conditioned_knowledge,
 )
 from configs import settings  # noqa: E402
 from configs.domain.scene_config import SCENE_LIST  # noqa: E402
@@ -39,83 +57,64 @@ from utils.http_retry import post_json_with_retry  # noqa: E402
 DEFAULT_PROCESSED_DIR = settings.DATA_PROCESSED_DIR
 DEFAULT_PROMPT_DIR = settings.PROMPT_DIR
 
-VLLM_URL = os.getenv("VLLM_TEXT_URL", settings.VLLM_TEXT_URL)
-MODEL_NAME = os.getenv("VLLM_TEXT_MODEL", settings.VLLM_TEXT_MODEL)
-TARGET_RISK = {"HIGH_RISK", "MEDIUM_RISK"}
-CHAIN_TIMEOUT_SECONDS = int(os.getenv("LLMMUI_CHAIN_TIMEOUT_SECONDS", "120"))
-
 OUTPUT_FILENAME = "result_llm_review.json"
+RETRIEVAL_FILENAME = "result_retrieved_knowledge.json"
 SEMANTIC_FILENAME = "result_chain_semantics.json"
-PROMPT_STAGE_A_FILE = "llm_stage_a_necessity.txt"
-PROMPT_STAGE_B_FILE = "llm_stage_b_consistency.txt"
-PROMPT_STAGE_C_FILE = "llm_stage_c_final.txt"
+SEMANTIC_V2_FILENAME = "result_semantic_v2.json"
+PERMISSION_FILENAME = "result_permission.json"
+PROMPT_FILE = "llm_single_pass_compliance.txt"
+SCENE_PRIOR_KNOWLEDGE_FILE = os.getenv(
+    "LLMMUI_SCENE_PRIOR_KNOWLEDGE_FILE",
+    os.path.join(ROOT, "configs", "scene_prior_knowledge.json"),
+)
+SCENE_PATTERN_KNOWLEDGE_FILE = os.getenv(
+    "LLMMUI_SCENE_PATTERN_KNOWLEDGE_FILE",
+    os.path.join(ROOT, "configs", "scene_pattern_knowledge.json"),
+)
+SCENE_CASE_KNOWLEDGE_FILE = os.getenv(
+    "LLMMUI_SCENE_CASE_KNOWLEDGE_FILE",
+    os.path.join(ROOT, "configs", "scene_case_knowledge.json"),
+)
+SCENE_SKILL_KNOWLEDGE_FILE = os.getenv(
+    "LLMMUI_SCENE_SKILL_KNOWLEDGE_FILE",
+    os.path.join(ROOT, "configs", "scene_skill_knowledge.json"),
+)
 
-
-STAGE_A_PROMPT = """
-你是一名安卓应用权限【最小必要性】分析专家。
-
-任务：仅基于输入中明确给出的 scene、intent、permissions 与 chain_summary，判断权限必要性。
-
-【强约束】
-1. 只分析输入里已经出现的权限，不得补充新权限。
-2. 不得依据“某类应用通常会申请某权限”进行扩展推理。
-3. 信息不足时可保守判断为 helpful，但必须给出理由。
-4. 输出必须是严格 JSON，不要输出额外文字。
-
-输入：
-{INPUT}
-
-输出格式（严格）：
-{
-  "label": "necessary|helpful|unnecessary",
-  "reason": "..."
+CHAIN_TIMEOUT_SECONDS = int(os.getenv("LLMMUI_CHAIN_TIMEOUT_SECONDS", "120"))
+REFINED_SCENE_LIST = [
+    "login_verification",
+    "profile_or_identity_upload",
+    "file_management",
+    "file_recovery",
+    "system_cleanup",
+    "album_selection",
+    "media_upload",
+    "map_navigation",
+    "wifi_scan_or_nearby_devices",
+    "content_browsing",
+    "customer_support",
+    "social_chat_or_share",
+]
+REFINED_SCENE_SET = set(REFINED_SCENE_LIST)
+UI_TO_REFINED_FALLBACK = {
+    "账号与身份认证": "login_verification",
+    "地图与位置服务": "map_navigation",
+    "内容浏览与搜索": "content_browsing",
+    "社交互动与通信": "social_chat_or_share",
+    "媒体拍摄与扫码": "media_upload",
+    "相册选择与媒体上传": "album_selection",
+    "商品浏览与消费": "content_browsing",
+    "支付与金融交易": "login_verification",
+    "文件与数据管理": "file_management",
+    "设备清理与系统优化": "system_cleanup",
+    "网络连接与设备管理": "wifi_scan_or_nearby_devices",
+    "用户反馈与客服": "customer_support",
+    "其他": "content_browsing",
 }
-"""
 
-STAGE_B_PROMPT = """
-你是一名安卓应用【场景-权限一致性】分析专家。
-
-任务：判断权限请求是否与当前 scene + intent 语义一致。
-
-【强约束】
-1. 只使用输入提供的信息，不引入外部假设。
-2. 若 UI 语义与权限目标无直接关联，应倾向 inconsistent。
-3. 若存在弱关联但证据不足，可判 weakly_consistent。
-4. 输出必须是严格 JSON，不要输出额外文字。
-
-输入：
-{INPUT}
-
-输出格式（严格）：
-{
-  "label": "consistent|weakly_consistent|inconsistent",
-  "reason": "..."
-}
-"""
-
-STAGE_C_PROMPT = """
-你是一名安卓隐私合规审计专家。
-
-任务：综合 Stage A（必要性）与 Stage B（一致性），完成最小权限分析与最终风险结论。
-
-【强约束】
-1. 必须遵守最小权限原则：能不用则不用，能低权限替代则不应高权限。
-2. 若必要性与一致性都弱，应倾向高风险。
-3. 若与规则信号冲突，不要忽略冲突，应在解释中说明。
-4. 输出必须是严格 JSON，不要输出额外文字。
-
-输入：
-{INPUT}
-
-输出格式（严格）：
-{
-  "minimality_label": "minimal|potentially_over_privileged|over_privileged",
-  "minimality_reason": "...",
-  "llm_final_decision": "COMPLIANT|SUSPICIOUS|NON_COMPLIANT",
-  "llm_final_risk": "LOW|MEDIUM|HIGH",
-  "llm_explanation": "..."
-}
-"""
+TARGET_STORAGE_PAIR = {"READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"}
+TARGET_LOCATION_PERMS = {"ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"}
+SENSITIVE_HIGH_FREQ_PERMS = TARGET_STORAGE_PAIR | TARGET_LOCATION_PERMS
 
 
 def _extract_json(text: str) -> Dict[str, Any]:
@@ -125,216 +124,570 @@ def _extract_json(text: str) -> Dict[str, Any]:
     text = re.sub(r"^```(?:json)?\n", "", text, flags=re.I)
     text = re.sub(r"```$", "", text).strip()
     try:
-        return json.loads(text)
+        obj = json.loads(text)
+        if isinstance(obj, dict):
+            return obj
     except Exception:
-        s, e = text.find("{"), text.rfind("}")
-        if s != -1 and e != -1 and e > s:
-            try:
-                return json.loads(text[s : e + 1])
-            except Exception:
-                pass
+        pass
+    s, e = text.find("{"), text.rfind("}")
+    if s != -1 and e != -1 and e > s:
+        try:
+            obj = json.loads(text[s : e + 1])
+            if isinstance(obj, dict):
+                return obj
+        except Exception:
+            pass
     return {}
 
 
-def _load_prompt(prompt_dir: str, filename: str, fallback: str) -> str:
-    path = os.path.join(prompt_dir, filename)
+def _as_text(v: Any, max_len: int = 320) -> str:
+    s = str(v or "").strip()
+    return s[:max_len] if len(s) > max_len else s
+
+
+def _as_list(v: Any) -> List[Any]:
+    return v if isinstance(v, list) else []
+
+
+def _load_prompt(prompt_dir: str) -> str:
+    path = os.path.join(prompt_dir, PROMPT_FILE)
     if os.path.exists(path):
         with open(path, "r", encoding="utf-8") as f:
-            content = f.read().strip()
-        if content:
-            return content
-    return fallback
+            c = f.read().strip()
+        if c:
+            return c
+
+    return """
+你是安卓隐私合规分析助手。你将收到 UI 语义、结构化任务线索、规则先验和 scene-conditioned retrieved knowledge。
+
+请完成一次性分析，输出严格 JSON，不要输出其它文本。
+
+要求：
+1) 必须先判断任务和证据，再判断 necessity / consistency / over_scope，最后给 final_decision。
+2) Scene is already inferred in semantic parsing; do not re-classify scene.
+3) refined_scene 优先于粗粒度 scene，rule_prior 与 retrieved knowledge 均为 soft guidance。
+4) retrieved patterns / retrieved cases / retrieved skills 仅作为辅助上下文，不是硬规则。
+5) 当 retrieved knowledge 与当前证据冲突时，以当前证据优先。
+6) Retrieved patterns highlight common positive and negative cues.
+7) Retrieved cases illustrate typical risky/compliant examples.
+8) Retrieved skills are distilled heuristics from strong experiments; use them only when field/scene match is strong.
+9) Current chain evidence has higher priority than retrieved examples.
+10) 优先使用 structured_cues（storage_read_cues / storage_write_cues / location_task_cues）。
+11) READ+WRITE 存储成对权限，只有读写证据都明确时，才允许 compliant+low。
+12) location 只有在强位置任务证据存在时，才允许 necessary/compliant+low。
+13) 证据不足时优先 suspicious+medium，不要默认 compliant+low。
+
+标签集合：
+- necessity.label: necessary | helpful | unnecessary
+- consistency.label: consistent | weakly_consistent | inconsistent
+- over_scope.label: minimal | potentially_over_scoped | over_scoped
+- final_risk: low | medium | high
+- final_decision: compliant | suspicious | non_compliant
+- confidence: 0.0~1.0
+
+输入：
+{INPUT}
+
+输出：
+{
+  "necessity": {"label": "...", "reason": "..."},
+  "consistency": {"label": "...", "reason": "..."},
+  "over_scope": {"label": "...", "reason": "..."},
+  "final_risk": "low|medium|high",
+  "final_decision": "compliant|suspicious|non_compliant",
+  "confidence": 0.0,
+  "analysis_summary": "..."
+}
+""".strip()
 
 
-def _call_llm(prompt: str, vllm_url: str, model: str, timeout_seconds: int, max_retries: int = 0) -> str:
-    payload = {"model": model, "messages": [{"role": "user", "content": prompt}], "temperature": 0}
+def _call_llm(prompt: str, vllm_url: str, model: str, timeout_seconds: int) -> str:
+    payload = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0,
+    }
     r = post_json_with_retry(
         vllm_url,
         payload,
         timeout=timeout_seconds,
-        max_retries=max_retries,
+        max_retries=0,
         backoff_factor=1.5,
     )
     r.raise_for_status()
     return r.json()["choices"][0]["message"]["content"]
 
 
-def _validate_stage_a(obj: Dict[str, Any]) -> bool:
-    return str(obj.get("label")) in NECESSITY_LABELS and isinstance(obj.get("reason"), str)
-
-
-def _validate_stage_b(obj: Dict[str, Any]) -> bool:
-    return str(obj.get("label")) in CONSISTENCY_LABELS and isinstance(obj.get("reason"), str)
-
-
-def _validate_stage_c(obj: Dict[str, Any]) -> bool:
-    return (
-        str(obj.get("minimality_label")) in MINIMALITY_LABELS
-        and isinstance(obj.get("minimality_reason"), str)
-        and str(obj.get("llm_final_decision")) in LLM_FINAL_DECISIONS
-        and str(obj.get("llm_final_risk")) in LLM_FINAL_RISKS
-        and isinstance(obj.get("llm_explanation"), str)
-    )
-
-
-def _clip_text(v: Any, max_len: int = 320) -> str:
-    s = str(v or "").strip()
-    return s[:max_len] if len(s) > max_len else s
-
-
-def _permission_capability_hints(permissions: List[str]) -> List[str]:
-    mapping = {
-        "ACCESS_FINE_LOCATION": "定位/附近发现/地图导航",
-        "ACCESS_COARSE_LOCATION": "粗定位/同城内容推荐",
-        "CAMERA": "拍照/扫码/视频采集",
-        "RECORD_AUDIO": "语音输入/录音/通话",
-        "READ_EXTERNAL_STORAGE": "读取本地文件/媒体",
-        "WRITE_EXTERNAL_STORAGE": "保存导出文件/媒体",
-        "MANAGE_EXTERNAL_STORAGE": "管理存储与文件清理",
-        "READ_CONTACTS": "读取联系人",
-        "READ_PHONE_STATE": "读取设备电话状态",
-        "READ_SMS": "读取短信验证码",
-        "READ_MEDIA_IMAGES": "读取图片媒体",
-        "READ_MEDIA_VIDEO": "读取视频媒体",
-        "READ_MEDIA_AUDIO": "读取音频媒体",
-    }
-    out: List[str] = []
-    for p in permissions:
-        p = str(p).strip().upper()
-        if p in mapping:
-            out.append(f"{p}:{mapping[p]}")
-    return out[:8]
-
-
-def _load_semantics_map(app_dir: str) -> Dict[int, Dict[str, Any]]:
-    sem_path = os.path.join(app_dir, SEMANTIC_FILENAME)
-    if not os.path.exists(sem_path):
+def _load_semantics_map(app_dir: str, filename: str = SEMANTIC_FILENAME) -> Dict[int, Dict[str, Any]]:
+    path = os.path.join(app_dir, filename)
+    if not os.path.exists(path):
         return {}
     try:
-        with open(sem_path, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding="utf-8") as f:
             raw = json.load(f)
-        sem_items, _ = validate_chain_semantic_results(raw)
-        return {int(x["chain_id"]): x for x in sem_items}
     except Exception:
         return {}
+    if not isinstance(raw, list):
+        return {}
+
+    out: Dict[int, Dict[str, Any]] = {}
+    for idx, item in enumerate(raw):
+        if not isinstance(item, dict):
+            continue
+        try:
+            cid = int(item.get("chain_id", idx))
+        except Exception:
+            continue
+        out[cid] = item
+    return out
 
 
-def _synthesize_stage_c(stage_a: Dict[str, Any], stage_b: Dict[str, Any]) -> Dict[str, Any]:
-    a = str(stage_a.get("label", "helpful"))
-    b = str(stage_b.get("label", "weakly_consistent"))
-    if a == "necessary" and b == "consistent":
-        return {
-            "minimality_label": "minimal",
-            "minimality_reason": "Stage A/B indicate direct need and semantic consistency.",
-            "llm_final_decision": "COMPLIANT",
-            "llm_final_risk": "LOW",
-            "llm_explanation": "Synthesized from valid Stage A/B: necessary + consistent.",
-        }
-    if a == "unnecessary" or b == "inconsistent":
-        return {
-            "minimality_label": "over_privileged",
-            "minimality_reason": "Stage A/B indicate weak necessity or semantic mismatch.",
-            "llm_final_decision": "NON_COMPLIANT",
-            "llm_final_risk": "HIGH",
-            "llm_explanation": "Synthesized from valid Stage A/B: unnecessary or inconsistent.",
-        }
+def _load_permission_map(app_dir: str) -> Dict[int, List[str]]:
+    path = os.path.join(app_dir, PERMISSION_FILENAME)
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            raw = json.load(f)
+    except Exception:
+        return {}
+    if not isinstance(raw, list):
+        return {}
+
+    out: Dict[int, List[str]] = {}
+    for idx, item in enumerate(raw):
+        if not isinstance(item, dict):
+            continue
+        try:
+            cid = int(item.get("chain_id", idx))
+        except Exception:
+            continue
+        perms = [_as_text(x, 64).upper() for x in _as_list(item.get("predicted_permissions")) if _as_text(x, 64)]
+        out[cid] = perms
+    return out
+
+
+def _resolve_refined_scene(chain: Dict[str, Any], sem: Dict[str, Any]) -> str:
+    rs = _as_text(chain.get("refined_scene") or sem.get("refined_scene"), 64).lower()
+    if rs in REFINED_SCENE_SET:
+        return rs
+    ui_scene = _as_text(chain.get("ui_task_scene") or sem.get("ui_task_scene"), 40)
+    return UI_TO_REFINED_FALLBACK.get(ui_scene, "content_browsing")
+
+
+def _perm_set(v: Any) -> Set[str]:
+    out: Set[str] = set()
+    for x in _as_list(v):
+        p = _as_text(x, 64).upper()
+        if p:
+            out.add(p)
+    return out
+
+
+def _merge_unique(values: List[str], extra: List[str], max_items: int = 12) -> List[str]:
+    out: List[str] = []
+    for x in values + extra:
+        v = _as_text(x, 60)
+        if not v:
+            continue
+        if v not in out:
+            out.append(v)
+        if len(out) >= max_items:
+            break
+    return out
+
+
+def _collect_structured_cues(
+    sem: Dict[str, Any],
+    chain: Dict[str, Any],
+    chain_summary_obj: Dict[str, Any],
+) -> Dict[str, List[str]]:
+    cues = {
+        "permission_task_cues": [_as_text(x, 60) for x in _as_list(sem.get("permission_task_cues")) if _as_text(x, 60)],
+        "storage_read_cues": [_as_text(x, 60) for x in _as_list(sem.get("storage_read_cues")) if _as_text(x, 60)],
+        "storage_write_cues": [_as_text(x, 60) for x in _as_list(sem.get("storage_write_cues")) if _as_text(x, 60)],
+        "location_task_cues": [_as_text(x, 60) for x in _as_list(sem.get("location_task_cues")) if _as_text(x, 60)],
+        "upload_task_cues": [_as_text(x, 60) for x in _as_list(sem.get("upload_task_cues")) if _as_text(x, 60)],
+        "cleanup_task_cues": [_as_text(x, 60) for x in _as_list(sem.get("cleanup_task_cues")) if _as_text(x, 60)],
+    }
+
+    text_blob = " ".join(
+        [
+            _as_text(sem.get("user_intent") or chain.get("intent"), 240),
+            _as_text(sem.get("trigger_action") or chain.get("trigger_action"), 120),
+            _as_text(sem.get("page_observation") or chain.get("page_function"), 320),
+            _as_text(chain.get("chain_summary"), 320),
+            _as_text(chain_summary_obj.get("before_text"), 320),
+            _as_text(chain_summary_obj.get("granting_text"), 320),
+            _as_text(chain_summary_obj.get("after_text"), 320),
+            " ".join([_as_text(x, 40) for x in _as_list(sem.get("visual_evidence"))[:8] if _as_text(x, 40)]),
+            " ".join([_as_text(x, 40) for x in _as_list(chain_summary_obj.get("top_widgets", []))[:12] if _as_text(x, 40)]),
+        ]
+    ).lower()
+
+    if any(k in text_blob for k in ["选择文件", "选择图片", "选择视频", "相册", "浏览本地", "读取文件", "导入"]):
+        cues["storage_read_cues"] = _merge_unique(cues["storage_read_cues"], ["storage_read_from_local"], max_items=8)
+    if any(k in text_blob for k in ["保存", "导出", "写入", "下载到本地", "恢复回写", "落盘", "缓存到本地"]):
+        cues["storage_write_cues"] = _merge_unique(cues["storage_write_cues"], ["storage_write_to_local"], max_items=8)
+    if any(k in text_blob for k in ["导航", "附近", "周边", "路线", "定位", "同城", "网点", "wifi扫描", "nearby devices", "附近设备"]):
+        cues["location_task_cues"] = _merge_unique(cues["location_task_cues"], ["location_task_present"], max_items=8)
+    if any(k in text_blob for k in ["上传", "附件", "头像", "发送文件", "发布", "提交"]):
+        cues["upload_task_cues"] = _merge_unique(cues["upload_task_cues"], ["upload_or_attachment_task"], max_items=8)
+    if any(k in text_blob for k in ["垃圾清理", "缓存清理", "清理空间", "深度清理", "重复文件", "释放空间", "一键清理", "视频清理"]):
+        cues["cleanup_task_cues"] = _merge_unique(cues["cleanup_task_cues"], ["cleanup_or_space_release_task"], max_items=8)
+
+    cues["permission_task_cues"] = _merge_unique(
+        cues["permission_task_cues"],
+        cues["storage_read_cues"] + cues["storage_write_cues"] + cues["location_task_cues"] + cues["upload_task_cues"] + cues["cleanup_task_cues"],
+        max_items=12,
+    )
+    return cues
+
+
+def _normalize_necessity(label: str) -> str:
+    v = _as_text(label, 40).lower()
+    if v in {"necessary", "helpful", "unnecessary"}:
+        return v
+    if v in {"partial", "partially_necessary", "weak_necessary"}:
+        return "helpful"
+    return "helpful"
+
+
+def _normalize_consistency(label: str) -> str:
+    v = _as_text(label, 40).lower()
+    if v in {"consistent", "weakly_consistent", "inconsistent"}:
+        return v
+    if v in {"partial", "partially_consistent", "weak"}:
+        return "weakly_consistent"
+    return "weakly_consistent"
+
+
+def _normalize_over_scope(label: str) -> str:
+    v = _as_text(label, 60).lower()
+    if v in {"minimal", "potentially_over_scoped", "over_scoped"}:
+        return v
+    if v in {"potentially_over_scope", "potentially_over_privileged"}:
+        return "potentially_over_scoped"
+    if v in {"over_privileged", "over_scope"}:
+        return "over_scoped"
+    return "potentially_over_scoped"
+
+
+def _normalize_final_risk(label: str) -> str:
+    v = _as_text(label, 20).lower()
+    return v if v in {"low", "medium", "high"} else "medium"
+
+
+def _normalize_final_decision(label: str) -> str:
+    v = _as_text(label, 40).lower()
+    if v in {"compliant", "suspicious", "non_compliant"}:
+        return v
+    if v in {"noncompliant", "non-compliant"}:
+        return "non_compliant"
+    return "suspicious"
+
+
+def _normalize_confidence(value: Any) -> float:
+    if isinstance(value, str):
+        v = value.strip().lower()
+        if v == "high":
+            return 0.9
+        if v == "medium":
+            return 0.65
+        if v == "low":
+            return 0.35
+    try:
+        score = float(value)
+    except Exception:
+        score = 0.35
+    if score < 0:
+        score = 0.0
+    if score > 1:
+        score = 1.0
+    return round(score, 3)
+
+
+def _to_compat_fields(one_pass: Dict[str, Any]) -> Dict[str, Any]:
+    necessity = one_pass.get("necessity") if isinstance(one_pass.get("necessity"), dict) else {}
+    consistency = one_pass.get("consistency") if isinstance(one_pass.get("consistency"), dict) else {}
+    over_scope = one_pass.get("over_scope") if isinstance(one_pass.get("over_scope"), dict) else {}
+
+    nec_label = _normalize_necessity(necessity.get("label", ""))
+    con_label = _normalize_consistency(consistency.get("label", ""))
+    ovs_label = _normalize_over_scope(over_scope.get("label", ""))
+
+    final_risk = _normalize_final_risk(one_pass.get("final_risk", ""))
+    final_decision = _normalize_final_decision(one_pass.get("final_decision", ""))
+    confidence = _normalize_confidence(one_pass.get("confidence", 0.35))
+
+    # Compatibility mapping to old internal fields.
+    minimality_label = {
+        "minimal": "minimal",
+        "potentially_over_scoped": "potentially_over_privileged",
+        "over_scoped": "over_privileged",
+    }[ovs_label]
+
+    llm_final_decision = {
+        "compliant": "COMPLIANT",
+        "suspicious": "SUSPICIOUS",
+        "non_compliant": "NON_COMPLIANT",
+    }[final_decision]
+
+    llm_final_risk = {
+        "low": "LOW",
+        "medium": "MEDIUM",
+        "high": "HIGH",
+    }[final_risk]
+
     return {
-        "minimality_label": "potentially_over_privileged",
-        "minimality_reason": "Stage A/B are not strong enough for clear compliant/non-compliant.",
-        "llm_final_decision": "SUSPICIOUS",
-        "llm_final_risk": "MEDIUM",
-        "llm_explanation": "Synthesized from valid Stage A/B: weak evidence.",
+        "necessity": {
+            "label": nec_label,
+            "reason": _as_text(necessity.get("reason", ""), 320),
+        },
+        "consistency": {
+            "label": con_label,
+            "reason": _as_text(consistency.get("reason", ""), 320),
+        },
+        "over_scope": {
+            "label": ovs_label,
+            "reason": _as_text(over_scope.get("reason", ""), 320),
+        },
+        "final_risk": final_risk,
+        "final_decision": final_decision,
+        "confidence": confidence,
+        "analysis_summary": _as_text(one_pass.get("analysis_summary", ""), 500),
+        # old compatibility
+        "necessity_analysis": {"label": nec_label, "reason": _as_text(necessity.get("reason", ""), 320)},
+        "consistency_analysis": {"label": con_label, "reason": _as_text(consistency.get("reason", ""), 320)},
+        "minimality_analysis": {"label": minimality_label, "reason": _as_text(over_scope.get("reason", ""), 320)},
+        "llm_final_decision": llm_final_decision,
+        "llm_final_risk": llm_final_risk,
+        "llm_explanation": _as_text(one_pass.get("analysis_summary", ""), 500),
     }
 
 
-def _call_stage(
+def _build_fallback(reason: str) -> Dict[str, Any]:
+    return {
+        "necessity": {"label": "helpful", "reason": f"fallback:{reason}"},
+        "consistency": {"label": "weakly_consistent", "reason": f"fallback:{reason}"},
+        "over_scope": {"label": "potentially_over_scoped", "reason": f"fallback:{reason}"},
+        "final_risk": "medium",
+        "final_decision": "suspicious",
+        "confidence": 0.35,
+        "analysis_summary": f"fallback_due_to_{reason}",
+    }
+
+
+def _sync_compat_fields(parsed: Dict[str, Any]) -> Dict[str, Any]:
+    nec = parsed.get("necessity") if isinstance(parsed.get("necessity"), dict) else {}
+    con = parsed.get("consistency") if isinstance(parsed.get("consistency"), dict) else {}
+    ovs = parsed.get("over_scope") if isinstance(parsed.get("over_scope"), dict) else {}
+    final_dec = _normalize_final_decision(parsed.get("final_decision", "suspicious"))
+    final_risk = _normalize_final_risk(parsed.get("final_risk", "medium"))
+
+    minimality_label = {
+        "minimal": "minimal",
+        "potentially_over_scoped": "potentially_over_privileged",
+        "over_scoped": "over_privileged",
+    }[_normalize_over_scope(ovs.get("label", "potentially_over_scoped"))]
+    parsed["necessity_analysis"] = {
+        "label": _normalize_necessity(nec.get("label", "helpful")),
+        "reason": _as_text(nec.get("reason", ""), 320),
+    }
+    parsed["consistency_analysis"] = {
+        "label": _normalize_consistency(con.get("label", "weakly_consistent")),
+        "reason": _as_text(con.get("reason", ""), 320),
+    }
+    parsed["minimality_analysis"] = {
+        "label": minimality_label,
+        "reason": _as_text(ovs.get("reason", ""), 320),
+    }
+    parsed["llm_final_decision"] = {
+        "compliant": "COMPLIANT",
+        "suspicious": "SUSPICIOUS",
+        "non_compliant": "NON_COMPLIANT",
+    }[final_dec]
+    parsed["llm_final_risk"] = {
+        "low": "LOW",
+        "medium": "MEDIUM",
+        "high": "HIGH",
+    }[final_risk]
+    parsed["llm_explanation"] = _as_text(parsed.get("analysis_summary", ""), 500)
+    parsed["final_decision"] = final_dec
+    parsed["final_risk"] = final_risk
+    parsed["confidence"] = _normalize_confidence(parsed.get("confidence", 0.35))
+    return parsed
+
+
+def _apply_storage_softening(
+    parsed: Dict[str, Any],
+    chain: Dict[str, Any],
+    sem: Dict[str, Any],
+    chain_summary_obj: Dict[str, Any],
+) -> Dict[str, Any]:
+    final_decision = _normalize_final_decision(parsed.get("final_decision", "suspicious"))
+    final_risk = _normalize_final_risk(parsed.get("final_risk", "medium"))
+    if final_decision != "compliant" or final_risk != "low":
+        return parsed
+
+    perms = _perm_set(chain.get("permissions", []))
+    cues = _collect_structured_cues(sem=sem, chain=chain, chain_summary_obj=chain_summary_obj)
+    reasons: List[str] = []
+
+    if TARGET_STORAGE_PAIR.issubset(perms):
+        has_read = bool(cues.get("storage_read_cues"))
+        has_write = bool(cues.get("storage_write_cues"))
+        if not (has_read and has_write):
+            reasons.append("storage_dual_evidence_missing")
+
+    if perms & TARGET_LOCATION_PERMS:
+        if not cues.get("location_task_cues"):
+            reasons.append("location_task_cues_missing")
+
+    has_task = bool(_as_text(sem.get("user_intent") or chain.get("intent"), 240)) and bool(
+        _as_text(sem.get("trigger_action") or chain.get("trigger_action"), 120)
+    )
+    has_page_evidence = len(_as_list(sem.get("visual_evidence"))) >= 2 or len(
+        _as_text(sem.get("page_observation") or chain.get("page_function"), 320)
+    ) >= 12
+    if not (has_task and has_page_evidence):
+        reasons.append("weak_task_or_page_evidence")
+
+    rule_prior = _as_text(chain.get("rule_prior"), 20).lower()
+    if rule_prior == "unexpected" and (perms & SENSITIVE_HIGH_FREQ_PERMS):
+        reasons.append("unexpected_prior_on_sensitive_permission")
+
+    if not reasons:
+        return parsed
+
+    # Distilled guardrail: strong necessity threshold for compliant+low.
+    parsed["final_decision"] = "suspicious"
+    parsed["final_risk"] = "medium"
+    if isinstance(parsed.get("necessity"), dict) and parsed["necessity"].get("label") == "necessary":
+        parsed["necessity"]["label"] = "helpful"
+    if isinstance(parsed.get("consistency"), dict) and parsed["consistency"].get("label") == "consistent":
+        parsed["consistency"]["label"] = "weakly_consistent"
+    if isinstance(parsed.get("over_scope"), dict) and parsed["over_scope"].get("label") == "minimal":
+        parsed["over_scope"]["label"] = "potentially_over_scoped"
+    summary = _as_text(parsed.get("analysis_summary", ""), 500)
+    gate_note = "distilled_gating:" + ",".join(sorted(set(reasons)))
+    parsed["analysis_summary"] = _as_text(f"{summary} | {gate_note}" if summary else gate_note, 500)
+
+    return _sync_compat_fields(parsed)
+
+
+def _run_one_pass(
     prompt_template: str,
     payload: Dict[str, Any],
-    validator,
     vllm_url: str,
     model: str,
     timeout_seconds: int,
 ) -> Tuple[Dict[str, Any], bool, str, str]:
-    """
-    Returns: (parsed_obj, valid, raw_output, fail_reason)
-    """
     prompt = prompt_template.replace("{INPUT}", json.dumps(payload, ensure_ascii=False, indent=2))
-    last_raw = ""
-    for _ in range(2):  # one retry for invalid format
-        try:
-            raw = _call_llm(
-                prompt,
-                vllm_url=vllm_url,
-                model=model,
-                timeout_seconds=timeout_seconds,
-                max_retries=0,
-            )
-        except Exception as exc:
-            last_raw = str(exc)
-            msg = str(exc).lower()
-            if "timed out" in msg or "timeout" in msg:
-                return {}, False, last_raw, "timeout"
-            continue
-        last_raw = raw
-        obj = _extract_json(raw)
-        if validator(obj):
-            return obj, True, raw, ""
-    return {}, False, last_raw, "format_error"
+    try:
+        raw = _call_llm(prompt, vllm_url=vllm_url, model=model, timeout_seconds=timeout_seconds)
+    except Exception as exc:
+        msg = str(exc)
+        if "timeout" in msg.lower() or "timed out" in msg.lower():
+            return {}, False, msg, "timeout"
+        return {}, False, msg, "request_error"
+
+    obj = _extract_json(raw)
+    if not isinstance(obj, dict) or not obj:
+        return {}, False, raw, "format_error"
+
+    # Minimal structural guard.
+    if not isinstance(obj.get("necessity"), dict) or not isinstance(obj.get("consistency"), dict):
+        return {}, False, raw, "format_error"
+    if not isinstance(obj.get("over_scope"), dict):
+        return {}, False, raw, "format_error"
+
+    return obj, True, raw, ""
 
 
-def _build_review_record(
+def _build_record(
     chain: Dict[str, Any],
-    chain_summary: Dict[str, Any],
-    stage_a: Dict[str, Any],
-    stage_b: Dict[str, Any],
-    stage_c: Dict[str, Any],
+    sem: Dict[str, Any],
+    chain_summary_obj: Dict[str, Any],
+    one_pass_obj: Dict[str, Any],
     output_valid: bool,
-    format_error: bool,
     raw_output: str,
-    fallback_reason: str = "",
+    fallback_reason: str,
+    apply_softening: bool = True,
 ) -> Dict[str, Any]:
+    parsed = _to_compat_fields(one_pass_obj)
+    if apply_softening:
+        parsed = _apply_storage_softening(parsed, chain=chain, sem=sem, chain_summary_obj=chain_summary_obj)
+    refined_scene = _resolve_refined_scene(chain=chain, sem=sem)
+
     record = {
         "chain_id": chain.get("chain_id"),
         "scene": chain.get("scene"),
-        "ui_task_scene": chain.get("ui_task_scene") or chain.get("scene"),
+        "ui_task_scene": chain.get("ui_task_scene") or chain.get("scene") or sem.get("ui_task_scene", ""),
+        "refined_scene": refined_scene,
         "ui_task_scene_top3": chain.get("ui_task_scene_top3", []),
+        "regulatory_scene": chain.get("regulatory_scene") or chain.get("regulatory_scene_top1", ""),
         "regulatory_scene_top1": chain.get("regulatory_scene_top1", ""),
         "regulatory_scene_top3": chain.get("regulatory_scene_top3", []),
-        "task_phrase": chain.get("task_phrase", ""),
-        "intent": chain.get("intent"),
-        "page_function": chain.get("page_function", ""),
-        "trigger_action": chain.get("trigger_action", ""),
-        "visible_actions": chain.get("visible_actions", []),
-        "task_relevance_cues": chain.get("task_relevance_cues", []),
-        "permission_context": chain.get("permission_context", ""),
-        "permissions": chain.get("permissions", []),
-        "allowed_permissions": chain.get("allowed_permissions", []),
-        "banned_permissions": chain.get("banned_permissions", []),
-        "rule_signal": chain.get("overall_rule_signal"),
-        "necessity_analysis": {
-            "label": stage_a.get("label", "unnecessary"),
-            "reason": stage_a.get("reason", ""),
+        "task_phrase": _as_text(chain.get("task_phrase") or sem.get("trigger_action") or sem.get("ui_task_scene", ""), 120),
+        "intent": _as_text(chain.get("intent") or sem.get("user_intent", ""), 240),
+        "page_function": _as_text(chain.get("page_function") or sem.get("page_observation", ""), 280),
+        "trigger_action": _as_text(chain.get("trigger_action") or sem.get("trigger_action", ""), 100),
+        "visible_actions": _as_list(chain.get("visible_actions")),
+        "task_relevance_cues": (
+            _as_list(chain.get("task_relevance_cues"))
+            + _as_list(sem.get("permission_task_cues"))
+            + _as_list(sem.get("visual_evidence"))
+        ),
+        "permission_context": _as_text(
+            chain.get("permission_context")
+            or sem.get("page_observation", "")
+            or ((sem.get("permission_event") or {}).get("ui_observation", "")),
+            320,
+        ),
+        "permissions": _as_list(chain.get("permissions")),
+        "allowed_permissions": _as_list(chain.get("allowed_permissions")),
+        "banned_permissions": _as_list(chain.get("banned_permissions")),
+        "rule_signal": _as_text(chain.get("overall_rule_signal", "MEDIUM_RISK"), 32),
+        "rule_prior": _as_text(chain.get("rule_prior", "suspicious"), 20),
+        "rule_notes": _as_list(chain.get("rule_notes"))[:8],
+        "chain_summary": _as_text(chain.get("chain_summary") or sem.get("page_observation", ""), 500),
+        "semantic": {
+            "ui_task_scene": _as_text(sem.get("ui_task_scene", ""), 80),
+            "refined_scene": refined_scene,
+            "user_intent": _as_text(sem.get("user_intent", ""), 240),
+            "trigger_action": _as_text(sem.get("trigger_action", ""), 100),
+            "page_observation": _as_text(sem.get("page_observation", ""), 280),
+            "visual_evidence": _as_list(sem.get("visual_evidence"))[:8],
         },
-        "consistency_analysis": {
-            "label": stage_b.get("label", "inconsistent"),
-            "reason": stage_b.get("reason", ""),
+        "ocr_triplet": {
+            "before_text": _as_text(chain_summary_obj.get("before_text", ""), 320),
+            "granting_text": _as_text(chain_summary_obj.get("granting_text", ""), 320),
+            "after_text": _as_text(chain_summary_obj.get("after_text", ""), 320),
         },
-        "minimality_analysis": {
-            "label": stage_c.get("minimality_label", "over_privileged"),
-            "reason": stage_c.get("minimality_reason", ""),
-        },
-        "llm_final_decision": stage_c.get("llm_final_decision", "SUSPICIOUS"),
-        "llm_final_risk": stage_c.get("llm_final_risk", "MEDIUM"),
-        "llm_explanation": stage_c.get("llm_explanation", ""),
-        "output_valid": output_valid,
-        "format_error": format_error,
+        "top_widgets": [_as_text(x, 36) for x in _as_list(chain_summary_obj.get("top_widgets", []))[:12] if _as_text(x, 36)],
+        # New one-pass output
+        "necessity": parsed["necessity"],
+        "consistency": parsed["consistency"],
+        "over_scope": parsed["over_scope"],
+        "final_risk": parsed["final_risk"],
+        "final_decision": parsed["final_decision"],
+        "confidence": parsed.get("confidence", 0.35),
+        "analysis_summary": parsed["analysis_summary"],
+        # Compatibility fields
+        "necessity_analysis": parsed["necessity_analysis"],
+        "consistency_analysis": parsed["consistency_analysis"],
+        "minimality_analysis": parsed["minimality_analysis"],
+        "llm_final_decision": parsed["llm_final_decision"],
+        "llm_final_risk": parsed["llm_final_risk"],
+        "llm_explanation": parsed["llm_explanation"],
+        "output_valid": bool(output_valid),
+        "format_error": bool((not output_valid) and fallback_reason == "format_error"),
     }
     if not output_valid:
-        record["raw_output"] = raw_output
-    if fallback_reason:
-        record["fallback_reason"] = fallback_reason
-    # include compact context for later audit; prefer semantics summary in chain.
-    record["chain_summary"] = chain.get("chain_summary") or chain_summary.get("chain_summary", {})
+        record["raw_output"] = _as_text(raw_output, 1600)
+        record["fallback_reason"] = _as_text(fallback_reason, 80)
+
     return normalize_llm_review_record(record)
 
 
@@ -343,13 +696,44 @@ def _rule_screening_path(app_dir: str) -> str:
     return path if os.path.exists(path) else ""
 
 
+def _semantic_confidence_score(sem: Dict[str, Any]) -> float:
+    raw = sem.get("confidence")
+    try:
+        return _normalize_confidence(float(raw))
+    except Exception:
+        pass
+    label = _as_text(raw, 20).lower()
+    if label == "high":
+        return 0.9
+    if label == "medium":
+        return 0.65
+    if label == "low":
+        return 0.35
+    return 0.35
+
+
+def _structured_cues_from_task_cues(sem: Dict[str, Any]) -> Dict[str, List[str]]:
+    task_cues = sem.get("task_cues") if isinstance(sem.get("task_cues"), dict) else {}
+    return {
+        "storage_read_cues": [_as_text(x, 60) for x in _as_list(task_cues.get("storage_read")) if _as_text(x, 60)],
+        "storage_write_cues": [_as_text(x, 60) for x in _as_list(task_cues.get("storage_write")) if _as_text(x, 60)],
+        "location_task_cues": [_as_text(x, 60) for x in _as_list(task_cues.get("location")) if _as_text(x, 60)],
+        "upload_task_cues": [_as_text(x, 60) for x in _as_list(task_cues.get("upload")) if _as_text(x, 60)],
+        "cleanup_task_cues": [_as_text(x, 60) for x in _as_list(task_cues.get("cleanup")) if _as_text(x, 60)],
+        "camera_task_cues": [_as_text(x, 60) for x in _as_list(task_cues.get("camera")) if _as_text(x, 60)],
+        "audio_task_cues": [_as_text(x, 60) for x in _as_list(task_cues.get("audio")) if _as_text(x, 60)],
+    }
+
+
 def process_app_dir(
     app_dir: str,
     vllm_url: str,
     model: str,
-    stage_a_prompt: str,
-    stage_b_prompt: str,
-    stage_c_prompt: str,
+    prompt_template: str,
+    prior_knowledge_entries: List[Dict[str, Any]],
+    pattern_knowledge_entries: List[Dict[str, Any]],
+    case_knowledge_entries: List[Dict[str, Any]],
+    skill_knowledge_entries: List[Dict[str, Any]],
     chain_ids_filter: Optional[Set[int]] = None,
 ) -> Tuple[int, int]:
     rule_path = _rule_screening_path(app_dir)
@@ -364,8 +748,8 @@ def process_app_dir(
     with open(rule_path, "r", encoding="utf-8") as f:
         screening_raw = json.load(f)
     screening, invalid = validate_rule_screening_results(screening_raw, SCENE_LIST)
-    sem_map = _load_semantics_map(app_dir)
 
+    sem_map = _load_semantics_map(app_dir)
     permissions_map = {int(x["chain_id"]): x.get("permissions", []) for x in screening}
     summary_map = load_chain_summary_map(result_json_path, permissions_map=permissions_map)
 
@@ -373,135 +757,293 @@ def process_app_dir(
     invalid_outputs = invalid
 
     for chain in screening:
-        if chain.get("overall_rule_signal") not in TARGET_RISK:
-            continue
         chain_id = int(chain.get("chain_id", -1))
         if chain_ids_filter is not None and chain_id not in chain_ids_filter:
             continue
-        chain_summary = summary_map.get(chain_id, {"chain_id": chain_id, "chain_summary": {}})
-        sem_item = sem_map.get(chain_id, {})
-        stage_timeout = max(10, CHAIN_TIMEOUT_SECONDS // 3)
+
+        sem = sem_map.get(chain_id, {})
+        chain_summary = summary_map.get(chain_id, {"chain_summary": {}})
+        chain_summary_obj = chain_summary.get("chain_summary", {})
+        if not isinstance(chain_summary_obj, dict):
+            chain_summary_obj = {}
+        refined_scene = _resolve_refined_scene(chain=chain, sem=sem)
+        structured_cues = _collect_structured_cues(sem=sem, chain=chain, chain_summary_obj=chain_summary_obj)
+        regulatory_scene = chain.get("regulatory_scene") or chain.get("regulatory_scene_top1", "")
+        rule_prior = chain.get("rule_prior", "suspicious")
+        retrieved_knowledge = retrieve_scene_conditioned_knowledge(
+            prior_entries=prior_knowledge_entries,
+            pattern_entries=pattern_knowledge_entries,
+            case_entries=case_knowledge_entries,
+            refined_scene=refined_scene,
+            ui_task_scene=chain.get("ui_task_scene") or sem.get("ui_task_scene", ""),
+            permissions=chain.get("permissions", []),
+            user_intent=sem.get("user_intent") or chain.get("intent", ""),
+            trigger_action=sem.get("trigger_action") or chain.get("trigger_action", ""),
+            page_observation=sem.get("page_observation") or chain.get("page_function", ""),
+            visual_evidence=sem.get("visual_evidence", []),
+            skill_entries=skill_knowledge_entries,
+            rule_prior=rule_prior,
+            regulatory_scene=regulatory_scene,
+            structured_cues=structured_cues,
+            top_k_patterns=2,
+            top_k_cases=2,
+            top_k_risky_cases=2,
+            top_k_compliant_cases=2,
+            top_k_skills=2,
+        )
+
+        payload = {
+            "chain_id": chain_id,
+            "refined_scene": refined_scene,
+            "semantic": {
+                "ui_task_scene": sem.get("ui_task_scene", ""),
+                "refined_scene": refined_scene,
+                "user_intent": sem.get("user_intent", ""),
+                "trigger_action": sem.get("trigger_action", ""),
+                "page_observation": sem.get("page_observation", ""),
+                "visual_evidence": sem.get("visual_evidence", []),
+                "permission_task_cues": structured_cues.get("permission_task_cues", []),
+                "storage_read_cues": structured_cues.get("storage_read_cues", []),
+                "storage_write_cues": structured_cues.get("storage_write_cues", []),
+                "location_task_cues": structured_cues.get("location_task_cues", []),
+                "upload_task_cues": structured_cues.get("upload_task_cues", []),
+                "cleanup_task_cues": structured_cues.get("cleanup_task_cues", []),
+            },
+            "structured_cues": structured_cues,
+            "permissions": chain.get("permissions", []),
+            "rule_prior": rule_prior,
+            "rule_notes": chain.get("rule_notes", []),
+            "ui_task_scene": chain.get("ui_task_scene") or sem.get("ui_task_scene", ""),
+            "regulatory_scene": regulatory_scene,
+            "regulatory_scene_top1": chain.get("regulatory_scene_top1", ""),
+            "regulatory_scene_top3": chain.get("regulatory_scene_top3", []),
+            "retrieved_knowledge": retrieved_knowledge,
+            "ocr_triplet": {
+                "before_text": _as_text(chain_summary_obj.get("before_text", ""), 320),
+                "granting_text": _as_text(chain_summary_obj.get("granting_text", ""), 320),
+                "after_text": _as_text(chain_summary_obj.get("after_text", ""), 320),
+            },
+            "widgets": [_as_text(x, 40) for x in _as_list(chain_summary_obj.get("top_widgets", []))[:14] if _as_text(x, 40)],
+            "chain_summary": chain.get("chain_summary") or sem.get("page_observation", ""),
+        }
+
+        one_pass, ok, raw, fail_reason = _run_one_pass(
+            prompt_template=prompt_template,
+            payload=payload,
+            vllm_url=vllm_url,
+            model=model,
+            timeout_seconds=CHAIN_TIMEOUT_SECONDS,
+        )
+
+        if not ok:
+            one_pass = _build_fallback(fail_reason or "invalid_output")
+            invalid_outputs += 1
+
+        outputs.append(
+            _build_record(
+                chain=chain,
+                sem=sem,
+                chain_summary_obj=chain_summary_obj,
+                one_pass_obj=one_pass,
+                output_valid=ok,
+                raw_output=raw,
+                fallback_reason=fail_reason,
+                apply_softening=True,
+            )
+        )
+
+    out_path = os.path.join(app_dir, OUTPUT_FILENAME)
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(outputs, f, indent=2, ensure_ascii=False)
+
+    print(
+        f"[LLM-Review] finish app={app_dir} reviewed={len(outputs)} "
+        f"invalid={invalid_outputs} out={out_path}"
+    )
+    return len(outputs), invalid_outputs
+
+
+def process_app_dir_v2(
+    app_dir: str,
+    vllm_url: str,
+    model: str,
+    prompt_template: str,
+    prior_knowledge_entries: List[Dict[str, Any]],
+    pattern_knowledge_entries: List[Dict[str, Any]],
+    case_knowledge_entries: List[Dict[str, Any]],
+    skill_knowledge_entries: List[Dict[str, Any]],
+    semantic_filename: str = SEMANTIC_V2_FILENAME,
+    retrieval_output_filename: str = RETRIEVAL_FILENAME,
+    chain_ids_filter: Optional[Set[int]] = None,
+) -> Tuple[int, int]:
+    result_json_path = os.path.join(app_dir, "result.json")
+    if not os.path.exists(result_json_path):
+        print(f"[LLM-Review-V2] skip app={app_dir} missing result.json")
+        return 0, 0
+
+    sem_map = _load_semantics_map(app_dir, filename=semantic_filename)
+    if not sem_map and semantic_filename != SEMANTIC_FILENAME:
+        sem_map = _load_semantics_map(app_dir, filename=SEMANTIC_FILENAME)
+    if not sem_map:
+        print(f"[LLM-Review-V2] skip app={app_dir} missing semantic file")
+        return 0, 0
+
+    permission_map = _load_permission_map(app_dir)
+    summary_map = load_chain_summary_map(result_json_path, permissions_map=permission_map)
+
+    outputs: List[Dict[str, Any]] = []
+    retrieval_outputs: List[Dict[str, Any]] = []
+    invalid_outputs = 0
+
+    for chain_id in sorted(sem_map.keys()):
+        if chain_ids_filter is not None and chain_id not in chain_ids_filter:
+            continue
+
+        sem = sem_map.get(chain_id, {})
+        chain_summary = summary_map.get(chain_id, {"chain_summary": {}})
         chain_summary_obj = chain_summary.get("chain_summary", {})
         if not isinstance(chain_summary_obj, dict):
             chain_summary_obj = {}
 
-        sem_evidence = sem_item.get("evidence", {}) if isinstance(sem_item.get("evidence", {}), dict) else {}
-        sem_permission_event = sem_item.get("permission_event", {}) if isinstance(sem_item.get("permission_event", {}), dict) else {}
-        effective_permissions = chain.get("permissions", []) if isinstance(chain.get("permissions", []), list) else []
+        permissions = permission_map.get(chain_id)
+        if not permissions:
+            permissions = [_as_text(x, 64).upper() for x in _as_list(sem.get("permissions_hint")) if _as_text(x, 64)]
 
-        base_payload = {
+        chain_stub = {
             "chain_id": chain_id,
-            "scene": chain.get("scene"),
-            "ui_task_scene": chain.get("ui_task_scene") or chain.get("scene"),
-            "ui_task_scene_top3": chain.get("ui_task_scene_top3", []),
-            "regulatory_scene_top1": chain.get("regulatory_scene_top1", ""),
-            "regulatory_scene_top3": chain.get("regulatory_scene_top3", []),
-            "task_phrase": chain.get("task_phrase", "") or sem_item.get("task_phrase", ""),
-            "intent": chain.get("intent") or sem_item.get("intent", ""),
-            "page_function": chain.get("page_function", "") or sem_item.get("page_function", ""),
-            "trigger_action": chain.get("trigger_action", "") or sem_item.get("trigger_action", ""),
-            "page_transition": sem_item.get("page_transition", ""),
-            "visible_actions": chain.get("visible_actions", []) or sem_item.get("visible_actions", []),
-            "task_relevance_cues": chain.get("task_relevance_cues", []) or sem_item.get("task_relevance_cues", []),
-            "permission_context": chain.get("permission_context", "") or sem_permission_event.get("ui_observation", ""),
-            "permissions": effective_permissions,
-            "permission_capability_hints": _permission_capability_hints(effective_permissions),
-            "allowed_permissions": chain.get("allowed_permissions", []),
-            "banned_permissions": chain.get("banned_permissions", []),
-            "permission_decisions": chain.get("permission_decisions", {}),
-            "matched_rules": chain.get("matched_rules", [])[:4],
-            "rule_signal": chain.get("overall_rule_signal"),
-            "chain_summary": chain.get("chain_summary") or chain_summary.get("chain_summary", {}),
-            "ocr_triplet": {
-                "before_text": _clip_text(chain_summary_obj.get("before_text", ""), 320),
-                "granting_text": _clip_text(chain_summary_obj.get("granting_text", ""), 320),
-                "after_text": _clip_text(chain_summary_obj.get("after_text", ""), 320),
-            },
-            "top_widgets": [str(x)[:36] for x in chain_summary_obj.get("top_widgets", [])[:10]],
-            "evidence": {
-                "keywords": [str(x)[:24] for x in sem_evidence.get("keywords", [])[:12]],
-                "widgets": [str(x)[:24] for x in sem_evidence.get("widgets", [])[:12]],
-                "page_cues": [str(x)[:32] for x in sem_evidence.get("page_cues", [])[:6]],
-            },
-            "analysis_focus": [
-                "先判断 trigger_action 是否直接需要该权限能力",
-                "再检查 intent/page_function 与权限是否一致",
-                "最后判断是否满足最小权限原则",
-            ],
+            "scene": _as_text(sem.get("ui_task_scene"), 80),
+            "ui_task_scene": _as_text(sem.get("ui_task_scene"), 80),
+            "refined_scene": _as_text(sem.get("refined_scene"), 64),
+            "task_phrase": _as_text(sem.get("trigger_action"), 120),
+            "intent": _as_text(sem.get("user_intent"), 240),
+            "page_function": _as_text(sem.get("page_observation"), 280),
+            "trigger_action": _as_text(sem.get("trigger_action"), 120),
+            "permissions": permissions,
+            "overall_rule_signal": "MEDIUM_RISK",
+            "rule_prior": "suspicious",
+            "rule_notes": [],
+            "chain_summary": _as_text(sem.get("page_observation"), 320),
         }
 
-        a_obj, a_ok, a_raw, a_fail = _call_stage(
-            stage_a_prompt,
-            base_payload,
-            _validate_stage_a,
-            vllm_url=vllm_url,
-            model=model,
-            timeout_seconds=stage_timeout,
+        structured_cues = _collect_structured_cues(sem=sem, chain=chain_stub, chain_summary_obj=chain_summary_obj)
+        task_cue_map = _structured_cues_from_task_cues(sem)
+        for k in ["storage_read_cues", "storage_write_cues", "location_task_cues", "upload_task_cues", "cleanup_task_cues"]:
+            structured_cues[k] = _merge_unique(structured_cues.get(k, []), task_cue_map.get(k, []), max_items=12)
+        structured_cues["permission_task_cues"] = _merge_unique(
+            structured_cues.get("permission_task_cues", []),
+            structured_cues.get("storage_read_cues", [])
+            + structured_cues.get("storage_write_cues", [])
+            + structured_cues.get("location_task_cues", [])
+            + structured_cues.get("upload_task_cues", [])
+            + structured_cues.get("cleanup_task_cues", [])
+            + task_cue_map.get("camera_task_cues", [])
+            + task_cue_map.get("audio_task_cues", []),
+            max_items=16,
         )
-        b_payload = dict(base_payload)
-        b_payload["necessity_analysis"] = a_obj if a_ok else {}
-        b_obj, b_ok, b_raw, b_fail = _call_stage(
-            stage_b_prompt,
-            b_payload,
-            _validate_stage_b,
-            vllm_url=vllm_url,
-            model=model,
-            timeout_seconds=stage_timeout,
-        )
-        c_payload = dict(base_payload)
-        c_payload["necessity_analysis"] = a_obj if a_ok else {}
-        c_payload["consistency_analysis"] = b_obj if b_ok else {}
-        c_obj, c_ok, c_raw, c_fail = _call_stage(
-            stage_c_prompt,
-            c_payload,
-            _validate_stage_c,
-            vllm_url=vllm_url,
-            model=model,
-            timeout_seconds=stage_timeout,
-        )
-        if (not c_ok) and a_ok and b_ok:
-            c_obj = _synthesize_stage_c(a_obj, b_obj)
-            c_ok = True
-            c_fail = ""
-            c_raw = (c_raw + "\n\n[synthesized_stage_c_from_ab]")[:1200]
 
-        output_valid = bool(a_ok and b_ok and c_ok)
-        fallback_reason = ""
-        if not output_valid and "timeout" in {a_fail, b_fail, c_fail}:
-            fallback_reason = "timeout"
-        elif not output_valid:
-            fallback_reason = "format_error"
-        format_error = fallback_reason == "format_error"
-        if not output_valid:
+        refined_scene = _resolve_refined_scene(chain=chain_stub, sem=sem)
+        retrieved_knowledge = retrieve_scene_conditioned_knowledge(
+            prior_entries=prior_knowledge_entries,
+            pattern_entries=pattern_knowledge_entries,
+            case_entries=case_knowledge_entries,
+            refined_scene=refined_scene,
+            ui_task_scene=_as_text(sem.get("ui_task_scene"), 80),
+            permissions=permissions,
+            user_intent=_as_text(sem.get("user_intent"), 240),
+            trigger_action=_as_text(sem.get("trigger_action"), 120),
+            page_observation=_as_text(sem.get("page_observation"), 320),
+            visual_evidence=_as_list(sem.get("visual_evidence")),
+            skill_entries=skill_knowledge_entries,
+            rule_prior="suspicious",
+            regulatory_scene="",
+            structured_cues=structured_cues,
+            top_k_patterns=2,
+            top_k_cases=4,
+            top_k_risky_cases=2,
+            top_k_compliant_cases=2,
+            top_k_skills=2,
+        )
+
+        retrieval_outputs.append(
+            {
+                "chain_id": chain_id,
+                "ui_task_scene": _as_text(sem.get("ui_task_scene"), 80),
+                "refined_scene": refined_scene,
+                "permissions": permissions,
+                "retrieved_knowledge": retrieved_knowledge,
+            }
+        )
+
+        payload = {
+            "chain_id": chain_id,
+            "refined_scene": refined_scene,
+            "semantic": {
+                "ui_task_scene": _as_text(sem.get("ui_task_scene"), 80),
+                "refined_scene": refined_scene,
+                "user_intent": _as_text(sem.get("user_intent"), 240),
+                "trigger_action": _as_text(sem.get("trigger_action"), 100),
+                "page_observation": _as_text(sem.get("page_observation"), 280),
+                "visual_evidence": _as_list(sem.get("visual_evidence"))[:8],
+                "task_cues": sem.get("task_cues", {}) if isinstance(sem.get("task_cues"), dict) else {},
+                "permission_task_cues": structured_cues.get("permission_task_cues", []),
+                "storage_read_cues": structured_cues.get("storage_read_cues", []),
+                "storage_write_cues": structured_cues.get("storage_write_cues", []),
+                "location_task_cues": structured_cues.get("location_task_cues", []),
+                "upload_task_cues": structured_cues.get("upload_task_cues", []),
+                "cleanup_task_cues": structured_cues.get("cleanup_task_cues", []),
+                "camera_task_cues": task_cue_map.get("camera_task_cues", []),
+                "audio_task_cues": task_cue_map.get("audio_task_cues", []),
+            },
+            "structured_cues": structured_cues,
+            "permissions": permissions,
+            "retrieved_knowledge": retrieved_knowledge,
+            "ocr_triplet": {
+                "before_text": _as_text(chain_summary_obj.get("before_text", ""), 320),
+                "granting_text": _as_text(chain_summary_obj.get("granting_text", ""), 320),
+                "after_text": _as_text(chain_summary_obj.get("after_text", ""), 320),
+            },
+            "widgets": [_as_text(x, 40) for x in _as_list(chain_summary_obj.get("top_widgets", []))[:14] if _as_text(x, 40)],
+            "chain_summary": _as_text(sem.get("page_observation"), 320),
+        }
+
+        one_pass, ok, raw, fail_reason = _run_one_pass(
+            prompt_template=prompt_template,
+            payload=payload,
+            vllm_url=vllm_url,
+            model=model,
+            timeout_seconds=CHAIN_TIMEOUT_SECONDS,
+        )
+        if not ok:
+            one_pass = _build_fallback(fail_reason or "invalid_output")
             invalid_outputs += 1
-        raw_output = "\n\n".join([f"stage_a:\n{a_raw}", f"stage_b:\n{b_raw}", f"stage_c:\n{c_raw}"])
+        if "confidence" not in one_pass:
+            one_pass["confidence"] = _semantic_confidence_score(sem)
 
         outputs.append(
-            _build_review_record(
-                chain=chain,
-                chain_summary=chain_summary,
-                stage_a=a_obj if a_ok else {},
-                stage_b=b_obj if b_ok else {},
-                stage_c=c_obj if c_ok else {},
-                output_valid=output_valid,
-                format_error=format_error,
-                raw_output=raw_output,
-                fallback_reason=fallback_reason,
+            _build_record(
+                chain=chain_stub,
+                sem=sem,
+                chain_summary_obj=chain_summary_obj,
+                one_pass_obj=one_pass,
+                output_valid=ok,
+                raw_output=raw,
+                fallback_reason=fail_reason,
+                apply_softening=False,
             )
         )
 
-    normalized, dropped = validate_llm_review_results(outputs)
-    invalid_outputs += dropped
-
     out_path = os.path.join(app_dir, OUTPUT_FILENAME)
     with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(normalized, f, indent=2, ensure_ascii=False)
+        json.dump(outputs, f, indent=2, ensure_ascii=False)
+    retrieval_path = os.path.join(app_dir, retrieval_output_filename)
+    with open(retrieval_path, "w", encoding="utf-8") as f:
+        json.dump(retrieval_outputs, f, indent=2, ensure_ascii=False)
 
     print(
-        f"[LLM-Review] finish app={app_dir} reviewed={len(normalized)} "
-        f"invalid={invalid_outputs} out={out_path}"
+        f"[LLM-Review-V2] finish app={app_dir} reviewed={len(outputs)} "
+        f"invalid={invalid_outputs} out={out_path} retrieval={retrieval_path}"
     )
-    return len(normalized), invalid_outputs
+    return len(outputs), invalid_outputs
 
 
 def run(
@@ -511,9 +1053,12 @@ def run(
     model: str,
     chain_ids: Optional[List[int]] = None,
 ) -> None:
-    stage_a_prompt = _load_prompt(prompt_dir, PROMPT_STAGE_A_FILE, STAGE_A_PROMPT)
-    stage_b_prompt = _load_prompt(prompt_dir, PROMPT_STAGE_B_FILE, STAGE_B_PROMPT)
-    stage_c_prompt = _load_prompt(prompt_dir, PROMPT_STAGE_C_FILE, STAGE_C_PROMPT)
+    prompt = _load_prompt(prompt_dir)
+    prior_knowledge_entries = load_prior_knowledge_entries(SCENE_PRIOR_KNOWLEDGE_FILE)
+    pattern_knowledge_entries = load_pattern_knowledge_entries(SCENE_PATTERN_KNOWLEDGE_FILE)
+    case_knowledge_entries = load_case_knowledge_entries(SCENE_CASE_KNOWLEDGE_FILE)
+    skill_knowledge_entries = load_skill_knowledge_entries(SCENE_SKILL_KNOWLEDGE_FILE)
+
     total = 0
     invalid = 0
 
@@ -526,9 +1071,11 @@ def run(
             processed_dir,
             vllm_url=vllm_url,
             model=model,
-            stage_a_prompt=stage_a_prompt,
-            stage_b_prompt=stage_b_prompt,
-            stage_c_prompt=stage_c_prompt,
+            prompt_template=prompt,
+            prior_knowledge_entries=prior_knowledge_entries,
+            pattern_knowledge_entries=pattern_knowledge_entries,
+            case_knowledge_entries=case_knowledge_entries,
+            skill_knowledge_entries=skill_knowledge_entries,
             chain_ids_filter=chain_filter,
         )
         total += c
@@ -543,9 +1090,11 @@ def run(
                     app_dir,
                     vllm_url=vllm_url,
                     model=model,
-                    stage_a_prompt=stage_a_prompt,
-                    stage_b_prompt=stage_b_prompt,
-                    stage_c_prompt=stage_c_prompt,
+                    prompt_template=prompt,
+                    prior_knowledge_entries=prior_knowledge_entries,
+                    pattern_knowledge_entries=pattern_knowledge_entries,
+                    case_knowledge_entries=case_knowledge_entries,
+                    skill_knowledge_entries=skill_knowledge_entries,
                     chain_ids_filter=chain_filter,
                 )
                 total += c
@@ -558,19 +1107,96 @@ def run(
     print("=======================================")
 
 
+def run_v2(
+    processed_dir: str,
+    prompt_dir: str,
+    vllm_url: str,
+    model: str,
+    chain_ids: Optional[List[int]] = None,
+    semantic_filename: str = SEMANTIC_V2_FILENAME,
+    retrieval_output_filename: str = RETRIEVAL_FILENAME,
+) -> None:
+    prompt = _load_prompt(prompt_dir)
+    prior_knowledge_entries = load_prior_knowledge_entries(SCENE_PRIOR_KNOWLEDGE_FILE)
+    pattern_knowledge_entries = load_pattern_knowledge_entries(SCENE_PATTERN_KNOWLEDGE_FILE)
+    case_knowledge_entries = load_case_knowledge_entries(SCENE_CASE_KNOWLEDGE_FILE)
+    skill_knowledge_entries = load_skill_knowledge_entries(SCENE_SKILL_KNOWLEDGE_FILE)
+
+    total = 0
+    invalid = 0
+
+    chain_filter: Optional[Set[int]] = None
+    if chain_ids:
+        chain_filter = {int(x) for x in chain_ids}
+
+    if os.path.exists(os.path.join(processed_dir, "result.json")):
+        c, i = process_app_dir_v2(
+            processed_dir,
+            vllm_url=vllm_url,
+            model=model,
+            prompt_template=prompt,
+            prior_knowledge_entries=prior_knowledge_entries,
+            pattern_knowledge_entries=pattern_knowledge_entries,
+            case_knowledge_entries=case_knowledge_entries,
+            skill_knowledge_entries=skill_knowledge_entries,
+            semantic_filename=semantic_filename,
+            retrieval_output_filename=retrieval_output_filename,
+            chain_ids_filter=chain_filter,
+        )
+        total += c
+        invalid += i
+    else:
+        for d in tqdm(sorted(os.listdir(processed_dir)), desc="LLM Review V2"):
+            app_dir = os.path.join(processed_dir, d)
+            if not os.path.isdir(app_dir):
+                continue
+            try:
+                c, i = process_app_dir_v2(
+                    app_dir,
+                    vllm_url=vllm_url,
+                    model=model,
+                    prompt_template=prompt,
+                    prior_knowledge_entries=prior_knowledge_entries,
+                    pattern_knowledge_entries=pattern_knowledge_entries,
+                    case_knowledge_entries=case_knowledge_entries,
+                    skill_knowledge_entries=skill_knowledge_entries,
+                    semantic_filename=semantic_filename,
+                    retrieval_output_filename=retrieval_output_filename,
+                    chain_ids_filter=chain_filter,
+                )
+                total += c
+                invalid += i
+            except Exception as exc:
+                print(f"[LLM-Review-V2][WARN] app failed {app_dir}: {exc}")
+
+    print("\n========== LLM Review V2 Summary ==========")
+    print(f"reviewed={total} invalid={invalid}")
+    print("==========================================")
+
+
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Decomposed LLM compliance review")
+    parser = argparse.ArgumentParser(description="Single-pass LLM compliance review")
     parser.add_argument(
         "--processed-dir",
         default=os.getenv("LLMMUI_PROCESSED_DIR", os.getenv("PROCESSED_DIR", DEFAULT_PROCESSED_DIR)),
     )
-    parser.add_argument("--prompt-dir", default=os.getenv("LLMMUI_PROMPT_DIR", os.getenv("PROMPT_DIR", DEFAULT_PROMPT_DIR)))
-    parser.add_argument("--vllm-url", default=VLLM_URL)
-    parser.add_argument("--model", default=MODEL_NAME)
+    parser.add_argument(
+        "--prompt-dir",
+        default=os.getenv("LLMMUI_PROMPT_DIR", os.getenv("PROMPT_DIR", DEFAULT_PROMPT_DIR)),
+    )
+    parser.add_argument(
+        "--vllm-url",
+        default=os.getenv("LLMMUI_VLLM_TEXT_URL", os.getenv("VLLM_TEXT_URL", settings.VLLM_TEXT_URL)),
+    )
+    parser.add_argument(
+        "--model",
+        default=os.getenv("LLMMUI_VLLM_TEXT_MODEL", os.getenv("VLLM_TEXT_MODEL", settings.VLLM_TEXT_MODEL)),
+    )
     parser.add_argument("--chain-ids", default="", help="comma-separated chain ids, e.g. 1,3,9")
     args = parser.parse_args()
+
     chain_ids: List[int] = []
     if args.chain_ids.strip():
         for seg in args.chain_ids.split(","):
@@ -581,6 +1207,7 @@ if __name__ == "__main__":
                 chain_ids.append(int(seg))
             except Exception:
                 continue
+
     run(
         args.processed_dir,
         prompt_dir=args.prompt_dir,

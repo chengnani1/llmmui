@@ -1,0 +1,127 @@
+{
+  "skills": [
+    {
+      "scene": "system_cleanup",
+      "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+      "rule_prior": "suspicious",
+      "skill_name": "storage_maintenance_relax",
+      "skill_type": "relax_pattern",
+      "positive_cues": ["清理", "垃圾", "开始扫描", "立即清理", "存储空间", "视频清理", "释放空间"],
+      "negative_cues": ["首页推荐", "无扫描", "无清理动作", "仅宣传文案"],
+      "guidance": "If a cleanup flow clearly shows scan and user-triggered cleaning actions, storage pair may be justified even under suspicious prior.",
+      "usage_note": "Soft pattern distilled from best_result guards; require explicit in-page evidence before relaxing risk.",
+      "origin": "best_result_distilled_v1"
+    },
+    {
+      "scene": "system_cleanup",
+      "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+      "rule_prior": "unexpected",
+      "skill_name": "storage_unexpected_need_review",
+      "skill_type": "caution_pattern",
+      "positive_cues": ["设备清理", "垃圾扫描"],
+      "negative_cues": ["无任务证据", "泛首页", "纯推荐"],
+      "guidance": "When storage permissions appear with unexpected prior, keep a high evidence threshold and avoid compliant-low by default.",
+      "usage_note": "Auxiliary caution only; if current chain evidence is strong and concrete, prioritize current evidence.",
+      "origin": "best_result_distilled_v1"
+    },
+    {
+      "scene": "map_navigation",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"],
+      "rule_prior": "suspicious",
+      "skill_name": "location_need_strong_task_cues",
+      "skill_type": "caution_pattern",
+      "positive_cues": ["导航", "路线", "附近", "周边", "定位", "同城", "网点", "搜索"],
+      "negative_cues": ["仅地图展示", "无定位任务", "弱相关页面"],
+      "guidance": "Location permissions in map-like scenes still need strong task cues; weak map context should remain suspicious.",
+      "usage_note": "Do not promote to compliant-low without concrete location-task evidence.",
+      "origin": "best_result_distilled_v1"
+    },
+    {
+      "scene": "content_browsing",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"],
+      "rule_prior": "suspicious",
+      "skill_name": "location_scene_mismatch_caution",
+      "skill_type": "caution_pattern",
+      "positive_cues": ["附近", "同城", "本地服务"],
+      "negative_cues": ["文件管理", "系统清理", "设备管理", "无位置入口"],
+      "guidance": "If location permissions appear in non-location-centric scenes, require stronger evidence and avoid direct compliant-low.",
+      "usage_note": "Treat as risk reminder, not hard label override.",
+      "origin": "best_result_distilled_v1"
+    },
+    {
+      "scene": "media_upload",
+      "permission": "CAMERA",
+      "rule_prior": "suspicious",
+      "regulatory_scene": "网络直播",
+      "skill_name": "camera_live_upload_caution",
+      "skill_type": "caution_pattern",
+      "positive_cues": ["直播", "拍摄", "视频上传", "开播"],
+      "negative_cues": ["首页", "无拍摄动作", "无上传入口"],
+      "guidance": "In live upload contexts with suspicious prior, camera should be verified by concrete capture/upload actions before low-risk compliance.",
+      "usage_note": "Narrowly scoped distilled guard; avoid broad camera penalties.",
+      "origin": "best_result_distilled_v1"
+    },
+    {
+      "scene": "album_selection",
+      "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+      "rule_prior": "suspicious",
+      "regulatory_scene": "在线影音",
+      "skill_name": "album_online_media_storage_caution",
+      "skill_type": "caution_pattern",
+      "positive_cues": ["相册", "上传", "选择图片", "选择视频"],
+      "negative_cues": ["仅背景设置", "动态背景", "无导入导出"],
+      "guidance": "For album selection + online media combinations, storage pair needs explicit task-evidence coupling; avoid over-relaxation.",
+      "usage_note": "Keep this as auxiliary scene-specific caution.",
+      "origin": "best_result_distilled_v1"
+    },
+    {
+      "scene": "customer_support",
+      "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+      "rule_prior": "suspicious",
+      "skill_name": "support_attachment_relax",
+      "skill_type": "relax_pattern",
+      "positive_cues": ["上传截图", "上传附件", "问题反馈", "日志上传"],
+      "negative_cues": ["FAQ", "仅文本客服", "无附件入口"],
+      "guidance": "In support flows, storage pair can be acceptable when attachment upload/export evidence is explicit.",
+      "usage_note": "Require visible attachment path; do not relax on generic support pages.",
+      "origin": "best_result_distilled_v1"
+    },
+    {
+      "scene": "content_browsing",
+      "permission": "RECORD_AUDIO",
+      "rule_prior": "expected",
+      "regulatory_scene": "在线影音",
+      "skill_name": "audio_only_expected_relax",
+      "skill_type": "relax_pattern",
+      "positive_cues": ["语音", "音频", "录音", "声音互动"],
+      "negative_cues": ["无音频功能", "纯图文浏览"],
+      "guidance": "Audio-only requests in online media browsing can be reasonable when explicit audio interaction is visible.",
+      "usage_note": "Use as supportive evidence only; check concrete UI cues first.",
+      "origin": "best_result_distilled_v1"
+    },
+    {
+      "scene": "content_browsing",
+      "permission": "CAMERA",
+      "rule_prior": "suspicious",
+      "skill_name": "camera_only_relax_if_action_clear",
+      "skill_type": "relax_pattern",
+      "positive_cues": ["扫码", "拍照", "相机", "拍摄上传"],
+      "negative_cues": ["纯浏览", "首页推荐", "无相机入口"],
+      "guidance": "Camera-only requests may be acceptable if explicit scan/capture actions are visible, even under suspicious prior.",
+      "usage_note": "Avoid relaxing when camera cues are absent.",
+      "origin": "best_result_distilled_v1"
+    },
+    {
+      "scene": "system_cleanup",
+      "permission": "CAMERA",
+      "rule_prior": "suspicious",
+      "skill_name": "camera_cleanup_relax_narrow",
+      "skill_type": "relax_pattern",
+      "positive_cues": ["扫码", "拍照识别", "相机入口"],
+      "negative_cues": ["无相机功能", "仅清理功能"],
+      "guidance": "Camera in cleanup-like scenes should be treated narrowly; only relax when explicit camera task exists.",
+      "usage_note": "Designed to prevent over-penalizing rare legitimate camera subflows.",
+      "origin": "best_result_distilled_v1"
+    }
+  ]
+}

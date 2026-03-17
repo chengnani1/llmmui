@@ -1,0 +1,130 @@
+{
+  "cases": [
+    {
+      "scene": "file_recovery",
+      "permission": "READ_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": ["文件恢复", "扫描本地文件", "恢复列表"],
+      "reason": "Read access is generally aligned when the UI explicitly shows local file scan/recovery workflow."
+    },
+    {
+      "scene": "file_recovery",
+      "permission": "WRITE_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": ["恢复到本地", "选择恢复路径", "导出恢复文件"],
+      "reason": "Write access can be justified when recovered files are clearly written back to local storage."
+    },
+    {
+      "scene": "file_recovery",
+      "permission": "WRITE_EXTERNAL_STORAGE",
+      "case_type": "risky",
+      "evidence": ["仅扫描", "仅预览", "无保存动作"],
+      "reason": "If no write-back or export behavior exists, WRITE permission tends to be over-scoped."
+    },
+    {
+      "scene": "system_cleanup",
+      "permission": "READ_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": ["垃圾扫描", "重复文件扫描", "大文件扫描"],
+      "reason": "Cleanup scan features often require read access when concrete scan targets are visible."
+    },
+    {
+      "scene": "system_cleanup",
+      "permission": "WRITE_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": ["一键清理", "删除垃圾", "清理完成"],
+      "reason": "Write/delete operations can justify WRITE permission in explicit cleanup execution pages."
+    },
+    {
+      "scene": "system_cleanup",
+      "permission": "READ_EXTERNAL_STORAGE",
+      "case_type": "risky",
+      "evidence": ["释放空间宣传", "无扫描入口", "仅推荐页"],
+      "reason": "Storage permissions are often over-scoped in cleanup-themed pages without concrete scan actions."
+    },
+    {
+      "scene": "album_selection",
+      "permission": "READ_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": ["相册", "选择图片", "本地媒体选择"],
+      "reason": "READ permission is expected for explicit local media picking/upload."
+    },
+    {
+      "scene": "album_selection",
+      "permission": "WRITE_EXTERNAL_STORAGE",
+      "case_type": "risky",
+      "evidence": ["仅选择上传", "无保存按钮", "无导出动作"],
+      "reason": "Album selection alone usually does not justify WRITE permission without local save/export behavior."
+    },
+    {
+      "scene": "media_upload",
+      "permission": "READ_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": ["发送图片", "发送视频", "选择附件"],
+      "reason": "Local media/file selection for upload commonly supports READ permission."
+    },
+    {
+      "scene": "media_upload",
+      "permission": "WRITE_EXTERNAL_STORAGE",
+      "case_type": "risky",
+      "evidence": ["仅上传", "仅发布", "无本地保存"],
+      "reason": "Upload-only flows frequently over-request WRITE permission if no local save/export exists."
+    },
+    {
+      "scene": "content_browsing",
+      "permission": "READ_EXTERNAL_STORAGE",
+      "case_type": "risky",
+      "evidence": ["首页推荐", "资讯浏览", "搜索列表"],
+      "reason": "Storage read is often over-scoped in pure browsing contexts lacking local import/upload intent."
+    },
+    {
+      "scene": "content_browsing",
+      "permission": "WRITE_EXTERNAL_STORAGE",
+      "case_type": "risky",
+      "evidence": ["内容浏览", "无下载入口", "无导出操作"],
+      "reason": "WRITE permission is typically unnecessary when the page only supports browsing."
+    },
+    {
+      "scene": "map_navigation",
+      "permission": "ACCESS_FINE_LOCATION",
+      "case_type": "compliant",
+      "evidence": ["导航", "路线规划", "当前位置", "附近"],
+      "reason": "Fine location is commonly justified in explicit turn-by-turn/nearby navigation tasks."
+    },
+    {
+      "scene": "map_navigation",
+      "permission": "ACCESS_FINE_LOCATION",
+      "case_type": "risky",
+      "evidence": ["无定位入口", "仅地图浏览", "静态展示"],
+      "reason": "Without a strong location task, fine location requests tend to be over-scoped."
+    },
+    {
+      "scene": "map_navigation",
+      "permission": "ACCESS_COARSE_LOCATION",
+      "case_type": "compliant",
+      "evidence": ["同城", "附近商家", "城市切换", "附近服务"],
+      "reason": "Coarse location can be reasonable for city/nearby recommendation features."
+    },
+    {
+      "scene": "wifi_scan_or_nearby_devices",
+      "permission": "ACCESS_FINE_LOCATION",
+      "case_type": "compliant",
+      "evidence": ["WiFi扫描", "发现设备", "附近设备"],
+      "reason": "Nearby device/WiFi discovery can legitimately require location permission in Android ecosystems."
+    },
+    {
+      "scene": "wifi_scan_or_nearby_devices",
+      "permission": "ACCESS_COARSE_LOCATION",
+      "case_type": "compliant",
+      "evidence": ["附近设备列表", "扫描热点", "连接设备"],
+      "reason": "Coarse location can be justified if discovery behavior is explicit on the page."
+    },
+    {
+      "scene": "content_browsing",
+      "permission": "ACCESS_FINE_LOCATION",
+      "case_type": "risky",
+      "evidence": ["资讯阅读", "推荐流", "无同城或附近模块"],
+      "reason": "Location is often over-scoped in generic browsing flows without nearby/local intent cues."
+    }
+  ]
+}
