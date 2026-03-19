@@ -1,88 +1,61 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if [[ $# -lt 1 ]]; then
-  echo "Usage: bash run_full_pipeline.sh <processed_root> [--app APP] [--scene-mode text|vision] [--force] [--chain-ids 1,2,3]"
+usage() {
+  cat <<'EOF'
+Usage:
+  bash run_full_pipeline.sh <mode> <target> [extra args...]
+
+Modes (mapped to src/main.py):
+  full                 run phase1 + phase2 + phase3_v2
+  phase1               data collection only
+  phase2               data processing only
+  phase3_v2            permission + semantic + retrieval+llm + final
+  phase3_v2_compliance retrieval+llm only (reuse semantic+permission)
+  phase3_v2_final      final mapping only (reuse llm output)
+  phase3_v2_post       compliance + final (skip semantic)
+
+Examples:
+  bash run_full_pipeline.sh phase3_v2 /path/to/processed --app APP --force
+  bash run_full_pipeline.sh phase3_v2_compliance /path/to/processed --chain-ids 0,1,2 --force
+  bash run_full_pipeline.sh phase3_v2_post /path/to/processed --app APP --force
+  bash run_full_pipeline.sh full /path/to/apk_dir --raw-root /path/raw --processed-root /path/processed --force
+EOF
+}
+
+if [[ $# -lt 2 ]]; then
+  usage
   exit 1
 fi
 
-PROCESSED_ROOT="$1"
-shift
+MODE="$1"
+TARGET="$2"
+shift 2
+EXTRA_ARGS=("$@")
 
-APP_NAME=""
-SCENE_MODE="text"
-FORCE_FLAG=""
-CHAIN_IDS=""
+# Local tunnel / loopback endpoints are common for this project.
+export NO_PROXY="${NO_PROXY:-127.0.0.1,localhost}"
+export no_proxy="${no_proxy:-127.0.0.1,localhost}"
 
-while [[ $# -gt 0 ]]; do
-  case "$1" in
-    --app)
-      APP_NAME="${2:-}"
-      shift 2
-      ;;
-    --scene-mode)
-      SCENE_MODE="${2:-text}"
-      shift 2
-      ;;
-    --force)
-      FORCE_FLAG="--force"
-      shift
-      ;;
-    --chain-ids)
-      CHAIN_IDS="${2:-}"
-      shift 2
-      ;;
-    *)
-      echo "Unknown arg: $1"
-      exit 1
-      ;;
-  esac
-done
+run_main() {
+  local mode="$1"
+  echo "[RUN] python3 src/main.py ${mode} ${TARGET} ${EXTRA_ARGS[*]}"
+  python3 src/main.py "${mode}" "${TARGET}" "${EXTRA_ARGS[@]}"
+}
 
-COMMON_ARGS=()
-if [[ -n "$APP_NAME" ]]; then
-  COMMON_ARGS+=("--app" "$APP_NAME")
-fi
-if [[ -n "$FORCE_FLAG" ]]; then
-  COMMON_ARGS+=("$FORCE_FLAG")
-fi
-if [[ -n "$CHAIN_IDS" ]]; then
-  COMMON_ARGS+=("--chain-ids" "$CHAIN_IDS")
-fi
+case "${MODE}" in
+  full|phase1|phase2|phase3_v2|phase3_v2_compliance|phase3_v2_final)
+    run_main "${MODE}"
+    ;;
+  phase3_v2_post)
+    run_main "phase3_v2_compliance"
+    run_main "phase3_v2_final"
+    ;;
+  *)
+    echo "[ERROR] Unsupported mode: ${MODE}"
+    usage
+    exit 2
+    ;;
+esac
 
-echo "[RUN] phase3_semantics"
-cmd=(python3 src/main.py phase3_semantics "$PROCESSED_ROOT")
-if (( ${#COMMON_ARGS[@]} > 0 )); then
-  cmd+=("${COMMON_ARGS[@]}")
-fi
-"${cmd[@]}"
-
-echo "[RUN] phase3_scene"
-cmd=(python3 src/main.py phase3_scene "$PROCESSED_ROOT" --scene-mode "$SCENE_MODE")
-if (( ${#COMMON_ARGS[@]} > 0 )); then
-  cmd+=("${COMMON_ARGS[@]}")
-fi
-"${cmd[@]}"
-
-echo "[RUN] phase3_rule"
-cmd=(python3 src/main.py phase3_rule "$PROCESSED_ROOT")
-if (( ${#COMMON_ARGS[@]} > 0 )); then
-  cmd+=("${COMMON_ARGS[@]}")
-fi
-"${cmd[@]}"
-
-echo "[RUN] phase3_llm"
-cmd=(python3 src/main.py phase3_llm "$PROCESSED_ROOT")
-if (( ${#COMMON_ARGS[@]} > 0 )); then
-  cmd+=("${COMMON_ARGS[@]}")
-fi
-"${cmd[@]}"
-
-echo "[RUN] phase3_final"
-cmd=(python3 src/main.py phase3_final "$PROCESSED_ROOT")
-if (( ${#COMMON_ARGS[@]} > 0 )); then
-  cmd+=("${COMMON_ARGS[@]}")
-fi
-"${cmd[@]}"
-
-echo "[DONE] full pipeline finished"
+echo "[DONE] mode=${MODE}"

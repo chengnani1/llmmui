@@ -2,7 +2,7 @@
 """
 Unified entrypoint for llmui.
 Modes:
-  - full       : phase1 + phase2 + phase3
+  - full       : phase1 + phase2 + phase3_v2
   - phase1     : data collect
   - phase2     : data process
   - phase3_v2  : permission + semantic_v2 + retrieved_knowledge + llm + final
@@ -435,23 +435,6 @@ def run_phase3_v2_final(processed_root: str, app_name: str, force: bool, chain_i
     return summary
 
 
-def run_phase3(
-    processed_root: str,
-    scene_mode: str,
-    run_compliance: bool,
-    app_name: str = "",
-    force: bool = False,
-    chain_ids: Optional[List[int]] = None,
-) -> None:
-    del scene_mode, run_compliance  # keep backward-compatible signature
-    run_phase3_v2(
-        processed_root=processed_root,
-        app_name=app_name,
-        force=force,
-        chain_ids=chain_ids,
-    )
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(description="llmui unified entry")
     parser.add_argument(
@@ -460,7 +443,6 @@ def main() -> None:
             "full",
             "phase1",
             "phase2",
-            "phase3",
             "phase3_v2",
             "phase3_v2_compliance",
             "phase3_v2_final",
@@ -471,8 +453,6 @@ def main() -> None:
     parser.add_argument("--raw-root", default=settings.DATA_RAW_DIR)
     parser.add_argument("--processed-root", default=settings.DATA_PROCESSED_DIR)
 
-    parser.add_argument("--scene-mode", choices=["text", "vision", "vl"], default="text")
-    parser.add_argument("--no-compliance", action="store_true")
     parser.add_argument("--force", action="store_true", help="force rerun even if output file already exists")
     parser.add_argument("--app", default="", help="run only one app directory name under processed root")
     parser.add_argument("--chain-ids", default="", help="comma-separated chain ids, e.g. 1,3,9")
@@ -488,17 +468,6 @@ def main() -> None:
     if args.mode == "phase2":
         raw_root = args.target or args.raw_root
         run_phase2(raw_root, args.processed_root)
-        return
-
-    if args.mode == "phase3":
-        run_phase3(
-            processed_root=args.target or args.processed_root,
-            scene_mode=args.scene_mode,
-            run_compliance=not args.no_compliance,
-            app_name=args.app,
-            force=args.force,
-            chain_ids=chain_ids,
-        )
         return
 
     if args.mode == "phase3_v2":
@@ -531,10 +500,8 @@ def main() -> None:
     if args.mode == "full":
         run_phase1(args.target)
         run_phase2(args.raw_root, args.processed_root)
-        run_phase3(
+        run_phase3_v2(
             processed_root=args.processed_root,
-            scene_mode=args.scene_mode,
-            run_compliance=not args.no_compliance,
             app_name=args.app,
             force=args.force,
             chain_ids=chain_ids,

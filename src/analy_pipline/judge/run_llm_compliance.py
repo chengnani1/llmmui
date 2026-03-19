@@ -30,22 +30,6 @@ SEMANTIC_V2_FILENAME = "result_semantic_v2.json"
 PERMISSION_FILENAME = "result_permission.json"
 PROMPT_FILE = "llm_single_pass_compliance.txt"
 
-SCENE_PRIOR_KNOWLEDGE_FILE = os.getenv(
-    "LLMMUI_SCENE_PRIOR_KNOWLEDGE_FILE",
-    os.path.join(ROOT, "configs", "scene_prior_knowledge.json"),
-)
-SCENE_PATTERN_KNOWLEDGE_FILE = os.getenv(
-    "LLMMUI_SCENE_PATTERN_KNOWLEDGE_FILE",
-    os.path.join(ROOT, "configs", "scene_pattern_knowledge.json"),
-)
-SCENE_CASE_KNOWLEDGE_FILE = os.getenv(
-    "LLMMUI_SCENE_CASE_KNOWLEDGE_FILE",
-    os.path.join(ROOT, "configs", "scene_case_knowledge.json"),
-)
-SCENE_SKILL_KNOWLEDGE_FILE = os.getenv(
-    "LLMMUI_SCENE_SKILL_KNOWLEDGE_FILE",
-    os.path.join(ROOT, "configs", "scene_skill_knowledge.json"),
-)
 SCENE_STRUCTURED_KNOWLEDGE_FILE = os.getenv(
     "LLMMUI_SCENE_STRUCTURED_KNOWLEDGE_FILE",
     os.path.join(ROOT, "configs", "scene_structured_knowledge.json"),
