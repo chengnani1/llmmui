@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Structured Scene Knowledge",
+  "type": "object",
+  "required": ["version", "knowledge"],
+  "properties": {
+    "version": {"type": "string"},
+    "knowledge": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "scene",
+          "refined_scene",
+          "permissions",
+          "allow_if",
+          "deny_if",
+          "boundary_if_missing",
+          "positive_evidence",
+          "negative_evidence",
+          "source_type"
+        ],
+        "properties": {
+          "id": {"type": "string"},
+          "scene": {"type": "string"},
+          "refined_scene": {"type": "string"},
+          "permissions": {
+            "type": "array",
+            "items": {"type": "string"},
+            "minItems": 1
+          },
+          "allow_if": {"type": "array", "items": {"type": "string"}},
+          "deny_if": {"type": "array", "items": {"type": "string"}},
+          "boundary_if_missing": {"type": "array", "items": {"type": "string"}},
+          "positive_evidence": {"type": "array", "items": {"type": "string"}},
+          "negative_evidence": {"type": "array", "items": {"type": "string"}},
+          "source_type": {"type": "string", "enum": ["prior", "pattern", "case"]},
+          "notes": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

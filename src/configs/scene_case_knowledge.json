@@ -4,127 +4,532 @@
       "scene": "file_recovery",
       "permission": "READ_EXTERNAL_STORAGE",
       "case_type": "compliant",
-      "evidence": ["文件恢复", "扫描本地文件", "恢复列表"],
+      "evidence": [
+        "文件恢复",
+        "扫描本地文件",
+        "恢复列表"
+      ],
       "reason": "Read access is generally aligned when the UI explicitly shows local file scan/recovery workflow."
     },
     {
       "scene": "file_recovery",
       "permission": "WRITE_EXTERNAL_STORAGE",
       "case_type": "compliant",
-      "evidence": ["恢复到本地", "选择恢复路径", "导出恢复文件"],
+      "evidence": [
+        "恢复到本地",
+        "选择恢复路径",
+        "导出恢复文件"
+      ],
       "reason": "Write access can be justified when recovered files are clearly written back to local storage."
     },
     {
       "scene": "file_recovery",
       "permission": "WRITE_EXTERNAL_STORAGE",
       "case_type": "risky",
-      "evidence": ["仅扫描", "仅预览", "无保存动作"],
+      "evidence": [
+        "仅扫描",
+        "仅预览",
+        "无保存动作"
+      ],
       "reason": "If no write-back or export behavior exists, WRITE permission tends to be over-scoped."
     },
     {
       "scene": "system_cleanup",
       "permission": "READ_EXTERNAL_STORAGE",
       "case_type": "compliant",
-      "evidence": ["垃圾扫描", "重复文件扫描", "大文件扫描"],
-      "reason": "Cleanup scan features often require read access when concrete scan targets are visible."
+      "evidence": [
+        "垃圾扫描",
+        "重复文件扫描",
+        "大文件扫描",
+        "提供后台运行稳定性设置入口，支持配置辅助服务权限、忽略电池优化及自动启动权限",
+        "提供系统服务权限配置与电池使用权限启用的说明与入口",
+        "提供一键WiFi连接与网络优化功能，支持手机清理与空间优化",
+        "提供手机垃圾清理结果展示与系统优化建议入口",
+        "完成应用后台稳定运行所需的系统权限配置",
+        "查看并配置系统服务权限以确保应用正常运行"
+      ],
+      "reason": "Cleanup scan features often require read access when concrete scan targets are visible. Derived from 5 FP errors in current run."
     },
     {
       "scene": "system_cleanup",
       "permission": "WRITE_EXTERNAL_STORAGE",
       "case_type": "compliant",
-      "evidence": ["一键清理", "删除垃圾", "清理完成"],
-      "reason": "Write/delete operations can justify WRITE permission in explicit cleanup execution pages."
+      "evidence": [
+        "一键清理",
+        "删除垃圾",
+        "清理完成",
+        "提供后台运行稳定性设置入口，支持配置辅助服务权限、忽略电池优化及自动启动权限",
+        "提供系统服务权限配置与电池使用权限启用的说明与入口",
+        "提供一键WiFi连接与网络优化功能，支持手机清理与空间优化",
+        "提供手机垃圾清理结果展示与系统优化建议入口",
+        "完成应用后台稳定运行所需的系统权限配置",
+        "查看并配置系统服务权限以确保应用正常运行"
+      ],
+      "reason": "Write/delete operations can justify WRITE permission in explicit cleanup execution pages. Derived from 5 FP errors in current run."
     },
     {
       "scene": "system_cleanup",
       "permission": "READ_EXTERNAL_STORAGE",
       "case_type": "risky",
-      "evidence": ["释放空间宣传", "无扫描入口", "仅推荐页"],
-      "reason": "Storage permissions are often over-scoped in cleanup-themed pages without concrete scan actions."
+      "evidence": [
+        "释放空间宣传",
+        "无扫描入口",
+        "仅推荐页",
+        "提供手机存储空间清理与垃圾文件管理功能",
+        "提供手机存储空间清理与软件管理功能",
+        "提供手机垃圾文件清理与存储空间释放功能",
+        "提供设备存储空间清理入口",
+        "执行手机深度清理以释放存储空间",
+        "执行手机存储空间清理操作",
+        "执行深度清理以释放手机存储空间",
+        "执行设备存储空间清理操作"
+      ],
+      "reason": "Storage permissions are often over-scoped in cleanup-themed pages without concrete scan actions. Derived from 57 FN errors in current run. Derived from 55 FN errors in current run. Derived from 58 FN errors in current run. Derived from 53 FN errors in current run."
     },
     {
       "scene": "album_selection",
       "permission": "READ_EXTERNAL_STORAGE",
       "case_type": "compliant",
-      "evidence": ["相册", "选择图片", "本地媒体选择"],
+      "evidence": [
+        "相册",
+        "选择图片",
+        "本地媒体选择"
+      ],
       "reason": "READ permission is expected for explicit local media picking/upload."
     },
     {
       "scene": "album_selection",
       "permission": "WRITE_EXTERNAL_STORAGE",
       "case_type": "risky",
-      "evidence": ["仅选择上传", "无保存按钮", "无导出动作"],
+      "evidence": [
+        "仅选择上传",
+        "无保存按钮",
+        "无导出动作"
+      ],
       "reason": "Album selection alone usually does not justify WRITE permission without local save/export behavior."
     },
     {
       "scene": "media_upload",
       "permission": "READ_EXTERNAL_STORAGE",
       "case_type": "compliant",
-      "evidence": ["发送图片", "发送视频", "选择附件"],
+      "evidence": [
+        "发送图片",
+        "发送视频",
+        "选择附件"
+      ],
       "reason": "Local media/file selection for upload commonly supports READ permission."
     },
     {
       "scene": "media_upload",
       "permission": "WRITE_EXTERNAL_STORAGE",
       "case_type": "risky",
-      "evidence": ["仅上传", "仅发布", "无本地保存"],
+      "evidence": [
+        "仅上传",
+        "仅发布",
+        "无本地保存"
+      ],
       "reason": "Upload-only flows frequently over-request WRITE permission if no local save/export exists."
     },
     {
       "scene": "content_browsing",
       "permission": "READ_EXTERNAL_STORAGE",
       "case_type": "risky",
-      "evidence": ["首页推荐", "资讯浏览", "搜索列表"],
+      "evidence": [
+        "首页推荐",
+        "资讯浏览",
+        "搜索列表"
+      ],
       "reason": "Storage read is often over-scoped in pure browsing contexts lacking local import/upload intent."
     },
     {
       "scene": "content_browsing",
       "permission": "WRITE_EXTERNAL_STORAGE",
       "case_type": "risky",
-      "evidence": ["内容浏览", "无下载入口", "无导出操作"],
+      "evidence": [
+        "内容浏览",
+        "无下载入口",
+        "无导出操作"
+      ],
       "reason": "WRITE permission is typically unnecessary when the page only supports browsing."
     },
     {
       "scene": "map_navigation",
       "permission": "ACCESS_FINE_LOCATION",
       "case_type": "compliant",
-      "evidence": ["导航", "路线规划", "当前位置", "附近"],
+      "evidence": [
+        "导航",
+        "路线规划",
+        "当前位置",
+        "附近"
+      ],
       "reason": "Fine location is commonly justified in explicit turn-by-turn/nearby navigation tasks."
     },
     {
       "scene": "map_navigation",
       "permission": "ACCESS_FINE_LOCATION",
       "case_type": "risky",
-      "evidence": ["无定位入口", "仅地图浏览", "静态展示"],
-      "reason": "Without a strong location task, fine location requests tend to be over-scoped."
+      "evidence": [
+        "无定位入口",
+        "仅地图浏览",
+        "静态展示",
+        "提供5A景区列表浏览与位置导航功能",
+        "提供地图上设置应用位置锁定与位置保护功能",
+        "提供对特定地理位置的锁定保护设置功能",
+        "提供景区列表浏览与位置搜索功能",
+        "查找并查看北京奥林匹克公园及其周边景点信息",
+        "在地图上设置应用的位置保护并锁定特定地理坐标",
+        "提供基于地理位置的景区导航与搜索功能",
+        "提供地图上设置应用位置锁定保护的功能入口"
+      ],
+      "reason": "Without a strong location task, fine location requests tend to be over-scoped. Derived from 8 FN errors in current run. Derived from 9 FN errors in current run. Derived from 10 FN errors in current run. Derived from 7 FN errors in current run."
     },
     {
       "scene": "map_navigation",
       "permission": "ACCESS_COARSE_LOCATION",
       "case_type": "compliant",
-      "evidence": ["同城", "附近商家", "城市切换", "附近服务"],
+      "evidence": [
+        "同城",
+        "附近商家",
+        "城市切换",
+        "附近服务"
+      ],
       "reason": "Coarse location can be reasonable for city/nearby recommendation features."
     },
     {
       "scene": "wifi_scan_or_nearby_devices",
       "permission": "ACCESS_FINE_LOCATION",
       "case_type": "compliant",
-      "evidence": ["WiFi扫描", "发现设备", "附近设备"],
+      "evidence": [
+        "WiFi扫描",
+        "发现设备",
+        "附近设备"
+      ],
       "reason": "Nearby device/WiFi discovery can legitimately require location permission in Android ecosystems."
     },
     {
       "scene": "wifi_scan_or_nearby_devices",
       "permission": "ACCESS_COARSE_LOCATION",
       "case_type": "compliant",
-      "evidence": ["附近设备列表", "扫描热点", "连接设备"],
+      "evidence": [
+        "附近设备列表",
+        "扫描热点",
+        "连接设备"
+      ],
       "reason": "Coarse location can be justified if discovery behavior is explicit on the page."
+    },
+    {
+      "scene": "nearby_service_or_wifi_scan",
+      "permission": "ACCESS_FINE_LOCATION",
+      "case_type": "risky",
+      "evidence": [
+        "网络测速",
+        "网速测试",
+        "信号检测",
+        "网络状态",
+        "无附近设备入口",
+        "提供附近免费WiFi发现与一键加速功能",
+        "提供WiFi连接管理与优化功能，包括发现附近WiFi、网络测速、安全监测和一键加速",
+        "提供附近免费WiFi的搜索与连接入口，支持网络测速与延时优化功能",
+        "提供一键加速WiFi与网络清理功能，支持查看附近可连接的免费WiFi列表",
+        "查看并连接附近可用的免费WiFi",
+        "使用WiFi连接管家进行网络加速与附近WiFi发现"
+      ],
+      "reason": "Location is often over-scoped on WiFi pages focused on network test/status without nearby discovery behavior. Derived from 8 FN errors in current run."
+    },
+    {
+      "scene": "system_cleanup",
+      "permission": "READ_PHONE_STATE",
+      "case_type": "risky",
+      "evidence": [
+        "垃圾清理",
+        "缓存清理",
+        "存储清理",
+        "应用卸载",
+        "无通话或SIM任务",
+        "提供深度清理与应用空间释放功能",
+        "提供垃圾清理与存储空间释放功能",
+        "提供深度清理和应用空间释放功能入口",
+        "提供垃圾清理与深度清理入口，支持释放存储空间和优化手机性能",
+        "执行设备深度清理以释放存储空间",
+        "执行设备内存清理操作",
+        "提供设备存储空间清理功能，包括垃圾文件、重复文件及自启软件的管理与清理",
+        "提供清理垃圾文件、重复文件及自启软件管理功能",
+        "提供自启软件管理与设备存储空间清理功能",
+        "执行设备存储空间清理操作",
+        "提供设备存储空间清理入口，支持大文件、重复文件、自启软件等分类清理"
+      ],
+      "reason": "Phone-state permission is typically unnecessary in cleanup workflows without telecom-related task evidence. Derived from 11 FN errors in current run. Derived from 9 FN errors in current run. Derived from 12 FN errors in current run. Derived from 8 FN errors in current run."
+    },
+    {
+      "scene": "system_cleanup",
+      "permission": "READ_PHONE_NUMBERS",
+      "case_type": "risky",
+      "evidence": [
+        "垃圾清理",
+        "缓存清理",
+        "存储清理",
+        "应用卸载",
+        "无号码输入或校验任务",
+        "提供深度清理与应用空间释放功能",
+        "提供垃圾清理与存储空间释放功能",
+        "提供深度清理和应用空间释放功能入口",
+        "提供垃圾清理与深度清理入口，支持释放存储空间和优化手机性能",
+        "执行设备深度清理以释放存储空间",
+        "执行设备内存清理操作",
+        "提供设备存储空间清理功能，包括垃圾文件、重复文件及自启软件的管理与清理",
+        "提供清理垃圾文件、重复文件及自启软件管理功能",
+        "提供自启软件管理与设备存储空间清理功能",
+        "执行设备存储空间清理操作",
+        "提供设备存储空间清理入口，支持大文件、重复文件、自启软件等分类清理"
+      ],
+      "reason": "Phone-number permission is typically unnecessary in cleanup workflows without explicit number-related task. Derived from 11 FN errors in current run. Derived from 9 FN errors in current run. Derived from 12 FN errors in current run. Derived from 8 FN errors in current run."
+    },
+    {
+      "scene": "customer_support",
+      "permission": "READ_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": [
+        "问题反馈",
+        "意见反馈",
+        "上传截图",
+        "上传附件",
+        "提交反馈",
+        "提供意见反馈提交入口，支持选择问题类型、填写标题与内容并提交",
+        "提供意见反馈填写与提交入口",
+        "提供问题反馈填写与提交入口",
+        "提供客服咨询入口并支持用户输入咨询内容或订单号",
+        "提交关于应用使用中的问题或建议",
+        "填写并提交问题反馈"
+      ],
+      "reason": "Read storage is commonly justified in feedback pages with explicit screenshot/attachment upload. Derived from 6 FP errors in current run."
+    },
+    {
+      "scene": "customer_support",
+      "permission": "WRITE_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": [
+        "问题反馈",
+        "意见反馈",
+        "上传截图",
+        "上传附件",
+        "提交反馈",
+        "提供意见反馈提交入口，支持选择问题类型、填写标题与内容并提交",
+        "提供意见反馈填写与提交入口",
+        "提供问题反馈填写与提交入口",
+        "提供客服咨询入口并支持用户输入咨询内容或订单号",
+        "提交关于应用使用中的问题或建议",
+        "填写并提交问题反馈"
+      ],
+      "reason": "Write storage can be acceptable in feedback submission flows with explicit attachment handling. Derived from 6 FP errors in current run."
     },
     {
       "scene": "content_browsing",
       "permission": "ACCESS_FINE_LOCATION",
       "case_type": "risky",
-      "evidence": ["资讯阅读", "推荐流", "无同城或附近模块"],
+      "evidence": [
+        "资讯阅读",
+        "推荐流",
+        "无同城或附近模块"
+      ],
       "reason": "Location is often over-scoped in generic browsing flows without nearby/local intent cues."
+    },
+    {
+      "scene": "system_cleanup",
+      "permission": "WRITE_EXTERNAL_STORAGE",
+      "case_type": "risky",
+      "evidence": [
+        "提供手机存储空间清理与垃圾文件管理功能",
+        "提供手机存储空间清理与软件管理功能",
+        "提供手机垃圾文件清理与存储空间释放功能",
+        "提供设备存储空间清理入口",
+        "执行手机深度清理以释放存储空间",
+        "执行手机存储空间清理操作",
+        "执行深度清理以释放手机存储空间",
+        "执行设备存储空间清理操作"
+      ],
+      "reason": "Derived from 57 FN errors in current run. Derived from 55 FN errors in current run. Derived from 58 FN errors in current run. Derived from 53 FN errors in current run."
+    },
+    {
+      "scene": "map_navigation",
+      "permission": "ACCESS_COARSE_LOCATION",
+      "case_type": "risky",
+      "evidence": [
+        "提供5A景区列表浏览与位置导航功能",
+        "提供地图上设置应用位置锁定与位置保护功能",
+        "提供对特定地理位置的锁定保护设置功能",
+        "提供景区列表浏览与位置搜索功能",
+        "查找并查看北京奥林匹克公园及其周边景点信息",
+        "在地图上设置应用的位置保护并锁定特定地理坐标",
+        "提供基于地理位置的景区导航与搜索功能",
+        "提供地图上设置应用位置锁定保护的功能入口"
+      ],
+      "reason": "Derived from 8 FN errors in current run. Derived from 9 FN errors in current run. Derived from 10 FN errors in current run. Derived from 7 FN errors in current run."
+    },
+    {
+      "scene": "map_navigation",
+      "permission": "READ_PHONE_NUMBERS",
+      "case_type": "risky",
+      "evidence": [
+        "提供5A景区列表浏览与位置导航功能",
+        "提供地图上设置应用位置锁定与位置保护功能",
+        "提供对特定地理位置的锁定保护设置功能",
+        "提供景区列表浏览与位置搜索功能",
+        "查找并查看北京奥林匹克公园及其周边景点信息",
+        "在地图上设置应用的位置保护并锁定特定地理坐标",
+        "提供基于地理位置的景区导航与搜索功能",
+        "提供地图上设置应用位置锁定保护的功能入口"
+      ],
+      "reason": "Derived from 8 FN errors in current run. Derived from 9 FN errors in current run. Derived from 10 FN errors in current run. Derived from 7 FN errors in current run."
+    },
+    {
+      "scene": "map_navigation",
+      "permission": "READ_PHONE_STATE",
+      "case_type": "risky",
+      "evidence": [
+        "提供5A景区列表浏览与位置导航功能",
+        "提供地图上设置应用位置锁定与位置保护功能",
+        "提供对特定地理位置的锁定保护设置功能",
+        "提供景区列表浏览与位置搜索功能",
+        "查找并查看北京奥林匹克公园及其周边景点信息",
+        "在地图上设置应用的位置保护并锁定特定地理坐标",
+        "提供基于地理位置的景区导航与搜索功能",
+        "提供地图上设置应用位置锁定保护的功能入口"
+      ],
+      "reason": "Derived from 8 FN errors in current run. Derived from 9 FN errors in current run. Derived from 10 FN errors in current run. Derived from 7 FN errors in current run."
+    },
+    {
+      "scene": "nearby_service_or_wifi_scan",
+      "permission": "ACCESS_COARSE_LOCATION",
+      "case_type": "risky",
+      "evidence": [
+        "提供附近免费WiFi发现与一键加速功能",
+        "提供WiFi连接管理与优化功能，包括发现附近WiFi、网络测速、安全监测和一键加速",
+        "提供附近免费WiFi的搜索与连接入口，支持网络测速与延时优化功能",
+        "提供一键加速WiFi与网络清理功能，支持查看附近可连接的免费WiFi列表",
+        "查看并连接附近可用的免费WiFi",
+        "使用WiFi连接管家进行网络加速与附近WiFi发现"
+      ],
+      "reason": "Derived from 8 FN errors in current run."
+    },
+    {
+      "scene": "map_navigation",
+      "permission": "READ_EXTERNAL_STORAGE",
+      "case_type": "risky",
+      "evidence": [
+        "提供5A景区列表浏览与位置导航功能",
+        "提供对特定地理位置的锁定保护设置功能",
+        "提供景区列表浏览与位置搜索功能",
+        "提供地图上设置应用位置锁定保护的功能入口",
+        "查找并查看北京奥林匹克公园及其周边景点信息",
+        "设置故宫博物院内中和殿位置的保护策略",
+        "提供基于地理位置的景区导航与搜索功能",
+        "提供城市地标搜索与位置导航入口",
+        "提供地图上设置位置锁定保护的功能入口",
+        "查找并定位特定景区位置"
+      ],
+      "reason": "Derived from 7 FN errors in current run. Derived from 8 FN errors in current run. Derived from 9 FN errors in current run. Derived from 6 FN errors in current run."
+    },
+    {
+      "scene": "map_navigation",
+      "permission": "WRITE_EXTERNAL_STORAGE",
+      "case_type": "risky",
+      "evidence": [
+        "提供5A景区列表浏览与位置导航功能",
+        "提供对特定地理位置的锁定保护设置功能",
+        "提供景区列表浏览与位置搜索功能",
+        "提供地图上设置应用位置锁定保护的功能入口",
+        "查找并查看北京奥林匹克公园及其周边景点信息",
+        "设置故宫博物院内中和殿位置的保护策略",
+        "提供基于地理位置的景区导航与搜索功能",
+        "提供城市地标搜索与位置导航入口",
+        "提供地图上设置位置锁定保护的功能入口",
+        "查找并定位特定景区位置"
+      ],
+      "reason": "Derived from 7 FN errors in current run. Derived from 8 FN errors in current run. Derived from 9 FN errors in current run. Derived from 6 FN errors in current run."
+    },
+    {
+      "scene": "social_chat_or_share",
+      "permission": "READ_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": [
+        "提供个人空间信息展示与社交链接分享入口",
+        "提供直播中内容的扫码收听入口和社交平台分享功能",
+        "提供生成分享图并分享至多个社交平台的入口",
+        "提供社交动态查看与回复入口",
+        "查看并分享个人在酷我聚星的社交空间",
+        "通过扫码收听当前直播内容并分享给社交好友"
+      ],
+      "reason": "Derived from 6 FP errors in current run. Derived from 5 FP errors in current run."
+    },
+    {
+      "scene": "social_chat_or_share",
+      "permission": "WRITE_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": [
+        "提供个人空间信息展示与社交链接分享入口",
+        "提供直播中内容的扫码收听入口和社交平台分享功能",
+        "提供生成分享图并分享至多个社交平台的入口",
+        "提供社交动态查看与回复入口",
+        "查看并分享个人在酷我聚星的社交空间",
+        "通过扫码收听当前直播内容并分享给社交好友"
+      ],
+      "reason": "Derived from 6 FP errors in current run. Derived from 5 FP errors in current run."
+    },
+    {
+      "scene": "content_browsing",
+      "permission": "READ_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": [
+        "提供基于图片搜索、扫一扫及文件管理的入口",
+        "提供演讲内容浏览与用户留言互动功能",
+        "提供儿童趣味手工课程学习入口",
+        "提供长按识别二维码以获取文本内容的入口",
+        "使用图片搜索或扫一扫功能查找内容",
+        "查看并参与演讲内容的讨论与分享"
+      ],
+      "reason": "Derived from 5 FP errors in current run."
+    },
+    {
+      "scene": "content_browsing",
+      "permission": "WRITE_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": [
+        "提供基于图片搜索、扫一扫及文件管理的入口",
+        "提供演讲内容浏览与用户留言互动功能",
+        "提供儿童趣味手工课程学习入口",
+        "提供长按识别二维码以获取文本内容的入口",
+        "使用图片搜索或扫一扫功能查找内容",
+        "查看并参与演讲内容的讨论与分享"
+      ],
+      "reason": "Derived from 5 FP errors in current run."
+    },
+    {
+      "scene": "file_management",
+      "permission": "READ_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": [
+        "提供音频文件浏览与管理入口",
+        "提供文件保护与文档、图片、视频恢复入口",
+        "提供创建新文件夹的入口，支持对相册进行结构化管理",
+        "提供文件与位置双重保护的设置入口",
+        "查看并管理已保存的音频文件",
+        "进入文件保护或数据恢复功能以管理设备上的文件"
+      ],
+      "reason": "Derived from 5 FP errors in current run."
+    },
+    {
+      "scene": "file_management",
+      "permission": "WRITE_EXTERNAL_STORAGE",
+      "case_type": "compliant",
+      "evidence": [
+        "提供音频文件浏览与管理入口",
+        "提供文件保护与文档、图片、视频恢复入口",
+        "提供创建新文件夹的入口，支持对相册进行结构化管理",
+        "提供文件与位置双重保护的设置入口",
+        "查看并管理已保存的音频文件",
+        "进入文件保护或数据恢复功能以管理设备上的文件"
+      ],
+      "reason": "Derived from 5 FP errors in current run."
     }
   ]
 }

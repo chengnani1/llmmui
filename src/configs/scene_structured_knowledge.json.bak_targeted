@@ -1,0 +1,837 @@
+{
+  "version": "v1_structured_boundary",
+  "knowledge": [
+    {
+      "id": "K001",
+      "scene": "设备清理与系统优化",
+      "refined_scene": "system_cleanup",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "垃圾清理",
+        "缓存扫描",
+        "大文件扫描",
+        "重复文件扫描",
+        "扫描结果列表",
+        "提供后台运行稳定性设置入口，支持配置辅助服务权限、忽略电池优化及自动启动权限",
+        "完成应用后台稳定运行所需的系统权限配置",
+        "页面展示的是一个应用后台运行稳定性设置界面",
+        "核心内容为提示用户开启必要权限以避免应用被系统清理"
+      ],
+      "deny_if": [
+        "首页推荐",
+        "资讯浏览",
+        "聊天页面",
+        "隐私政策",
+        "微信专清",
+        "软件管理",
+        "页面展示的是手机清理工具的主界面",
+        "已清理107"
+      ],
+      "boundary_if_missing": [
+        "扫描对象",
+        "待清理项列表"
+      ],
+      "positive_evidence": [
+        "页面出现扫描类文案",
+        "存在清理对象分类",
+        "存在空间占用或扫描结果",
+        "提供后台运行稳定性设置入口，支持配置辅助服务权限、忽略电池优化及自动启动权限",
+        "完成应用后台稳定运行所需的系统权限配置",
+        "页面展示的是一个应用后台运行稳定性设置界面",
+        "核心内容为提示用户开启必要权限以避免应用被系统清理"
+      ],
+      "negative_evidence": [
+        "页面仅为内容浏览",
+        "无任何扫描对象或清理对象",
+        "微信专清",
+        "软件管理",
+        "页面展示的是手机清理工具的主界面",
+        "已清理107"
+      ],
+      "source_type": "prior"
+    },
+    {
+      "id": "K002",
+      "scene": "设备清理与系统优化",
+      "refined_scene": "system_cleanup",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "一键清理",
+        "删除垃圾",
+        "清理完成",
+        "删除重复文件",
+        "释放空间",
+        "提供后台运行稳定性设置入口，支持配置辅助服务权限、忽略电池优化及自动启动权限",
+        "完成应用后台稳定运行所需的系统权限配置",
+        "页面展示的是一个应用后台运行稳定性设置界面",
+        "核心内容为提示用户开启必要权限以避免应用被系统清理"
+      ],
+      "deny_if": [
+        "仅扫描未执行",
+        "仅展示建议",
+        "无删除入口",
+        "微信专清",
+        "软件管理",
+        "页面展示的是手机清理工具的主界面",
+        "已清理107"
+      ],
+      "boundary_if_missing": [
+        "删除或清理执行入口",
+        "清理结果变化"
+      ],
+      "positive_evidence": [
+        "页面出现执行清理按钮",
+        "清理后空间变化或结果反馈",
+        "提供后台运行稳定性设置入口，支持配置辅助服务权限、忽略电池优化及自动启动权限",
+        "完成应用后台稳定运行所需的系统权限配置",
+        "页面展示的是一个应用后台运行稳定性设置界面",
+        "核心内容为提示用户开启必要权限以避免应用被系统清理"
+      ],
+      "negative_evidence": [
+        "页面只有扫描结果无执行动作",
+        "页面仅为推荐或设置说明",
+        "微信专清",
+        "软件管理",
+        "页面展示的是手机清理工具的主界面",
+        "已清理107"
+      ],
+      "source_type": "pattern"
+    },
+    {
+      "id": "K003",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "本地导入",
+        "选择图片上传",
+        "选择本地文件",
+        "附件选择器",
+        "提供演讲内容浏览与用户留言互动功能",
+        "查看并参与演讲内容的讨论与分享",
+        "页面展示了一篇来自‘一席App’的演讲内容",
+        "标题为‘现代挤走了生活"
+      ],
+      "deny_if": [
+        "搜索结果浏览",
+        "资讯详情",
+        "视频播放",
+        "推荐流浏览"
+      ],
+      "boundary_if_missing": [
+        "本地文件选择入口"
+      ],
+      "positive_evidence": [
+        "明确出现本地文件或相册选择入口",
+        "提供演讲内容浏览与用户留言互动功能",
+        "查看并参与演讲内容的讨论与分享",
+        "页面展示了一篇来自‘一席App’的演讲内容",
+        "标题为‘现代挤走了生活"
+      ],
+      "negative_evidence": [
+        "页面仅用于搜索、阅读或播放",
+        "无本地文件读取动作"
+      ],
+      "source_type": "prior"
+    },
+    {
+      "id": "K004",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "保存到本地",
+        "下载文件",
+        "导出图片",
+        "缓存到相册",
+        "提供演讲内容浏览与用户留言互动功能",
+        "查看并参与演讲内容的讨论与分享",
+        "页面展示了一篇来自‘一席App’的演讲内容",
+        "标题为‘现代挤走了生活"
+      ],
+      "deny_if": [
+        "纯浏览",
+        "仅搜索阅读",
+        "无下载保存动作"
+      ],
+      "boundary_if_missing": [
+        "下载或保存入口"
+      ],
+      "positive_evidence": [
+        "页面可见下载、保存、导出操作",
+        "提供演讲内容浏览与用户留言互动功能",
+        "查看并参与演讲内容的讨论与分享",
+        "页面展示了一篇来自‘一席App’的演讲内容",
+        "标题为‘现代挤走了生活"
+      ],
+      "negative_evidence": [
+        "仅展示内容，没有落盘动作"
+      ],
+      "source_type": "pattern"
+    },
+    {
+      "id": "K005",
+      "scene": "社交互动与通信",
+      "refined_scene": "social_chat_or_share",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "发送图片",
+        "发送视频",
+        "选择附件",
+        "本地相册",
+        "分享文件",
+        "提供个人空间信息展示与社交链接分享入口",
+        "查看并分享个人在酷我聚星的社交空间",
+        "页面展示用户在酷我聚星平台的个人空间信息",
+        "包含用户ID"
+      ],
+      "deny_if": [
+        "纯文本聊天",
+        "联系人列表",
+        "动态浏览无上传"
+      ],
+      "boundary_if_missing": [
+        "媒体附件入口"
+      ],
+      "positive_evidence": [
+        "页面有媒体或文件附件入口",
+        "提供个人空间信息展示与社交链接分享入口",
+        "查看并分享个人在酷我聚星的社交空间",
+        "页面展示用户在酷我聚星平台的个人空间信息",
+        "包含用户ID"
+      ],
+      "negative_evidence": [
+        "仅文本输入和会话列表"
+      ],
+      "source_type": "case"
+    },
+    {
+      "id": "K006",
+      "scene": "社交互动与通信",
+      "refined_scene": "social_chat_or_share",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "保存到相册",
+        "保存分享图",
+        "下载聊天文件",
+        "提供个人空间信息展示与社交链接分享入口",
+        "查看并分享个人在酷我聚星的社交空间",
+        "页面展示用户在酷我聚星平台的个人空间信息",
+        "包含用户ID"
+      ],
+      "deny_if": [
+        "仅发送不落盘",
+        "纯聊天输入页",
+        "无保存下载入口"
+      ],
+      "boundary_if_missing": [
+        "保存或下载动作入口"
+      ],
+      "positive_evidence": [
+        "页面明确支持保存或下载",
+        "提供个人空间信息展示与社交链接分享入口",
+        "查看并分享个人在酷我聚星的社交空间",
+        "页面展示用户在酷我聚星平台的个人空间信息",
+        "包含用户ID"
+      ],
+      "negative_evidence": [
+        "页面仅支持发送与浏览"
+      ],
+      "source_type": "pattern"
+    },
+    {
+      "id": "K007",
+      "scene": "地图与位置服务",
+      "refined_scene": "map_navigation",
+      "permissions": [
+        "ACCESS_FINE_LOCATION"
+      ],
+      "allow_if": [
+        "导航",
+        "实时定位",
+        "附近",
+        "到这去",
+        "当前位置"
+      ],
+      "deny_if": [
+        "静态地图图文",
+        "隐私政策",
+        "非地图业务页"
+      ],
+      "boundary_if_missing": [
+        "定位触发入口",
+        "位置更新状态"
+      ],
+      "positive_evidence": [
+        "页面出现导航或实时定位任务"
+      ],
+      "negative_evidence": [
+        "仅展示地名文本，无定位行为"
+      ],
+      "source_type": "prior"
+    },
+    {
+      "id": "K008",
+      "scene": "地图与位置服务",
+      "refined_scene": "map_navigation",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "allow_if": [
+        "附近服务",
+        "同城推荐",
+        "区域定位",
+        "周边"
+      ],
+      "deny_if": [
+        "离线文档浏览",
+        "纯搜索页",
+        "账号或客服页面"
+      ],
+      "boundary_if_missing": [
+        "城市级或附近定位任务"
+      ],
+      "positive_evidence": [
+        "页面展示附近或同城定位需求"
+      ],
+      "negative_evidence": [
+        "页面与位置任务无关"
+      ],
+      "source_type": "case"
+    },
+    {
+      "id": "K009",
+      "scene": "图像视频拍摄与扫码",
+      "refined_scene": "media_capture_or_recording",
+      "permissions": [
+        "CAMERA"
+      ],
+      "allow_if": [
+        "拍摄照片",
+        "录制视频",
+        "扫码",
+        "相机预览",
+        "拍照"
+      ],
+      "deny_if": [
+        "纯音频录制",
+        "歌词浏览",
+        "仅播放页面"
+      ],
+      "boundary_if_missing": [
+        "相机采集入口"
+      ],
+      "positive_evidence": [
+        "页面明确出现拍照、录像或扫码入口"
+      ],
+      "negative_evidence": [
+        "页面无任何相机采集动作"
+      ],
+      "source_type": "prior"
+    },
+    {
+      "id": "K010",
+      "scene": "音频录制与创作",
+      "refined_scene": "media_capture_or_recording",
+      "permissions": [
+        "RECORD_AUDIO"
+      ],
+      "allow_if": [
+        "开始录音",
+        "录制中",
+        "清唱",
+        "配音",
+        "麦克风"
+      ],
+      "deny_if": [
+        "纯相册上传",
+        "纯图片浏览",
+        "仅视频播放"
+      ],
+      "boundary_if_missing": [
+        "录音入口或录制状态"
+      ],
+      "positive_evidence": [
+        "页面出现录音入口或录制状态"
+      ],
+      "negative_evidence": [
+        "页面只有浏览/播放无录音行为"
+      ],
+      "source_type": "pattern"
+    },
+    {
+      "id": "AUTO_011",
+      "scene": "网络连接与设备管理",
+      "refined_scene": "nearby_service_or_wifi_scan",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "allow_if": [
+        "业务入口明确"
+      ],
+      "deny_if": [
+        "业务证据不足",
+        "但未获取到WiFi名称",
+        "页面展示当前已连接的WiFi网络状态",
+        "包括XJTUEIE5G",
+        "安全测试"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本",
+        "但未获取到WiFi名称",
+        "页面展示当前已连接的WiFi网络状态",
+        "包括XJTUEIE5G",
+        "安全测试"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_012",
+      "scene": "网络连接与设备管理",
+      "refined_scene": "nearby_service_or_wifi_scan",
+      "permissions": [
+        "ACCESS_FINE_LOCATION"
+      ],
+      "allow_if": [
+        "业务入口明确"
+      ],
+      "deny_if": [
+        "业务证据不足",
+        "但未获取到WiFi名称",
+        "页面展示当前已连接的WiFi网络状态",
+        "包括XJTUEIE5G",
+        "安全测试"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本",
+        "但未获取到WiFi名称",
+        "页面展示当前已连接的WiFi网络状态",
+        "包括XJTUEIE5G",
+        "安全测试"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_013",
+      "scene": "用户反馈与客服",
+      "refined_scene": "customer_support",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "页面为用户反馈提交界面",
+        "包含反馈标题",
+        "支持最多上传三张图片",
+        "包含问题类型选择"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "页面为用户反馈提交界面",
+        "包含反馈标题",
+        "支持最多上传三张图片",
+        "包含问题类型选择"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_014",
+      "scene": "用户反馈与客服",
+      "refined_scene": "customer_support",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "页面为用户反馈提交界面",
+        "包含反馈标题",
+        "支持最多上传三张图片",
+        "包含问题类型选择"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "页面为用户反馈提交界面",
+        "包含反馈标题",
+        "支持最多上传三张图片",
+        "包含问题类型选择"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_015",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "包含‘搜全国 您想要的全都有’的搜索入口和‘同城’分类标签",
+        "查看同城商品信息并发布新内容",
+        "页面当前显示‘暂时没有数据’",
+        "提供同城商品与服务的搜索与浏览入口"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "包含‘搜全国 您想要的全都有’的搜索入口和‘同城’分类标签",
+        "查看同城商品信息并发布新内容",
+        "页面当前显示‘暂时没有数据’",
+        "提供同城商品与服务的搜索与浏览入口"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_016",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "ACCESS_FINE_LOCATION"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "包含‘搜全国 您想要的全都有’的搜索入口和‘同城’分类标签",
+        "查看同城商品信息并发布新内容",
+        "页面当前显示‘暂时没有数据’",
+        "提供同城商品与服务的搜索与浏览入口"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "包含‘搜全国 您想要的全都有’的搜索入口和‘同城’分类标签",
+        "查看同城商品信息并发布新内容",
+        "页面当前显示‘暂时没有数据’",
+        "提供同城商品与服务的搜索与浏览入口"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_017",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "RECORD_AUDIO"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "提供文本搜索与网址输入入口",
+        "输入关键词或网址进行搜索",
+        "页面显示一个搜索输入框",
+        "上方有提示文字‘简单搜索将使用您的麦克风’"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "提供文本搜索与网址输入入口",
+        "输入关键词或网址进行搜索",
+        "页面显示一个搜索输入框",
+        "上方有提示文字‘简单搜索将使用您的麦克风’"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_018",
+      "scene": "文件与数据管理",
+      "refined_scene": "file_management",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "提供已录制音频文件的浏览与管理入口",
+        "查看并管理已保存的录音文件",
+        "页面为录音机应用的文件管理界面",
+        "展示多个已录制音频文件的列表"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "提供已录制音频文件的浏览与管理入口",
+        "查看并管理已保存的录音文件",
+        "页面为录音机应用的文件管理界面",
+        "展示多个已录制音频文件的列表"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_019",
+      "scene": "文件与数据管理",
+      "refined_scene": "file_management",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "提供已录制音频文件的浏览与管理入口",
+        "查看并管理已保存的录音文件",
+        "页面为录音机应用的文件管理界面",
+        "展示多个已录制音频文件的列表"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "提供已录制音频文件的浏览与管理入口",
+        "查看并管理已保存的录音文件",
+        "页面为录音机应用的文件管理界面",
+        "展示多个已录制音频文件的列表"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_020",
+      "scene": "图像视频拍摄与扫码",
+      "refined_scene": "media_capture_or_recording",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "发射速度",
+        "文本大小",
+        "提供歌曲演唱与作品分享入口",
+        "发布已演唱的《断情泪》作品并分享至社交平台"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "发射速度",
+        "文本大小",
+        "提供歌曲演唱与作品分享入口",
+        "发布已演唱的《断情泪》作品并分享至社交平台"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_021",
+      "scene": "图像视频拍摄与扫码",
+      "refined_scene": "media_capture_or_recording",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "发射速度",
+        "文本大小",
+        "提供歌曲演唱与作品分享入口",
+        "发布已演唱的《断情泪》作品并分享至社交平台"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "发射速度",
+        "文本大小",
+        "提供歌曲演唱与作品分享入口",
+        "发布已演唱的《断情泪》作品并分享至社交平台"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_022",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "CAMERA"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "提供音乐内容发现与社交互动入口",
+        "查看推荐音乐内容并参与社交互动",
+        "页面显示为音乐社交类应用的主界面",
+        "顶部有‘发现’‘关注’等导航标签"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "提供音乐内容发现与社交互动入口",
+        "查看推荐音乐内容并参与社交互动",
+        "页面显示为音乐社交类应用的主界面",
+        "顶部有‘发现’‘关注’等导航标签"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_023",
+      "scene": "相册选择与媒体上传",
+      "refined_scene": "album_selection",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "提供相册中已保存照片和视频的浏览与查看入口",
+        "查看爱聊中已保存的照片和视频内容",
+        "页面显示为爱聊应用内的相册功能界面",
+        "包含照片和视频的列表展示"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "提供相册中已保存照片和视频的浏览与查看入口",
+        "查看爱聊中已保存的照片和视频内容",
+        "页面显示为爱聊应用内的相册功能界面",
+        "包含照片和视频的列表展示"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_024",
+      "scene": "相册选择与媒体上传",
+      "refined_scene": "album_selection",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "提供相册中已保存照片和视频的浏览与查看入口",
+        "查看爱聊中已保存的照片和视频内容",
+        "页面显示为爱聊应用内的相册功能界面",
+        "包含照片和视频的列表展示"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "提供相册中已保存照片和视频的浏览与查看入口",
+        "查看爱聊中已保存的照片和视频内容",
+        "页面显示为爱聊应用内的相册功能界面",
+        "包含照片和视频的列表展示"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    }
+  ]
+}

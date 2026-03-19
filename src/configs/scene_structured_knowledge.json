@@ -1,0 +1,1738 @@
+{
+  "version": "v1_structured_boundary",
+  "knowledge": [
+    {
+      "id": "K001",
+      "scene": "设备清理与系统优化",
+      "refined_scene": "system_cleanup",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "扫描结果列表",
+        "待清理项列表",
+        "缓存扫描结果",
+        "大文件扫描结果",
+        "重复文件扫描结果"
+      ],
+      "deny_if": [
+        "首页推荐",
+        "资讯浏览",
+        "聊天页面",
+        "隐私政策",
+        "微信专清",
+        "软件管理",
+        "立即卸载",
+        "深度清理",
+        "清理1G空间"
+      ],
+      "boundary_if_missing": [
+        "扫描结果列表",
+        "待清理项列表",
+        "可清理文件明细"
+      ],
+      "positive_evidence": [
+        "页面出现扫描结果列表",
+        "存在待清理项分类",
+        "存在可清理文件明细"
+      ],
+      "negative_evidence": [
+        "页面仅为清理入口聚合",
+        "页面核心为软件管理/卸载",
+        "无待清理文件明细"
+      ],
+      "source_type": "prior"
+    },
+    {
+      "id": "K002",
+      "scene": "设备清理与系统优化",
+      "refined_scene": "system_cleanup",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "删除选中文件",
+        "一键清理执行",
+        "清理完成反馈",
+        "删除结果变化"
+      ],
+      "deny_if": [
+        "仅扫描未执行",
+        "仅展示建议",
+        "无删除入口",
+        "微信专清",
+        "软件管理",
+        "立即卸载",
+        "深度清理",
+        "清理1G空间"
+      ],
+      "boundary_if_missing": [
+        "删除执行入口",
+        "清理结果变化",
+        "可删除文件明细"
+      ],
+      "positive_evidence": [
+        "页面出现删除执行入口",
+        "清理后空间变化",
+        "存在可删除文件条目"
+      ],
+      "negative_evidence": [
+        "页面仅为清理入口说明",
+        "页面核心为软件卸载或管理",
+        "无清理执行结果"
+      ],
+      "source_type": "pattern"
+    },
+    {
+      "id": "K003",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "本地导入",
+        "选择图片上传",
+        "选择本地文件",
+        "附件选择器",
+        "导入文件",
+        "从相册选择"
+      ],
+      "deny_if": [
+        "搜索结果浏览",
+        "资讯详情",
+        "视频播放",
+        "推荐流浏览",
+        "纯文本浏览"
+      ],
+      "boundary_if_missing": [
+        "本地导入",
+        "选择本地文件"
+      ],
+      "positive_evidence": [
+        "明确出现本地文件或相册选择入口",
+        "出现导入或上传文件动作"
+      ],
+      "negative_evidence": [
+        "页面仅搜索阅读播放无本地文件读取动作"
+      ],
+      "source_type": "prior"
+    },
+    {
+      "id": "K004",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "保存到本地",
+        "下载文件",
+        "导出图片",
+        "缓存到相册",
+        "提供演讲内容浏览与用户留言互动功能",
+        "查看并参与演讲内容的讨论与分享",
+        "页面展示了一篇来自‘一席App’的演讲内容",
+        "标题为‘现代挤走了生活"
+      ],
+      "deny_if": [
+        "纯浏览",
+        "仅搜索阅读",
+        "无下载保存动作"
+      ],
+      "boundary_if_missing": [
+        "下载或保存入口"
+      ],
+      "positive_evidence": [
+        "页面可见下载、保存、导出操作",
+        "提供演讲内容浏览与用户留言互动功能",
+        "查看并参与演讲内容的讨论与分享",
+        "页面展示了一篇来自‘一席App’的演讲内容",
+        "标题为‘现代挤走了生活"
+      ],
+      "negative_evidence": [
+        "仅展示内容，没有落盘动作"
+      ],
+      "source_type": "pattern"
+    },
+    {
+      "id": "K005",
+      "scene": "社交互动与通信",
+      "refined_scene": "social_chat_or_share",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "发送图片",
+        "发送视频",
+        "选择附件",
+        "本地相册",
+        "分享文件",
+        "分享"
+      ],
+      "deny_if": [
+        "系统清理",
+        "垃圾清理",
+        "文件删除",
+        "隐私声明",
+        "纯文本浏览"
+      ],
+      "boundary_if_missing": [
+        "分享",
+        "发送图片",
+        "本地相册"
+      ],
+      "positive_evidence": [
+        "页面存在分享/附件相关入口",
+        "页面存在图片或视频发送动作"
+      ],
+      "negative_evidence": [
+        "页面仅动态浏览无分享入口",
+        "页面为隐私政策展示"
+      ],
+      "source_type": "case"
+    },
+    {
+      "id": "K006",
+      "scene": "社交互动与通信",
+      "refined_scene": "social_chat_or_share",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "保存到相册",
+        "保存分享图",
+        "下载聊天文件",
+        "分享",
+        "发送图片",
+        "发布并保存"
+      ],
+      "deny_if": [
+        "系统清理",
+        "垃圾清理",
+        "文件删除",
+        "隐私声明",
+        "纯文本浏览"
+      ],
+      "boundary_if_missing": [
+        "分享",
+        "保存到相册",
+        "下载"
+      ],
+      "positive_evidence": [
+        "页面存在分享发布或保存下载入口",
+        "页面存在文件写入或保存动作"
+      ],
+      "negative_evidence": [
+        "页面仅动态浏览无保存下载入口",
+        "页面为隐私政策展示"
+      ],
+      "source_type": "pattern"
+    },
+    {
+      "id": "K007",
+      "scene": "地图与位置服务",
+      "refined_scene": "map_navigation",
+      "permissions": [
+        "ACCESS_FINE_LOCATION"
+      ],
+      "allow_if": [
+        "导航",
+        "实时定位",
+        "附近",
+        "到这去",
+        "当前位置"
+      ],
+      "deny_if": [
+        "静态地图图文",
+        "隐私政策",
+        "非地图业务页"
+      ],
+      "boundary_if_missing": [
+        "定位触发入口",
+        "位置更新状态"
+      ],
+      "positive_evidence": [
+        "页面出现导航或实时定位任务"
+      ],
+      "negative_evidence": [
+        "仅展示地名文本，无定位行为"
+      ],
+      "source_type": "prior"
+    },
+    {
+      "id": "K008",
+      "scene": "地图与位置服务",
+      "refined_scene": "map_navigation",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "allow_if": [
+        "附近服务",
+        "同城推荐",
+        "区域定位",
+        "周边"
+      ],
+      "deny_if": [
+        "离线文档浏览",
+        "纯搜索页",
+        "账号或客服页面"
+      ],
+      "boundary_if_missing": [
+        "城市级或附近定位任务"
+      ],
+      "positive_evidence": [
+        "页面展示附近或同城定位需求"
+      ],
+      "negative_evidence": [
+        "页面与位置任务无关"
+      ],
+      "source_type": "case"
+    },
+    {
+      "id": "K009",
+      "scene": "图像视频拍摄与扫码",
+      "refined_scene": "media_capture_or_recording",
+      "permissions": [
+        "CAMERA"
+      ],
+      "allow_if": [
+        "拍摄照片",
+        "录制视频",
+        "扫码",
+        "相机预览",
+        "拍照"
+      ],
+      "deny_if": [
+        "纯音频录制",
+        "歌词浏览",
+        "仅播放页面"
+      ],
+      "boundary_if_missing": [
+        "相机采集入口"
+      ],
+      "positive_evidence": [
+        "页面明确出现拍照、录像或扫码入口"
+      ],
+      "negative_evidence": [
+        "页面无任何相机采集动作"
+      ],
+      "source_type": "prior"
+    },
+    {
+      "id": "K010",
+      "scene": "音频录制与创作",
+      "refined_scene": "media_capture_or_recording",
+      "permissions": [
+        "RECORD_AUDIO"
+      ],
+      "allow_if": [
+        "开始录音",
+        "录制中",
+        "清唱",
+        "配音",
+        "麦克风"
+      ],
+      "deny_if": [
+        "纯相册上传",
+        "纯图片浏览",
+        "仅视频播放"
+      ],
+      "boundary_if_missing": [
+        "录音入口或录制状态"
+      ],
+      "positive_evidence": [
+        "页面出现录音入口或录制状态"
+      ],
+      "negative_evidence": [
+        "页面只有浏览/播放无录音行为"
+      ],
+      "source_type": "pattern"
+    },
+    {
+      "id": "AUTO_011",
+      "scene": "网络连接与设备管理",
+      "refined_scene": "nearby_service_or_wifi_scan",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "allow_if": [
+        "业务入口明确"
+      ],
+      "deny_if": [
+        "业务证据不足",
+        "但未获取到WiFi名称",
+        "页面展示当前已连接的WiFi网络状态",
+        "包括XJTUEIE5G",
+        "安全测试"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本",
+        "但未获取到WiFi名称",
+        "页面展示当前已连接的WiFi网络状态",
+        "包括XJTUEIE5G",
+        "安全测试"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_012",
+      "scene": "网络连接与设备管理",
+      "refined_scene": "nearby_service_or_wifi_scan",
+      "permissions": [
+        "ACCESS_FINE_LOCATION"
+      ],
+      "allow_if": [
+        "业务入口明确"
+      ],
+      "deny_if": [
+        "业务证据不足",
+        "但未获取到WiFi名称",
+        "页面展示当前已连接的WiFi网络状态",
+        "包括XJTUEIE5G",
+        "安全测试"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本",
+        "但未获取到WiFi名称",
+        "页面展示当前已连接的WiFi网络状态",
+        "包括XJTUEIE5G",
+        "安全测试"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_013",
+      "scene": "用户反馈与客服",
+      "refined_scene": "customer_support",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "意见反馈",
+        "添加反馈",
+        "问题类型",
+        "反馈标题",
+        "反馈内容",
+        "提交",
+        "上传附件",
+        "添加图片"
+      ],
+      "deny_if": [
+        "无输入区域",
+        "系统清理",
+        "删除文件"
+      ],
+      "boundary_if_missing": [
+        "反馈",
+        "提交",
+        "输入"
+      ],
+      "positive_evidence": [
+        "页面为反馈提交表单",
+        "存在问题类型/标题/内容输入与提交按钮",
+        "页面包含可选附件语义"
+      ],
+      "negative_evidence": [
+        "页面无反馈输入与提交动作"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_014",
+      "scene": "用户反馈与客服",
+      "refined_scene": "customer_support",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "意见反馈",
+        "添加反馈",
+        "问题类型",
+        "反馈标题",
+        "反馈内容",
+        "提交",
+        "上传附件",
+        "添加图片"
+      ],
+      "deny_if": [
+        "无输入区域",
+        "系统清理",
+        "删除文件"
+      ],
+      "boundary_if_missing": [
+        "反馈",
+        "提交",
+        "输入"
+      ],
+      "positive_evidence": [
+        "页面为反馈提交表单",
+        "存在问题类型/标题/内容输入与提交按钮",
+        "页面包含可选附件语义"
+      ],
+      "negative_evidence": [
+        "页面无反馈输入与提交动作"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_015",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "包含‘搜全国 您想要的全都有’的搜索入口和‘同城’分类标签",
+        "查看同城商品信息并发布新内容",
+        "页面当前显示‘暂时没有数据’",
+        "提供同城商品与服务的搜索与浏览入口"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "包含‘搜全国 您想要的全都有’的搜索入口和‘同城’分类标签",
+        "查看同城商品信息并发布新内容",
+        "页面当前显示‘暂时没有数据’",
+        "提供同城商品与服务的搜索与浏览入口"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_016",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "ACCESS_FINE_LOCATION"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "包含‘搜全国 您想要的全都有’的搜索入口和‘同城’分类标签",
+        "查看同城商品信息并发布新内容",
+        "页面当前显示‘暂时没有数据’",
+        "提供同城商品与服务的搜索与浏览入口"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "包含‘搜全国 您想要的全都有’的搜索入口和‘同城’分类标签",
+        "查看同城商品信息并发布新内容",
+        "页面当前显示‘暂时没有数据’",
+        "提供同城商品与服务的搜索与浏览入口"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_017",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "RECORD_AUDIO"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "提供文本搜索与网址输入入口",
+        "输入关键词或网址进行搜索",
+        "页面显示一个搜索输入框",
+        "上方有提示文字‘简单搜索将使用您的麦克风’"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "提供文本搜索与网址输入入口",
+        "输入关键词或网址进行搜索",
+        "页面显示一个搜索输入框",
+        "上方有提示文字‘简单搜索将使用您的麦克风’"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_018",
+      "scene": "文件与数据管理",
+      "refined_scene": "file_management",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "文件恢复",
+        "文档恢复",
+        "图片恢复",
+        "视频保护",
+        "已恢复文件",
+        "导出",
+        "添加文件夹",
+        "导入文件",
+        "图片转文字"
+      ],
+      "deny_if": [
+        "首页推荐",
+        "视频播放",
+        "纯内容浏览",
+        "系统清理"
+      ],
+      "boundary_if_missing": [
+        "文件",
+        "恢复"
+      ],
+      "positive_evidence": [
+        "页面存在文件恢复或导出管理入口",
+        "页面存在文件夹管理或导入入口"
+      ],
+      "negative_evidence": [
+        "页面仅内容浏览无文件管理动作"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_019",
+      "scene": "文件与数据管理",
+      "refined_scene": "file_management",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "文件恢复",
+        "文档恢复",
+        "图片恢复",
+        "视频保护",
+        "已恢复文件",
+        "导出",
+        "添加文件夹",
+        "导入文件",
+        "图片转文字"
+      ],
+      "deny_if": [
+        "首页推荐",
+        "视频播放",
+        "纯内容浏览",
+        "系统清理"
+      ],
+      "boundary_if_missing": [
+        "文件",
+        "恢复"
+      ],
+      "positive_evidence": [
+        "页面存在导出/保存相关文件管理入口",
+        "页面存在文件恢复或文件夹管理操作"
+      ],
+      "negative_evidence": [
+        "页面仅内容浏览无文件写入动作"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_020",
+      "scene": "图像视频拍摄与扫码",
+      "refined_scene": "media_capture_or_recording",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "扫码",
+        "二维码",
+        "扫描框",
+        "从相册识别",
+        "拍照识别"
+      ],
+      "deny_if": [
+        "系统清理",
+        "隐私政策展示",
+        "纯文本浏览"
+      ],
+      "boundary_if_missing": [
+        "扫码",
+        "二维码"
+      ],
+      "positive_evidence": [
+        "页面存在扫码入口或扫描框",
+        "页面存在二维码识别相关提示"
+      ],
+      "negative_evidence": [
+        "页面无扫码入口且无媒体采集动作"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_021",
+      "scene": "图像视频拍摄与扫码",
+      "refined_scene": "media_capture_or_recording",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "扫码结果保存",
+        "二维码识别记录",
+        "扫码",
+        "二维码"
+      ],
+      "deny_if": [
+        "系统清理",
+        "隐私政策展示",
+        "纯文本浏览"
+      ],
+      "boundary_if_missing": [
+        "扫码",
+        "二维码"
+      ],
+      "positive_evidence": [
+        "页面存在扫码入口或扫描框",
+        "页面存在扫码结果处理语义"
+      ],
+      "negative_evidence": [
+        "页面无扫码入口且无结果保存语义"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_022",
+      "scene": "图像视频拍摄与扫码",
+      "refined_scene": "media_capture_or_recording",
+      "permissions": [
+        "CAMERA"
+      ],
+      "allow_if": [
+        "扫码",
+        "扫一扫",
+        "二维码",
+        "拍照搜索",
+        "拍摄"
+      ],
+      "deny_if": [
+        "纯内容浏览",
+        "播放页",
+        "隐私政策展示",
+        "系统清理"
+      ],
+      "boundary_if_missing": [
+        "扫码",
+        "拍摄"
+      ],
+      "positive_evidence": [
+        "页面存在相机采集或扫码入口",
+        "页面存在拍摄或扫码动作语义"
+      ],
+      "negative_evidence": [
+        "页面仅内容浏览无拍摄/扫码入口"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_023",
+      "scene": "相册选择与媒体上传",
+      "refined_scene": "album_selection",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "提供相册中已保存照片和视频的浏览与查看入口",
+        "查看爱聊中已保存的照片和视频内容",
+        "页面显示为爱聊应用内的相册功能界面",
+        "包含照片和视频的列表展示"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "提供相册中已保存照片和视频的浏览与查看入口",
+        "查看爱聊中已保存的照片和视频内容",
+        "页面显示为爱聊应用内的相册功能界面",
+        "包含照片和视频的列表展示"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "AUTO_024",
+      "scene": "相册选择与媒体上传",
+      "refined_scene": "album_selection",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "业务入口明确",
+        "提供相册中已保存照片和视频的浏览与查看入口",
+        "查看爱聊中已保存的照片和视频内容",
+        "页面显示为爱聊应用内的相册功能界面",
+        "包含照片和视频的列表展示"
+      ],
+      "deny_if": [
+        "业务证据不足"
+      ],
+      "boundary_if_missing": [
+        "关键业务入口"
+      ],
+      "positive_evidence": [
+        "页面存在明确功能入口",
+        "提供相册中已保存照片和视频的浏览与查看入口",
+        "查看爱聊中已保存的照片和视频内容",
+        "页面显示为爱聊应用内的相册功能界面",
+        "包含照片和视频的列表展示"
+      ],
+      "negative_evidence": [
+        "仅系统或无关文本"
+      ],
+      "source_type": "pattern",
+      "notes": "auto-created from iteration"
+    },
+    {
+      "id": "TGT_ND_001",
+      "scene": "设备清理与系统优化",
+      "refined_scene": "system_cleanup",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "清理工具页面"
+      ],
+      "deny_if": [
+        "91清理大师",
+        "立即卸载",
+        "卸载不用的软件",
+        "清理1G空间"
+      ],
+      "boundary_if_missing": [
+        "91清理大师",
+        "立即卸载"
+      ],
+      "positive_evidence": [],
+      "negative_evidence": [
+        "页面出现清理大师品牌或强制卸载引导",
+        "页面以卸载不用软件为核心动作并持续请求存储权限"
+      ],
+      "source_type": "case",
+      "notes": "targeted for fastbot-com.nd.assistance FN"
+    },
+    {
+      "id": "TGT_ND_002",
+      "scene": "设备清理与系统优化",
+      "refined_scene": "system_cleanup",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "清理工具页面"
+      ],
+      "deny_if": [
+        "91清理大师",
+        "立即卸载",
+        "卸载不用的软件",
+        "清理1G空间"
+      ],
+      "boundary_if_missing": [
+        "91清理大师",
+        "立即卸载"
+      ],
+      "positive_evidence": [],
+      "negative_evidence": [
+        "页面出现清理大师品牌或强制卸载引导",
+        "页面以卸载不用软件为核心动作并持续请求存储权限"
+      ],
+      "source_type": "case",
+      "notes": "targeted for fastbot-com.nd.assistance FN"
+    },
+    {
+      "id": "TGT_SOOUYA_001",
+      "scene": "用户反馈与客服",
+      "refined_scene": "customer_support",
+      "permissions": [
+        "RECORD_AUDIO"
+      ],
+      "allow_if": [
+        "咨询客服",
+        "描述咨询内容",
+        "提供订单号",
+        "输入框",
+        "发送",
+        "进行通话录音或本地录音"
+      ],
+      "deny_if": [
+        "垃圾清理",
+        "深度清理",
+        "删除文件"
+      ],
+      "boundary_if_missing": [
+        "咨询客服"
+      ],
+      "positive_evidence": [
+        "页面为客服咨询或对话界面",
+        "存在文字输入与发送入口",
+        "出现录音用途提示"
+      ],
+      "negative_evidence": [
+        "页面为系统清理或文件删除场景"
+      ],
+      "source_type": "case",
+      "notes": "targeted for fastbot-com.soouya.pic FP"
+    },
+    {
+      "id": "TGT_SOOUYA_002",
+      "scene": "用户反馈与客服",
+      "refined_scene": "customer_support",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "咨询客服",
+        "描述咨询内容",
+        "提供订单号",
+        "客服对话",
+        "输入框",
+        "拍摄",
+        "上传"
+      ],
+      "deny_if": [
+        "垃圾清理",
+        "深度清理",
+        "删除垃圾",
+        "卸载",
+        "图片恢复",
+        "数据恢复",
+        "一键恢复"
+      ],
+      "boundary_if_missing": [
+        "咨询客服",
+        "输入框"
+      ],
+      "positive_evidence": [
+        "页面为客服咨询界面",
+        "可见拍摄或上传入口",
+        "可见文字输入区"
+      ],
+      "negative_evidence": [
+        "页面为系统清理/恢复工具场景"
+      ],
+      "source_type": "case",
+      "notes": "targeted for fastbot-com.soouya.pic FP"
+    },
+    {
+      "id": "TGT_SOOUYA_003",
+      "scene": "用户反馈与客服",
+      "refined_scene": "customer_support",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "咨询客服",
+        "描述咨询内容",
+        "提供订单号",
+        "客服对话",
+        "输入框",
+        "拍摄",
+        "上传"
+      ],
+      "deny_if": [
+        "垃圾清理",
+        "深度清理",
+        "删除垃圾",
+        "卸载",
+        "图片恢复",
+        "数据恢复",
+        "一键恢复"
+      ],
+      "boundary_if_missing": [
+        "咨询客服",
+        "输入框"
+      ],
+      "positive_evidence": [
+        "页面为客服咨询界面",
+        "可见拍摄或上传入口",
+        "可见文字输入区"
+      ],
+      "negative_evidence": [
+        "页面为系统清理/恢复工具场景"
+      ],
+      "source_type": "case",
+      "notes": "targeted for fastbot-com.soouya.pic FP"
+    },
+    {
+      "id": "TGT_YOUKU_001",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "RECORD_AUDIO"
+      ],
+      "allow_if": [
+        "优酷",
+        "热门电视剧",
+        "剧集推荐",
+        "搜索栏",
+        "搜索结果",
+        "播放",
+        "进行通话录音或本地录音"
+      ],
+      "deny_if": [
+        "垃圾清理",
+        "文件管理",
+        "软件卸载",
+        "删除垃圾",
+        "后台静默录音"
+      ],
+      "boundary_if_missing": [
+        "优酷",
+        "搜索栏"
+      ],
+      "positive_evidence": [
+        "页面为视频内容浏览或搜索场景",
+        "存在剧集推荐或搜索内容",
+        "视频平台可用麦克风执行语音搜索或语音交互"
+      ],
+      "negative_evidence": [
+        "页面为系统清理或文件删除场景",
+        "出现后台静默录音迹象"
+      ],
+      "source_type": "case",
+      "notes": "targeted for fastbot-com.youku.phone FP"
+    },
+    {
+      "id": "TGT_WESHINE_001",
+      "scene": "社交互动与通信",
+      "refined_scene": "social_chat_or_share",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "查看原动态",
+        "全部回复",
+        "社交动态",
+        "隐私声明",
+        "长按识别二维码",
+        "文本内容"
+      ],
+      "deny_if": [
+        "垃圾清理",
+        "深度清理",
+        "删除文件",
+        "软件卸载"
+      ],
+      "boundary_if_missing": [
+        "查看原动态"
+      ],
+      "positive_evidence": [
+        "页面为社交动态浏览或文本展示",
+        "无系统清理类文案"
+      ],
+      "negative_evidence": [
+        "页面为系统清理或文件删除场景"
+      ],
+      "source_type": "case",
+      "notes": "targeted for fastbot-im.weshine.keyboard FP"
+    },
+    {
+      "id": "TGT_WESHINE_002",
+      "scene": "社交互动与通信",
+      "refined_scene": "social_chat_or_share",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "查看原动态",
+        "全部回复",
+        "社交动态",
+        "隐私声明",
+        "长按识别二维码",
+        "文本内容"
+      ],
+      "deny_if": [
+        "垃圾清理",
+        "深度清理",
+        "删除文件",
+        "软件卸载"
+      ],
+      "boundary_if_missing": [
+        "查看原动态"
+      ],
+      "positive_evidence": [
+        "页面为社交动态浏览或文本展示",
+        "无系统清理类文案"
+      ],
+      "negative_evidence": [
+        "页面为系统清理或文件删除场景"
+      ],
+      "source_type": "case",
+      "notes": "targeted for fastbot-im.weshine.keyboard FP"
+    },
+    {
+      "id": "TGT_WESHINE_003",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "长按识别二维码",
+        "文本内容",
+        "句子",
+        "浏览内容",
+        "隐私声明"
+      ],
+      "deny_if": [
+        "垃圾清理",
+        "深度清理",
+        "删除文件",
+        "软件卸载"
+      ],
+      "boundary_if_missing": [
+        "文本内容"
+      ],
+      "positive_evidence": [
+        "页面以文本浏览为主",
+        "存在二维码识别或隐私说明文案"
+      ],
+      "negative_evidence": [
+        "页面为系统清理或文件删除场景"
+      ],
+      "source_type": "case",
+      "notes": "targeted for fastbot-im.weshine.keyboard FP"
+    },
+    {
+      "id": "TGT_SOOUYA_FR_001",
+      "scene": "文件与数据管理",
+      "refined_scene": "file_recovery",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "图片恢复",
+        "数据恢复",
+        "一键恢复",
+        "恢复照片",
+        "恢复文件"
+      ],
+      "deny_if": [
+        "垃圾清理",
+        "深度清理",
+        "删除垃圾",
+        "软件卸载"
+      ],
+      "boundary_if_missing": [
+        "图片恢复",
+        "一键恢复"
+      ],
+      "positive_evidence": [
+        "页面为恢复工具入口",
+        "出现恢复相关文案"
+      ],
+      "negative_evidence": [
+        "页面为系统清理或删除场景"
+      ],
+      "source_type": "case",
+      "notes": "targeted safe boundary for soouya file recovery"
+    },
+    {
+      "id": "TGT_SOOUYA_FR_002",
+      "scene": "文件与数据管理",
+      "refined_scene": "file_recovery",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "图片恢复",
+        "数据恢复",
+        "一键恢复",
+        "恢复照片",
+        "恢复文件"
+      ],
+      "deny_if": [
+        "垃圾清理",
+        "深度清理",
+        "删除垃圾",
+        "软件卸载"
+      ],
+      "boundary_if_missing": [
+        "图片恢复",
+        "一键恢复"
+      ],
+      "positive_evidence": [
+        "页面为恢复工具入口",
+        "出现恢复相关文案"
+      ],
+      "negative_evidence": [
+        "页面为系统清理或删除场景"
+      ],
+      "source_type": "case",
+      "notes": "targeted safe boundary for soouya file recovery"
+    },
+    {
+      "id": "TGT_SOOUYA_ORD_001",
+      "scene": "商品浏览与消费",
+      "refined_scene": "other",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "暂时还没有订单",
+        "订单列表空状态",
+        "查看订单信息"
+      ],
+      "deny_if": [
+        "删除文件",
+        "垃圾清理",
+        "软件卸载"
+      ],
+      "boundary_if_missing": [
+        "订单"
+      ],
+      "positive_evidence": [
+        "页面为订单空状态或订单列表",
+        "无清理删除场景"
+      ],
+      "negative_evidence": [
+        "页面为系统清理或删除场景"
+      ],
+      "source_type": "case",
+      "notes": "targeted safe boundary for soouya order empty"
+    },
+    {
+      "id": "TGT_SOOUYA_ORD_002",
+      "scene": "商品浏览与消费",
+      "refined_scene": "other",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "暂时还没有订单",
+        "订单列表空状态",
+        "查看订单信息"
+      ],
+      "deny_if": [
+        "删除文件",
+        "垃圾清理",
+        "软件卸载"
+      ],
+      "boundary_if_missing": [
+        "订单"
+      ],
+      "positive_evidence": [
+        "页面为订单空状态或订单列表",
+        "无清理删除场景"
+      ],
+      "negative_evidence": [
+        "页面为系统清理或删除场景"
+      ],
+      "source_type": "case",
+      "notes": "targeted safe boundary for soouya order empty"
+    },
+    {
+      "id": "TGT_WESHINE_PRIV_001",
+      "scene": "用户反馈与客服",
+      "refined_scene": "customer_support",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "隐私声明",
+        "隐私政策",
+        "在浏览器中查看",
+        "关于KK键盘"
+      ],
+      "deny_if": [
+        "删除文件",
+        "垃圾清理",
+        "软件卸载"
+      ],
+      "boundary_if_missing": [
+        "隐私"
+      ],
+      "positive_evidence": [
+        "页面为隐私政策展示",
+        "无文件删除场景"
+      ],
+      "negative_evidence": [
+        "页面为系统清理或删除场景"
+      ],
+      "source_type": "case",
+      "notes": "targeted safe boundary for weshine privacy"
+    },
+    {
+      "id": "TGT_WESHINE_PRIV_002",
+      "scene": "用户反馈与客服",
+      "refined_scene": "customer_support",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "隐私声明",
+        "隐私政策",
+        "在浏览器中查看",
+        "关于KK键盘"
+      ],
+      "deny_if": [
+        "删除文件",
+        "垃圾清理",
+        "软件卸载"
+      ],
+      "boundary_if_missing": [
+        "隐私"
+      ],
+      "positive_evidence": [
+        "页面为隐私政策展示",
+        "无文件删除场景"
+      ],
+      "negative_evidence": [
+        "页面为系统清理或删除场景"
+      ],
+      "source_type": "case",
+      "notes": "targeted safe boundary for weshine privacy"
+    },
+    {
+      "id": "TGT_YOUKU_002",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "RECORD_AUDIO"
+      ],
+      "allow_if": [
+        "优酷",
+        "电视剧",
+        "剧集",
+        "搜索栏",
+        "搜索结果",
+        "推荐"
+      ],
+      "deny_if": [
+        "后台静默录音",
+        "持续录音",
+        "系统清理",
+        "文件删除"
+      ],
+      "boundary_if_missing": [
+        "优酷",
+        "剧集"
+      ],
+      "positive_evidence": [
+        "视频平台浏览页出现剧集推荐或搜索结果",
+        "无清理/删除类任务",
+        "麦克风可用于语音搜索入口"
+      ],
+      "negative_evidence": [
+        "出现后台静默录音或持续录音线索",
+        "页面任务与视频浏览无关"
+      ],
+      "source_type": "case",
+      "notes": "targeted for fastbot-com.youku.phone FP"
+    },
+    {
+      "id": "SAFE_SYS_CLEAN_001",
+      "scene": "设备清理与系统优化",
+      "refined_scene": "system_cleanup",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "一键清理",
+        "开始扫描",
+        "垃圾文件",
+        "缓存文件",
+        "清理表情包",
+        "立即处理",
+        "微信清理",
+        "深度加速"
+      ],
+      "deny_if": [
+        "91清理大师",
+        "立即卸载不用的软件"
+      ],
+      "boundary_if_missing": [
+        "清理",
+        "扫描"
+      ],
+      "positive_evidence": [
+        "页面为清理工具主界面并提供清理入口",
+        "存在清理任务或扫描提示"
+      ],
+      "negative_evidence": [
+        "页面主要为非清理业务页面"
+      ],
+      "source_type": "case",
+      "notes": "safe boundary from FP clusters system_cleanup/storage"
+    },
+    {
+      "id": "SAFE_SYS_CLEAN_002",
+      "scene": "设备清理与系统优化",
+      "refined_scene": "system_cleanup",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "一键清理",
+        "开始扫描",
+        "垃圾文件",
+        "缓存文件",
+        "立即处理",
+        "微信清理",
+        "清理结果"
+      ],
+      "deny_if": [
+        "91清理大师",
+        "立即卸载不用的软件"
+      ],
+      "boundary_if_missing": [
+        "清理",
+        "处理"
+      ],
+      "positive_evidence": [
+        "页面存在清理执行按钮或处理入口",
+        "页面存在清理任务上下文"
+      ],
+      "negative_evidence": [
+        "页面主要为非清理业务页面"
+      ],
+      "source_type": "case",
+      "notes": "safe boundary from FP clusters system_cleanup/storage"
+    },
+    {
+      "id": "RISK_SYS_CLEAN_BRAND_001",
+      "scene": "设备清理与系统优化",
+      "refined_scene": "system_cleanup",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "清理工具页面"
+      ],
+      "deny_if": [
+        "91清理大师",
+        "立即卸载",
+        "卸载不用的软件",
+        "清理1G空间"
+      ],
+      "boundary_if_missing": [
+        "91清理大师",
+        "立即卸载"
+      ],
+      "positive_evidence": [],
+      "negative_evidence": [
+        "页面出现清理大师品牌或强制卸载引导",
+        "页面以卸载不用软件为核心动作并持续请求存储权限"
+      ],
+      "source_type": "case",
+      "notes": "targeted risk boundary for cleanup overreach patterns"
+    },
+    {
+      "id": "RISK_SYS_CLEAN_BRAND_002",
+      "scene": "设备清理与系统优化",
+      "refined_scene": "system_cleanup",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "清理工具页面"
+      ],
+      "deny_if": [
+        "91清理大师",
+        "立即卸载",
+        "卸载不用的软件",
+        "清理1G空间"
+      ],
+      "boundary_if_missing": [
+        "91清理大师",
+        "立即卸载"
+      ],
+      "positive_evidence": [],
+      "negative_evidence": [
+        "页面出现清理大师品牌或强制卸载引导",
+        "页面以卸载不用软件为核心动作并持续请求存储权限"
+      ],
+      "source_type": "case",
+      "notes": "targeted risk boundary for cleanup overreach patterns"
+    },
+    {
+      "id": "RISK_SYS_CLEAN_PHONE_001",
+      "scene": "设备清理与系统优化",
+      "refined_scene": "system_cleanup",
+      "permissions": [
+        "READ_PHONE_STATE"
+      ],
+      "allow_if": [
+        "来电识别",
+        "手机号验证",
+        "SIM信息"
+      ],
+      "deny_if": [
+        "垃圾文件",
+        "重复文件",
+        "清理",
+        "手机加速",
+        "内存优化",
+        "自启管理"
+      ],
+      "boundary_if_missing": [
+        "来电识别",
+        "手机号",
+        "SIM"
+      ],
+      "positive_evidence": [
+        "页面存在明确电话状态或手机号相关业务入口"
+      ],
+      "negative_evidence": [
+        "页面为清理/加速任务且未出现电话相关业务入口"
+      ],
+      "source_type": "pattern",
+      "notes": "targeted for cleanup scene with phone-state over-scope"
+    },
+    {
+      "id": "RISK_SYS_CLEAN_PHONE_002",
+      "scene": "设备清理与系统优化",
+      "refined_scene": "system_cleanup",
+      "permissions": [
+        "READ_PHONE_NUMBERS"
+      ],
+      "allow_if": [
+        "手机号验证",
+        "SIM信息",
+        "账号绑定手机号"
+      ],
+      "deny_if": [
+        "垃圾文件",
+        "重复文件",
+        "清理",
+        "手机加速",
+        "内存优化",
+        "自启管理"
+      ],
+      "boundary_if_missing": [
+        "手机号",
+        "SIM",
+        "验证"
+      ],
+      "positive_evidence": [
+        "页面存在手机号或SIM相关业务入口"
+      ],
+      "negative_evidence": [
+        "页面为清理/加速任务且未出现手机号相关业务入口"
+      ],
+      "source_type": "pattern",
+      "notes": "targeted for cleanup scene with phone-number over-scope"
+    },
+    {
+      "id": "SAFE_CONTENT_CAMERA_SCAN_001",
+      "scene": "内容浏览与搜索",
+      "refined_scene": "content_browsing",
+      "permissions": [
+        "CAMERA"
+      ],
+      "allow_if": [
+        "扫码",
+        "扫一扫",
+        "二维码",
+        "拍照搜索"
+      ],
+      "deny_if": [
+        "后台持续拍摄",
+        "无拍摄入口",
+        "纯内容浏览"
+      ],
+      "boundary_if_missing": [
+        "扫码",
+        "二维码",
+        "扫一扫",
+        "拍照"
+      ],
+      "positive_evidence": [
+        "页面存在扫码或拍照搜索入口"
+      ],
+      "negative_evidence": [
+        "页面仅内容浏览且无任何拍摄/扫码入口"
+      ],
+      "source_type": "pattern",
+      "notes": "allow camera in browsing when scan entry is explicit"
+    },
+    {
+      "id": "SAFE_FILE_MGMT_AUDIO_001",
+      "scene": "文件与数据管理",
+      "refined_scene": "file_management",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "文件库",
+        "文件列表",
+        "录音文件",
+        "语音文件",
+        "导出记录",
+        "云端文件",
+        "我的相册",
+        "添加文件夹"
+      ],
+      "deny_if": [
+        "后台静默读取",
+        "无文件管理入口"
+      ],
+      "boundary_if_missing": [
+        "文件",
+        "文件夹",
+        "导出"
+      ],
+      "positive_evidence": [
+        "页面展示可管理的文件或文件夹列表",
+        "页面存在文件库/导出记录/相册管理等入口"
+      ],
+      "negative_evidence": [
+        "页面无文件管理入口且无本地文件语义"
+      ],
+      "source_type": "pattern",
+      "notes": "reduce FP for benign file-management pages"
+    },
+    {
+      "id": "SAFE_FILE_MGMT_AUDIO_002",
+      "scene": "文件与数据管理",
+      "refined_scene": "file_management",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "保存",
+        "导出",
+        "重命名",
+        "删除文件",
+        "添加文件夹",
+        "新建文件夹",
+        "整理相册",
+        "语音文件"
+      ],
+      "deny_if": [
+        "后台静默写入",
+        "无保存/导出入口"
+      ],
+      "boundary_if_missing": [
+        "保存",
+        "导出",
+        "文件夹"
+      ],
+      "positive_evidence": [
+        "页面存在保存、导出或文件夹管理操作入口"
+      ],
+      "negative_evidence": [
+        "页面无写入动作语义且无文件管理入口"
+      ],
+      "source_type": "pattern",
+      "notes": "reduce FP for benign file-management write operations"
+    },
+    {
+      "id": "SAFE_SOCIAL_SHARE_LINK_001",
+      "scene": "社交互动与通信",
+      "refined_scene": "social_chat_or_share",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "分享至",
+        "复制链接",
+        "微信好友",
+        "朋友圈",
+        "微博",
+        "QQ好友",
+        "查看原动态",
+        "全部回复"
+      ],
+      "deny_if": [
+        "后台自动上传",
+        "无分享入口"
+      ],
+      "boundary_if_missing": [
+        "分享",
+        "复制链接"
+      ],
+      "positive_evidence": [
+        "页面存在明确的分享或动态互动入口"
+      ],
+      "negative_evidence": [
+        "页面缺少分享入口且出现后台上传语义"
+      ],
+      "source_type": "pattern",
+      "notes": "reduce FP for share-link/chat-interaction pages"
+    },
+    {
+      "id": "SAFE_SOCIAL_SHARE_LINK_002",
+      "scene": "社交互动与通信",
+      "refined_scene": "social_chat_or_share",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "allow_if": [
+        "分享至",
+        "复制链接",
+        "微信好友",
+        "朋友圈",
+        "微博",
+        "QQ好友",
+        "发布",
+        "转发"
+      ],
+      "deny_if": [
+        "后台自动上传",
+        "无分享入口"
+      ],
+      "boundary_if_missing": [
+        "分享",
+        "复制链接"
+      ],
+      "positive_evidence": [
+        "页面存在可触发分享/转发的显式入口"
+      ],
+      "negative_evidence": [
+        "页面缺少分享动作却持续请求写存储"
+      ],
+      "source_type": "pattern",
+      "notes": "reduce FP for share write-storage pages"
+    }
+  ]
+}

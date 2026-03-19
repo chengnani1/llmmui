@@ -104,8 +104,18 @@ MAX_TOTAL_LEN = 30000  # 输入给 LLM 的安全上限
 PROMPT_SCENE_CLASSIFY_PATH = os.path.join(os.path.dirname(__file__), '..', 'prompt', 'scene_classify.txt')
 
 def load_scene_prompt_template() -> str:
-    with open(PROMPT_SCENE_CLASSIFY_PATH, 'r', encoding='utf-8') as f:
-        return f.read().strip()
+    if os.path.exists(PROMPT_SCENE_CLASSIFY_PATH):
+        with open(PROMPT_SCENE_CLASSIFY_PATH, 'r', encoding='utf-8') as f:
+            return f.read().strip()
+    return (
+        "你是场景分类助手。\\n"
+        "请根据页面特征在给定场景中选择最匹配的一项。\\n"
+        "候选场景：\\n{SCENE_LIST}\\n\\n"
+        "场景定义：\\n{SCENE_DEFINITIONS}\\n\\n"
+        "分类规则：\\n{SCENE_RULES}\\n\\n"
+        "输入特征：\\n{FEATURE}\\n\\n"
+        "仅输出场景名。"
+    )
 
 SCENE_PROMPT_TEMPLATE = load_scene_prompt_template()
 

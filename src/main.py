@@ -5,7 +5,9 @@ Modes:
   - full       : phase1 + phase2 + phase3
   - phase1     : data collect
   - phase2     : data process
-  - phase3     : scene + permission + judgement (+ optional compliance + final decision)
+  - phase3_v2  : permission + semantic_v2 + retrieved_knowledge + llm + final
+  - phase3_v2_compliance : retrieval + llm only (reuse existing semantic/permission outputs)
+  - phase3_v2_final      : final label mapping only (reuse existing llm output)
 """
 
 import argparse
@@ -13,7 +15,6 @@ import json
 import os
 import sys
 import traceback
-from collections import Counter
 from datetime import datetime
 from typing import Any, Dict, List, Optional
 
@@ -24,17 +25,10 @@ if ROOT not in sys.path:
 from configs import settings
 
 PROMPT_DIR = settings.PROMPT_DIR
-RULE_FILE = settings.SCENE_RULE_FILE
-from analy_pipline.scene import (
-    run_chain_semantic_interpreter,
-    run_regulatory_scene_mapping,
-    run_scene_from_semantics_text,
-    run_scene_llm,
-    run_scene_vllm,
-)
+from analy_pipline.scene import run_chain_semantic_interpreter
 from analy_pipline.permission import run_permission_rule
-from analy_pipline.judge import run_rule_judgement, run_llm_compliance
-from analy_pipline.judge.finalize_decision import FinalizeConfig, finalize_results, finalize_results_v2
+from analy_pipline.judge import run_llm_compliance
+from analy_pipline.judge.finalize_decision import FinalizeConfig, finalize_results_v2
 
 
 def list_valid_apks(directory: str) -> List[str]:
@@ -317,270 +311,6 @@ def _run_apps_with_incremental(
     return stats
 
 
-def _build_semantics_summary(app_dirs: List[str], step_stats: Dict[str, int]) -> Dict[str, Any]:
-    total = 0
-    low_conf = 0
-    timeout = 0
-    for app_dir in app_dirs:
-        for rec in _read_json_list(os.path.join(app_dir, "result_chain_semantics.json")):
-            total += 1
-            if str(rec.get("confidence", "")).lower() == "low":
-                low_conf += 1
-            reason = str(rec.get("rerun_reason", "")).lower()
-            err = str(rec.get("error", "")).lower()
-            if "timeout" in reason or "timeout" in err:
-                timeout += 1
-    return {
-        **step_stats,
-        "total_chains": total,
-        "low_confidence_chains": low_conf,
-        "timeout_chains": timeout,
-    }
-
-
-def _build_scene_summary(app_dirs: List[str], step_stats: Dict[str, int]) -> Dict[str, Any]:
-    scene_counter: Counter = Counter()
-    top3_counter: Counter = Counter()
-    for app_dir in app_dirs:
-        for rec in _read_json_list(os.path.join(app_dir, "result_ui_task_scene.json")):
-            scene = str(rec.get("ui_task_scene") or rec.get("predicted_scene") or "UNKNOWN")
-            scene_counter[scene] += 1
-            top3 = rec.get("ui_task_scene_top3") or rec.get("scene_top3") or []
-            top3_key = " | ".join([str(x) for x in top3[:3]]) if isinstance(top3, list) else ""
-            if top3_key:
-                top3_counter[top3_key] += 1
-    total = sum(scene_counter.values())
-    return {
-        **step_stats,
-        "total_chains": total,
-        "scene_distribution": [
-            {"scene": k, "count": v, "ratio": round(v / total, 4) if total else 0.0}
-            for k, v in scene_counter.most_common()
-        ],
-        "top3_distribution": [
-            {"top3": k, "count": v, "ratio": round(v / total, 4) if total else 0.0}
-            for k, v in top3_counter.most_common()
-        ],
-    }
-
-
-def _build_rule_summary(app_dirs: List[str], step_stats: Dict[str, int]) -> Dict[str, Any]:
-    risk_counter: Counter = Counter()
-    for app_dir in app_dirs:
-        for rec in _read_json_list(os.path.join(app_dir, "result_rule_screening.json")):
-            risk_counter[str(rec.get("overall_rule_signal", "MEDIUM_RISK"))] += 1
-    total = sum(risk_counter.values())
-    return {
-        **step_stats,
-        "total_chains": total,
-        "risk_level_distribution": [
-            {"risk": k, "count": v, "ratio": round(v / total, 4) if total else 0.0}
-            for k, v in risk_counter.most_common()
-        ],
-    }
-
-
-def _map_gt_binary(item: Dict[str, Any]) -> str:
-    gt_risk = item.get("gt_risk")
-    if str(gt_risk) in {"0", "1"}:
-        return "RISKY" if int(gt_risk) == 1 else "SAFE"
-    label = str(item.get("gt_label", "")).strip().upper()
-    if label in {"SAFE", "RISKY"}:
-        return label
-    return ""
-
-
-def _map_final_binary(item: Dict[str, Any]) -> str:
-    decision = str(item.get("final_decision", "")).strip().upper()
-    risk = str(item.get("final_risk", "")).strip().upper()
-    if decision in {"CLEARLY_OK", "COMPLIANT"} or risk == "LOW":
-        return "SAFE"
-    if decision in {"CLEARLY_RISKY", "NEED_REVIEW", "NON_COMPLIANT", "SUSPICIOUS"} or risk in {"MEDIUM", "HIGH"}:
-        return "RISKY"
-    return ""
-
-
-def _build_final_summary(app_dirs: List[str], step_stats: Dict[str, int]) -> Dict[str, Any]:
-    tp = fp = tn = fn = 0
-    evaluated = 0
-    for app_dir in app_dirs:
-        pred_map = {int(x.get("chain_id", -1)): x for x in _read_json_list(os.path.join(app_dir, "result_final_decision.json"))}
-        gt_items = _read_json_list(os.path.join(app_dir, "label_judge.json"))
-        for gt in gt_items:
-            try:
-                cid = int(gt.get("chain_id"))
-            except Exception:
-                continue
-            gt_b = _map_gt_binary(gt)
-            pred_b = _map_final_binary(pred_map.get(cid, {}))
-            if not gt_b or not pred_b:
-                continue
-            evaluated += 1
-            if gt_b == "RISKY" and pred_b == "RISKY":
-                tp += 1
-            elif gt_b == "SAFE" and pred_b == "RISKY":
-                fp += 1
-            elif gt_b == "SAFE" and pred_b == "SAFE":
-                tn += 1
-            elif gt_b == "RISKY" and pred_b == "SAFE":
-                fn += 1
-
-    precision = tp / (tp + fp) if (tp + fp) else 0.0
-    recall = tp / (tp + fn) if (tp + fn) else 0.0
-    f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) else 0.0
-    tnr = tn / (tn + fp) if (tn + fp) else 0.0
-    bal_acc = (recall + tnr) / 2 if evaluated else 0.0
-    return {
-        **step_stats,
-        "evaluated_chains": evaluated,
-        "tp": tp,
-        "fp": fp,
-        "tn": tn,
-        "fn": fn,
-        "precision": round(precision, 6),
-        "recall": round(recall, 6),
-        "f1": round(f1, 6),
-        "balanced_accuracy": round(bal_acc, 6),
-    }
-
-
-def run_phase3_semantics(processed_root: str, app_name: str, force: bool, chain_ids: Optional[List[int]]) -> Dict[str, Any]:
-    app_dirs = _resolve_phase3_app_dirs(processed_root, app_name=app_name)
-    stats = _run_apps_with_incremental(
-        app_dirs,
-        output_filename="result_chain_semantics.json",
-        force=force,
-        runner=lambda app_dir: run_chain_semantic_interpreter.run(
-            target=app_dir,
-            prompt_file=os.path.join(PROMPT_DIR, "chain_semantic_interpreter_vision.txt"),
-            vllm_url=settings.VLLM_VL_URL,
-            model=settings.VLLM_VL_MODEL,
-            chain_ids=chain_ids,
-        ),
-    )
-    summary = _build_semantics_summary(app_dirs, stats)
-    summary_path = os.path.join(_summary_dir(processed_root), "phase3_semantics_summary.json")
-    _write_json(summary_path, summary)
-    print(f"[phase3_semantics] summary={summary_path}")
-    return summary
-
-
-def run_phase3_scene(
-    processed_root: str,
-    app_name: str,
-    force: bool,
-    chain_ids: Optional[List[int]],
-    scene_mode: str,
-) -> Dict[str, Any]:
-    app_dirs = _resolve_phase3_app_dirs(processed_root, app_name=app_name)
-    scene_mode = "vision" if scene_mode == "vl" else scene_mode
-    if scene_mode == "vision":
-        stats = _run_apps_with_incremental(
-            app_dirs,
-            output_filename="result_scene_vision.json",
-            force=force,
-            runner=lambda app_dir: run_scene_vllm.run(app_dir),
-        )
-        summary = {"note": "vision scene mode executed", **stats}
-        summary_path = os.path.join(_summary_dir(processed_root), "phase3_scene_summary.json")
-        _write_json(summary_path, summary)
-        print(f"[phase3_scene] summary={summary_path}")
-        return summary
-
-    stats = _run_apps_with_incremental(
-        app_dirs,
-        output_filename="result_ui_task_scene.json",
-        force=force,
-        runner=lambda app_dir: run_scene_from_semantics_text.run(
-            target=app_dir,
-            prompt_file=os.path.join(PROMPT_DIR, "scene_from_semantics_text.txt"),
-            vllm_url=settings.VLLM_TEXT_URL,
-            model=settings.VLLM_TEXT_MODEL,
-            chain_ids=chain_ids,
-        ),
-    )
-    summary = _build_scene_summary(app_dirs, stats)
-    summary_path = os.path.join(_summary_dir(processed_root), "phase3_scene_summary.json")
-    _write_json(summary_path, summary)
-    print(f"[phase3_scene] summary={summary_path}")
-    return summary
-
-
-def run_phase3_rule(processed_root: str, app_name: str, force: bool, chain_ids: Optional[List[int]]) -> Dict[str, Any]:
-    app_dirs = _resolve_phase3_app_dirs(processed_root, app_name=app_name)
-    stats = _run_apps_with_incremental(
-        app_dirs,
-        output_filename="result_rule_screening.json",
-        force=force,
-        runner=lambda app_dir: (
-            run_permission_rule.run(app_dir, chain_ids=chain_ids),
-            run_regulatory_scene_mapping.run(
-                target=app_dir,
-                prompt_file=os.path.join(PROMPT_DIR, "regulatory_scene_mapping.txt"),
-                knowledge_file=settings.PERMISSION_KNOWLEDGE_FILE,
-                vllm_url=settings.VLLM_TEXT_URL,
-                model=settings.VLLM_TEXT_MODEL,
-                chain_ids=chain_ids,
-            ),
-            run_rule_judgement.run(
-                app_dir,
-                rule_file=RULE_FILE,
-                knowledge_file=settings.PERMISSION_KNOWLEDGE_FILE,
-                chain_ids=chain_ids,
-            ),
-        ),
-    )
-    summary = _build_rule_summary(app_dirs, stats)
-    summary_path = os.path.join(_summary_dir(processed_root), "phase3_rule_summary.json")
-    _write_json(summary_path, summary)
-    print(f"[phase3_rule] summary={summary_path}")
-    return summary
-
-
-def run_phase3_llm(processed_root: str, app_name: str, force: bool, chain_ids: Optional[List[int]]) -> Dict[str, Any]:
-    app_dirs = _resolve_phase3_app_dirs(processed_root, app_name=app_name)
-    stats = _run_apps_with_incremental(
-        app_dirs,
-        output_filename="result_llm_review.json",
-        force=force,
-        runner=lambda app_dir: run_llm_compliance.run(
-            app_dir,
-            prompt_dir=PROMPT_DIR,
-            vllm_url=settings.VLLM_TEXT_URL,
-            model=settings.VLLM_TEXT_MODEL,
-            chain_ids=chain_ids,
-        ),
-    )
-    summary = {
-        **stats,
-        "total_records": sum(len(_read_json_list(os.path.join(app_dir, "result_llm_review.json"))) for app_dir in app_dirs),
-    }
-    summary_path = os.path.join(_summary_dir(processed_root), "phase3_llm_summary.json")
-    _write_json(summary_path, summary)
-    print(f"[phase3_llm] summary={summary_path}")
-    return summary
-
-
-def run_phase3_final(processed_root: str, app_name: str, force: bool, chain_ids: Optional[List[int]]) -> Dict[str, Any]:
-    app_dirs = _resolve_phase3_app_dirs(processed_root, app_name=app_name)
-    cfg = FinalizeConfig(
-        vllm_url=settings.VLLM_TEXT_URL,
-        vllm_model=settings.VLLM_TEXT_MODEL,
-        prompt_dir=PROMPT_DIR,
-    )
-    stats = _run_apps_with_incremental(
-        app_dirs,
-        output_filename="result_final_decision.json",
-        force=force,
-        runner=lambda app_dir: finalize_results(app_dir, cfg, chain_ids=chain_ids),
-    )
-    summary = _build_final_summary(app_dirs, stats)
-    summary_path = os.path.join(_summary_dir(processed_root), "phase3_final_summary.json")
-    _write_json(summary_path, summary)
-    print(f"[phase3_final] summary={summary_path}")
-    return summary
-
-
 def run_phase3_v2(processed_root: str, app_name: str, force: bool, chain_ids: Optional[List[int]]) -> Dict[str, Any]:
     app_dirs = _resolve_phase3_app_dirs(processed_root, app_name=app_name)
 
@@ -610,7 +340,7 @@ def run_phase3_v2(processed_root: str, app_name: str, force: bool, chain_ids: Op
 
     llm_stats = _run_apps_with_incremental(
         app_dirs,
-        output_filename="result_retrieved_knowledge.json",
+        output_filename="result_llm_review.json",
         force=force,
         runner=lambda app_dir: run_llm_compliance.run_v2(
             app_dir,
@@ -627,7 +357,6 @@ def run_phase3_v2(processed_root: str, app_name: str, force: bool, chain_ids: Op
         vllm_url=settings.VLLM_TEXT_URL,
         vllm_model=settings.VLLM_TEXT_MODEL,
         prompt_dir=PROMPT_DIR,
-        arbitration_strategy="lightweight_single_pass_v2",
     )
     final_stats = _run_apps_with_incremental(
         app_dirs,
@@ -653,6 +382,59 @@ def run_phase3_v2(processed_root: str, app_name: str, force: bool, chain_ids: Op
     return summary
 
 
+def run_phase3_v2_compliance(processed_root: str, app_name: str, force: bool, chain_ids: Optional[List[int]]) -> Dict[str, Any]:
+    app_dirs = _resolve_phase3_app_dirs(processed_root, app_name=app_name)
+    llm_stats = _run_apps_with_incremental(
+        app_dirs,
+        output_filename="result_llm_review.json",
+        force=force,
+        runner=lambda app_dir: run_llm_compliance.run_v2(
+            app_dir,
+            prompt_dir=PROMPT_DIR,
+            vllm_url=settings.VLLM_TEXT_URL,
+            model=settings.VLLM_TEXT_MODEL,
+            chain_ids=chain_ids,
+            semantic_filename="result_semantic_v2.json",
+            retrieval_output_filename="result_retrieved_knowledge.json",
+        ),
+    )
+    summary = {
+        "pipeline": "phase3_v2_compliance",
+        "llm_v2_stage": llm_stats,
+        "total_retrieval_records": sum(len(_read_json_list(os.path.join(app_dir, "result_retrieved_knowledge.json"))) for app_dir in app_dirs),
+        "total_llm_records": sum(len(_read_json_list(os.path.join(app_dir, "result_llm_review.json"))) for app_dir in app_dirs),
+    }
+    summary_path = os.path.join(_summary_dir(processed_root), "phase3_v2_compliance_summary.json")
+    _write_json(summary_path, summary)
+    print(f"[phase3_v2_compliance] summary={summary_path}")
+    return summary
+
+
+def run_phase3_v2_final(processed_root: str, app_name: str, force: bool, chain_ids: Optional[List[int]]) -> Dict[str, Any]:
+    app_dirs = _resolve_phase3_app_dirs(processed_root, app_name=app_name)
+    cfg = FinalizeConfig(
+        vllm_url=settings.VLLM_TEXT_URL,
+        vllm_model=settings.VLLM_TEXT_MODEL,
+        prompt_dir=PROMPT_DIR,
+    )
+    final_stats = _run_apps_with_incremental(
+        app_dirs,
+        output_filename="result_final_decision.json",
+        force=force,
+        runner=lambda app_dir: finalize_results_v2(app_dir, cfg, chain_ids=chain_ids),
+    )
+    summary = {
+        "pipeline": "phase3_v2_final",
+        "final_v2_stage": final_stats,
+        "total_llm_records": sum(len(_read_json_list(os.path.join(app_dir, "result_llm_review.json"))) for app_dir in app_dirs),
+        "total_final_records": sum(len(_read_json_list(os.path.join(app_dir, "result_final_decision.json"))) for app_dir in app_dirs),
+    }
+    summary_path = os.path.join(_summary_dir(processed_root), "phase3_v2_final_summary.json")
+    _write_json(summary_path, summary)
+    print(f"[phase3_v2_final] summary={summary_path}")
+    return summary
+
+
 def run_phase3(
     processed_root: str,
     scene_mode: str,
@@ -661,18 +443,13 @@ def run_phase3(
     force: bool = False,
     chain_ids: Optional[List[int]] = None,
 ) -> None:
-    run_phase3_semantics(processed_root, app_name=app_name, force=force, chain_ids=chain_ids)
-    run_phase3_scene(
-        processed_root,
+    del scene_mode, run_compliance  # keep backward-compatible signature
+    run_phase3_v2(
+        processed_root=processed_root,
         app_name=app_name,
         force=force,
         chain_ids=chain_ids,
-        scene_mode=scene_mode,
     )
-    run_phase3_rule(processed_root, app_name=app_name, force=force, chain_ids=chain_ids)
-    if run_compliance:
-        run_phase3_llm(processed_root, app_name=app_name, force=force, chain_ids=chain_ids)
-    run_phase3_final(processed_root, app_name=app_name, force=force, chain_ids=chain_ids)
 
 
 def main() -> None:
@@ -685,11 +462,8 @@ def main() -> None:
             "phase2",
             "phase3",
             "phase3_v2",
-            "phase3_semantics",
-            "phase3_scene",
-            "phase3_rule",
-            "phase3_llm",
-            "phase3_final",
+            "phase3_v2_compliance",
+            "phase3_v2_final",
         ],
     )
     parser.add_argument("target", help="APK path, APK dir, raw dir, or processed dir")
@@ -736,8 +510,8 @@ def main() -> None:
         )
         return
 
-    if args.mode == "phase3_semantics":
-        run_phase3_semantics(
+    if args.mode == "phase3_v2_compliance":
+        run_phase3_v2_compliance(
             processed_root=args.target or args.processed_root,
             app_name=args.app,
             force=args.force,
@@ -745,36 +519,8 @@ def main() -> None:
         )
         return
 
-    if args.mode == "phase3_scene":
-        run_phase3_scene(
-            processed_root=args.target or args.processed_root,
-            app_name=args.app,
-            force=args.force,
-            chain_ids=chain_ids,
-            scene_mode=args.scene_mode,
-        )
-        return
-
-    if args.mode == "phase3_rule":
-        run_phase3_rule(
-            processed_root=args.target or args.processed_root,
-            app_name=args.app,
-            force=args.force,
-            chain_ids=chain_ids,
-        )
-        return
-
-    if args.mode == "phase3_llm":
-        run_phase3_llm(
-            processed_root=args.target or args.processed_root,
-            app_name=args.app,
-            force=args.force,
-            chain_ids=chain_ids,
-        )
-        return
-
-    if args.mode == "phase3_final":
-        run_phase3_final(
+    if args.mode == "phase3_v2_final":
+        run_phase3_v2_final(
             processed_root=args.target or args.processed_root,
             app_name=args.app,
             force=args.force,
