@@ -42,8 +42,8 @@ from utils.http_retry import post_json_with_retry  # noqa: E402
 from utils.validators import validate_result_json_chains  # noqa: E402
 
 
-OUTPUT_FILENAME = "result_chain_semantics.json"
-SUMMARY_FILENAME = "chain_semantics_summary.json"
+OUTPUT_FILENAME = "result_semantic_v2.json"
+SUMMARY_FILENAME = "semantic_v2_summary.json"
 DEFAULT_PROMPT_FILE = os.path.join(settings.PROMPT_DIR, "chain_semantic_interpreter_vision.txt")
 PERMISSION_FILENAME = "result_permission.json"
 

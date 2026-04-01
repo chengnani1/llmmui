@@ -7,10 +7,13 @@ Input files per app dir:
   - label_judge.json (fallback: labels_judge.json)
   - result_vlm_direct_risk.json
   - result_final_decision.json
-  - result_chain_semantics.json
-  - result_ui_task_scene.json
-  - result_rule_screening.json
   - result_llm_review.json
+
+Optional context files per app dir:
+  - result_semantic_v2.json (preferred)
+  - result_chain_semantics.json (legacy fallback)
+  - result_ui_task_scene.json (legacy)
+  - result_rule_screening.json (legacy)
 
 Outputs (under processed root):
   - vlm_correct_full_wrong.csv
@@ -88,6 +91,15 @@ def _first_non_empty(*values: Any) -> Any:
         if v is not None:
             return v
     return ""
+
+
+def _load_first_available_json(app_dir: str, *filenames: str) -> Any:
+    for name in filenames:
+        path = os.path.join(app_dir, name)
+        data = load_json(path)
+        if data is not None:
+            return data
+    return None
 
 
 def _dedup(items: List[str]) -> List[str]:
@@ -322,7 +334,13 @@ def run(processed_root: str, app_prefix: str = "") -> Dict[str, Any]:
         vlm_map = map_by_chain_id(load_json(os.path.join(app_dir, "result_vlm_direct_risk.json")))
         final_map = map_by_chain_id(load_json(os.path.join(app_dir, "result_final_decision.json")))
 
-        sem_map = map_by_chain_id(load_json(os.path.join(app_dir, "result_chain_semantics.json")))
+        sem_map = map_by_chain_id(
+            _load_first_available_json(
+                app_dir,
+                "result_semantic_v2.json",
+                "result_chain_semantics.json",
+            )
+        )
         scene_map = map_by_chain_id(load_json(os.path.join(app_dir, "result_ui_task_scene.json")))
         rule_map = map_by_chain_id(load_json(os.path.join(app_dir, "result_rule_screening.json")))
         llm_map = map_by_chain_id(load_json(os.path.join(app_dir, "result_llm_review.json")))
@@ -460,4 +478,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

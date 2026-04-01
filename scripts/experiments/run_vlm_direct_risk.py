@@ -334,7 +334,7 @@ def main() -> None:
     parser.add_argument("--app-prefix", default="fastbot-", help="filter app dirs by prefix in root mode")
     parser.add_argument("--chain-ids", default="", help="comma-separated chain ids, e.g. 1,3,9")
     parser.add_argument("--vllm-url", default=os.getenv("VLLM_VL_URL", "http://127.0.0.1:29010/v1/chat/completions"))
-    parser.add_argument("--model", default=os.getenv("VLLM_VL_MODEL", "/home/fanm/zxc/model/Qwen3-VL-30B-A3B-Instruct"))
+    parser.add_argument("--model", default=os.getenv("VLLM_VL_MODEL", "qwen-vl-model"))
     parser.add_argument("--timeout", type=int, default=120, help="per request timeout seconds")
     parser.add_argument("--max-retries", type=int, default=0, help="retry times per payload format")
     parser.add_argument("--force", action="store_true", help="overwrite existing result_vlm_direct_risk.json")
@@ -427,4 +427,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

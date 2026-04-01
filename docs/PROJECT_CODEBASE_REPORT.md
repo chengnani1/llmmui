@@ -1,5 +1,7 @@
 # llmui 全项目代码实现报告（Phase1~Phase3_v2）
 
+说明：当前归档上传版本只保留现行主链代码。旧版 phase3、历史实验脚本和备份脚本已从仓库清理，本报告描述的是保留后的主链实现。
+
 本文档面向论文写作与工程复盘，按“问题-模块-数据契约-设计动机”梳理当前代码。
 
 ## 1. 目标与边界
@@ -191,4 +193,3 @@ LLM输出（标准块）：
 - **Ablation**：移除 retrieval 诊断项、移除 boundary 约束、移除知识库对比
 - **Error Analysis**：按 SCENE/RETRIEVAL/KNOWLEDGE/JUDGE 四层归因
 - **Threats to Validity**：模型波动、知识库覆盖偏置、场景噪声传播
-

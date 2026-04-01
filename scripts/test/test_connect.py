@@ -3,7 +3,7 @@ import requests
 url = "http://127.0.0.1:8010/v1/chat/completions"
 
 payload = {
-    "model": "/home/fanm/zxc/model/Qwen2.5-VL-32B-Instruct",
+    "model": "qwen-vl-model",
     "messages": [
         {"role": "user", "content": "测试一下你能不能听到我？"}
     ],

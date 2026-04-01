@@ -40,6 +40,15 @@ def _as_dict(v: Any) -> Dict[str, Any]:
     return v if isinstance(v, dict) else {}
 
 
+def _load_first_available_json(app_dir: str, *filenames: str) -> Any:
+    for name in filenames:
+        path = os.path.join(app_dir, name)
+        data = load_json(path)
+        if data is not None:
+            return data
+    return None
+
+
 def _first_non_empty(*values: Any) -> Any:
     for v in values:
         if v is None:
@@ -306,7 +315,13 @@ def build_rows(processed_root: str, app_prefix: str = "fastbot-") -> Tuple[List[
         app_name = os.path.basename(app_dir)
         result_map = map_by_chain_id(load_json(os.path.join(app_dir, "result.json")))
         label_map = map_by_chain_id(load_json(os.path.join(app_dir, "label_judge.json")))
-        sem_map = map_by_chain_id(load_json(os.path.join(app_dir, "result_chain_semantics.json")))
+        sem_map = map_by_chain_id(
+            _load_first_available_json(
+                app_dir,
+                "result_semantic_v2.json",
+                "result_chain_semantics.json",
+            )
+        )
         ui_scene_map = map_by_chain_id(load_json(os.path.join(app_dir, "result_ui_task_scene.json")))
         perm_map = map_by_chain_id(load_json(os.path.join(app_dir, "result_permission.json")))
         reg_map = map_by_chain_id(load_json(os.path.join(app_dir, "result_regulatory_scene.json")))
@@ -459,4 +474,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -7,8 +7,11 @@ Naming convention:
 - Backward compatibility: legacy vars are still accepted
 """
 
+import json
 import os
 import uuid
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
 
 
 def _env_first(names, default: str) -> str:
@@ -25,6 +28,48 @@ def _env_int(names, default: int) -> int:
         return int(raw)
     except ValueError:
         return default
+
+
+def _derive_models_url(chat_url: str) -> str:
+    url = (chat_url or "").strip()
+    if not url:
+        return ""
+    if url.endswith("/models"):
+        return url
+    marker = "/chat/completions"
+    if url.endswith(marker):
+        return url[: -len(marker)] + "/models"
+    return url.rstrip("/") + "/models"
+
+
+def _fetch_first_model_id(chat_url: str, timeout_seconds: float = 5.0) -> str:
+    models_url = _derive_models_url(chat_url)
+    if not models_url:
+        return ""
+    req = Request(models_url, headers={"Accept": "application/json"})
+    try:
+        with urlopen(req, timeout=timeout_seconds) as resp:
+            payload = json.loads(resp.read().decode("utf-8", errors="replace"))
+    except (HTTPError, URLError, TimeoutError, OSError, ValueError):
+        return ""
+
+    data = payload.get("data")
+    if not isinstance(data, list) or not data:
+        return ""
+    first = data[0]
+    if not isinstance(first, dict):
+        return ""
+    model_id = str(first.get("id", "")).strip()
+    return model_id
+
+
+def _resolve_vllm_model(names, default: str, chat_url: str) -> str:
+    configured = _env_first(names, default)
+    normalized = configured.strip().lower()
+    if normalized and normalized not in {"qwen-text-model", "qwen-vl-model", "auto", "default"}:
+        return configured
+    discovered = _fetch_first_model_id(chat_url)
+    return discovered or configured
 
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -87,23 +132,25 @@ ADB_PULL_TIMEOUT_SECONDS = _env_int(
 )
 
 # =========================
-# LLM / Agent
+# LLM runtime
 # =========================
 VLLM_TEXT_URL = _env_first(
     ["LLMMUI_VLLM_TEXT_URL", "VLLM_TEXT_URL", "LLMMUI_VLLM_URL"],
     "http://127.0.0.1:8011/v1/chat/completions",
 )
-VLLM_TEXT_MODEL = _env_first(
+VLLM_TEXT_MODEL = _resolve_vllm_model(
     ["LLMMUI_VLLM_TEXT_MODEL", "VLLM_TEXT_MODEL", "LLMMUI_MODEL_NAME"],
-    "/home/fanm/zxc/model/Qwen3-30B-A3B-Instruct-2507",
+    "qwen-text-model",
+    VLLM_TEXT_URL,
 )
 
 VLLM_VL_URL = _env_first(
     ["LLMMUI_VLLM_VL_URL", "VLLM_VL_URL"],
     "http://127.0.0.1:8010/v1/chat/completions",
 )
-VLLM_VL_MODEL = _env_first(
+VLLM_VL_MODEL = _resolve_vllm_model(
     ["LLMMUI_VLLM_VL_MODEL", "VLLM_VL_MODEL"],
-    "/home/fanm/zxc/model/Qwen3-VL-30B-A3B-Instruct",
+    "qwen-vl-model",
+    VLLM_VL_URL,
 )
 LLM_RESPONSE_TIMEOUT = _env_int(["LLMMUI_LLM_RESPONSE_TIMEOUT", "LLM_RESPONSE_TIMEOUT"], 120)

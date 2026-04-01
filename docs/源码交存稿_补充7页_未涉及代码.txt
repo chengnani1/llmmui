@@ -1,0 +1,350 @@
+00001: # FILE: scripts/run_phase3_rq3_a10029.sh
+00002: #!/usr/bin/env bash
+00003: set -euo pipefail
+00004: PROJECT_ROOT="/Users/charon/Downloads/code/llmmui"
+00005: PROCESSED_ROOT="/Volumes/Charon/data/code/llm_ui/code/data/rq3/processed-neeed"
+00006: # a100-29 default forwarded endpoints
+00007: export NO_PROXY="${NO_PROXY:-127.0.0.1,localhost}"
+00008: export no_proxy="${no_proxy:-127.0.0.1,localhost}"
+00009: export LLMMUI_VLLM_VL_URL="${LLMMUI_VLLM_VL_URL:-http://127.0.0.1:29010/v1/chat/completions}"
+00010: export LLMMUI_VLLM_TEXT_URL="${LLMMUI_VLLM_TEXT_URL:-http://127.0.0.1:29011/v1/chat/completions}"
+00011: export LLMMUI_VLLM_VL_MODEL="${LLMMUI_VLLM_VL_MODEL:-qwen-vl-model}"
+00012: export LLMMUI_VLLM_TEXT_MODEL="${LLMMUI_VLLM_TEXT_MODEL:-qwen-text-model}"
+00013: cd "$PROJECT_ROOT"
+00014: echo "[INFO] project_root=$PROJECT_ROOT"
+00015: echo "[INFO] processed_root=$PROCESSED_ROOT"
+00016: echo "[INFO] vl_url=$LLMMUI_VLLM_VL_URL"
+00017: echo "[INFO] text_url=$LLMMUI_VLLM_TEXT_URL"
+00018: python3 scripts/experiments/test_vllm_connectivity.py
+00019: bash run_full_pipeline.sh phase3_v2 "$PROCESSED_ROOT" --force
+00020: # FILE: scripts/artifact/templates/run_eval.sh
+00021: #!/usr/bin/env bash
+00022: set -euo pipefail
+00023: ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+00024: python3 "$ROOT_DIR/experience/reproduce_results.py" --artifact-root "$ROOT_DIR" "$@"
+00025: find "$ROOT_DIR/results" -name '._*' -delete
+00026: find "$ROOT_DIR/results" -name '.DS_Store' -delete
+00027: echo "[DONE] Reproduced evaluation outputs under results/"
+00028: # FILE: scripts/utils/redirect_raw_dir.sh
+00029: #!/usr/bin/env bash
+00030: set -euo pipefail
+00031: SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+00032: REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
+00033: DEFAULT_RAW_DIR="${REPO_ROOT}/data/raw"
+00034: usage() {
+00035:   echo "Usage: $0 <target_raw_dir> [source_raw_dir]"
+00036:   echo "Example: $0 /Volumes/Charon/data/code/llm_ui/code/data/0320/rawdata"
+00037: if [[ "${1:-}" == "" ]]; then
+00038:   usage
+00039:   exit 1
+00040: fi
+00041: TARGET_RAW_DIR="$1"
+00042: SOURCE_RAW_DIR="${2:-$DEFAULT_RAW_DIR}"
+00043: mkdir -p "$TARGET_RAW_DIR"
+00044: if [[ -L "$SOURCE_RAW_DIR" ]]; then
+00045:   CURRENT_TARGET="$(readlink "$SOURCE_RAW_DIR")"
+00046:   echo "source is already a symlink: $SOURCE_RAW_DIR -> $CURRENT_TARGET"
+00047:   exit 0
+00048: fi
+00049: if [[ -d "$SOURCE_RAW_DIR" ]]; then
+00050:   echo "sync existing data from $SOURCE_RAW_DIR -> $TARGET_RAW_DIR"
+00051:   rsync -a "$SOURCE_RAW_DIR"/ "$TARGET_RAW_DIR"/
+00052:   BACKUP_DIR="${SOURCE_RAW_DIR}.bak.$(date +%Y%m%d_%H%M%S)"
+00053:   echo "move original directory to backup: $BACKUP_DIR"
+00054:   mv "$SOURCE_RAW_DIR" "$BACKUP_DIR"
+00055: else
+00056:   mkdir -p "$(dirname "$SOURCE_RAW_DIR")"
+00057: fi
+00058: echo "create symlink: $SOURCE_RAW_DIR -> $TARGET_RAW_DIR"
+00059: ln -s "$TARGET_RAW_DIR" "$SOURCE_RAW_DIR"
+00060: echo "done"
+00061: echo "raw dir now points to: $(readlink "$SOURCE_RAW_DIR")"
+00062: # FILE: scripts/experiments/label_config.py
+00063: # ---------------------------------------------------------
+00064: # 场景列表（编号 1~44）
+00065: # ---------------------------------------------------------
+00066: SCENE_LIST = [
+00067:     "地图导航", "打车服务", "即时通信聊天服务", "电话通话", "网络社区", "网络支付",
+00068:     "网上购物", "餐饮外卖", "邮寄服务", "交通票务", "婚恋相亲", "求职招聘",
+00069:     "网络借贷", "房屋租售", "汽车交易", "医疗健康", "旅游服务", "酒店预定",
+00070:     "网络游戏", "学习教育", "维修装修", "女性健康", "汽车单车租赁", "投资理财",
+00071:     "手机银行", "网络邮箱", "远程会议", "网络直播", "在线影音", "新闻资讯",
+00072:     "运动健身", "浏览器", "杀毒软件", "电子图书", "拍摄美化", "应用商店",
+00073:     "天气", "日历", "实用工具", "文件管理", "娱乐票务", "用户登录",
+00074:     "其他", "广告","个人信息"
+00075: # ---------------------------------------------------------
+00076: # 权限候选（编号形式展示 + 中文解释）
+00077: # ---------------------------------------------------------
+00078: PERMISSION_CANDIDATES = [
+00079:     "READ_CALENDAR",              #1 读取日历
+00080:     "WRITE_CALENDAR",             #2 编辑日历
+00081:     "READ_CALL_LOG",              #3 读取通话记录
+00082:     "WRITE_CALL_LOG",             #4 编辑通话记录
+00083:     "PROCESS_OUTGOING_CALLS",     #5 监控呼出电话
+00084:     "CAMERA",                     #6 拍摄
+00085:     "READ_CONTACTS",              #7 读取通讯录
+00086:     "WRITE_CONTACTS",             #8 编辑通讯录
+00087:     "GET_ACCOUNTS",               #9 获取 App 账户
+00088:     "ACCESS_FINE_LOCATION",       #10 访问精准定位
+00089:     "ACCESS_COARSE_LOCATION",     #11 访问粗略位置
+00090:     "ACCESS_BACKGROUND_LOCATION", #12 后台访问位置
+00091:     "RECORD_AUDIO",               #13 录音
+00092:     "READ_PHONE_STATE",           #14 读取电话状态
+00093:     "READ_PHONE_NUMBERS",         #15 读取本机电话号码
+00094:     "CALL_PHONE",                 #16 拨打电话
+00095:     "ANSWER_PHONE_CALLS",         #17 接听电话
+00096:     "ADD_VOICEMAIL",              #18 添加语音邮件
+00097:     "USE_SIP",                    #19 使用网络电话
+00098:     "ACCEPT_HANDOVER",            #20 继续其他 App 的通话
+00099:     "BODY_SENSORS",               #21 身体传感器
+00100:     "SEND_SMS",                   #22 发送短信
+00101:     "RECEIVE_SMS",                #23 接收短信
+00102:     "READ_SMS",                   #24 读取短信
+00103:     "RECEIVE_WAP_PUSH",           #25 接收 WAP 推送
+00104:     "RECEIVE_MMS",                #26 接收彩信
+00105:     "READ_EXTERNAL_STORAGE",      #27 读取存储
+00106:     "WRITE_EXTERNAL_STORAGE",     #28 写入存储
+00107:     "ACCESS_MEDIA_LOCATION",      #29 读取照片位置信息
+00108:     "ACTIVITY_RECOGNITION",       #30 识别身体活动
+00109: # FILE: scripts/run_incremental_phase23.sh
+00110: #!/usr/bin/env bash
+00111: set -euo pipefail
+00112: SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+00113: REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+00114: usage() {
+00115:   cat <<'EOF'
+00116: Usage:
+00117:   bash scripts/run_incremental_phase23.sh <raw_root> <processed_root> [poll_seconds]
+00118: Example:
+00119:   bash scripts/run_incremental_phase23.sh \
+00120:     /Volumes/Charon/data/code/llm_ui/code/data/0320/rawdata \
+00121:     /Volumes/Charon/data/code/llm_ui/code/data/0320/processeddata \
+00122:     1800
+00123: Behavior:
+00124:   1. Scan raw_root for completed fastbot-* dirs (tupleOfPermissions.json exists)
+00125:   2. Run phase2 only for apps not yet processed
+00126:   3. Scan processed_root for apps with result.json but without result_final_decision.json
+00127:   4. Run phase3_v2 incrementally for those apps
+00128:   5. Sleep and repeat
+00129: Assumptions:
+00130:   - Run this script inside the activated llmui conda env
+00131:   - Do not start multiple copies of this script on the same dataset
+00132: EOF
+00133: if [[ "${1:-}" == "" || "${2:-}" == "" ]]; then
+00134:   usage
+00135:   exit 1
+00136: fi
+00137: RAW_ROOT="$1"
+00138: PROCESSED_ROOT="$2"
+00139: POLL_SECONDS="${3:-1800}"
+00140: PYTHON_BIN="${PYTHON_BIN:-python3}"
+00141: LOCK_DIR="${TMPDIR:-/tmp}/llmui_incremental_phase23.lock"
+00142: if [[ ! -d "$RAW_ROOT" ]]; then
+00143:   echo "[ERROR] raw_root not found: $RAW_ROOT"
+00144:   exit 1
+00145: fi
+00146: mkdir -p "$PROCESSED_ROOT"
+00147: if ! mkdir "$LOCK_DIR" 2>/dev/null; then
+00148:   echo "[ERROR] another incremental phase2/phase3 worker is already running: $LOCK_DIR"
+00149:   exit 1
+00150: fi
+00151: cleanup() {
+00152:   rm -rf "$LOCK_DIR"
+00153: trap cleanup EXIT
+00154: run_phase2_one() {
+00155:   local raw_app_dir="$1"
+00156:   local app_name
+00157:   local tmp_root
+00158:   local status=0
+00159:   app_name="$(basename "$raw_app_dir")"
+00160:   tmp_root="$(mktemp -d "${TMPDIR:-/tmp}/llmui_phase2_${app_name}.XXXXXX")"
+00161:   ln -s "$raw_app_dir" "$tmp_root/$app_name"
+00162:   echo "[PHASE2] $(date '+%F %T') app=$app_name"
+00163:   if (
+00164:     cd "$REPO_ROOT"
+00165:     "$PYTHON_BIN" -u src/main.py phase2 "$tmp_root" --processed-root "$PROCESSED_ROOT"
+00166:   ); then
+00167:     status=0
+00168:   else
+00169:     status=$?
+00170:   fi
+00171:   rm -rf "$tmp_root"
+00172:   return "$status"
+00173: run_phase3_one() {
+00174:   local processed_app_dir="$1"
+00175:   local app_name
+00176:   local status=0
+00177:   app_name="$(basename "$processed_app_dir")"
+00178:   echo "[PHASE3] $(date '+%F %T') app=$app_name"
+00179:   if (
+00180:     cd "$REPO_ROOT"
+00181:     "$PYTHON_BIN" -u src/main.py phase3_v2 "$processed_app_dir"
+00182:   ); then
+00183:     status=0
+00184:   else
+00185:     status=$?
+00186:   fi
+00187:   return "$status"
+00188: scan_and_run() {
+00189:   local phase2_count=0
+00190:   local phase3_count=0
+00191:   local raw_app_dir=""
+00192:   local processed_app_dir=""
+00193:   while IFS= read -r raw_app_dir; do
+00194:     [[ -d "$raw_app_dir" ]] || continue
+00195:     local app_name
+00196:     local processed_app
+00197:     app_name="$(basename "$raw_app_dir")"
+00198:     processed_app="$PROCESSED_ROOT/$app_name"
+00199:     [[ -f "$raw_app_dir/tupleOfPermissions.json" ]] || continue
+00200:     [[ -f "$processed_app/result.json" ]] && continue
+00201:     if run_phase2_one "$raw_app_dir"; then
+00202:       phase2_count=$((phase2_count + 1))
+00203:     else
+00204:       echo "[WARN] phase2 failed: $app_name"
+00205:     fi
+00206:   done < <(find "$RAW_ROOT" -maxdepth 1 -mindepth 1 -type d -name 'fastbot-*' | sort)
+00207:   while IFS= read -r processed_app_dir; do
+00208:     [[ -d "$processed_app_dir" ]] || continue
+00209:     [[ -f "$processed_app_dir/result.json" ]] || continue
+00210:     [[ -f "$processed_app_dir/result_final_decision.json" ]] && continue
+00211:     if run_phase3_one "$processed_app_dir"; then
+00212:       phase3_count=$((phase3_count + 1))
+00213:     else
+00214:       echo "[WARN] phase3 failed: $(basename "$processed_app_dir")"
+00215:     fi
+00216:   done < <(find "$PROCESSED_ROOT" -maxdepth 1 -mindepth 1 -type d -name 'fastbot-*' | sort)
+00217:   echo "[ROUND] $(date '+%F %T') phase2_new=$phase2_count phase3_new=$phase3_count"
+00218: echo "[START] raw_root=$RAW_ROOT processed_root=$PROCESSED_ROOT poll_seconds=$POLL_SECONDS"
+00219: while true; do
+00220:   scan_and_run
+00221:   echo "[SLEEP] $(date '+%F %T') sleep=${POLL_SECONDS}s"
+00222:   sleep "$POLL_SECONDS"
+00223: done
+00224: # FILE: scripts/artifact/build_privui_guard_artifact.sh
+00225: #!/usr/bin/env bash
+00226: set -euo pipefail
+00227: REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+00228: TEMPLATE_ROOT="$REPO_ROOT/scripts/artifact/templates"
+00229: TARGET_ROOT="${1:-/Volumes/Charon/data/code/llm_ui/code/data/artifact/PrivUI-Guard_artifact}"
+00230: SRC_RQ1="/Volumes/Charon/data/code/llm_ui/code/data/rq1/processed"
+00231: SRC_RQ2="/Volumes/Charon/data/code/llm_ui/code/data/rq2/processed"
+00232: SRC_RQ3="/Volumes/Charon/data/code/llm_ui/code/data/rq3/processed"
+00233: copy_tree() {
+00234:   local src="$1"
+00235:   local dst="$2"
+00236:   mkdir -p "$dst"
+00237:   rsync -a --delete \
+00238:     --exclude '._*' \
+00239:     --exclude '.DS_Store' \
+00240:     --exclude '__pycache__' \
+00241:     --exclude '*.pyc' \
+00242:     "$src"/ "$dst"/
+00243: copy_file() {
+00244:   local src="$1"
+00245:   local dst="$2"
+00246:   mkdir -p "$(dirname "$dst")"
+00247:   install -m 0644 "$src" "$dst"
+00248: copy_exec() {
+00249:   local src="$1"
+00250:   local dst="$2"
+00251:   mkdir -p "$(dirname "$dst")"
+00252:   install -m 0755 "$src" "$dst"
+00253: sanitize_dataset_root() {
+00254:   local dataset_root="$1"
+00255:   local child=""
+00256:   find "$dataset_root" -maxdepth 1 -type f -delete
+00257:   for child in "$dataset_root"/*; do
+00258:     if [[ ! -e "$child" ]]; then
+00259:       continue
+00260:     fi
+00261:     if [[ -d "$child" ]]; then
+00262:       case "$(basename "$child")" in
+00263:         fastbot-*)
+00264:           ;;
+00265:         *)
+00266:           rm -rf "$child"
+00267:           ;;
+00268:       esac
+00269:     fi
+00270:   done
+00271: cleanup_target() {
+00272:   local rel
+00273:   local remove_list=(
+00274:     "README.md"
+00275:     "requirements.txt"
+00276:     "environment.yml"
+00277:     "ANONYMITY.md"
+00278:     "configs"
+00279:     "prompts"
+00280:     "scripts"
+00281:     "src"
+00282:     "lib"
+00283:     "docs"
+00284:     "data"
+00285:     "results"
+00286:     "experience"
+00287:     "run_eval.sh"
+00288:     "run_project.sh"
+00289:     "run_full_pipeline.sh"
+00290:   )
+00291:   for rel in "${remove_list[@]}"; do
+00292:     rm -rf "$TARGET_ROOT/$rel"
+00293:   done
+00294: main() {
+00295:   mkdir -p "$TARGET_ROOT"
+00296:   cleanup_target
+00297:   mkdir -p \
+00298:     "$TARGET_ROOT/data" \
+00299:     "$TARGET_ROOT/results" \
+00300:     "$TARGET_ROOT/docs" \
+00301:     "$TARGET_ROOT/experience"
+00302:   copy_tree "$REPO_ROOT/src" "$TARGET_ROOT/src"
+00303:   copy_tree "$REPO_ROOT/lib" "$TARGET_ROOT/lib"
+00304:   copy_tree "$REPO_ROOT/docs" "$TARGET_ROOT/docs"
+00305:   copy_tree "$SRC_RQ1" "$TARGET_ROOT/data/benchmark_processed"
+00306:   copy_tree "$SRC_RQ2" "$TARGET_ROOT/data/independent_processed"
+00307:   copy_tree "$SRC_RQ3" "$TARGET_ROOT/data/large_scale_processed"
+00308:   sanitize_dataset_root "$TARGET_ROOT/data/benchmark_processed"
+00309:   sanitize_dataset_root "$TARGET_ROOT/data/independent_processed"
+00310:   sanitize_dataset_root "$TARGET_ROOT/data/large_scale_processed"
+00311:   copy_tree "$TEMPLATE_ROOT/experience" "$TARGET_ROOT/experience"
+00312:   copy_file "$TEMPLATE_ROOT/README.md" "$TARGET_ROOT/README.md"
+00313:   copy_exec "$TEMPLATE_ROOT/run_eval.sh" "$TARGET_ROOT/run_eval.sh"
+00314:   copy_exec "$TEMPLATE_ROOT/run_project.sh" "$TARGET_ROOT/run_project.sh"
+00315:   copy_exec "$REPO_ROOT/run_full_pipeline.sh" "$TARGET_ROOT/run_full_pipeline.sh"
+00316:   copy_file "$REPO_ROOT/requirements.txt" "$TARGET_ROOT/requirements.txt"
+00317:   cat >"$TARGET_ROOT/data/DATASET_MAPPING.md" <<'EOF'
+00318: # Dataset Mapping
+00319: The artifact packages three processed datasets and names them by paper role:
+00320: - `data/benchmark_processed`: benchmark dataset for effectiveness and ablation
+00321: - `data/independent_processed`: held-out dataset for generalization
+00322: - `data/large_scale_processed`: large-scale dataset for real-world analysis
+00323: This file intentionally avoids machine-specific source paths.
+00324: EOF
+00325:   find "$TARGET_ROOT" -name '._*' -exec rm -f {} + 2>/dev/null || true
+00326:   find "$TARGET_ROOT" -name '.DS_Store' -exec rm -f {} + 2>/dev/null || true
+00327:   echo "[DONE] Artifact rebuilt at: $TARGET_ROOT"
+00328:   echo "[INFO] Benchmark data      -> $TARGET_ROOT/data/benchmark_processed"
+00329:   echo "[INFO] Independent data    -> $TARGET_ROOT/data/independent_processed"
+00330:   echo "[INFO] Large-scale data    -> $TARGET_ROOT/data/large_scale_processed"
+00331:   echo "[INFO] Project code        -> $TARGET_ROOT/src"
+00332:   echo "[INFO] Fastbot libraries   -> $TARGET_ROOT/lib"
+00333:   echo "[INFO] Experiment scripts  -> $TARGET_ROOT/experience"
+00334: main "$@"
+00335: # FILE: scripts/artifact/templates/run_project.sh
+00336: #!/usr/bin/env bash
+00337: set -euo pipefail
+00338: usage() {
+00339:   cat <<'EOF'
+00340: Usage:
+00341:   bash run_project.sh <mode> <target> [extra args...]
+00342:   full
+00343:   phase1
+00344:   phase2
+00345:   phase3_v2
+00346:   phase3_v2_compliance
+00347:   phase3_v2_final
+00348:   phase3_v2_post
+00349: Target aliases:
+00350:   benchmark     -> data/benchmark_processed
